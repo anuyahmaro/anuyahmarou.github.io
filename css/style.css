@@ -19,10 +19,10 @@
   src: local('brandon-grotesque-regular-italic'), url('../fonts/brandon-grotesque/brandon-grotesque-regular-italic-58a8a456c4724.woff') format('woff');
 }
 @font-face {
-  font-family: 'brandon-grotesque-thin-talic';
+  font-family: 'brandon-grotesque-thin-italic';
   font-style: normal;
   font-weight: normal;
-  src: local('brandon-grotesque-thin-talic'), url('../fonts/brandon-grotesque/brandon-grotesque-thin-italic-58a8a3a8861fe.woff') format('woff');
+  src: local('brandon-grotesque-thin-italic'), url('../fonts/brandon-grotesque/brandon-grotesque-thin-italic-58a8a3a8861fe.woff') format('woff');
 }
 @font-face {
   font-family: 'brandon-grotesque-light';

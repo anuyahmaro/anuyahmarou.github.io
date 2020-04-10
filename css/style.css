@@ -86,13 +86,15 @@ body {
     overflow-y: hidden; }
 
 a {
-  color: #CA82F8;
+
+  color: #093877;
+  /*color: #CA82F8;*/
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
   a:hover {
     text-decoration: underline;
-    color: #CA82F8; }
+    color: #093877; }
   a:focus, a:active {
     outline: none; }
 
@@ -256,7 +258,9 @@ h1, h2, h3, h4, h5, h6 {
           outline: none;
           text-decoration: none; }
       #colorlib-main-nav ul li.active a {
-        color: #CA82F8; }
+        color: #093877 ;
+      /*color:#CA82F8 */
+      }
   #colorlib-main-nav .form-group {
     margin-bottom: 40px;
     position: relative;
@@ -290,7 +294,9 @@ h1, h2, h3, h4, h5, h6 {
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     border-radius: 0;
-    background: #CA82F8;
+    background: #093877;
+    /* background: #CA82F8;*/
+
     color: #fff;
     border: none;
     padding: 16px; }
@@ -1054,6 +1060,12 @@ header {
       background: #CA82F8;
       color: #fff; }
 
+
+
+
+
+
+
 .btn-success {
   background: #5cb85c;
   color: #fff;
@@ -1281,7 +1293,9 @@ header {
       font-size: 16px;
       color: rgba(0, 0, 0, 0.5); }
     .contact-info li a {
-      color: #CA82F8; }
+      color: #093877;
+    /*color: #CA82F8; */
+    }
 
 .form-control {
   -webkit-box-shadow: none;
@@ -1313,7 +1327,11 @@ input[type="text"] {
 
 .colorlib-social-icons i {
   font-size: 24px;
-  color: #CA82F8; }
+  color: #093877;
+  /*color: #CA82F8;*/
+}
+
+/*#093877*/
 
 #footer {
   padding: 8em 0;
@@ -1330,7 +1348,13 @@ input[type="text"] {
     text-decoration: none !important; }
   #footer p.colorlib-social-icons i {
     font-size: 24px;
-    color: #CA82F8; }
+    /*color: #CA82F8;*/
+    color: #093877;
+
+  }
+
+/*#093877*/
+
   #footer p .block {
     color: #1a1a1a;
     font-size: 14px; }

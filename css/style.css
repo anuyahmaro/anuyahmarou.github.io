@@ -1046,18 +1046,26 @@ header {
     outline: none !important; }
 
 .btn-primary {
-  background: #CA82F8;
+  background: #337ab7;
+  /* #CA82F8*/
   color: #fff;
-  border: 2px solid #CA82F8; }
+  border: 2px solid #337ab7; }
+/* #CA82F8*/
+
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-    background: #d49af9 !important;
-    border-color: #d49af9 !important; }
+    background: #337ab7 !important;
+    /*background: #d49af9 !important;*/
+    border-color: #337ab7 !important;
+    /*border-color: #d49af9 !important;*/
+  }
   .btn-primary.btn-outline {
     background: transparent;
     color: #4d4d4d;
     border: 1px solid #d9d9d9; }
+
     .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-      background: #CA82F8;
+      /*background: #CA82F8;*/
+      background: #337ab7;
       color: #fff; }
 
 

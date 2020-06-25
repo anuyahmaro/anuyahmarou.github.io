@@ -69,7 +69,7 @@
         }
 
         /* On smaller screens, decrease text size */
-        @media only screen and (max-width: 300px) {
+        @media only screen and (max-width: 800px) {
             .text {font-size: 11px}
         }
     </style>
@@ -108,12 +108,12 @@
 </div>
 <br>
 
-<!--<div style="text-align:center">-->
-    <!--<span class="dot"></span>-->
-    <!--<span class="dot"></span>-->
-    <!--<span class="dot"></span>-->
-    <!--<span class="dot"></span>-->
-<!--</div>-->
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
 
 <script>
     var slideIndex = 0;
@@ -133,7 +133,7 @@
         }
         slides[slideIndex-1].style.display = "block";
         dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 5000); // Change image every 2 seconds
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
     }
 </script>
 

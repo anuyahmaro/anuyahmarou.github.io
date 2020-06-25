@@ -40,13 +40,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="202" />
-          <entry key="html" value="5975" />
+          <entry key="html" value="5982" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="202" />
-          <entry key="HTML" value="5975" />
+          <entry key="HTML" value="5982" />
         </counts>
       </usages-collector>
     </session>
@@ -83,8 +83,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/slides.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="89" selection-start-line="89" selection-end-line="89" />
+            <state relative-caret-position="165">
+              <caret line="93" column="13" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" />
               </folding>
@@ -349,7 +349,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1593091746459" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1593093037732" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -393,15 +393,16 @@
       <workItem from="1586579137404" duration="196000" />
       <workItem from="1586895926575" duration="50000" />
       <workItem from="1592881922572" duration="856000" />
-      <workItem from="1593090631532" duration="1136000" />
+      <workItem from="1593090631532" duration="1617000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60627000" />
+    <option name="totallyTimeSpent" value="61108000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2832723" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -647,8 +648,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/slides.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        <state relative-caret-position="165">
+          <caret line="93" column="13" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" />
           </folding>

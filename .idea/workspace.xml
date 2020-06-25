@@ -39,13 +39,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="202" />
-          <entry key="html" value="5964" />
+          <entry key="html" value="5972" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="202" />
-          <entry key="HTML" value="5964" />
+          <entry key="HTML" value="5972" />
         </counts>
       </usages-collector>
     </session>
@@ -82,8 +82,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/slides.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="90" column="89" selection-start-line="90" selection-start-column="89" selection-end-line="90" selection-end-column="89" />
+            <state relative-caret-position="225">
+              <caret line="97" column="49" selection-start-line="97" selection-start-column="49" selection-end-line="97" selection-end-column="49" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" />
               </folding>
@@ -348,7 +348,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1593091229606" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1593091490424" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -392,18 +392,17 @@
       <workItem from="1586579137404" duration="196000" />
       <workItem from="1586895926575" duration="50000" />
       <workItem from="1592881922572" duration="856000" />
-      <workItem from="1593090631532" duration="246000" />
+      <workItem from="1593090631532" duration="541000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59737000" />
+    <option name="totallyTimeSpent" value="60032000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2832723" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2832723" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -418,7 +417,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.1244898" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.1244898" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -647,8 +646,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/slides.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="90" column="89" selection-start-line="90" selection-start-column="89" selection-end-line="90" selection-end-column="89" />
+        <state relative-caret-position="225">
+          <caret line="97" column="49" selection-start-line="97" selection-start-column="49" selection-end-line="97" selection-end-column="49" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" />
           </folding>

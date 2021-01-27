@@ -103,6 +103,10 @@ p, span, li {
   font-weight: 400;
   font-family: "Karla", Arial, sans-serif; }
 
+li {
+  font-family: "Karla", Arial, sans-serif; }
+
+
 ul, ol {
   display: block;
   margin-bottom: 1.5em; }

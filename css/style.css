@@ -98,7 +98,7 @@ a {
   a:focus, a:active {
     outline: none; }
 
-p, span {
+p, span, li {
   margin-bottom: 1.5em;
   font-weight: 400;
   font-family: "Karla", Arial, sans-serif; }
@@ -435,6 +435,11 @@ header {
       background: #000;
       width: 40px;
       height: 1px; }
+
+
+    li {
+      font-family: "Karla", Arial, sans-serif;
+    }
 
 .about-desc {
   padding-top: 3em; }

@@ -1,0 +1,77 @@
+{
+  "Nodes": [
+    {
+      "lvl": 0,
+      "name": "Socket exception"
+    },
+    {
+      "lvl": 0,
+      "name": "groundstation"
+    },
+    {
+      "lvl": 0,
+      "name": "GroundStationID"
+    },
+    {
+      "lvl": 0,
+      "name": "shutting down"
+    },
+    {
+      "lvl": 0,
+      "name": "tearDown"
+    },
+    {
+      "lvl": 0,
+      "name": "timestamp"
+    }
+  ,
+
+    {
+      "lvl": 1,
+      "name": "socket error"
+    },
+    {
+      "lvl": 1,
+      "name": "time-out"
+    },
+    {
+      "lvl": 1,
+      "name": "deactivated"
+    },
+    {
+      "lvl": 1,
+      "name": "GCS"
+    }
+  ],
+  "links": [
+
+    {
+      "source": "Socket exception",
+      "target": "socket error"
+    }
+    // {
+    //     "source": "groundstation",
+    //     "target": "GCS"
+    // },
+    // {
+    //     "source": "GroundStationID",
+    //     "target": "GCS"
+    // },
+    // {
+    //     "source": "shutting down",
+    //     "target": "deactivated"
+    // },
+    // {
+    //     "source": "tearDown",
+    //     "target": "deactivated"
+    // },
+    // {
+    //     "source": "timestamp",
+    //     "target": "time-out"
+    // }
+    // ],
+    // "names" : [
+    //     {"name": "I5",
+    //     "content": "thsisis"}
+  ]
+}

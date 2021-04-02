@@ -1,0 +1,10 @@
+[{
+    "id": 100,
+    "content": "/** Threat handling incoming messages from a GCS\n* The {@link ReadDispatcher} can handle json messages\ntransformed into UAV Messages (extending {@link Abstraction}\nby the {@link UAVMessageFactory}.**/\n\n} catch (SocketException sex) {\nLOGGER.error(“Socket Exception groundstation” +\ndispatchQueueManager.getGroundstationid() +\n“Disconnected - shutting down connection -- Error:” +\nsex.getMessage());\ndispatchQueueManager.tearDown();\ncont.set(false);\n}\n… else if (message instanceof UAVHandshakeMessage) {\nLOGGER.hwInfo(FormatUtil.formatTimestamp(message.getTimestamp(),\nFormatUtil.FORMAT_YEAR_FIRST_MILLIS) + “_”+message.toString());",
+    "type": "code"
+  },
+  {
+    "id": 102,
+    "content": "When a socket error or time-out occurs, all UAVs associated with the GCS shall be deactivated.",
+    "type": "requirement"
+  }]

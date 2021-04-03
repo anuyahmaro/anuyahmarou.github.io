@@ -50,10 +50,14 @@ a:link {
   color: black;
   font-size: 15px;
   /*width: 500px;*/
-  width: 100%;
+  /*width: 90%;*/
   height: 350px;
   margin-top: 80px;
   margin-bottom: 80px;
+  /*text-align: justify;*/
+  padding: 30px;
+  /*margin-right: 20px;*/
+  /*margin-left: 20px;*/
   /*width: calc(100% - 30)!important;*/
   /*max-width:100%;*/
   overflow: scroll;
@@ -70,6 +74,8 @@ a:link {
 .content-panel{
   background-color:#b0bec5;
   height: 500px;
+  /*text-align: justify;*/
+  /*margin-right: 50px;*/
   /*width: 35%;*/
 }
 

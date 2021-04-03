@@ -168,7 +168,7 @@
         // },
         svg;
 
-    console.log(width / 4.5)
+
 
 
     var artifact_data = {
@@ -243,11 +243,13 @@
 
                 {
                     "source": "system",
-                    "target": "personalized"
+                    "target": "personalized",
+                    "relationship": "parent of"
                 },
                 {
                     "source": "system",
-                    "target": "predefined"
+                    "target": "predefined",
+                    "relationship": "child of"
                 }
 
             ]
@@ -355,7 +357,8 @@
             links.push({
                 source: find(d.source),
                 target: find(d.target),
-                id: "l" + find(d.source).id + find(d.target).id
+                id: "l" + find(d.source).id + find(d.target).id,
+                relationship: d.relationship
             });
         });
 
@@ -424,6 +427,7 @@
         links.forEach(function (li) {
             svg.append("path", "g")
                 .attr("class", "link_d3")
+                .attr("stroke", "darkgray")
                 .attr("id", li.id)
                 .attr("d", function () {
                     var oTarget = {
@@ -445,13 +449,13 @@
                         target: oTarget
                     });
                 })
-                .attr("stroke-width", "black")
+                // .attr("stroke-width", "black")
             .on("mouseenter", function () {
                 mouse_action_link(li);
             })
-            // .on("mouseout", function () {
-            //     mouse_action_link_clear()
-            // });
+            .on("mouseout", function () {
+                mouse_action_link_clear(li)
+            });
         });
 
 
@@ -459,16 +463,104 @@
 
 
     function mouse_action_link(val) {
-        // "use strict";
-        // d3.select("#" + val.id).classed("active_d3", stat);
+
         console.log("Link has been hovered on!");
-        console.log("Data is "+ val.id);
+        // console.log("Data is "+ val.id);
+        var clicked_link = [];
+
+        clicked_link.push(val);
+
+
+        // console.log(clicked_link[0]);
+
+        d3.select("#" + val.id).attr("stroke", "green").attr("stroke-width", "2.5px");
+
+        clicked_link.forEach(function (d) {
+
+            var source_info = d.source;
+            var target_info = d.target;
+
+            console.log("hola before");
+            console.log("source:");
+            console.log(source_info);
+            console.log("target:");
+            console.log(target_info);
+            console.log("hola after");
+
+            var highlight_source = d3.select("#" + source_info.id)
+                // .attr("fill", d.cl)
+                .attr("fill-opacity", "1")
+                .attr("stroke", "green")
+                .attr("stroke-width", "2.5px");
+            ;
+
+            var highlight_target = d3.select("#" + target_info.id)
+            // .attr("fill", d.cl)
+                .attr("fill-opacity", "1")
+                .attr("stroke", "green")
+                .attr("stroke-width", "2.5px");
+            ;
+
+            hover("<span style='text-transform: capitalize'>"+ source_info.name +"</span> is a "+
+                "<span style='text-transform: uppercase'><b><u>"+ val.relationship +"</u></b></span> " +
+                "<span style='text-transform: capitalize'>"+ target_info.name + "</span>");
+
+        });
+
 
         console.log(links);
 
 
     }
 
+    function mouse_action_link_clear(val) {
+
+        console.log("Link has been hovered on!");
+        // console.log("Data is "+ val.id);
+        var clicked_link = [];
+
+        clicked_link.push(val);
+
+
+        // console.log(clicked_link[0]);
+
+        d3.select("#" + val.id).attr("stroke", "darkgray").attr("stroke-width", "2px");
+
+        clicked_link.forEach(function (d) {
+
+            var source_info = d.source;
+            var target_info = d.target;
+
+            console.log("hola before");
+            console.log("source:");
+            console.log(source_info);
+            console.log("target:");
+            console.log(target_info);
+            console.log("hola after");
+
+            var highlight_source = d3.select("#" + source_info.id)
+            // .attr("fill", d.cl)
+                .attr("fill-opacity", "0.6")
+                .attr("stroke", "darkgrey")
+                .attr("stroke-width", "2px");
+            ;
+
+            var highlight_target = d3.select("#" + target_info.id)
+            // .attr("fill", d.cl)
+                .attr("fill-opacity", "0.6")
+                .attr("stroke", "darkgray")
+                .attr("stroke-width", "2px");
+            ;
+
+            clearInformationBoard();
+
+        });
+
+
+        // console.log(links);
+
+
+    }
 
 
 
@@ -483,7 +575,7 @@
         d3.select("#" + val.id)
             .attr("fill", val.cl)
             .attr("fill-opacity", "1")
-            .attr("stroke", "gray")
+            .attr("stroke", "green")
             .attr("stroke-width", "2.5px");
         ;
 
@@ -499,8 +591,7 @@
         }
         else {
             var extractContent =  document.getElementsByClassName(val.name+"_t");
-            // extractContent.style("background-color: pink");
-            // extractContent.style.fontSize = "25px";
+
 
             for (var i = 0; i < extractContent.length; i++) {
                 extractContent[i].style.fontSize = "25px";
@@ -558,19 +649,6 @@
         });
     }
 
-
-
-
-
-
-
-
-
-    function mouse_action_link_clear() {
-
-        console.log("Write link leave function!")
-
-    }
 
 
 

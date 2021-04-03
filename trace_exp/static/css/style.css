@@ -242,9 +242,17 @@ rect {
 .link_d3 {
   fill: none;
   /*stroke: #ccc;*/
-  stroke: darkgray;
+
   stroke-width: 2px;
 }
+
+
+/*.active_link_d3 {*/
+  /*fill: none;*/
+  /*!*stroke: #ccc;*!*/
+  /*stroke: black;*/
+  /*stroke-width: 2px;*/
+/*}*/
 
 #tree {
   /*background-color: lightsteelblue;*/

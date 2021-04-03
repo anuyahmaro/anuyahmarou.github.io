@@ -104,6 +104,7 @@ div.information-panel {
   padding: 10px;
   color: black;
   font-size: small;
+  overflow: scroll;
 }
 
 

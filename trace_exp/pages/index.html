@@ -321,12 +321,6 @@
 
         });
 
-        // console.log(concept_definitions_);
-
-        // console.log(conceptDef("event-delay", concept_definitions_));
-
-        // const concept_definitions_unique = [...new Set(concept_definitions_.map(x => x.))];
-        // console.log(conceptDef('system', concept_definitions_));
 
 
 
@@ -418,14 +412,15 @@
         node.append("text")
             .attr("class", "label")
             .attr("x", function (d) {
-                return d.x + 15;
+                return d.x + boxWidth / 8;
             })
             .attr("y", function (d) {
-                return d.y + 22;
+                return d.y + boxHeight / 1.7;
             })
             .text(function (d) {
                 return d.name;
-            });
+            })
+            .attr("font-size", (boxWidth * 0.007) + "em");
 
 
         // var link = svg.select(".links");
@@ -486,12 +481,6 @@
             var source_info = d.source;
             var target_info = d.target;
 
-            // console.log("hola before");
-            // console.log("source:");
-            // console.log(source_info);
-            // console.log("target:");
-            // console.log(target_info);
-            // console.log("hola after");
 
             var highlight_source = d3.select("#" + source_info.id)
                 // .attr("fill", d.cl)
@@ -537,12 +526,6 @@
             var source_info = d.source;
             var target_info = d.target;
 
-            // console.log("hola before");
-            // console.log("source:");
-            // console.log(source_info);
-            // console.log("target:");
-            // console.log(target_info);
-            // console.log("hola after");
 
             var highlight_source = d3.select("#" + source_info.id)
             // .attr("fill", d.cl)

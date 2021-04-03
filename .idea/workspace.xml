@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="53120068-35ce-4fad-9bea-d5c9e2da7296" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trace_exp/pages/artifact.json" beforeDir="false" afterPath="$PROJECT_DIR$/trace_exp/pages/artifact.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trace_exp/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/trace_exp/pages/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trace_exp/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/trace_exp/static/css/style.css" afterDir="false" />
     </list>
@@ -34,6 +35,7 @@
           <entry key="css" value="12" />
           <entry key="html" value="59" />
           <entry key="jpg" value="11" />
+          <entry key="json" value="2" />
           <entry key="png" value="18" />
         </counts>
       </usages-collector>
@@ -42,18 +44,21 @@
           <entry key="CSS" value="12" />
           <entry key="HTML" value="59" />
           <entry key="Image" value="29" />
+          <entry key="JSON" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="388" />
-          <entry key="html" value="14758" />
+          <entry key="css" value="395" />
+          <entry key="html" value="15081" />
+          <entry key="json" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="388" />
-          <entry key="HTML" value="14758" />
+          <entry key="CSS" value="395" />
+          <entry key="HTML" value="15081" />
+          <entry key="JSON" value="16" />
         </counts>
       </usages-collector>
     </session>
@@ -61,28 +66,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="143" column="16" selection-start-line="143" selection-start-column="16" selection-end-line="171" selection-end-column="22" />
-              <folding>
-                <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#a#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trace_exp/static/css/materialize.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="3524" column="12" selection-start-line="3524" selection-start-column="10" selection-end-line="3524" selection-end-column="12" />
+            <state relative-caret-position="198">
+              <caret line="3525" column="9" lean-forward="true" selection-start-line="3525" selection-start-column="9" selection-end-line="3525" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -90,8 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trace_exp/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="249" selection-start-line="249" selection-start-column="2" selection-end-line="254" selection-end-column="3" />
+            <state relative-caret-position="174">
+              <caret line="9757" column="31" selection-start-line="9757" selection-start-column="24" selection-end-line="9757" selection-end-column="31" />
               <folding>
                 <element signature="e#140877#141184#2" expanded="true" />
                 <element signature="e#184564#185026#2" expanded="true" />
@@ -107,8 +94,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/trace_exp/pages/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="603" lean-forward="true" selection-start-line="603" selection-end-line="603" />
+            <state relative-caret-position="379">
+              <caret line="351" column="67" selection-start-line="351" selection-start-column="67" selection-end-line="351" selection-end-column="67" />
               <folding>
                 <element signature="n#style#0;n#b#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -127,6 +114,15 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/trace_exp/pages/artifact.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -139,9 +135,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>about</find>
-      <find>Luz_brilliante</find>
-      <find>looking fo</find>
       <find>skills</find>
       <find>publ</find>
       <find>ux</find>
@@ -164,11 +157,14 @@
       <find>art</find>
       <find>content-p</find>
       <find>overflo</find>
-      <find>s4</find>
       <find>read</find>
       <find>type</find>
       <find>console.log</find>
+      <find>Nodes.p</find>
+      <find>consol</find>
       <find>link_d3</find>
+      <find>s4</find>
+      <find>margin.</find>
     </findStrings>
     <replaceStrings>
       <replace>oanuyah</replace>
@@ -207,6 +203,7 @@
         <option value="$PROJECT_DIR$/ir-for-kids.html" />
         <option value="$PROJECT_DIR$/research-portfolio.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/trace_exp/pages/artifact.json" />
         <option value="$PROJECT_DIR$/trace_exp/static/css/style.css" />
         <option value="$PROJECT_DIR$/trace_exp/pages/index.html" />
       </list>
@@ -271,7 +268,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1617461010258" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1617465624396" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -347,18 +344,18 @@
       <workItem from="1613360269867" duration="422000" />
       <workItem from="1616511078272" duration="376000" />
       <workItem from="1617326853330" duration="168000" />
-      <workItem from="1617327097369" duration="14035000" />
+      <workItem from="1617327097369" duration="18101000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123902000" />
+    <option name="totallyTimeSpent" value="127968000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33943835" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33943835" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -373,7 +370,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3612245" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3612245" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -423,20 +420,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fonts/brandon-grotesque/example.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myexample.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fonts/brandon-grotesque/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -712,17 +695,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/trace_exp/pages/artifact_content.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trace_exp/pages/artifact.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/trace_exp/static/css/materialize.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="3524" column="12" selection-start-line="3524" selection-start-column="10" selection-end-line="3524" selection-end-column="12" />
+        <state relative-caret-position="198">
+          <caret line="3525" column="9" lean-forward="true" selection-start-line="3525" selection-start-column="9" selection-end-line="3525" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/trace_exp/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="249" selection-start-line="249" selection-start-column="2" selection-end-line="254" selection-end-column="3" />
+        <state relative-caret-position="174">
+          <caret line="9757" column="31" selection-start-line="9757" selection-start-column="24" selection-end-line="9757" selection-end-column="31" />
           <folding>
             <element signature="e#140877#141184#2" expanded="true" />
             <element signature="e#184564#185026#2" expanded="true" />
@@ -736,8 +729,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/trace_exp/pages/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="603" lean-forward="true" selection-start-line="603" selection-end-line="603" />
+        <state relative-caret-position="379">
+          <caret line="351" column="67" selection-start-line="351" selection-start-column="67" selection-end-line="351" selection-end-column="67" />
           <folding>
             <element signature="n#style#0;n#b#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />

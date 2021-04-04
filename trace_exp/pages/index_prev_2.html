@@ -2,14 +2,14 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Trace</title>
-  <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}" /> -->
-  <link rel="stylesheet" type="text/css" href="../static/css/materialize.css" />
-  <!--<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>-->
-  <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trace</title>
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}" /> -->
+    <link rel="stylesheet" type="text/css" href="../static/css/materialize.css" />
+    <!--<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>-->
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
 
 
 </head>
@@ -23,118 +23,118 @@
 <!--<div id="tree"></div>-->
 
 <div class="home-button-div">
-  <a class="waves-effect waves-light blue-grey lighten-4 grey-text btn-small home-button" href="home_page.html">Home</a>
+    <a class="waves-effect waves-light blue-grey lighten-4 grey-text btn-small home-button" href="home_page.html">Home</a>
 </div>
 
 <div class="link-conf">
-  <h3><b>Link confidence:</b> <span class="confidence-score">0.85</span></h3>
+    <h3><b>Link confidence:</b> <span class="confidence-score">0.85</span></h3>
 </div>
 
 <div class = "artifact-panels row col s12">
-  <div class="content-panel row col s4">
-    <div class="artifact-type-button">
-      <a class="waves-effect waves-light blue-grey lighten-4 grey-text btn-small artifact-type disabled">ReadDispatcher.java</a></div>
-      <!--<div id = "target_artifact" style="width:500px; color: black; font-size: 15px"></div>-->
-      <!--<br><br>-->
-      <div id = "source_artifact" class="art_contents"></div>
-
-
-  </div>
-
-  <div class="relationship-panel  row col s4">
-    <div class="information-panel">
-      <div class="information-panel-content" id = "relationship_update" > </div>
+    <div class="content-panel row col s4">
+        <div class="artifact-type-button">
+            <a class="waves-effect waves-light blue-grey lighten-4 grey-text btn-small artifact-type disabled">ReadDispatcher.java</a></div>
+        <!--<div id = "target_artifact" style="width:500px; color: black; font-size: 15px"></div>-->
+        <!--<br><br>-->
+        <div id = "source_artifact" class="art_contents"></div>
 
 
     </div>
-    <!--<br>-->
-    <div id="tree"></div>
 
-  </div>
+    <div class="relationship-panel  row col s4">
+        <div class="information-panel">
+            <div class="information-panel-content" id = "relationship_update" > </div>
 
-  <!--<div id="tree"></div>-->
-  <div class="content-panel row col s4">
-    <div class="artifact-type-button">
-      <a class="waves-effect waves-light blue-grey lighten-4 grey-text btn-small artifact-type disabled">Design-Definition2</a>
+
+        </div>
+        <!--<br>-->
+        <div id="tree"></div>
+
     </div>
 
+    <!--<div id="tree"></div>-->
+    <div class="content-panel row col s4">
+        <div class="artifact-type-button">
+            <a class="waves-effect waves-light blue-grey lighten-4 grey-text btn-small artifact-type disabled">Design-Definition2</a>
+        </div>
 
-      <div id = "target_artifact" class="art_contents">
 
-      </div>
+        <div id = "target_artifact" class="art_contents">
+
+        </div>
 
 
-  </div>
+    </div>
 </div>
 
 
 
 
 <div class = "vetter-panels col s12">
-  <div class="vetter-info-panel col s6">
+    <div class="vetter-info-panel col s6">
 
-    <div class="link-status">
-      <b style="font-size: medium">Link type:</b> Manual
+        <div class="link-status">
+            <b style="font-size: medium">Link type:</b> Manual
+        </div>
+        <div class="scrollbar" id="style-1" style="margin-top: 5%">
+            <div class="force-overflow">
+
+                <table>
+                    <tr>
+                        <th>Date</th>
+                        <th>Name</th>
+                        <th>Link correct?</th>
+                    </tr>
+                    <tr>
+                        <td>11/06/2019</td>
+                        <td>J Cleland-Huang</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>12/06/2019</td>
+                        <td>Y Liu</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>12/20/2019</td>
+                        <td>J Lin</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>12/24/2019</td>
+                        <td>R Metoyer</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>01/02/2020</td>
+                        <td>N Farrell</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>01/10/2020</td>
+                        <td>G Rovelli</td>
+                        <td>Yes</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
     </div>
-    <div class="scrollbar" id="style-1" style="margin-top: 5%">
-      <div class="force-overflow">
 
-        <table>
-          <tr>
-            <th>Date</th>
-            <th>Name</th>
-            <th>Link correct?</th>
-          </tr>
-          <tr>
-            <td>11/06/2019</td>
-            <td>J Cleland-Huang</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>12/06/2019</td>
-            <td>Y Liu</td>
-            <td>No</td>
-          </tr>
-          <tr>
-            <td>12/20/2019</td>
-            <td>J Lin</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>12/24/2019</td>
-            <td>R Metoyer</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>01/02/2020</td>
-            <td>N Farrell</td>
-            <td>No</td>
-          </tr>
-          <tr>
-            <td>01/10/2020</td>
-            <td>G Rovelli</td>
-            <td>Yes</td>
-          </tr>
-        </table>
-      </div>
+
+    <div class="vetter-voting-panel s6">
+        <p style="margin-left: 20%; margin-top: 10%; color: black; display: flex; font-size: medium">Do you agree that this is a correct link? &nbsp;
+            <label>
+                <input type="checkbox" class="filled-in" checked="checked" />
+                <span style="color: black">Yes&nbsp;&nbsp;&nbsp;</span>
+            </label>
+            <label>
+                <input type="checkbox" class="filled-in"  />
+                <span style="color: black">No</span>
+            </label>
+        </p>
 
     </div>
-  </div>
-
-
-  <div class="vetter-voting-panel s6">
-    <p style="margin-left: 20%; margin-top: 10%; color: black; display: flex; font-size: medium">Do you agree that this is a correct link? &nbsp;
-      <label>
-        <input type="checkbox" class="filled-in" checked="checked" />
-        <span style="color: black">Yes&nbsp;&nbsp;&nbsp;</span>
-      </label>
-      <label>
-        <input type="checkbox" class="filled-in"  />
-        <span style="color: black">No</span>
-      </label>
-    </p>
-
-  </div>
 
 
 
@@ -204,7 +204,16 @@
         });
 
 
-
+    function find(text) {
+        "use strict";
+        var i;
+        for (i = 0; i < Nodes.length; i += 1) {
+            if (Nodes[i].name === text) {
+                return Nodes[i];
+            }
+        }
+        return null;
+    }
 
 
 
@@ -247,12 +256,7 @@
                 },
                 {
                     "source": "capability",
-                    "target": "system",
-                    "relationship": "acronym of"
-                },
-                {
-                    "source": "system",
-                    "target": "system",
+                    "target": "predefined",
                     "relationship": "synonym of"
                 }
 
@@ -265,19 +269,19 @@
             if (d['query'] === "source") {
                 var source_nodes = d['concepts'];
                 source_nodes.forEach(c => {
-                    data_node_links_["Nodes"].push({"lvl": 0, "name": c, "type": "source"})
+                    data_node_links_["Nodes"].push({"lvl": 0, "name": c})
                 })
             }
             else {
                 var target_nodes = d['concepts'];
                 target_nodes.forEach(c => {
-                    data_node_links_["Nodes"].push({"lvl": 1, "name": c, "type": "target"})
+                    data_node_links_["Nodes"].push({"lvl": 1, "name": c})
                 })
             }
         });
 
 
-        // console.log(links);
+        // console.log(data_node_links_)
 
 
         // create the concepts array
@@ -302,7 +306,7 @@
 
         // have the unique concepts
         const data_concepts_unique = [...new Set(data_concepts_)];
-        console.log(data_concepts_unique);
+        // console.log(data_concepts_unique);
 
 
         // Get the definitions of our concepts
@@ -359,26 +363,12 @@
 
         data_node_links_.links.forEach(function (d) {
             links.push({
-                source: find(d.source, "source"),
-                target: find(d.target, "target"),
-
-                id: "l" + find(d.source, "source").id + find(d.target, "target").id,
+                source: find(d.source),
+                target: find(d.target),
+                id: "l" + find(d.source).id + find(d.target).id,
                 relationship: d.relationship
             });
-            // console.log(find("system"));
         });
-
-        // console.log(links);
-
-        // for (var i = 0; i < Nodes.length; i++){
-        //     console.log(Nodes[i])
-        // }
-
-        console.log("Trying this out");
-        console.log(find("system", "target"));
-        console.log("Trying this out======");
-
-
 
 
         unvisite_links();
@@ -440,7 +430,6 @@
 
         // var link = svg.select(".links");
 
-        console.log(links);
         links.forEach(function (li) {
             svg.append("path", "g")
                 .attr("class", "link_d3")
@@ -448,11 +437,9 @@
                 .attr("id", li.id)
                 .attr("d", function () {
                     var oTarget = {
-
                         x: li.target.y + 0.5 * boxHeight,
                         y: li.target.x
                     };
-                    // console.log(li);
                     var oSource = {
                         x: li.source.y + 0.5 * boxHeight,
                         y: li.source.x
@@ -469,46 +456,16 @@
                     });
                 })
                 // .attr("stroke-width", "black")
-            .on("mouseover", function () {
-                mouse_action_link(li);
-            })
-            .on("mouseout", function () {
-                mouse_action_link_clear(li)
-            });
+                .on("mouseover", function () {
+                    mouse_action_link(li);
+                })
+                .on("mouseout", function () {
+                    mouse_action_link_clear(li)
+                });
         });
 
 
     }
-
-
-    function find(text, tp) {
-        // "use strict";
-        var i;
-        // var result;
-        // var filtered_Nodes = [];
-        for (i = 0; i < Nodes.length; i += 1) {
-            if (Nodes[i].type === tp && Nodes[i].name=== text) {
-                return Nodes[i];
-
-            }
-        }
-
-
-        return null;
-    }
-
-
-
-    // function find(text) {
-    //     "use strict";
-    //     var i;
-    //     for (i = 0; i < Nodes.length; i += 1) {
-    //         if (Nodes[i].name === text) {
-    //             return Nodes[i];
-    //         }
-    //     }
-    //     return null;
-    // }
 
 
     // console.log(links);
@@ -532,7 +489,7 @@
 
 
             var highlight_source = d3.select("#" + source_info.id)
-                // .attr("fill", d.cl)
+            // .attr("fill", d.cl)
                 .attr("fill-opacity", "1")
                 .attr("stroke", "green")
                 .attr("stroke-width", "2.5px");

@@ -456,7 +456,7 @@
                     });
                 })
                 // .attr("stroke-width", "black")
-            .on("mouseenter", function () {
+            .on("mouseover", function () {
                 mouse_action_link(li);
             })
             .on("mouseout", function () {
@@ -506,6 +506,20 @@
                 "<span style='text-transform: uppercase'><b><u>"+ val.relationship +"</u></b></span> " +
                 "<span style='text-transform: capitalize'>"+ target_info.name + "</span>");
 
+
+
+            var updateStyleSource =  document.getElementsByClassName(source_info.name + "_s");
+            for (var i = 0; i < updateStyleSource.length; i++) {
+                updateStyleSource[i].style.fontSize = "25px";
+            }
+
+            // console.log(source_info.name);
+            // console.log(target_info.name);
+
+            var updateStyleTarget =  document.getElementsByClassName(target_info.name + "_t");
+            for (var i = 0; i < updateStyleTarget.length; i++) {
+                updateStyleTarget[i].style.fontSize = "25px";
+            }
         });
 
 
@@ -549,6 +563,18 @@
 
             clearInformationBoard();
 
+
+            var updateStyleSource =  document.getElementsByClassName(source_info.name + "_s");
+            for (var i = 0; i < updateStyleSource.length; i++) {
+                updateStyleSource[i].style.fontSize = "15px";
+            }
+
+
+            var updateStyleTarget =  document.getElementsByClassName(target_info.name + "_t");
+            for (var i = 0; i < updateStyleTarget.length; i++) {
+                updateStyleTarget[i].style.fontSize = "15px";
+            }
+
         });
 
 
@@ -580,9 +606,11 @@
 
         // Change the styling of the artifact content based on the concept (node / rect) that the user is hovering on
         if (concept_type===0){
-            var extractContent =  document.getElementById(val.name+"_s");
+            var extractContent =  document.getElementsByClassName(val.name+"_s");
             // extractContent.style("background-color: pink");
-            extractContent.style.fontSize = "25px";
+            for (var i = 0; i < extractContent.length; i++) {
+                extractContent[i].style.fontSize = "25px";
+            }
         }
         else {
             var extractContent =  document.getElementsByClassName(val.name+"_t");
@@ -614,10 +642,11 @@
         clearInformationBoard();
 
         if (concept_type===0){
-            var extractContent =  document.getElementById(val.name+"_s");
-            // extractContent.style("backgrond-color: pink");
-            extractContent.style.fontSize = "15px";
-            // console.log(extractContent);
+            var extractContent =  document.getElementsByClassName(val.name+"_s");
+            // extractContent.style("background-color: pink");
+            for (var i = 0; i < extractContent.length; i++) {
+                extractContent[i].style.fontSize = "15px";
+            }
         }
         else {
             var extractContent =  document.getElementsByClassName(val.name+"_t");
@@ -750,7 +779,7 @@
         for (var i = 0; i < split_source_words.length; i++) {
             var sourceWord = split_source_words[i].replace(".", "").replace(",","");
             if (data_concepts_.includes(sourceWord)) {
-                split_source_words[i] = "<a href=''  onmouseout='urlMouseAction_leave(this)' onmouseover='urlMouseAction(this)'><span id='"+sourceWord+"_s' style='background-color:"+ getUniqueColors(sourceWord,
+                split_source_words[i] = "<a href=''  onmouseout='urlMouseAction_leave(this)' onmouseover='urlMouseAction(this)'><span class='"+sourceWord+"_s' style='background-color:"+ getUniqueColors(sourceWord,
                     data_concepts_unique)+ "'>" + split_source_words[i] + "</span></a>";
 
 

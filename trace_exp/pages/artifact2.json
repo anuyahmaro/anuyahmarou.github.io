@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1680,
+    "text": "The system shall allow event-delay capability for pre-admission, discharge, and transfer orders.",
+    "concepts": ["system","event-delay", "discharge", "capability"],
+    "query": "source",
+    "definitions": [{"system": "A system is a computer software being designed."},
+      {"event-delay": "This occurs when there is an implementation delay."},
+      {"discharge": "This is a system discharge update."},
+      {"capability": "The system is has some capability update issues."}],
+    "importance_scores": [{"system": 0.2},
+      {"event-delay": 0.8},
+      {"discharge": 0.3},
+      {"capability": 0.4}]
+  },
+  {
+    "id": 1681,
+    "text": "The system shall allow complete order sets to be predefined and personalized.",
+    "concepts": ["system","personalized", "predefined"],
+    "query": "target",
+    "definitions": [{"system": "A system is a computer software being designed."},
+      {"personalized": "Software designed for a specific task."},
+      {"predefined": "Designer predefines the system structure."}],
+    "importance_scores": [{"system": 0.2},
+      {"personalized": 0.4},
+      {"predefined": 0.7}]
+  }
+]
+

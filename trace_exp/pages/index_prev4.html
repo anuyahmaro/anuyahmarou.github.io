@@ -2,14 +2,14 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Trace</title>
-  <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}" /> -->
-  <link rel="stylesheet" type="text/css" href="../static/css/materialize.css" />
-  <!--<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>-->
-  <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trace</title>
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}" /> -->
+    <link rel="stylesheet" type="text/css" href="../static/css/materialize.css" />
+    <!--<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>-->
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
 
 
 </head>
@@ -23,117 +23,116 @@
 <!--<div id="tree"></div>-->
 
 <div class="home-button-div">
-  <a class="waves-effect waves-light blue-grey lighten-4 grey-text btn-small home-button" href="home_page.html">Home</a>
+    <a class="waves-effect waves-light blue-grey lighten-4 grey-text btn-small home-button" href="home_page.html">Home</a>
 </div>
 
 <div class="link-conf">
-  <h3><b>Link confidence:</b> <span class="confidence-score">0.85</span></h3>
+    <h3><b>Link confidence:</b> <span class="confidence-score">0.85</span></h3>
 </div>
 
-<div class = "artifact-panels col s12">
-  <div class="content-panel col s4">
-    <div class="artifact-type-button">
-      <a class="waves-effect waves-light blue-grey lighten-4 grey-text btn-small artifact-type disabled">Design-Definition2</a>
-    </div>
-
-
-    <div id = "source_artifact" class="art_contents content-panel-style">
-
-    </div>
-
-
-  </div>
-
-
-  <div class="relationship-panel col s4">
-    <div class="information-panel">
-      <div class="information-panel-content" id = "relationship_update" > </div>
+<div class = "artifact-panels row col s12">
+    <div class="content-panel row col s4">
+        <div class="artifact-type-button">
+            <a class="waves-effect waves-light blue-grey lighten-4 grey-text btn-small artifact-type disabled">ReadDispatcher.java</a></div>
+        <div id = "source_artifact" class="art_contents"></div>
 
 
     </div>
-    <!--<br>-->
-    <div id="tree"></div>
 
-  </div>
-
-  <!--<div id="tree"></div>-->
-  <div class="content-panel col s4">
-    <div class="artifact-type-button">
-      <a class="waves-effect waves-light blue-grey lighten-4 grey-text btn-small artifact-type disabled">ReadDispatcher.java</a></div>
-    <div id = "target_artifact" class="art_contents content-panel-style"></div>
+    <div class="relationship-panel  row col s4">
+        <div class="information-panel">
+            <div class="information-panel-content" id = "relationship_update" > </div>
 
 
-  </div>
+        </div>
+        <!--<br>-->
+        <div id="tree"></div>
+
+    </div>
+
+    <!--<div id="tree"></div>-->
+    <div class="content-panel row col s4">
+        <div class="artifact-type-button">
+            <a class="waves-effect waves-light blue-grey lighten-4 grey-text btn-small artifact-type disabled">Design-Definition2</a>
+        </div>
+
+
+        <div id = "target_artifact" class="art_contents">
+
+        </div>
+
+
+    </div>
 </div>
 
 
 
 
 <div class = "vetter-panels col s12">
-  <div class="vetter-info-panel col s6">
+    <div class="vetter-info-panel col s6">
 
-    <div class="link-status">
-      <b style="font-size: medium">Link type:</b> Manual
+        <div class="link-status">
+            <b style="font-size: medium">Link type:</b> Manual
+        </div>
+        <div class="scrollbar" id="style-1" style="margin-top: 5%">
+            <div class="force-overflow">
+
+                <table>
+                    <tr>
+                        <th>Date</th>
+                        <th>Name</th>
+                        <th>Link correct?</th>
+                    </tr>
+                    <tr>
+                        <td>11/06/2019</td>
+                        <td>J Cleland-Huang</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>12/06/2019</td>
+                        <td>Y Liu</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>12/20/2019</td>
+                        <td>J Lin</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>12/24/2019</td>
+                        <td>R Metoyer</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>01/02/2020</td>
+                        <td>N Farrell</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>01/10/2020</td>
+                        <td>G Rovelli</td>
+                        <td>Yes</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
     </div>
-    <div class="scrollbar" id="style-1" style="margin-top: 5%">
-      <div class="force-overflow">
 
-        <table>
-          <tr>
-            <th>Date</th>
-            <th>Name</th>
-            <th>Link correct?</th>
-          </tr>
-          <tr>
-            <td>11/06/2019</td>
-            <td>J Cleland-Huang</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>12/06/2019</td>
-            <td>Y Liu</td>
-            <td>No</td>
-          </tr>
-          <tr>
-            <td>12/20/2019</td>
-            <td>J Lin</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>12/24/2019</td>
-            <td>R Metoyer</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>01/02/2020</td>
-            <td>N Farrell</td>
-            <td>No</td>
-          </tr>
-          <tr>
-            <td>01/10/2020</td>
-            <td>G Rovelli</td>
-            <td>Yes</td>
-          </tr>
-        </table>
-      </div>
+
+    <div class="vetter-voting-panel s6">
+        <p style="margin-left: 20%; margin-top: 10%; color: black; display: flex; font-size: medium">Do you agree that this is a correct link? &nbsp;
+            <label>
+                <input type="checkbox" class="filled-in" checked="checked" />
+                <span style="color: black">Yes&nbsp;&nbsp;&nbsp;</span>
+            </label>
+            <label>
+                <input type="checkbox" class="filled-in"  />
+                <span style="color: black">No</span>
+            </label>
+        </p>
 
     </div>
-  </div>
-
-
-  <div class="vetter-voting-panel s6">
-    <p style="margin-left: 20%; margin-top: 10%; color: black; display: flex; font-size: medium">Do you agree that this is a correct link? &nbsp;
-      <label>
-        <input type="checkbox" class="filled-in" checked="checked" />
-        <span style="color: black">Yes&nbsp;&nbsp;&nbsp;</span>
-      </label>
-      <label>
-        <input type="checkbox" class="filled-in"  />
-        <span style="color: black">No</span>
-      </label>
-    </p>
-
-  </div>
 
 
 
@@ -163,10 +162,14 @@
         },
         svg;
 
-    svg = d3.select("#tree").append("svg")
-        .attr("width", width)
-        .attr("height", height)
-        .append("g");
+
+    console.log(margin.right);
+
+
+    var artifact_data = {
+        "info": [{"aid": "",
+            "content": ""}]
+    };
 
 
 
@@ -177,17 +180,12 @@
 
     var diagonal = d3.linkHorizontal()
         .x(function(d) {
+            // console.log(d.x);
             return d.y;
         })
         .y(function(d) {
             return d.x;
         });
-
-
-    const colors = d3.scaleOrdinal()
-        .range(d3.schemeSet3);
-
-
 
     function conceptDef(val, val_array) {
 
@@ -208,6 +206,8 @@
         }
 
     }
+
+
 
 
 
@@ -246,7 +246,6 @@
 
 
 
-        // Build the node data and append to the Nodes array
         data.forEach(function (d) {
             if (d['query'] === "source") {
                 var source_nodes = d['concepts'];
@@ -261,6 +260,9 @@
                 })
             }
         });
+
+
+        // console.log(links);
 
 
         // create the concepts array
@@ -287,18 +289,23 @@
         const data_concepts_unique = [...new Set(data_concepts_)];
         data_concepts_unique.sort()
 
+        console.log(data_concepts_unique);
+        console.log("These are unique concepts");
 
-        // Extract the definition of each concept
+
+        // Get the definitions of our concepts
         var concept_definitions_ = [];
         var concept_importance_scores_ = [];
 
         data.forEach(function (d) {
             d['definitions'].forEach(function (k) {
+                // console.log(k)
                 for (const [key, value] of Object.entries(k)) {
+                    // console.log(`${key}: ${value}`);
                     concept_definitions_.push({"name":key, "definition":value})
                 }
 
-            });
+            })
 
             d['importance_scores'].forEach(function (k) {
                 // console.log(k)
@@ -313,11 +320,14 @@
 
         });
 
-        console.log(concept_definitions_);
+        // console.log("#######");
+        // console.log(concept_importance_scores_);
+        // console.log("#######");
 
 
 
-        //this count array stores the number of rects to be created for the source and target => [source_boxes, target_boxes]
+
+        //this count array stores the number of rects to be created for the source and target=> [source_boxes, target_boxes]
         "use strict";
         var count = [];
 
@@ -325,17 +335,21 @@
             count[d.lvl] = 0;
         });
 
+        // console.log("this count");
+        // console.log(count);
+
         lvlCount = count.length;
 
         data_node_links_.Nodes.forEach(function (d, i) {
-            if (d.lvl === 0){
+            // d.x = margin.left + d.lvl * (boxWidth + gap.width)  - margin.right;
+            if(d.lvl === 0){
                 d.x = margin.left + d.lvl * (boxWidth + gap.width);
             }
             else {
                 d.x = d.lvl * (boxWidth + gap.width) - margin.right;
             }
             d.y = margin.top + (boxHeight + gap.height) * count[d.lvl];
-            d.cl =  colors(d.name); //getUniqueColors(d.name, data_concepts_unique);
+            d.cl = getUniqueColors(d.name, data_concepts_unique);
             d.definition = conceptDef(d.name, concept_definitions_);
             d.imp_score = conceptImportanceScores(d.name, concept_importance_scores_);
             d.id = "n" + i;
@@ -343,7 +357,9 @@
             Nodes.push(d);
         });
 
-        // get details about the links and how to draw the path between them
+        // console.log("Hey Nodes");
+        console.log(Nodes);
+
         data_node_links_.links.forEach(function (d) {
             links.push({
                 source: find(d.source, "source"),
@@ -352,7 +368,14 @@
                 id: "l" + find(d.source, "source").id + find(d.target, "target").id,
                 relationship: d.relationship
             });
+            // console.log(find("system"));
         });
+
+
+
+
+
+        unvisite_links();
 
         // Draw all of the nodes
         svg.append("g")
@@ -379,7 +402,7 @@
             .attr("height", boxHeight)
             .attr("class", "node")
             .attr("fill", function (d) {
-                return  colors(d.name);//getUniqueColors(d.name, data_concepts_unique); // in case we want the color to change based on the color of the text
+                return getUniqueColors(d.name, data_concepts_unique); // in case we want the color to change based on the color of the text
             })
             .attr("fill-opacity", "0.5")
             .attr("stroke", "darkgrey")
@@ -387,9 +410,11 @@
             // .attr("fill", "blue")
             .on("mouseover", function () {
                 mouse_action(d3.select(this).datum(), true);
+                unvisite_links();
             })
             .on("mouseout", function () {
                 mouse_action_clear(d3.select(this).datum(), false);
+                unvisite_links();
             });
 
         // Add the text to display in the rect (i.e., each node)
@@ -421,6 +446,7 @@
                         x: li.target.y + 0.5 * boxHeight,
                         y: li.target.x
                     };
+                    // console.log(li);
                     var oSource = {
                         x: li.source.y + 0.5 * boxHeight,
                         y: li.source.x
@@ -437,12 +463,12 @@
                     });
                 })
                 // .attr("stroke-width", "black")
-            .on("mouseover", function () {
-                mouse_action_link(li);
-            })
-            .on("mouseout", function () {
-                mouse_action_link_clear(li)
-            });
+                .on("mouseover", function () {
+                    mouse_action_link(li);
+                })
+                .on("mouseout", function () {
+                    mouse_action_link_clear(li)
+                });
         });
 
 
@@ -452,7 +478,8 @@
     function find(text, tp) {
         // "use strict";
         var i;
-
+        // var result;
+        // var filtered_Nodes = [];
         for (i = 0; i < Nodes.length; i += 1) {
             if (Nodes[i].type === tp && Nodes[i].name=== text) {
                 return Nodes[i];
@@ -460,16 +487,23 @@
             }
         }
 
+
         return null;
     }
 
-console.log(links);
 
+
+    // console.log(links);
     function mouse_action_link(val) {
 
+        // console.log("Link has been hovered on!");
+        // console.log("Data is "+ val.id);
         var clicked_link = [];
 
         clicked_link.push(val);
+
+
+        // console.log(clicked_link[0]);
 
         d3.select("#" + val.id).attr("stroke", "green").attr("stroke-width", "2.5px");
 
@@ -480,27 +514,25 @@ console.log(links);
 
 
             var highlight_source = d3.select("#" + source_info.id)
+            // .attr("fill", d.cl)
                 .attr("fill-opacity", "1")
                 .attr("stroke", "green")
                 .attr("stroke-width", "2.5px");
             ;
 
             var highlight_target = d3.select("#" + target_info.id)
+            // .attr("fill", d.cl)
                 .attr("fill-opacity", "1")
                 .attr("stroke", "green")
                 .attr("stroke-width", "2.5px");
             ;
 
-
-            var message = "<span style='text-transform: capitalize'>"+ source_info.name +"</span> is a "+
+            hover("<span style='text-transform: capitalize'>"+ source_info.name +"</span> is a "+
                 "<span style='text-transform: uppercase'><b><u>"+ val.relationship +"</u></b></span> " +
-                "<span style='text-transform: capitalize'>"+ target_info.name + "</span>";
-
-            hover(message);
+                "<span style='text-transform: capitalize'>"+ target_info.name + "</span>");
 
 
 
-            // get all of the class names in the document that has both concepts in the source and target artifacts
             var classNames_s = document.querySelectorAll("[class*=_s]");
             var classNames_t = document.querySelectorAll("[class*=_t]");
             var totalClassNames = [];
@@ -517,14 +549,15 @@ console.log(links);
             var updateStyleSource =  document.getElementsByClassName(source_info.name + "_s");
             for (var i = 0; i < updateStyleSource.length; i++) {
                 updateStyleSource[i].style.borderStyle = "solid";
-                updateStyleSource[i].style.borderColor = "red";
+                updateStyleSource[i].style.borderColor = "green";
             }
 
             for (var j = 0; j < classNames_s.length; j++) {
                 var otherclassNamesEach = classNames_s[j].textContent.replace(".","").replace(",", "");
                 if (otherclassNamesEach !== source_info.name){
                     var extractContent_other_source_classes =  document.getElementsByClassName(otherclassNamesEach+"_s");
-                    
+                    // console.log(val.name);
+                    console.log(extractContent_other_source_classes);
                     for (var k = 0; k < extractContent_other_source_classes.length; k++) {
 
 
@@ -540,13 +573,15 @@ console.log(links);
             var updateStyleTarget =  document.getElementsByClassName(target_info.name + "_t");
             for (var i = 0; i < updateStyleTarget.length; i++) {
                 updateStyleTarget[i].style.borderStyle = "solid";
-                updateStyleTarget[i].style.borderColor = "red";
+                updateStyleTarget[i].style.borderColor = "green";
             }
 
             for (var j = 0; j < classNames_t.length; j++) {
                 var otherclassNamesEach_t = classNames_t[j].textContent.replace(".","").replace(",", "");
                 if (otherclassNamesEach_t !== target_info.name){
                     var extractContent_other_target_classes =  document.getElementsByClassName(otherclassNamesEach_t+"_t");
+                    // console.log(val.name);
+                    console.log(extractContent_other_target_classes);
                     for (var k = 0; k < extractContent_other_target_classes.length; k++) {
 
 
@@ -559,13 +594,24 @@ console.log(links);
             }
         });
 
+
+
+
+        // console.log(links);
+
+
     }
 
     function mouse_action_link_clear(val) {
 
+        // console.log("Link has been hovered on!");
+        // console.log("Data is "+ val.id);
         var clicked_link = [];
 
         clicked_link.push(val);
+
+
+        // console.log(clicked_link[0]);
 
         d3.select("#" + val.id).attr("stroke", "darkgray").attr("stroke-width", "2px");
 
@@ -576,18 +622,20 @@ console.log(links);
 
 
             var highlight_source = d3.select("#" + source_info.id)
+            // .attr("fill", d.cl)
                 .attr("fill-opacity", "0.6")
                 .attr("stroke", "darkgrey")
                 .attr("stroke-width", "2px");
             ;
 
             var highlight_target = d3.select("#" + target_info.id)
+            // .attr("fill", d.cl)
                 .attr("fill-opacity", "0.6")
                 .attr("stroke", "darkgray")
                 .attr("stroke-width", "2px");
             ;
 
-            resetInfoBoardMsg();
+            clearInformationBoard();
 
             var classNames_s = document.querySelectorAll("[class*=_s]");
             var classNames_t = document.querySelectorAll("[class*=_t]");
@@ -613,10 +661,12 @@ console.log(links);
                 var otherclassNamesEach = classNames_s[j].textContent.replace(".","").replace(",", "");
                 if (otherclassNamesEach !== source_info.name){
                     var extractContent_other_source_classes =  document.getElementsByClassName(otherclassNamesEach+"_s");
+                    // console.log(val.name);
+                    console.log(extractContent_other_source_classes);
                     for (var k = 0; k < extractContent_other_source_classes.length; k++) {
 
 
-                        extractContent_other_source_classes[k].style.backgroundColor = colors(otherclassNamesEach) // getUniqueColors(otherclassNamesEach, totalClassNames_);
+                        extractContent_other_source_classes[k].style.backgroundColor = getUniqueColors(otherclassNamesEach, totalClassNames_);
 
                     }
 
@@ -634,10 +684,12 @@ console.log(links);
                 var otherclassNamesEach_t = classNames_t[j].textContent.replace(".","").replace(",", "");
                 if (otherclassNamesEach_t !== target_info.name){
                     var extractContent_other_target_classes =  document.getElementsByClassName(otherclassNamesEach_t+"_t");
+                    // console.log(val.name);
+                    console.log(extractContent_other_target_classes);
                     for (var k = 0; k < extractContent_other_target_classes.length; k++) {
 
 
-                        extractContent_other_target_classes[k].style.backgroundColor = colors(otherclassNamesEach_t);//getUniqueColors(otherclassNamesEach_t, totalClassNames_);
+                        extractContent_other_target_classes[k].style.backgroundColor = getUniqueColors(otherclassNamesEach_t, totalClassNames_);
 
                     }
 
@@ -700,7 +752,7 @@ console.log(links);
 
                 // extractContent[i].style.fontSize = "1.5em";
                 extractContent[i].style.borderStyle = "solid";
-                extractContent[i].style.borderColor = "red";
+                extractContent[i].style.borderColor = "green";
             }
 
 
@@ -708,6 +760,8 @@ console.log(links);
                 var otherclassNamesEach = classNames_s[j].textContent.replace(".","").replace(",", "");
                 if (otherclassNamesEach !== val.name){
                     var extractContent_other_source_classes =  document.getElementsByClassName(otherclassNamesEach+"_s");
+                    // console.log(val.name);
+                    console.log(extractContent_other_source_classes);
                     for (var k = 0; k < extractContent_other_source_classes.length; k++) {
 
 
@@ -726,7 +780,7 @@ console.log(links);
 
             for (var i = 0; i < extractContent.length; i++) {
                 extractContent[i].style.borderStyle = "solid";
-                extractContent[i].style.borderColor = "red";
+                extractContent[i].style.borderColor = "green";
             }
 
 
@@ -734,6 +788,8 @@ console.log(links);
                 var otherclassNamesEach_t = classNames_t[j].textContent.replace(".","").replace(",", "");
                 if (otherclassNamesEach_t !== val.name){
                     var extractContent_other_target_classes =  document.getElementsByClassName(otherclassNamesEach_t+"_t");
+                    // console.log(val.name);
+                    console.log(extractContent_other_target_classes);
                     for (var k = 0; k < extractContent_other_target_classes.length; k++) {
 
 
@@ -766,7 +822,7 @@ console.log(links);
             .attr("stroke", "darkgray")
             .attr("stroke-width", "2px");
         // d3.select("#" + val.id).classed("active_d3", stat);
-        resetInfoBoardMsg();
+        clearInformationBoard();
 
         var classNames_s = document.querySelectorAll("[class*=_s]");
         var classNames_t = document.querySelectorAll("[class*=_t]");
@@ -781,8 +837,13 @@ console.log(links);
         var totalClassNames_ = [...new Set(totalClassNames)];
         totalClassNames_.sort();
 
+        // console.log("These are total class names!")
+        // console.log(totalClassNames_);
+        // console.log("These are total class names_")
+
         if (concept_type===0){
             var extractContent =  document.getElementsByClassName(val.name+"_s");
+            // extractContent.style("background-color: pink");
             for (var i = 0; i < extractContent.length; i++) {
                 extractContent[i].style.borderStyle = "none";
 
@@ -790,11 +851,13 @@ console.log(links);
 
             for (var j = 0; j < classNames_s.length; j++) {
                 var otherclassNamesEach = classNames_s[j].textContent.replace(".","").replace(",", "");
+                // all_concepts.push(otherclassNamesEach);
                 if (otherclassNamesEach !== val.name){
                     var extractContent_other_source_classes =  document.getElementsByClassName(otherclassNamesEach+"_s");
+                    console.log(extractContent_other_source_classes);
                     for (var k = 0; k < extractContent_other_source_classes.length; k++) {
 
-                        extractContent_other_source_classes[k].style.backgroundColor = colors(otherclassNamesEach) // getUniqueColors(otherclassNamesEach, totalClassNames_);
+                        extractContent_other_source_classes[k].style.backgroundColor = getUniqueColors(otherclassNamesEach, totalClassNames_);
                     }
 
                 }
@@ -807,6 +870,7 @@ console.log(links);
 
             for (var i = 0; i < extractContent.length; i++) {
                 extractContent[i].style.borderStyle = "none";
+                // extractContent[i].style.borderColor = "green";
             }
 
             for (var j = 0; j < classNames_t.length; j++) {
@@ -814,9 +878,10 @@ console.log(links);
 
                 if (otherclassNamesEach_t !== val.name){
                     var extractContent_other_target_classes =  document.getElementsByClassName(otherclassNamesEach_t+"_t");
+                    console.log(extractContent_other_target_classes);
                     for (var k = 0; k < extractContent_other_target_classes.length; k++) {
 
-                        extractContent_other_target_classes[k].style.backgroundColor = colors(otherclassNamesEach_t); // getUniqueColors(otherclassNamesEach_t, totalClassNames_);
+                        extractContent_other_target_classes[k].style.backgroundColor = getUniqueColors(otherclassNamesEach_t, totalClassNames_);
                     }
 
                 }
@@ -835,18 +900,40 @@ console.log(links);
 
 
 
+    function unvisite_links() {
+        "use strict";
+        links.forEach(function (d) {
+            d.visited = false;
+        });
+    }
 
 
 
-    function resetInfoBoardMsg(){
+
+
+
+    function clearInformationBoard(){
+        // d3.select("#" + val.id).classed("active_d3", stat);
         document.getElementById('relationship_update').innerHTML = "";
     }
 
 
 
 
-    function hover(message) {
-        document.getElementById('relationship_update').innerHTML = message;
+    function hover(description) {
+        // console.log(description);
+        document.getElementById('relationship_update').innerHTML = description;
+    }
+
+
+
+
+
+    function getUniqueColors(item, items) {
+        // set unique colors for the important concepts
+        var preseelected_colors = ["#ffffcc", "#e6f9ff", "#7da7ca", "#ffcccc", "#e6ffee", "#ffccf2", "#f2e6ff"];
+
+        return preseelected_colors[items.indexOf(item)];
     }
 
 
@@ -854,7 +941,7 @@ console.log(links);
 
 
     function urlMouseAction(m){
-        var concept = m.text.replace(".", "").replace(",","");
+        var concept = m.text.replace(".", "").replace(",","")
         var definition;
 
         for (i=0; i < Nodes.length; i++){
@@ -863,8 +950,8 @@ console.log(links);
 
             }
         }
-        var message = "<span style='text-transform: capitalize'><b>"+ concept +"</b></span>: "+ definition;
-        hover(message);
+        // console.log(definition);
+        hover("<span style='text-transform: capitalize'><b>"+ concept +"</b></span>: "+ definition);
     }
 
     function urlMouseAction_leave(){
@@ -933,6 +1020,8 @@ console.log(links);
 
         updateArtifactContent(s_orig_content, t_orig_content);
 
+        // console.log(data_concepts_);
+        var h = "him";
 
         var split_source_words = s_orig_content.split(" ");
         for (var i = 0; i < split_source_words.length; i++) {
@@ -941,7 +1030,7 @@ console.log(links);
                 var imp_score_s = conceptImportanceScores(sourceWord, concept_importance_scores_);
                 // console.log(imp_score_s);
                 split_source_words[i] = "<a href='' onmouseout='urlMouseAction_leave(this)' onmouseover='urlMouseAction(this)'><span class='"+sourceWord+"_s' " +
-                    "style='background-color:"+ colors(sourceWord) + ";font-size:" + (1 * (1 + imp_score_s)) +"em'>"  +  split_source_words[i] + "</span></a>";
+                    "style='background-color:"+ getUniqueColors(sourceWord, data_concepts_unique)+ ";font-size:" + (1 * (1 + imp_score_s)) +"em'>"  +  split_source_words[i] + "</span></a>";
 
 
                 var new_s = split_source_words.join(" ");
@@ -954,10 +1043,17 @@ console.log(links);
 
         }
 
+        // console.log("Here!!!!!");
+        // console.log(Nodes);
+        // console.log("Here ends!");
 
 
         var split_target_words = t_orig_content.split(" ");
+        // var n_split_target_words = split_target_words.join(" ");
+        // split_target_words = n_split_target_words.split(" ");
 
+        // console.log("Here B!!!!!");
+        // console.log(split_target_words);
 
         for (var i = 0; i < split_target_words.length; i++) {
             var targetWord = split_target_words[i].replace(".", "").replace(",","");
@@ -965,7 +1061,7 @@ console.log(links);
                 var imp_score_t = conceptImportanceScores(targetWord, concept_importance_scores_);
                 console.log(imp_score_t);
                 split_target_words[i] = "<a href='' onmouseout='urlMouseAction_leave(this)' onmouseover='urlMouseAction(this)'><span class='"+targetWord+"_t' " +
-                    "style='background-color:"+ colors(targetWord) + ";font-size:" + (1 * (1 + imp_score_t)) +"em;'>"  +
+                    "style='background-color:"+ getUniqueColors(targetWord, data_concepts_unique)+ ";font-size:" + (1 * (1 + imp_score_t)) +"em;'>"  +
                     split_target_words[i] + "</span></a>";
 
 
@@ -981,6 +1077,9 @@ console.log(links);
                 .html(new_t);
 
         }
+
+
+        // .attr("font-size", (boxWidth * 0.007) + "em");
 
 
 
@@ -1010,7 +1109,10 @@ console.log(links);
 
 
 
-
+    svg = d3.select("#tree").append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .append("g");
 
 
 

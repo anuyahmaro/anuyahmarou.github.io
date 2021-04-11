@@ -1,7 +1,7 @@
 [
   {
     "id": 1680,
-    "text": "The system shall allow event-delay capability for pre-admission, discharge, and transfer orders.",
+    "text": "The system shall allow event-delay capability for pre-admission, discharge, and transfer orders. ",
     "concepts": ["system","event-delay", "discharge", "capability"],
     "query": "source",
     "definitions": [{"system": "A system is a computer software being designed."},

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Position a div at bottom</title>
+    <style>
+        .main_div {
+            text-align:center;
+            position: relative;
+            background-color:#eceff1;
+            height: 500px;
+            left: 100px;
+            width: 500px;
+
+        }
+        .sub_div {
+            position: absolute;
+            bottom: 0px;
+            font-family: arial, sans-serif;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            margin: auto;
+            height: 80px;
+            background-color:#78909c;
+        }
+
+        .information-panel-content{
+            background-color:#b0bec5;
+            height: 60px;
+            width: 100%;
+            padding: 10px;
+            color: black;
+            font-size: small;
+            overflow: scroll;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="main_div">
+    <h1>GeeksforGeeks</h1>
+    <div class="sub_div">
+        <div class="information-panel-content"></div>
+    </div>
+</div>
+</body>
+</html>

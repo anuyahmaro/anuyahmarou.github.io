@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trace</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/materialize.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/style3.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/myStyles.css" />
+
+</head>
+
+<body class = 'mdc-layout-grid blue-grey lighten-5'>
+
+<!--<div id="tree"></div>-->
+
+
+<div class="link-conf">
+    <h3><b>Link confidence:</b> <span class="confidence-score">0.85</span></h3>
+</div>
+
+<div class = "artifact-panels row col s12">
+    <div class="content-panel col s3">
+        <div class="artifact-type-button">
+            <a class="waves-effect waves-light blue-grey lighten-4 dim-grey-text btn-small artifact-type disabled">Source Artifact</a>
+        </div>
+
+
+        <div id = "source_artifact" class="art_contents content-panel-style">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+        </div>
+
+
+    </div>
+
+    <div class="relationship-panel  col s3">
+        <div class="information-panel">
+            <div class="information-panel-content" id = "relationship_update" > </div>
+        </div>
+        <!--<br>-->
+        <div id="tree"></div>
+
+        <div class="vetting-panel-update">
+
+            <div class="scrollbar" id="style-1" style="margin-top: 5%; position: absolute;">
+                <div class="force-overflow">
+
+                    <table>
+                        <tr>
+                            <th>Date</th>
+                            <th>Name</th>
+                            <th>Role</th>
+                            <th>Link correct?</th>
+                        </tr>
+                        <tr>
+                            <td>11/06/19</td>
+                            <td>J Cleland-Huang</td>
+                            <td>Software Engr</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>12/06/19</td>
+                            <td>Y Liu</td>
+                            <td>Safety Analyst</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>12/20/19</td>
+                            <td>J Lin</td>
+                            <td>Developer</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>12/24/19</td>
+                            <td>R Metoyer</td>
+                            <td>Designer</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>01/02/20</td>
+                            <td>N Farrell</td>
+                            <td>Researcher</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>01/10/20</td>
+                            <td>G Rovelli</td>
+                            <td>Software Engr</td>
+                            <td>Yes</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+
+
+            <div class="information-panel-content2">
+                <!--<div style="color: black;position: relative; font-size: 0.8em">-->
+                <span class="brk"> <b>Link type:</b> Manual</span>
+                <span class="brk"> <b>Summary:</b> 5 yes 4 No</span>
+            </div>
+            <!--</div>-->
+        </div>
+
+
+    </div>
+
+
+
+    <!--<div id="tree"></div><div id = "source_artifact" class="art_contents content-panel-style">-->
+    <div class="content-panel col s3" >
+        <div id="target_artifact" class="content-panel-style target_list">
+            <button type="button" class="collapsible">
+                <a class="targ_art_name waves-effect waves-light blue-grey lighten-4 dim-grey-text btn-small artifact-type disabled">Target 1</a>
+                <br><br><br><br>
+                <div class="art_summary">
+                    This is a summary of the artifact itself...
+                </div>
+
+            </button>
+            <div class="content" id = "target_artifact_1">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <button type="button" class="collapsible">
+                <a class="targ_art_name waves-effect waves-light blue-grey lighten-4 dim-grey-text btn-small artifact-type disabled">Target 2</a>
+                <br><br><br><br>
+                <div class="art_summary">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit...</div>
+            </button>
+            <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <button type="button" class="collapsible">
+                <a class="targ_art_name waves-effect waves-light blue-grey lighten-4 dim-grey-text btn-small artifact-type disabled">Target 3</a>
+                <br><br><br><br>
+                <div class="art_summary">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit...</div>
+            </button>
+            <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <button type="button" class="collapsible">
+                <a class="targ_art_name waves-effect waves-light blue-grey lighten-4 dim-grey-text btn-small artifact-type disabled">Target 4</a>
+                <br><br><br><br>
+                <div class="art_summary">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit...</div>
+            </button>
+            <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <button type="button" class="collapsible">
+                <a class="targ_art_name waves-effect waves-light blue-grey lighten-4 dim-grey-text btn-small artifact-type disabled">Target 5</a>
+                <br><br><br><br>
+                <div class="art_summary">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit...</div>
+            </button>
+            <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="user-vote-panel col s3">
+        <div id = "user_vote" class="art_contents content-panel-style">
+            <p id="user_vote_link_pred">Do you agree that this is a link?</p>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+</body>
+
+
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var artifact_name_elements = document.getElementsByClassName("targ_art_name");
+    var artifact_summary_elements = document.getElementsByClassName("art_summary");
+    const coll_style = getComputedStyle(coll[0]).height;
+    var artifact_names = [];
+    var artifact_summary = [];
+
+
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", d);
+        artifact_names.push(artifact_name_elements[i].textContent);
+        artifact_summary.push(artifact_summary_elements[i].textContent);
+        console.log(coll[i]);
+    }
+
+    // artifact_summary_elements[0].textContent = artifact_summary[1]
+    // console.log(artifact_summary_elements[0].textContent = artifact_summary[1]);
+    function d(){
+        this.classList.toggle("active");
+        this.style.height = (screen.height - 300) / 3;
+
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+            // this.style.height = (screen.height - 300) / 3;
+            for (var k = 0; k < coll.length; k++) {
+                const v = coll_style;
+                coll[k].style.height = coll_style;
+                // coll[k].textContent = artifact_names[k];
+                artifact_summary_elements[k].textContent = artifact_summary[k];
+                // console.log(artifact_summary_elements[k]);
+
+            }
+        } else { // if the display is "none", it means that it has not been clicked yet.
+            content.style.display = "block"; // when clicked, change to block immediately and minimize the height
+            this.setAttribute("id", "selected_collapsible");
+            for (var j = 0; j < coll.length; j++) {
+
+                coll[j].style.height = "80px";
+                artifact_name_elements[j] = artifact_names[j];
+                artifact_summary_elements[j].textContent = "";
+                // console.log("100px")
+            }
+            // this
+        }
+
+
+    }
+
+
+    function collapseFunction() {
+        // this.classList.toggle("active");
+        // this.style.height = (screen.height - 300) / 3;
+        // var content = this.nextElementSibling;
+        // if (content.style.display === "block") {
+        //
+        //     content.style.display = "none";
+        //     // this.style.height = (screen.height - 300) / 3;
+        // } else {
+        //     content.style.display = "block";
+        //     this.style.height = "100px";
+        // }
+    }
+
+    // console.log((screen.height - 300) / 3);
+
+</script>
+</html>

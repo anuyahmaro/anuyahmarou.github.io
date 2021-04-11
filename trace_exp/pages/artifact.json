@@ -1,19 +1,511 @@
 [
   {
-    "id": 1680,
-    "text": "The system shall allow event-delay capability for pre-admission, discharge, and transfer orders.  ",
-    "concepts": ["system","event-delay", "discharge", "capability"],
-    "query": "source",
-    "definitions": [{"system": "A system is a computer software being designed."}, {"event-delay": "This occurs when there is an implementation delay."},
-      {"discharge": "This is a system discharge update."}, {"capability": "The system is has some capability update issues."}]
-  },
-  {
-    "id": 1681,
-    "text": "The system shall allow complete order sets to be predefined and personalized. The system shall allow complete order sets to be predefined and personalized. The system shall allow complete order sets to be predefined and personalized. The system shall allow complete order sets to be predefined and personalized. The system shall allow complete order sets to be predefined and personalized. The system shall allow complete order sets to be predefined and personalized. The system shall allow complete order sets to be predefined and personalized. The system shall allow complete order sets to be predefined and personalized. The system shall allow complete order sets to be predefined and personalized. The system shall allow complete order sets to be predefined and personalized. The system shall allow complete order sets to be predefined and personalized. The system shall allow complete order sets to be predefined and personalized. The system shall allow complete order sets to be predefined and personalized. The system shall allow complete order sets to be predefined and personalized. The system shall allow complete order sets to be predefined and personalized. The system shall allow complete order sets to be predefined and personalized. The system shall allow complete order sets to be predefined and personalized. ",
-    "concepts": ["system","personalized", "predefined"],
-    "query": "target",
-    "definitions": [{"system": "A system is a computer software being designed."}, {"personalized": "Software designed for a specific task."},
-      {"predefined": "Designer predefines the system structure."}]
+    "source": [
+      {
+        "id": 1680,
+        "text": "The system shall allow event-delay capability for pre-admission, discharge, and transfer orders.",
+        "concepts": ["system", "event-delay", "discharge", "capability"
+        ],
+        "query": "source",
+        "definitions": [
+          {
+            "system": "A system is a computer software being designed."
+          },
+          {
+            "event-delay": "This occurs when there is an implementation delay."
+          },
+          {
+            "discharge": "This is a system discharge update."
+          },
+          {
+            "capability": "The system is has some capability update issues."
+          }
+        ],
+        "importance_scores": [
+          {
+            "system": 0.2
+          },
+          {
+            "event-delay": 0.8
+          },
+          {
+            "discharge": 0.3
+          },
+          {
+            "capability": 0.4
+          }
+        ]
+      }
+    ],
+    "targets": [
+      {
+        "id": 1680,
+        "text": "The system shall allow event-delay capability for pre-admission, discharge, and transfer orders.",
+        "concepts": [
+          "system",
+          "event-delay",
+          "discharge",
+          "capability"
+        ],
+        "score" : 0.85,
+        "query": "source",
+        "definitions": [
+          {
+            "system": "A system is a computer software being designed."
+          },
+          {
+            "event-delay": "This occurs when there is an implementation delay."
+          },
+          {
+            "discharge": "This is a system discharge update."
+          },
+          {
+            "capability": "The system is has some capability update issues."
+          }
+        ],
+        "importance_scores": [
+          {
+            "system": 0.2
+          },
+          {
+            "event-delay": 0.8
+          },
+          {
+            "discharge": 0.3
+          },
+          {
+            "capability": 0.4
+          }
+        ],
+        "links":  [
+
+          {
+            "source": "system",
+            "target": "system",
+            "relationship": "synonym of"
+          },
+          {
+            "source": "event-delay",
+            "target": "event-delay",
+            "relationship": "synonym of"
+          },
+          {
+            "source": "capability",
+            "target": "capability",
+            "relationship": "synonym of"
+          },
+          {
+            "source": "discharge",
+            "target": "discharge",
+            "relationship": "synonym of"
+          }
+
+        ]
+      },
+      {
+        "id": 1681,
+        "text": "The system shall allow complete order sets to be predefined and personalized.",
+        "score" : 0.76,
+        "concepts": [
+          "system",
+          "personalized",
+          "predefined"
+        ],
+        "query": "target",
+        "definitions": [
+          {
+            "system": "A system is a computer software being designed."
+          },
+          {
+            "personalized": "Software designed for a specific task."
+          },
+          {
+            "predefined": "Designer predefines the system structure."
+          }
+        ],
+        "importance_scores": [
+          {
+            "system": 0.2
+          },
+          {
+            "personalized": 0.4
+          },
+          {
+            "predefined": 0.7
+          }
+        ],
+        "links":  [
+
+        {
+          "source": "system",
+          "target": "personalized",
+          "relationship": "parent of"
+        },
+        {
+          "source": "system",
+          "target": "predefined",
+          "relationship": "child of"
+        },
+        {
+          "source": "capability",
+          "target": "system",
+          "relationship": "acronym of"
+        },
+        {
+          "source": "system",
+          "target": "system",
+          "relationship": "synonym of"
+        }
+
+      ]
+      },
+      {
+        "id": 1682,
+        "text": "At admission and discharge from the hospital, the system shall provide the ability to permit the clinician to designate which home medications are being continued / discontinued.",
+        "score" : 0.72,
+        "concepts": [
+          "system",
+          "discharge",
+          "clinician",
+          "hospital"
+        ],
+        "query": "target",
+        "definitions": [
+          {
+            "system": "A system is a computer software being designed."
+          },
+          {
+            "discharge": "This is a system discharge update."
+          },
+          {
+            "clinician": "This is a medical personnel"
+          },
+          {
+            "hospital": "A hospital is a health care institution providing patient treatment with specialized medical and nursing staff and medical equipment."
+          }
+        ],
+        "importance_scores": [
+          {
+            "system": 0.2
+          },
+          {
+            "discharge": 0.3
+          },
+          {
+            "clinician": 0.8
+          },
+          {
+            "hospital": 0.7
+          }
+        ],
+        "links":  [
+
+          {
+            "source": "system",
+            "target": "discharge",
+            "relationship": "child of"
+          },
+          {
+            "source": "capability",
+            "target": "hospital",
+            "relationship": "pre-requisite of"
+          },
+          {
+            "source": "capability",
+            "target": "clinician",
+            "relationship": "pre-requisite of"
+          },
+          {
+            "source": "discharge",
+            "target": "discharge",
+            "relationship": "synonym of"
+          }
+
+        ]
+      },
+      {
+        "id": 465,
+        "text": "The system shall provide a means to edit discharge instructions for a particular patient.",
+        "score" : 0.65,
+        "concepts": [
+          "system",
+          "discharge",
+          "patient"
+        ],
+        "query": "target",
+        "definitions": [
+          {
+            "system": "A system is a computer software being designed."
+          },
+          {
+            "discharge": "This is a system discharge update."
+          },
+          {
+            "patient": "Any recipient of health-care services that are performed by health-care professionals. "
+          }
+        ],
+        "importance_scores": [
+          {
+            "system": 0.2
+          },
+          {
+            "discharge": 0.3
+          },
+          {
+            "patient": 0.8
+          }
+        ],
+        "links":  [
+
+          {
+            "source": "system",
+            "target": "discharge",
+            "relationship": "child of"
+          },
+          {
+            "source": "capability",
+            "target": "patient",
+            "relationship": "pre-requisite of"
+          },
+          {
+            "source": "discharge",
+            "target": "discharge",
+            "relationship": "synonym of"
+          }
+
+        ]
+      },
+      {
+        "id": 469,
+        "text": "The system shall provide a means to manage discharge instructions.",
+        "score" : 0.62,
+        "concepts": [
+          "system",
+          "discharge",
+          "instructions"
+        ],
+        "query": "target",
+        "definitions": [
+          {
+            "system": "A system is a computer software being designed."
+          },
+          {
+            "discharge": "This is a system discharge update."
+          },
+          {
+            "instructions": "A statement that describes how to do something. "
+          }
+        ],
+        "importance_scores": [
+          {
+            "system": 0.2
+          },
+          {
+            "discharge": 0.3
+          },
+          {
+            "instructions": 0.5
+          }
+        ],
+        "links":  [
+
+          {
+            "source": "system",
+            "target": "discharge",
+            "relationship": "child of"
+          },
+          {
+            "source": "system",
+            "target": "instructions",
+            "relationship": "parent of"
+          },
+          {
+            "source": "discharge",
+            "target": "discharge",
+            "relationship": "synonym of"
+          }
+
+        ]
+      },
+      {
+        "id": 1015,
+        "text": "The system shall provide the ability to renew an existing medication order without requiring re-entry of order information.",
+        "score" : 0.60,
+        "concepts": [
+          "system",
+          "medication",
+          "re-entry",
+          "information",
+          "order"
+        ],
+        "query": "target",
+        "definitions": [
+          {
+            "system": "A system is a computer software being designed."
+          },
+          {
+            "medication": "A substance used for medical treatment, especially a medicine or drug."
+          },
+          {
+            "re-entry": "The action of retaking or repossession. "
+          },
+          {
+            "information": "Facts provided or learned about something or someone. "
+          },
+          {
+            "order": "An authoritative command, direction, or instruction. "
+          }
+        ],
+        "importance_scores": [
+          {
+            "system": 0.2
+          },
+          {
+            "medication": 0.3
+          },
+          {
+            "re-entry": 0.5
+          },
+          {
+            "information": 0.9
+          },
+          {
+            "order": 0.8
+          }
+        ],
+        "links":  [
+
+          {
+            "source": "system",
+            "target": "order",
+            "relationship": "child of"
+          },
+          {
+            "source": "system",
+            "target": "information",
+            "relationship": "parent of"
+          },
+          {
+            "source": "system",
+            "target": "system",
+            "relationship": "synonym of"
+          }
+
+        ]
+      },
+      {
+        "id": 149,
+        "text": "The system shall provide the ability to customize clinical templates.",
+        "score" : 0.55,
+        "concepts": [
+          "system",
+          "clinical",
+          "templates"
+        ],
+        "query": "target",
+        "definitions": [
+          {
+            "system": "A system is a computer software being designed."
+          },
+          {
+            "clinical": "Relating to the observation and treatment of actual patients rather than theoretical or laboratory studies"
+          },
+          {
+            "templates": "A system or pattern used as a guide to the form of a piece being made."
+          }
+        ],
+        "importance_scores": [
+          {
+            "system": 0.2
+          },
+          {
+            "clinical": 0.6
+          },
+          {
+            "templates": 0.8
+          }
+        ],
+        "links":  [
+
+          {
+            "source": "system",
+            "target": "templates",
+            "relationship": "child of"
+          },
+          {
+            "source": "capability",
+            "target": "clinical",
+            "relationship": "pre-requisite of"
+          },
+          {
+            "source": "system",
+            "target": "system",
+            "relationship": "synonym of"
+          }
+
+        ]
+      },
+      {
+        "id": 433,
+        "text": "The system shall display laboratory results that are pending at time of patient discharge",
+        "score" : 0.45,
+        "concepts": [
+          "system",
+          "laboratory",
+          "patient",
+          "discharge"
+        ],
+        "query": "target",
+        "definitions": [
+          {
+            "system": "A system is a computer software being designed."
+          },
+          {
+            "laboratory": "Relating to the observation and treatment of actual patients rather than theoretical or laboratory studies"
+          },
+          {
+            "patient": "Any recipient of health-care services that are performed by health-care professionals. "
+          },
+          {
+            "discharge": "This is a system discharge update."
+          }
+        ],
+        "importance_scores": [
+          {
+            "system": 0.2
+          },
+          {
+            "laboratory": 0.6
+          },
+          {
+            "patient": 0.7
+          },
+          {
+            "discharge": 0.3
+          }
+        ],
+        "links":  [
+
+          {
+            "source": "discharge",
+            "target": "discharge",
+            "relationship": "synonym of"
+          },
+          {
+            "source": "capability",
+            "target": "patient",
+            "relationship": "pre-requisite of"
+          },
+          {
+            "source": "system",
+            "target": "system",
+            "relationship": "synonym of"
+          }
+
+        ]
+      }
+    ]
   }
+
 ]
 

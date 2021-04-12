@@ -47,7 +47,7 @@
           "discharge",
           "capability"
         ],
-        "score" : 0.85,
+        "score" : 1.0,
         "query": "source",
         "definitions": [
           {
@@ -105,7 +105,7 @@
       {
         "id": 1681,
         "text": "The system shall allow complete order sets to be predefined and personalized.",
-        "score" : 0.76,
+        "score" : 0.85,
         "concepts": [
           "system",
           "personalized",

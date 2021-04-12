@@ -28,7 +28,7 @@
 <!--</div>-->
 <div class = "conf-panel row col s12">
     <div class="x col s3"></div>
-    <div class="conf_score col s3" style="margin-left: 80px "><h3><b>Link confidence:</b> <span class="confidence-score">0.85</span></h3></div>
+    <div class="conf_score col s3" style="margin-left: 80px "><h3><b>Link confidence:</b> <span id="confidence-score"></span></h3></div>
     <div class ="y col s3"></div>
     <div class ="z col s2"></div>
 </div>
@@ -403,6 +403,8 @@
             .style("display", "block")
             .html(function(d) { return "<b>Score: </b>" + d.score; });
 
+
+
         var CollapsedContent = outer_list.append("div")
             .attr("class", "collapsible-body content")
             .text(function(d) { return d.content});
@@ -510,7 +512,12 @@
                 });
             });
 
-            console.log(clickedTargetData);
+            console.log(clickedTargetData[0].score);
+            //  Update the confidence score confidence-score
+            var clickedTargetDataScore = clickedTargetData[0].score;
+            var confidence_score_element = document.getElementById("confidence-score");
+            confidence_score_element.textContent = clickedTargetDataScore;
+
 
 
             //Highlight the important words in the clicked target artifact

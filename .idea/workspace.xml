@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53120068-35ce-4fad-9bea-d5c9e2da7296" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trace_exp/pages/artifact.json" beforeDir="false" afterPath="$PROJECT_DIR$/trace_exp/pages/artifact.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trace_exp/pages/index_new_layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/trace_exp/pages/index_new_layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trace_exp/static/css/myStyles2.css" beforeDir="false" afterPath="$PROJECT_DIR$/trace_exp/static/css/myStyles2.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,15 +47,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="1325" />
-          <entry key="html" value="25568" />
+          <entry key="css" value="1328" />
+          <entry key="html" value="25630" />
           <entry key="json" value="1081" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="1325" />
-          <entry key="HTML" value="25568" />
+          <entry key="CSS" value="1328" />
+          <entry key="HTML" value="25630" />
           <entry key="JSON" value="1081" />
         </counts>
       </usages-collector>
@@ -85,17 +85,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/trace_exp/pages/index_new_layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="217" column="54" selection-start-line="217" selection-start-column="54" selection-end-line="217" selection-end-column="54" />
+            <state relative-caret-position="412">
+              <caret line="157" column="82" selection-start-line="157" selection-start-column="82" selection-end-line="157" selection-end-column="82" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#label#0;n#p#0;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#label#1;n#p#0;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#button#0;n#form#0;n#div#0;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h6#0;n#div#1;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -119,8 +120,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trace_exp/static/css/myStyles2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="445" column="12" selection-start-line="445" selection-start-column="12" selection-end-line="445" selection-end-column="12" />
+            <state relative-caret-position="485">
+              <caret line="446" column="13" selection-start-line="446" selection-start-column="13" selection-end-line="446" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -204,14 +205,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trace_exp/pages/artifact.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="107" column="22" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
+            <state relative-caret-position="75">
+              <caret line="104" column="6" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
               <folding>
                 <element signature="e#15#21#0" />
                 <element signature="e#996#2495#0" />
+                <element signature="e#1982#3282#0" />
                 <element signature="e#1794#1867#0" />
                 <element signature="e#2783#3284#0" />
                 <element signature="e#3866#5208#0" />
@@ -249,7 +251,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>do you ag</find>
       <find>user_vot</find>
       <find>user-</find>
       <find>user</find>
@@ -265,7 +266,6 @@
       <find>patient</find>
       <find>discharg</find>
       <find>art</find>
-      <find>&quot;text&quot;</find>
       <find>art_co</find>
       <find>user-vote</find>
       <find>user_vote</find>
@@ -277,8 +277,10 @@
       <find>vetters_details</find>
       <find>preed</find>
       <find>table</find>
-      <find>pred</find>
       <find>do</find>
+      <find>&quot;text&quot;</find>
+      <find>do you a</find>
+      <find>pred</find>
     </findStrings>
     <replaceStrings>
       <replace>oanuyah</replace>
@@ -332,9 +334,9 @@
         <option value="$PROJECT_DIR$/trace_exp/pages/index.html" />
         <option value="$PROJECT_DIR$/trace_exp/pages/index_new_layout2.html" />
         <option value="$PROJECT_DIR$/trace_exp/pages/index_new_layout_prev.html" />
+        <option value="$PROJECT_DIR$/trace_exp/pages/artifact.json" />
         <option value="$PROJECT_DIR$/trace_exp/static/css/myStyles2.css" />
         <option value="$PROJECT_DIR$/trace_exp/pages/index_new_layout.html" />
-        <option value="$PROJECT_DIR$/trace_exp/pages/artifact.json" />
       </list>
     </option>
   </component>
@@ -397,7 +399,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1618191640264" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1618193262745" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -475,12 +477,12 @@
       <workItem from="1617326853330" duration="168000" />
       <workItem from="1617327097369" duration="27936000" />
       <workItem from="1617658937704" duration="9710000" />
-      <workItem from="1617840299412" duration="82410000" />
+      <workItem from="1617840299412" duration="83714000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229923000" />
+    <option name="totallyTimeSpent" value="231227000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1680" height="1022" extended-state="0" />
@@ -911,23 +913,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/trace_exp/pages/artifact.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="104" column="6" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
+          <folding>
+            <element signature="e#15#21#0" />
+            <element signature="e#996#2495#0" />
+            <element signature="e#1982#3282#0" />
+            <element signature="e#1794#1867#0" />
+            <element signature="e#2783#3284#0" />
+            <element signature="e#3866#5208#0" />
+            <element signature="e#4137#4433#0" />
+            <element signature="e#4464#4637#0" />
+            <element signature="e#4657#5158#0" />
+            <element signature="e#5432#6989#0" />
+            <element signature="e#6830#8061#0" />
+            <element signature="e#8039#9667#0" />
+            <element signature="e#9674#10928#0" />
+            <element signature="e#10970#12277#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/trace_exp/static/css/myStyles2.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="445" column="12" selection-start-line="445" selection-start-column="12" selection-end-line="445" selection-end-column="12" />
+        <state relative-caret-position="485">
+          <caret line="446" column="13" selection-start-line="446" selection-start-column="13" selection-end-line="446" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/trace_exp/pages/index_new_layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="217" column="54" selection-start-line="217" selection-start-column="54" selection-end-line="217" selection-end-column="54" />
+        <state relative-caret-position="412">
+          <caret line="157" column="82" selection-start-line="157" selection-start-column="82" selection-end-line="157" selection-end-column="82" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#label#0;n#p#0;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#label#1;n#p#0;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#button#0;n#form#0;n#div#0;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h6#0;n#div#1;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -943,28 +969,6 @@
             <element signature="e#27528#30325#0" />
             <element signature="n#style#0;n#span#0;n#a#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trace_exp/pages/artifact.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="107" column="22" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
-          <folding>
-            <element signature="e#15#21#0" />
-            <element signature="e#996#2495#0" />
-            <element signature="e#1794#1867#0" />
-            <element signature="e#2783#3284#0" />
-            <element signature="e#3866#5208#0" />
-            <element signature="e#4137#4433#0" />
-            <element signature="e#4464#4637#0" />
-            <element signature="e#4657#5158#0" />
-            <element signature="e#5432#6989#0" />
-            <element signature="e#6830#8061#0" />
-            <element signature="e#8039#9667#0" />
-            <element signature="e#9674#10928#0" />
-            <element signature="e#10970#12277#0" />
           </folding>
         </state>
       </provider>

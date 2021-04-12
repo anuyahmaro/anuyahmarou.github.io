@@ -48,15 +48,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="1318" />
-          <entry key="html" value="25560" />
+          <entry key="css" value="1325" />
+          <entry key="html" value="25566" />
           <entry key="json" value="1076" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="1318" />
-          <entry key="HTML" value="25560" />
+          <entry key="CSS" value="1325" />
+          <entry key="HTML" value="25566" />
           <entry key="JSON" value="1076" />
         </counts>
       </usages-collector>
@@ -86,7 +86,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trace_exp/pages/index_new_layout.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
@@ -117,11 +117,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/trace_exp/static/css/myStyles2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="366" column="5" selection-start-line="366" selection-end-line="366" selection-end-column="5" />
+            <state relative-caret-position="352">
+              <caret line="445" column="12" selection-start-line="445" selection-start-column="12" selection-end-line="445" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -251,7 +251,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>collapsi</find>
       <find>do you ag</find>
       <find>user_vot</find>
       <find>user-</find>
@@ -279,8 +278,9 @@
       <find>panel-update</find>
       <find>vetters_details</find>
       <find>preed</find>
-      <find>do</find>
       <find>table</find>
+      <find>pred</find>
+      <find>do</find>
     </findStrings>
     <replaceStrings>
       <replace>oanuyah</replace>
@@ -399,7 +399,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1618191189123" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1618191302364" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -477,16 +477,15 @@
       <workItem from="1617326853330" duration="168000" />
       <workItem from="1617327097369" duration="27936000" />
       <workItem from="1617658937704" duration="9710000" />
-      <workItem from="1617840299412" duration="81814000" />
+      <workItem from="1617840299412" duration="82092000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229327000" />
+    <option name="totallyTimeSpent" value="229605000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1680" height="1022" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32173383" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -936,13 +935,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trace_exp/static/css/myStyles2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="366" column="5" selection-start-line="366" selection-end-line="366" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/trace_exp/pages/index_new_layout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -969,6 +961,13 @@
             <element signature="n#style#0;n#span#0;n#a#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trace_exp/static/css/myStyles2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="445" column="12" selection-start-line="445" selection-start-column="12" selection-end-line="445" selection-end-column="12" />
         </state>
       </provider>
     </entry>

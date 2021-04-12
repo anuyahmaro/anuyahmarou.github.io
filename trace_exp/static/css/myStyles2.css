@@ -42,8 +42,8 @@ a:link {
     font-size: 1em;
     /*width: 500px;*/
     /*width: 90%;*/
-    height: calc(100vh - 310px);
-    /*margin-top: 80px;*/
+    height: calc(100vh - 250px);
+    margin-top: 8px;
     /*margin-bottom: 80px;*/
     /*text-align: justify;*/
     padding: 30px;
@@ -440,6 +440,7 @@ background-color: darkseagreen!important;
     border-radius: 25px;
     border: 2px solid darkgray;
     padding: 10px;
+    font-size: 1em;
     /*width: 200px;*/
     /*left: -50px;*/
     /*margin-left: 50px;*/

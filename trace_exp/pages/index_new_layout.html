@@ -28,7 +28,7 @@
 <!--</div>-->
 <div class = "conf-panel row col s12">
     <div class="x col s3"></div>
-    <div class="conf_score col s3" style="margin-left: 80px "><h3><b>Link confidence:</b> <span id="confidence-score"></span></h3></div>
+    <div class="conf_score col s3" style="margin-left: 80px "><h3><b>Link confidence score:</b> <span id="confidence-score"></span></h3></div>
     <div class ="y col s3"></div>
     <div class ="z col s2"></div>
 </div>
@@ -38,16 +38,17 @@
 
     <div class="content-panel col s3">
         <!--<div class="artifact-type-button">-->
-        <br>
-            <a id="source_art_name" class="waves-effect waves-light blue-grey lighten-4 dim-grey-text btn-small artifact-type disabled">Source Artifact</a>
+        <!--<br>-->
+        <div  class="art_contents content-panel-style" style="background-color: white">
+            <a id="source_art_name" style="margin-top: -18px" class="waves-effect waves-light blue-grey lighten-4 dim-grey-text btn-small artifact-type disabled">Source Artifact</a>
         <!--</div>-->
 
 
-        <p style="background-color: white" id = "source_artifact" class="art_contents content-panel-style">
+        <p id = "source_artifact">
 
         </p>
 
-
+        </div>
     </div>
 
     <div class="relationship-panel  col s3">
@@ -144,7 +145,7 @@
 
     <div id="user-vote-panel" class="col s3">
         <div id = "user_vote"  style="display: none; position: absolute; top: 150px;" class="art_contents content-panel-style">
-            <div id="user_vote_link_pred">Do you agree that this is a link?
+            <div id="user_vote_link_pred"><span style="font-size: 1em">Do you agree that this is a link?</span>
                <form id="votingform">
                 <label>
                     <input name="group1" type="radio" checked />
@@ -155,7 +156,7 @@
                     <span style= "font-size: 1em">No</span>
                 </label>
                    <br><br>
-                   <button type="submit" class="waves-effect waves-green btn-small">
+                   <button type="submit" class="waves-effect waves-green btn-small text-smallt">
                       Submit
                    </button>
         </form>

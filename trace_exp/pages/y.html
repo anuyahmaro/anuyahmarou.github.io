@@ -74,6 +74,65 @@
 </ul>
 
 
+<div class="content-panel-style" >
+<table class="collapsible">
+    <tr class="mim">
+        <td width="70%">Alfreds Futterkiste</td>
+        <td>
+            <p>
+                <label>
+                    <input name="group1" type="radio" checked />
+                    <span>Maybe</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input name="group1" type="radio" checked />
+                    <span>Agree</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input name="group1" type="radio" checked />
+                    <span>Disagree</span>
+                </label>
+            </p>
+        </td>
+    </tr>
+    <tr class="collapsible-body content">
+        <td>This is something</td>
+        <td>Another</td>
+    </tr>
+    <!--<tr>-->
+        <!--<td >Alfreds Futterkiste</td>-->
+
+        <!--<td>-->
+            <!--<p>-->
+                <!--<label>-->
+                    <!--<input name="group1" type="radio" checked />-->
+                    <!--<span>Maybe</span>-->
+                <!--</label>-->
+            <!--</p>-->
+            <!--<p>-->
+                <!--<label>-->
+                    <!--<input name="group1" type="radio" checked />-->
+                    <!--<span>Agree</span>-->
+                <!--</label>-->
+            <!--</p>-->
+            <!--<p>-->
+                <!--<label>-->
+                    <!--<input name="group1" type="radio" checked />-->
+                    <!--<span>Disagree</span>-->
+                <!--</label>-->
+            <!--</p>-->
+        <!--</td>-->
+    <!--</tr>-->
+</table>
+</div>
+
+
+
+
 
 </body>
 <script src="https://unpkg.com/d3@6.6.1/dist/d3.min.js"></script>
@@ -87,8 +146,20 @@
         var instances = M.Collapsible.init(elems);
     });
 
+function gg() {
+    // this.classList.toggle("active");
+    console.log(this);
+}
 
 
+    // var collb = document.getElementsByClassName("mim");
+
+
+
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     var elems = document.querySelectorAll('.collapsible');
+    //     var instances = M.Collapsible.init(elems);
+    // });
 
     // for (i = 0; i < coll.length; i++) {
     //     coll[i].addEventListener("click", collapseFunc);
@@ -97,11 +168,19 @@
     // }
 
 
+    var coll_g = document.getElementsByClassName("mim");
+    for (var i = 0; i < coll_g.length; i++) {
+        coll_g[i].addEventListener("click", console.log("hulo"));
+
+        // coll_[i].addEventListener("click", d);
+    }
 
 
 
 
-function drawTargets(data){
+
+
+    function drawTargets(data){
         var target_data = data[0].targets;
 
     var artifact_data = {
@@ -156,6 +235,7 @@ function drawTargets(data){
 
 
     function collapseFunc() {
+        console.log(this);
         this.classList.toggle("active");
 
         for (var q = 0; q < coll_.length; q++){
@@ -163,7 +243,7 @@ function drawTargets(data){
                 // console.log(coll_[q]);
                 var targetInfo = coll_[q].getElementsByClassName("targ_artifact_info")[0];
                 // targetInfo.getElementsByClassName("art_summary")[0].style.display = "block";
-                coll_[q].getElementsByClassName("art_summary")[0].style.display = "block";
+                // coll_[q].getElementsByClassName("art_summary")[0].style.display = "block";
                 // console.log(coll_[q].getElementsByClassName("art_summary")[0].style.display);
 
                 var content = this.nextElementSibling;
@@ -174,12 +254,12 @@ function drawTargets(data){
                     // console.log("It is closed right now");
                     content.style.display = "none";
                     // console.log(targetInfo.getElementsByClassName("art_summary"))
-                    targetInfo.getElementsByClassName("art_summary")[0].style.display = "block";
+                    // targetInfo.getElementsByClassName("art_summary")[0].style.display = "block";
 
                 }
                 else {
                     console.log("It is open right now");
-                    coll_[q].getElementsByClassName("art_summary")[0].style.display = "none";
+                    // coll_[q].getElementsByClassName("art_summary")[0].style.display = "none";
                     // targetInfo.getElementsByClassName("art_summary")[0].style.display = "none";
 
 
@@ -188,7 +268,7 @@ function drawTargets(data){
             else { // while the collapsibles are not active, make sure to show their summary
                 // var targetInfo2 = coll_[q].getElementsByClassName("targ_artifact_info")[0];
                 // targetInfo2.getElementsByClassName("art_summary")[0].style.display = "block";
-                coll_[q].getElementsByClassName("art_summary")[0].style.display = "block";
+                // coll_[q].getElementsByClassName("art_summary")[0].style.display = "block";
                 coll_[q].classList.remove("active");
             }
 

@@ -7,6 +7,8 @@ body{
     font-family: arial, sans-serif;
 }
 
+/*html { overflow:auto; }*/
+
 .home-button{
     position:absolute;
     margin-left: 1.5%;
@@ -16,6 +18,11 @@ body{
 .link-conf{
     text-align: center;
     margin-top: 50px;
+}
+
+input[type="radio"] {
+    margin-left:5px;
+    border:1px solid #888;
 }
 
 
@@ -78,13 +85,25 @@ a:link {
 
 }
 
+
+
 .content-panel-style{
     max-width: calc(100vw / 3);
     /*word-wrap:break-word;*/
 }
 
+.content-panel-style2{
+    max-width: calc(100vw / 2.5);
+    max-height: calc(100vh - 200px);
+    height:calc(100vh - 200px) ;
+    width: 950px;
+    margin-left: 4px;
+    /*word-wrap:break-word;*/
+}
+
 .target_list{
     height: calc(100vh - 250px);
+    max-height: calc(100vh - 200px);
     overflow: scroll;
 }
 
@@ -106,7 +125,7 @@ a:link {
     width: 80%;
     text-align: center;
     margin: auto;
-    height: 80px;
+    height: 100px;
     /*width: 80%;*/
     background-color:#78909c;
     /*margin-top: 70px;*/
@@ -132,7 +151,7 @@ a:link {
 
 .information-panel-content{
     background-color:#b0bec5;
-    height: 60px;
+    height: 80px;
     width: 100%;
     padding: 10px;
     color: black;
@@ -366,7 +385,7 @@ rect {
 
 table {
     font-family: arial, sans-serif;
-    font-size: 0.6em;
+    font-size: 1em;
     border-collapse: collapse;
     width: 100%;
     color: black;
@@ -407,13 +426,21 @@ tr:nth-child(even) {
 /*outline: none;*/
 /*font-size: 15px;*/
 /*}*/
+p{
+    color: black;
+}
 
 .collapsible-header:hover {
 background-color: darkseagreen!important;
 }
 
+/*.collapsible_:hover {*/
+    /*background-color: darkseagreen!important;*/
+/*}*/
 
-
+button.score_btn:hover, button.vetting_btn:hover{
+ background-color: lightgrey!important;
+}
 
 .collapsible{
     width: 100%;
@@ -431,7 +458,8 @@ background-color: darkseagreen!important;
     /*text-align:center;*/
     color: black;
     font-size: 1em;
-    height: 350px;
+    /*height: 600px;*/
+    height: calc(100vh - 315px);
     overflow: scroll;
     padding: 30px;
 }

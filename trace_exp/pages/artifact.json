@@ -394,58 +394,6 @@
         ]
       },
       {
-        "id": 149,
-        "text": "The system shall provide the ability to customize clinical templates.",
-        "score" : 0.55,
-        "concepts": [
-          "system",
-          "clinical",
-          "templates"
-        ],
-        "query": "target",
-        "definitions": [
-          {
-            "system": "A system is a computer software being designed."
-          },
-          {
-            "clinical": "Relating to the observation and treatment of actual patients rather than theoretical or laboratory studies"
-          },
-          {
-            "templates": "A system or pattern used as a guide to the form of a piece being made."
-          }
-        ],
-        "importance_scores": [
-          {
-            "system": 0.2
-          },
-          {
-            "clinical": 0.6
-          },
-          {
-            "templates": 0.8
-          }
-        ],
-        "links":  [
-
-          {
-            "source": "system",
-            "target": "templates",
-            "relationship": "child of"
-          },
-          {
-            "source": "capability",
-            "target": "clinical",
-            "relationship": "pre-requisite of"
-          },
-          {
-            "source": "system",
-            "target": "system",
-            "relationship": "synonym of"
-          }
-
-        ]
-      },
-      {
         "id": 433,
         "text": "The system shall display laboratory results that are pending at time of patient discharge",
         "score" : 0.45,
@@ -503,7 +451,60 @@
           }
 
         ]
+      },
+      {
+        "id": 149,
+        "text": "The system shall provide the ability to customize clinical templates.",
+        "score" : 0.55,
+        "concepts": [
+          "system",
+          "clinical",
+          "templates"
+        ],
+        "query": "target",
+        "definitions": [
+          {
+            "system": "A system is a computer software being designed."
+          },
+          {
+            "clinical": "Relating to the observation and treatment of actual patients rather than theoretical or laboratory studies"
+          },
+          {
+            "templates": "A system or pattern used as a guide to the form of a piece being made."
+          }
+        ],
+        "importance_scores": [
+          {
+            "system": 0.2
+          },
+          {
+            "clinical": 0.6
+          },
+          {
+            "templates": 0.8
+          }
+        ],
+        "links":  [
+
+          {
+            "source": "system",
+            "target": "templates",
+            "relationship": "child of"
+          },
+          {
+            "source": "capability",
+            "target": "clinical",
+            "relationship": "pre-requisite of"
+          },
+          {
+            "source": "system",
+            "target": "system",
+            "relationship": "synonym of"
+          }
+
+        ]
       }
+
     ]
   }
 

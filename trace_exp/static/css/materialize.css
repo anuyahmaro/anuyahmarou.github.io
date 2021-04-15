@@ -2983,7 +2983,7 @@ ul.staggered-list li {
 }
 
 table, th, td {
-  border: none;
+  border: red;
 }
 
 table {

@@ -13,30 +13,30 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../static/css/style3.css" />
+    <!--<link rel="stylesheet" type="text/css" href="../static/css/style3.css" />-->
     <link rel="stylesheet" type="text/css" href="../static/css/myStyles2.css" />
 
 </head>
 
-<body class = 'mdc-layout-grid blue-grey lighten-5'>
+<body class = 'blue-grey lighten-5'>
 
 <!--<div id="tree"></div>-->
 
 
-<!--<div class="link-conf">-->
-    <!--<h3><b>Link confidence:</b> <span class="confidence-score">0.85</span></h3>-->
-<!--</div>-->
-<div class = "conf-panel row col s12">
-    <div class="x col s3"></div>
-    <div class="conf_score col s3" style="margin-left: 80px "><h3><b>Link confidence score:</b> <span id="confidence-score"></span></h3></div>
-    <div class ="y col s3"></div>
-    <div class ="z col s2"></div>
+<div class="link-conf">
+    <h5><b>Link confidence:</b> <span id="confidence-score"></span></h5>
 </div>
+<!--<div class = "conf-panel row col s12">-->
+    <!--<div class="x col s4"></div>-->
+    <!--<div class="conf_score col s4" ><h5><b>Link confidence score:</b> <span id="confidence-score"></span></h5></div>-->
+    <!--<div class ="y col s4"></div>-->
+    <!--&lt;!&ndash;<div class ="z col s2"></div>&ndash;&gt;-->
+<!--</div>-->
 
 
 <div class = "artifact-panels row col s12">
 
-    <div class="content-panel col s3">
+    <div class="content-panel col s4" style="margin-left: 20px">
         <!--<div class="artifact-type-button">-->
         <!--<br>-->
         <div  class="art_contents content-panel-style" style="background-color: white">
@@ -51,7 +51,7 @@
         </div>
     </div>
 
-    <div class="relationship-panel  col s3">
+    <div class="relationship-panel  col s4">
         <div class="information-panel">
             <div class="information-panel-content" id = "relationship_update" > </div>
         </div>
@@ -133,7 +133,7 @@
 
 
     <!--<div id="tree"></div><div id = "source_artifact" class="art_contents content-panel-style">-->
-    <div class="content-panel col s3" >
+    <div class="content-panel col s4" >
         <ul id="target_artifacts" class="collapsible content-panel-style target_list">
         </ul>
     </div>
@@ -143,7 +143,7 @@
 
 
 
-    <div id="user-vote-panel" class="col s3">
+    <div id="user-vote-panel" class="col s0">
         <div id = "user_vote"  style="display: none; position: absolute; top: 150px;" class="art_contents content-panel-style">
             <div id="user_vote_link_pred"><span style="font-size: 1em">Do you agree that this is a link?</span>
                <form id="votingform">
@@ -161,13 +161,12 @@
                    </button>
         </form>
 
-            </p>
 
         </div>
         <div id = "vetters_details"  style="display: none; position: absolute; top: 400px; background-color: #78909c; height: 260px" class="art_contents content-panel-style">
             <!--<div id="user_vote_link_pred2">Do you agree that this is a link?-->
                 <!--<div class="scrollbar" id="style-1" style="margin-top: 5%; position: absolute;">-->
-            <h6 style="font-weight: bold; text-align: center">VETTING DETAILS</h6>
+            <h6 style="font-weight: bold; text-align: center">Other users that have vetted this link</h6>
             <div style="height: 100px; overflow-y: scroll; background: #b0bec5; position: relative">
 
                 <div class="force-overflow">
@@ -232,73 +231,75 @@
         </div>
 
 
-        <!--<div style="display: block" class="content-panel-style art_contents">-->
 
-            <!--<div class="scrollbar" id="style-1" style="margin-top: 5%; position: absolute;">-->
-                <!--<div class="force-overflow">-->
-
-                    <!--<table>-->
-                        <!--<tr>-->
-                            <!--<th>Date</th>-->
-                            <!--<th>Name</th>-->
-                            <!--<th>Role</th>-->
-                            <!--<th>Link correct?</th>-->
-                        <!--</tr>-->
-                        <!--<tr>-->
-                            <!--<td>11/06/19</td>-->
-                            <!--<td>J Cleland-Huang</td>-->
-                            <!--<td>Software Engr</td>-->
-                            <!--<td>Yes</td>-->
-                        <!--</tr>-->
-                        <!--<tr>-->
-                            <!--<td>12/06/19</td>-->
-                            <!--<td>Y Liu</td>-->
-                            <!--<td>Safety Analyst</td>-->
-                            <!--<td>No</td>-->
-                        <!--</tr>-->
-                        <!--<tr>-->
-                            <!--<td>12/20/19</td>-->
-                            <!--<td>J Lin</td>-->
-                            <!--<td>Developer</td>-->
-                            <!--<td>Yes</td>-->
-                        <!--</tr>-->
-                        <!--<tr>-->
-                            <!--<td>12/24/19</td>-->
-                            <!--<td>R Metoyer</td>-->
-                            <!--<td>Designer</td>-->
-                            <!--<td>Yes</td>-->
-                        <!--</tr>-->
-                        <!--<tr>-->
-                            <!--<td>01/02/20</td>-->
-                            <!--<td>N Farrell</td>-->
-                            <!--<td>Researcher</td>-->
-                            <!--<td>No</td>-->
-                        <!--</tr>-->
-                        <!--<tr>-->
-                            <!--<td>01/10/20</td>-->
-                            <!--<td>G Rovelli</td>-->
-                            <!--<td>Software Engr</td>-->
-                            <!--<td>Yes</td>-->
-                        <!--</tr>-->
-                    <!--</table>-->
-                <!--</div>-->
-
-            <!--</div>-->
-
-
-
-            <!--<div class="information-panel-content2">-->
-                <!--&lt;!&ndash;<div style="color: black;position: relative; font-size: 0.8em">&ndash;&gt;-->
-                <!--<span class="brk"> <b>Link type:</b> Manual</span>-->
-                <!--<span class="brk"> <b>Summary:</b> 5 yes 4 No</span>-->
-            <!--</div>-->
-            <!--&lt;!&ndash;</div>&ndash;&gt;-->
-        <!--</div>-->
 
 
     </div>
+    </div>
 
 
+</div>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h5>Other individuals that have vetted this link</h5>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Link correct?</th>
+            </tr>
+            <tr>
+                <td>11/06/19</td>
+                <td>J Cleland-Huang</td>
+                <td>Software Engr</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>12/06/19</td>
+                <td>Y Liu</td>
+                <td>Safety Analyst</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>12/20/19</td>
+                <td>J Lin</td>
+                <td>Developer</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>12/24/19</td>
+                <td>R Metoyer</td>
+                <td>Designer</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>01/02/20</td>
+                <td>N Farrell</td>
+                <td>Researcher</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>01/10/20</td>
+                <td>G Rovelli</td>
+                <td>Software Engr</td>
+                <td>Yes</td>
+            </tr>
+        </table>
+    </div>
+    <div style="color: black;position: relative; font-size: 1em; margin-left: 25px">
+        <span class="brk"> <b>Vetting summary:</b> <mark>5 yes</mark> <mark style="background-color: #c9f3ef;">4 No</mark></span>
+        <span class="brk"> <b>Link type:</b> Manual</span>
+
+        </div>
+    <div style="text-align: center">
+        <h6>Do you agree that this is a link?</h6>
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Disagree</a>
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Maybe</a>
+    </div>
 </div>
 
 
@@ -314,7 +315,7 @@
     var lvlCount = 0;
 
 
-    var width = Math.round(screen.width * 25 / 100),
+    var width = Math.round(screen.width * 33.333 / 100),
         height = 400,
         boxWidth = Math.round(width / 4),
         boxHeight = height/10,
@@ -353,12 +354,22 @@
         var instances = M.Collapsible.init(elems);
     });
 
-
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems);
+    });
 
 
 
     const colors = d3.scaleOrdinal()
         .range(d3.schemeSet3);
+
+
+        // .range(["#3366cc", "#dc3912", "#ff9900", "#109618", "#990099",
+        //     "#0099c6", "#dd4477", "#66aa00", "#b82e2e", "#316395", "#994499",
+        //     "#22aa99", "#aaaa11", "#6633cc", "#e67300", "#8b0707",
+        //     "#651067", "#329262", "#5574a6", "#3b3eac"]);
+        // .range(d3.schemeSet3);
 
 
 
@@ -376,8 +387,7 @@
 
         });
 
-        // console.log(artifact_data);
-        // console.log(target_data);
+
 
         var outer_list = d3.select("#target_artifacts")
             .selectAll("li")
@@ -398,17 +408,29 @@
 
         TargetArtifactInfo.append("a")
             .attr("class", "targ_art_name waves-effect waves-light blue-grey lighten-4 dim-grey-text btn-small artifact-type disabled")
+            // .attr("href", "https://anuyahmaro.github.io")
+            // .attr("target", "_blank")
             .text(function(d) { return "Target " + d.aid; });
 
         TargetArtifactInfo.append("p")
             .attr("class", "art_summary")
             .style("display", "block")
-            .text(function(d) { return d.content.slice(0, 50)+"..."; });
+            .text(function(d) { return d.content.slice(0, 80)+"..."; })
+
+            TargetArtifactInfo.append("button")
+        // .attr("class", "waves-effect waves-light green lighten-4 black-text btn-small artifact-type")
+        .attr("type", "button")
+        .attr("class", "btn btn-primary modal-trigger")
+        .text("Vetting")
+        .attr("data-target", "modal1");
+
 
         TargetArtifactInfo.append("p")
             .attr("class", "art_score")
             .style("display", "block")
             .html(function(d) { return "<b>Score: </b>" + d.score; });
+
+
 
 
 
@@ -425,10 +447,24 @@
         }
 
 
+        // var elements_ = document.getElementsByClassName("vote_linkss");
+        //
+        // var myFunction = function() {
+        //     // var attribute = this.getAttribute("data-myattribute");
+        //     alert("hey!");
+        // };
+        //
+        // for (var i = 0; i < elements_.length; i++) {
+        //     elements_[i].addEventListener('mouseover', myFunction, false);
+        // }
+
+
         function collapseFunc() {
 
             this.classList.toggle("active");
             Nodes = [];
+
+
 
 
             var index_of_current_target;
@@ -464,13 +500,18 @@
                         console.log("It is open right now");
                         coll_[q].getElementsByClassName("art_summary")[0].style.display = "none";
                         coll_[q].getElementsByClassName("art_score")[0].style.display = "none";
+                        coll_[q].getElementsByClassName("modal-trigger")[0].style.display = "none";
                         restart();
 
-                        var vetterInfoSection = document.getElementById("vetters_details");
-                        vetterInfoSection.style.display = "block";
+                        //Work on this lateer Maro
+                        // var vetterInfoSection = document.getElementById("vetters_details");
+                        // vetterInfoSection.style.display = "block";
+                        //Work on this lateer Maro
 
-                        var userVoteSection = document.getElementById("user_vote");
-                        userVoteSection.style.display="block";
+                        //Work on this lateer Maro
+                        // var userVoteSection = document.getElementById("user_vote");
+                        // userVoteSection.style.display="block";
+                        //Work on this lateer Maro
 
                         // links = [];
 
@@ -485,6 +526,7 @@
                     coll_[q].getElementsByClassName("art_summary")[0].style.display = "block";
                     coll_[q].getElementsByClassName("art_score")[0].style.display = "block";
                     coll_[q].classList.remove("active");
+                    coll_[q].style.display="none";
                     coll_[q].setAttribute("id", "");
                     coll_[q].nextElementSibling.setAttribute("id", "");
                     restart();
@@ -555,7 +597,7 @@
                 "links": []
             };
 
-            var plc_Nodes = []
+            var plc_Nodes = [];
 
 
 
@@ -988,6 +1030,9 @@
             .data(Nodes);
          node.exit()
         .remove();
+
+        // var colors = d3.scaleOrdinal()
+        //     .range(d3.schemeSet3);
 
         var link = svg.selectAll("path")
             .data(links.splice(0, Nodes.length));

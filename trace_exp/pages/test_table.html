@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="../static/css/style3.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/myStyles2.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/materialize.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even){background-color: #f2f2f2}
+    </style>
+</head>
+<body style="overflow: hidden">
+
+<div class="row">
+    <div class="col s5">
+<div style="overflow-y:auto;height:200px">
+    <table >
+
+        <tbody class="each_target_artifact"><tr id="row1" class="collapsible_"><td><div><div class="action_btn" style="margin-top: 12px;"></div><a class="targ_art_name waves-effect waves-light blue-grey lighten-4 dim-grey-text btn-small artifact-type disabled">Target 1680</a><button type="button" class="btn btn-small" style="background-color: white; color: black; margin-left: 8px;"><b>Score: </b>1</button><button type="button" class="btn btn-small tooltipped" data-position="bottom" data-tooltip="I am a tooltip" style="background-color: lightgoldenrodyellow; margin-left: 8px; color: black;">5 <i class="material-icons" style="font-size: 1em">thumb_up</i> 2 <i class="material-icons" style="font-size: 1em">thumb_down</i></button><button type="button" class="btn btn-small back_button" style="background-color: lightskyblue; margin-left: 8px; color: black;">Back</button><p class="art_summary" style="display: block; font-size: 0.9em; padding: 10px;">The system shall allow event-delay capability for pre-admission, discharge, and transfer orders....</p></div></td><td><p style="padding: 8px; font-size: 0.9em">
+            <label>
+                <input name="group1" type="radio">
+                <span style="color: black">Maybe</span>
+            </label>
+        </p>
+            <p style="padding: 8px; font-size: 0.9em">
+                <label>
+                    <input name="group1" type="radio">
+                    <span style="color: black">Agree</span>
+                </label>
+            </p>
+            <p style="padding: 8px; font-size: 0.9em">
+                <label>
+                    <input name="group1" type="radio">
+                    <span style="color: black">Disagree</span>
+                </label>
+            </p></td></tr><tr class="collapse-content" id="row1_content" style="background-color: white;"><td><div id="row1_content_data" style="display: none; padding: 10px; height: 500px; background-color: rgb(236, 239, 241);">The system shall allow event-delay capability for pre-admission, discharge, and transfer orders.</div></td></tr></tbody><tbody class="each_target_artifact"><tr id="row2" class="collapsible_"><td><div><div class="action_btn" style="margin-top: 12px;"></div><a class="targ_art_name waves-effect waves-light blue-grey lighten-4 dim-grey-text btn-small artifact-type disabled">Target 1681</a><button type="button" class="btn btn-small" style="background-color: white; color: black; margin-left: 8px;"><b>Score: </b>0.85</button><button type="button" class="btn btn-small tooltipped" data-position="bottom" data-tooltip="I am a tooltip" style="background-color: lightgoldenrodyellow; margin-left: 8px; color: black;">5 <i class="material-icons" style="font-size: 1em">thumb_up</i> 2 <i class="material-icons" style="font-size: 1em">thumb_down</i></button><button type="button" class="btn btn-small back_button" style="background-color: lightskyblue; margin-left: 8px; color: black;">Back</button><p class="art_summary" style="display: block; font-size: 0.9em; padding: 10px;">The system shall allow complete order sets to be predefined and personalized....</p></div></td><td><p style="padding: 8px; font-size: 0.9em">
+        <label>
+            <input name="group1" type="radio">
+            <span style="color: black">Maybe</span>
+        </label>
+    </p>
+        <p style="padding: 8px; font-size: 0.9em">
+            <label>
+                <input name="group1" type="radio">
+                <span style="color: black">Agree</span>
+            </label>
+        </p>
+        <p style="padding: 8px; font-size: 0.9em">
+            <label>
+                <input name="group1" type="radio">
+                <span style="color: black">Disagree</span>
+            </label>
+        </p></td></tr><tr class="collapse-content" id="row2_content" style="background-color: white;"><td><div id="row2_content_data" style="display: none; padding: 10px; height: 500px; background-color: rgb(236, 239, 241);">The system shall allow complete order sets to be predefined and personalized.</div></td></tr></tbody><tbody class="each_target_artifact"><tr id="row3" class="collapsible_"><td><div><div class="action_btn" style="margin-top: 12px;"></div><a class="targ_art_name waves-effect waves-light blue-grey lighten-4 dim-grey-text btn-small artifact-type disabled">Target 1682</a><button type="button" class="btn btn-small" style="background-color: white; color: black; margin-left: 8px;"><b>Score: </b>0.72</button><button type="button" class="btn btn-small tooltipped" data-position="bottom" data-tooltip="I am a tooltip" style="background-color: lightgoldenrodyellow; margin-left: 8px; color: black;">5 <i class="material-icons" style="font-size: 1em">thumb_up</i> 2 <i class="material-icons" style="font-size: 1em">thumb_down</i></button><button type="button" class="btn btn-small back_button" style="background-color: lightskyblue; margin-left: 8px; color: black;">Back</button><p class="art_summary" style="display: block; font-size: 0.9em; padding: 10px;">At admission and discharge from the hospital, the system shall provide the ability to permit the cli...</p></div></td><td><p style="padding: 8px; font-size: 0.9em">
+        <label>
+            <input name="group1" type="radio">
+            <span style="color: black">Maybe</span>
+        </label>
+    </p>
+        <p style="padding: 8px; font-size: 0.9em">
+            <label>
+                <input name="group1" type="radio">
+                <span style="color: black">Agree</span>
+            </label>
+        </p>
+        <p style="padding: 8px; font-size: 0.9em">
+            <label>
+                <input name="group1" type="radio">
+                <span style="color: black">Disagree</span>
+            </label>
+        </p></td></tr><tr class="collapse-content" id="row3_content" style="background-color: white;"><td><div id="row3_content_data" style="display: none; padding: 10px; height: 500px; background-color: rgb(236, 239, 241);">At admission and discharge from the hospital, the system shall provide the ability to permit the clinician to designate which home medications are being continued / discontinued.</div></td></tr></tbody><tbody class="each_target_artifact"><tr id="row4" class="collapsible_"><td><div><div class="action_btn" style="margin-top: 12px;"></div><a class="targ_art_name waves-effect waves-light blue-grey lighten-4 dim-grey-text btn-small artifact-type disabled">Target 465</a><button type="button" class="btn btn-small" style="background-color: white; color: black; margin-left: 8px;"><b>Score: </b>0.65</button><button type="button" class="btn btn-small tooltipped" data-position="bottom" data-tooltip="I am a tooltip" style="background-color: lightgoldenrodyellow; margin-left: 8px; color: black;">5 <i class="material-icons" style="font-size: 1em">thumb_up</i> 2 <i class="material-icons" style="font-size: 1em">thumb_down</i></button><button type="button" class="btn btn-small back_button" style="background-color: lightskyblue; margin-left: 8px; color: black;">Back</button><p class="art_summary" style="display: block; font-size: 0.9em; padding: 10px;">The system shall provide a means to edit discharge instructions for a particular patient....</p></div></td><td><p style="padding: 8px; font-size: 0.9em">
+        <label>
+            <input name="group1" type="radio">
+            <span style="color: black">Maybe</span>
+        </label>
+    </p>
+        <p style="padding: 8px; font-size: 0.9em">
+            <label>
+                <input name="group1" type="radio">
+                <span style="color: black">Agree</span>
+            </label>
+        </p>
+        <p style="padding: 8px; font-size: 0.9em">
+            <label>
+                <input name="group1" type="radio">
+                <span style="color: black">Disagree</span>
+            </label>
+        </p></td></tr><tr class="collapse-content" id="row4_content" style="background-color: white;"><td><div id="row4_content_data" style="display: none; padding: 10px; height: 500px; background-color: rgb(236, 239, 241);">The system shall provide a means to edit discharge instructions for a particular patient.</div></td></tr></tbody><tbody class="each_target_artifact"><tr id="row5" class="collapsible_"><td><div><div class="action_btn" style="margin-top: 12px;"></div><a class="targ_art_name waves-effect waves-light blue-grey lighten-4 dim-grey-text btn-small artifact-type disabled">Target 469</a><button type="button" class="btn btn-small" style="background-color: white; color: black; margin-left: 8px;"><b>Score: </b>0.62</button><button type="button" class="btn btn-small tooltipped" data-position="bottom" data-tooltip="I am a tooltip" style="background-color: lightgoldenrodyellow; margin-left: 8px; color: black;">5 <i class="material-icons" style="font-size: 1em">thumb_up</i> 2 <i class="material-icons" style="font-size: 1em">thumb_down</i></button><button type="button" class="btn btn-small back_button" style="background-color: lightskyblue; margin-left: 8px; color: black;">Back</button><p class="art_summary" style="display: block; font-size: 0.9em; padding: 10px;">The system shall provide a means to manage discharge instructions....</p></div></td><td><p style="padding: 8px; font-size: 0.9em">
+        <label>
+            <input name="group1" type="radio">
+            <span style="color: black">Maybe</span>
+        </label>
+    </p>
+        <p style="padding: 8px; font-size: 0.9em">
+            <label>
+                <input name="group1" type="radio">
+                <span style="color: black">Agree</span>
+            </label>
+        </p>
+        <p style="padding: 8px; font-size: 0.9em">
+            <label>
+                <input name="group1" type="radio">
+                <span style="color: black">Disagree</span>
+            </label>
+        </p></td></tr><tr class="collapse-content" id="row5_content" style="background-color: white;"><td><div id="row5_content_data" style="display: none; padding: 10px; height: 500px; background-color: rgb(236, 239, 241);">The system shall provide a means to manage discharge instructions.</div></td></tr></tbody><tbody class="each_target_artifact"><tr id="row6" class="collapsible_"><td><div><div class="action_btn" style="margin-top: 12px;"></div><a class="targ_art_name waves-effect waves-light blue-grey lighten-4 dim-grey-text btn-small artifact-type disabled">Target 1015</a><button type="button" class="btn btn-small" style="background-color: white; color: black; margin-left: 8px;"><b>Score: </b>0.6</button><button type="button" class="btn btn-small tooltipped" data-position="bottom" data-tooltip="I am a tooltip" style="background-color: lightgoldenrodyellow; margin-left: 8px; color: black;">5 <i class="material-icons" style="font-size: 1em">thumb_up</i> 2 <i class="material-icons" style="font-size: 1em">thumb_down</i></button><button type="button" class="btn btn-small back_button" style="background-color: lightskyblue; margin-left: 8px; color: black;">Back</button><p class="art_summary" style="display: block; font-size: 0.9em; padding: 10px;">The system shall provide the ability to renew an existing medication order without requiring re-entr...</p></div></td><td><p style="padding: 8px; font-size: 0.9em">
+        <label>
+            <input name="group1" type="radio">
+            <span style="color: black">Maybe</span>
+        </label>
+    </p>
+        <p style="padding: 8px; font-size: 0.9em">
+            <label>
+                <input name="group1" type="radio">
+                <span style="color: black">Agree</span>
+            </label>
+        </p>
+        <p style="padding: 8px; font-size: 0.9em">
+            <label>
+                <input name="group1" type="radio">
+                <span style="color: black">Disagree</span>
+            </label>
+        </p></td></tr><tr class="collapse-content" id="row6_content" style="background-color: white;"><td><div id="row6_content_data" style="display: none; padding: 10px; height: 500px; background-color: rgb(236, 239, 241);">The system shall provide the ability to renew an existing medication order without requiring re-entry of order information.</div></td></tr></tbody></table>
+</div>
+    </div>
+</div>
+
+</body>
+</html>

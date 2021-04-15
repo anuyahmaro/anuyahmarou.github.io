@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>yum</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css/style3.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/myStyles2.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+<div class="content-panel-style2 target_list">
+
+    <table>
+        <tr id="row1" class="collapsible_"  >
+            <td><div>
+
+                <div class="action_btn">
+                    <a class="targ_art_name waves-effect waves-light blue-grey lighten-4 dim-grey-text btn-small artifact-type disabled">Target 1680</a>
+                    <!--<a class="targ_art_name waves-effect blue lighten-1 dim-grey-text btn-small artifact-type disabled">Score: 1</a>-->
+                    <button type="button" class="btn" style="background-color: palevioletred; color: black">Score: 1</button>
+                    <button type="button" class="btn" style="background-color: lightgoldenrodyellow; color: black">5 <i class="material-icons" style="font-size: 1em">thumb_up</i> 2 <i class="material-icons" style="font-size: 1em">thumb_down</i></button>
+
+                    <!--<button class="action_btn submit" onclick="ref()">Back</button>-->
+                    <button type="button" class="btn" onclick="vettingInfo()" style="background-color: mediumpurple; color: black">Vetting Info</button>
+                    <button type="button" class="btn" onclick="ref()" style="background-color: lightskyblue; color: black">Back</button>
+
+
+                </div>
+                <p>Summary</p>
+            </div></td>
+
+            <td style="padding: 10px">
+                <p>
+                    <label>
+                        <input name="group1" type="radio"/>
+                        <span>Maybe</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="group1" type="radio" />
+                        <span>Agree</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="group1" type="radio"/>
+                        <span>Disagree</span>
+                    </label>
+                </p>
+            </td>
+        </tr>
+        <tr id="row1_content" class="collapse-content row1_content"  style="background-color: white;">
+            <td colspan="2">
+                <div id="row1_content_data" style="display: none"> I have a data here</div>
+            </td><!--<td>Another</td>-->
+        </tr>
+
+        <tr  id="row2" class="collapsible_" >
+            <td width="80%">Alfreds Futterkiste B</td>
+            <td style="padding: 10px">
+                <p>
+                    <label>
+                        <input name="group1" type="radio" checked />
+                        <span>Maybe</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="group1" type="radio" checked />
+                        <span>Agree</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="group1" type="radio" checked />
+                        <span>Disagree</span>
+                    </label>
+                </p>
+            </td>
+        </tr>
+        <tr id="row_2_content" class="collapse-content" style="background-color: white">
+            <td colspan="2">
+                <div id="row_2_content_data" style="display: none"> I have a data here too I have a data here tooI have a data here tooI have a data here tooI have a data here tooI have a data here tooI have a data here too</div>
+            </td><!--<td>Another</td>-->
+        </tr>
+
+        <tr  id="row3" class="collapsible_" >
+            <td width="80%">Alfreds Futterkiste B</td>
+            <td style="padding: 10px">
+                <p>
+                    <label>
+                        <input name="group1" type="radio" checked />
+                        <span>Maybe</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="group1" type="radio" checked />
+                        <span>Agree</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="group1" type="radio" checked />
+                        <span>Disagree</span>
+                    </label>
+                </p>
+            </td>
+        </tr>
+        <tr id="row_3_content" class="collapse-content" style="background-color: white">
+            <td colspan="2">
+                <div id="row3_content_data" style="display: none"> I have a data here too I have a data here tooI have a data here tooI have a data here tooI have a data here tooI have a data here tooI have a data here too</div>
+            </td><!--<td>Another</td>-->
+        </tr>
+
+        <tr  id="row4" class="collapsible_" >
+            <td width="80%">Alfreds Futterkiste B</td>
+            <td style="padding: 10px">
+                <p>
+                    <label>
+                        <input name="group1" type="radio" checked />
+                        <span>Maybe</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="group1" type="radio" checked />
+                        <span>Agree</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="group1" type="radio" checked />
+                        <span>Disagree</span>
+                    </label>
+                </p>
+            </td>
+        </tr>
+        <tr id="row_4_content" class="collapse-content" style="background-color: white">
+            <td colspan="2">
+                <div id="row_4_content_data" style="display: none"> I have a data here too I have a data here tooI have a data here tooI have a data here tooI have a data here tooI have a data here tooI have a data here too</div>
+            </td><!--<td>Another</td>-->
+        </tr>
+
+        <tr  id="row5" class="collapsible_" >
+            <td width="80%">Alfreds Futterkiste B</td>
+            <td style="padding: 10px">
+                <p>
+                    <label>
+                        <input name="group1" type="radio" checked />
+                        <span>Maybe</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="group1" type="radio" checked />
+                        <span>Agree</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="group1" type="radio" checked />
+                        <span>Disagree</span>
+                    </label>
+                </p>
+            </td>
+        </tr>
+        <tr id="row_5_content" class="collapse-content" style="background-color: white">
+            <td colspan="2">
+                <div id="row_5_content_data" style="display: none"> I have a data here too I have a data here tooI have a data here tooI have a data here tooI have a data here tooI have a data here tooI have a data here too</div>
+            </td><!--<td>Another</td>-->
+        </tr>
+
+        <tr  id="row6" class="collapsible_" >
+            <td width="80%">Alfreds Futterkiste B</td>
+            <td style="padding: 10px">
+                <p>
+                    <label>
+                        <input name="group1" type="radio" checked />
+                        <span>Maybe</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="group1" type="radio" checked />
+                        <span>Agree</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="group1" type="radio" checked />
+                        <span>Disagree</span>
+                    </label>
+                </p>
+            </td>
+        </tr>
+        <tr id="row_6_content" class="collapse-content" style="background-color: white">
+            <td colspan="2">
+                <div id="row_6_content_data" style="display: none"> I have a data here too I have a data here tooI have a data here tooI have a data here tooI have a data here tooI have a data here tooI have a data here too</div>
+            </td><!--<td>Another</td>-->
+        </tr>
+
+        <tr  id="row7" class="collapsible_" >
+            <td width="80%">Alfreds Futterkiste B</td>
+            <td style="padding: 10px">
+                <p>
+                    <label>
+                        <input name="group1" type="radio" checked />
+                        <span>Maybe</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="group1" type="radio" checked />
+                        <span>Agree</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="group1" type="radio" checked />
+                        <span>Disagree</span>
+                    </label>
+                </p>
+            </td>
+        </tr>
+        <tr id="row_7_content" class="collapse-content" style="background-color: white">
+            <td colspan="2">
+                <div id="row_7_content_data" style="display: none"> I have a data here too I have a data here tooI have a data here tooI have a data here tooI have a data here tooI have a data here tooI have a data here too</div>
+            </td><!--<td>Another</td>-->
+        </tr>
+
+
+
+    </table>
+</div>
+
+</body>
+
+
+<script>
+    var coll_ = document.getElementsByClassName("collapsible_");
+
+    // console.log(coll_);
+    //
+    // function showContent() {
+    //     console.log(this);
+    //
+    // }
+
+
+    // var tr_class = document.getElementsByClassName("mim");
+    // // document.addEventListener('DOMContentLoaded', function() {
+    // //     var elems = document.querySelectorAll('.collapsible');
+    // //     var instances = M.Collapsible.init(elems);
+    // // });
+    //
+    for (var i = 0; i < coll_.length; i++) {
+        coll_[i].addEventListener("click", fn);
+    }
+    //
+    //
+
+    function ref() {
+        location.reload()
+    }
+
+    function fn() {
+        this.classList.toggle("active");
+
+
+        // var cont_placement = this.nextElementSibling;
+
+
+        console.log(this.id);
+
+        // console.log(document.getElementById(this.nextElementSibling.id + "_data").style.display);
+
+        for (var q = 0; q < coll_.length; q++){
+            if (coll_[q]===this){
+                // console.log(coll_[q]);
+                // var targetInfo = coll_[q].getElementsByClassName("targ_artifact_info")[0];
+                // coll_[q].getElementsByClassName("art_summary")[0].style.display = "block";
+
+                // index_of_current_target = q;
+                var content = this.nextElementSibling;
+                // console.log(content);
+                // var content = document.getElementById(this.id +"_content");
+                // console.log(content.style.backgroundColor);
+
+                // content.style.backgroundColor = "#eceff1";
+                // console.log(content.id);
+                // content.style.visibility = "visible";
+                // content.textContent = "This is the content"
+
+                // content.style.display="table-cell";
+                var content_data = document.getElementById(content.id + "_data");
+                console.log(content_data.style.display);
+                // content_data.style.display = "block";
+                // console.log(content_data.style.display);
+
+
+                coll_[q].setAttribute("id","currently_clicked_target");
+                // content_data.setAttribute("id", "currently_clicked_target_content");
+
+
+                if (content_data.style.display === "block") {
+                    console.log("It is closed right now");
+                    content_data.style.display = "none";
+                    // ref();
+
+
+                    // location.reload();
+                    // document.getElementById("tree").reset()
+                    // console.log(links);
+                    // d3.selectAll("#tree").remove();
+
+
+                }
+                else {
+                    content_data.style.display="block";
+                    console.log("It is open right now");
+                    // ref();
+                    // coll_[q].getElementsByClassName("art_summary")[0].style.display = "none";
+                    // coll_[q].getElementsByClassName("art_score")[0].style.display = "none";
+                    // coll_[q].getElementsByClassName("modal-trigger")[0].style.display = "none";
+
+
+
+                }
+            }
+            else { // while the collapsibles are not active, make sure to show their summary
+                // coll_[q].getElementsByClassName("art_summary")[0].style.display = "block";
+                // coll_[q].getElementsByClassName("art_score")[0].style.display = "block";
+                coll_[q].classList.remove("active");
+                coll_[q].style.display="none";
+                coll_[q].setAttribute("id", "");
+                coll_[q].nextElementSibling.setAttribute("id", "");
+                coll_[q].nextElementSibling.style.display="none";
+                // restart();
+
+                // location.reload()
+                // links = [];
+
+            }
+
+        }
+
+
+
+    }
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trace</title>
+    <!--<link rel="stylesheet" type="text/css" href="../static/css/materialize.css" />-->
+    <!--<link rel="stylesheet" type="text/css" href="../static/css/style3.css" />-->
+    <!--<link rel="stylesheet" type="text/css" href="../static/css/myStyles.css" />-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="../static/css/style3.css" />-->
+    <link rel="stylesheet" type="text/css" href="../static/css/myStyles2.css" />
+
+</head>
+<body class = 'blue-grey lighten-5' style="overflow: hidden;">
+
+<div class="row">
+    <div class = "artifact-panels col s12">
+
+ <div class="content-panel col s3"  >
+     <form id="radio_btn_select">
+         <div style="display:inline-block; padding:20px;" >
+
+             <input type = "radio"
+                    name = "radSize"
+                    id = "sizeSmall"
+                    value = "small"
+                    checked = "checked" />
+             <label for = "sizeSmall">Small</label>
+
+             <input type = "radio"
+                    name = "radSize"
+                    id = "sizeMed"
+                    value = "medium" />
+             <label for = "sizeMed">Medium</label>
+
+             <input type = "radio"
+                    name = "radSize"
+                    id = "sizeLarge"
+                    value = "large" />
+             <label for = "sizeLarge">Large</label>
+         </div>
+     </form>
+
+
+
+     <div  style='font-size: 0.9em; display:inline-block; padding:20px;'>
+         <label>
+         <input name='group1' type='radio'/>
+         <span style='color: black'>Link</span>
+         </label>
+         <label>
+             <input name='group1' type='radio' />
+             <span style='color: black'>No link</span>
+         </label>
+         <label>
+             <input name='group1' type='radio'/>
+             <span style='color: black'>Unvetted</span>
+         </label>
+         </div>
+
+ </div>
+<div class="content-panel col s5"  >
+    <!--<ul id="target_artifacts" class="collapsible content-panel-style target_list">-->
+    <!--</ul>-->
+    <div class="content-panel-style2 target_list" style="margin-top: 8px; margin-left: 0px;">
+        <table id="target_artifacts" >
+            <colgroup>
+                <col span="1" style="width: 60%;">
+                <col span="1" style="width: 40%;">
+            </colgroup>
+        </table>
+    </div>
+</div>
+
+
+    </div>
+</div>
+</body>
+
+<script src="https://unpkg.com/d3@6.6.1/dist/d3.min.js"></script>
+<script>
+
+    // document.body.style.overflow = 'hidden';
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.tooltipped');
+        var instances = M.Tooltip.init(elems);
+    });
+
+    function ref() {
+        location.reload()
+    }
+
+    function drawTargets(data) {
+
+
+        var target_data = data[0].targets;
+        console.log(target_data)
+
+
+        var artifact_data = {
+            "info": []
+        };
+
+        target_data.forEach(function (d) {
+            artifact_data["info"].push({"aid": d["id"], "content": d["text"], "score": d["score"]});
+
+        });
+
+
+        var outer_list = d3.select("#target_artifacts")
+            .selectAll("tbody")
+            .data(artifact_data['info'])
+            .enter()
+            .append("tbody")
+            .attr("class", "each_target_artifact");
+        // .text("Hello");
+
+        var table_rows = outer_list.append("tr")
+            .attr("id", function (d, i) {
+                return "row" + (i + 1);
+            })
+            .attr("class", "collapsible_")
+            .style("background-color", "white");
+
+        var table_row_summary = table_rows.append("td");
+
+        var table_row_summary_header_buttons = table_row_summary.append("div");
+
+
+        var table_row_summary_header_buttons_outerdiv = table_row_summary_header_buttons.append("div")
+            .attr("class", "action_btn")
+            .style("margin-top", "12px");
+
+        table_row_summary_header_buttons_outerdiv.append("a")
+            .attr("class", "targ_art_name waves-effect waves-light purple lighten-4 dim-grey-text btn-small artifact-type collapsible_new")
+            // .attr("href", "https://anuyahmaro.github.io")
+            // .attr("target", "_blank")
+            // .style("background-color", "#7F00FF")
+            .attr("id", function (d, i) {
+                return "row" + (i + 1) + "_target_button"
+            })
+            .style("color", "black")
+            .style("margin-left", "20px")
+            .text(function (d) {
+                return "Target " + d.aid;
+            });
+
+        table_row_summary_header_buttons_outerdiv.append("button")
+            .attr("type", "button")
+            .attr("class", "btn btn-small score_btn")
+            .style("background-color", "white")
+            .style("box-shadow", "none")
+            .style("color", "black")
+            .style("margin-left", "2px")
+            .html(function (d) {
+                return "<b>Score: </b>" + d.score
+            });
+
+        table_row_summary_header_buttons_outerdiv.append("button")
+            .attr("type", "button")
+            .attr("class", "btn btn-small tooltipped vetting-det modal-trigger vetting_btn")
+            .style("box-shadow", "none")
+            .attr("id", function (d, i) {
+                return "modal" + (i + 1) + "_fire"
+            })
+            .attr("href", function (d, i) {
+                return "#modal" + (i + 1)
+            })
+            .style("background-color", "white")
+            .attr("data-position", "bottom")
+            .style("margin-left", "2px")
+            .style("color", "black")
+            .attr("data-tooltip", "I am a tooltip")
+            .html(function (d) {
+                return "5 <i class='material-icons' style='font-size: 1em'>thumb_up</i> 2 <i class='material-icons' style='font-size: 1em'>thumb_down</i>"
+            });
+
+        table_row_summary_header_buttons.append("p")
+            .attr("class", "art_summary")
+            .style("display", "block")
+            .style("font-size", "0.9em")
+            .style("padding", "10px")
+            .style("margin-left", "20px")
+            .text(function (d) {
+                return d.content.slice(0, 400) + "...";
+            })
+
+
+        table_rows.append("td")
+            .html(function (d, i) {
+                return "<div id='row"+(i+1)+"_vote' style='font-size: 0.8em; display:inline-block; padding:7px;'>\n" +
+                    "         <label>\n" +
+                    "         <input name='group"+(i+1)+"' type='radio' checked/>\n" +
+                    "         <span style='color: black'>Link</span>\n" +
+                    "         </label>\n" +
+                    "         <label>\n" +
+                    "             <input name='group"+(i+1)+"' type='radio'  />\n" +
+                    "             <span style='color: black'>No link</span>\n" +
+                    "         </label>\n" +
+                    "         <label>\n" +
+                    "             <input  name='group"+(i+1)+"' type='radio'/>\n" +
+                    "             <span style='color: black'>Unvetted</span>\n" +
+                    "         </label>\n" +
+                    "         </div>"
+            });
+
+
+        var table_rows_content = outer_list.append("tr")
+            .attr("class", "collapse-content")
+            .attr("id", function (d, i) {
+                return "row" + (i + 1) + "_content";
+            })
+            .style("background-color", "white");
+
+        table_rows_content.append("td")
+        // .attr("colspan", "2")
+            .append("div")
+            .attr("id", function (d, i) {
+                return "row" + (i + 1) + "_content_data";
+            })
+            .style("display", "none")
+            .style("padding", "10px")
+            .style("height", "520px")
+            .style("background-color", "#eceff1")
+            .text(function (d) {
+                return d.content
+            });
+
+        table_rows_content.append("td");
+
+
+        // Loading the target data has finished!
+        var coll_ = document.getElementsByClassName("collapsible-header");
+        var timesClicked = 0;
+        for (i = 0; i < coll_.length; i++) {
+            coll_[i].addEventListener("click", collapseFunc);
+
+            // coll_[i].addEventListener("click", d);
+        }
+
+
+
+        var coll_new = document.getElementsByClassName("collapsible_new");
+
+        for (var i = 0; i < coll_new.length; i++) {
+            coll_new[i].addEventListener("click", fnb);
+        }
+
+        var back_btn = document.getElementsByClassName("back_button");
+        for (var i = 0; i < back_btn.length; i++) {
+            back_btn[i].addEventListener("click", ref);
+        }
+
+
+
+        function fnb() {
+            timesClicked++;
+
+            if (timesClicked > 1) {
+                    ref()
+            }
+            else{
+
+                // console.log(this.id);
+                var target_this_id = this.id.split("_")[0];
+                console.log(target_this_id);
+
+                var target_this = document.getElementById(target_this_id);
+                // var main_parent =
+
+
+                target_this.classList.toggle("active");
+                //
+                var index_of_current_target;
+
+                // console.log(document.getElementById(this.nextElementSibling.id + "_data").style.display);
+
+                for (var q = 0; q < coll_new.length; q++) {
+                    var current_q_id = coll_new[q].id.split("_")[0];
+                    var current_q = document.getElementById(current_q_id);
+                    if (current_q === target_this) {
+                        index_of_current_target = q;
+
+                        console.log(index_of_current_target);
+
+
+                        var content = target_this.nextElementSibling;
+
+                        console.log(content);
+
+                        var content_data = document.getElementById(content.id + "_data");
+                        console.log(content_data.style.display);
+                        //
+                        //
+                        current_q.setAttribute("id", "currently_clicked_target");
+                        // content_data.setAttribute("id", "currently_clicked_target_content");
+
+                        //
+                        if (content_data.style.display === "block") {
+                            console.log("It is closed right now");
+                            content_data.style.display = "none";
+
+                            //
+                            //
+                        }
+                        else {
+                            content_data.style.display = "block";
+
+                            console.log("It is open right now");
+                            current_q.getElementsByClassName("art_summary")[0].style.display = "none"
+                            // coll_2[q].classList.remove("collapsible_");
+
+
+                        }
+                    }
+                    else { // while the collapsibles are not active, make sure to show their summary
+
+                        current_q.classList.remove("active");
+                        // coll_2[q].classList.remove("collapsible_");
+                        current_q.style.display = "none";
+                        current_q.setAttribute("id", "");
+                        current_q.nextElementSibling.setAttribute("id", "");
+                        current_q.nextElementSibling.style.display = "none";
+
+
+                    }
+
+                }
+
+
+            }
+
+
+        }
+
+
+    }
+
+
+
+    d3.json("artifact.json").then(data => {
+
+
+        drawTargets(data);
+
+
+    });
+
+
+
+</script>
+</html>

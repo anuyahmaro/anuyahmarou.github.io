@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--<link rel="stylesheet" type="text/css" href="../static/css/style3.css" />-->
+    <link rel="stylesheet" type="text/css" href="../static/css/myStyles2.css" />
+</head>
+<body>
+<a class="waves-effect waves-light btn modal-trigger" id="modal1_fire" href="#modal1">Modal</a>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4>Vetting Details</h4>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Link correct?</th>
+            </tr>
+            <tr>
+                <td>11/06/19</td>
+                <td>J Cleland-Huang</td>
+                <td>Software Engr</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>12/06/19</td>
+                <td>Y Liu</td>
+                <td>Safety Analyst</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>12/20/19</td>
+                <td>J Lin</td>
+                <td>Developer</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>12/24/19</td>
+                <td>R Metoyer</td>
+                <td>Designer</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>01/02/20</td>
+                <td>N Farrell</td>
+                <td>Researcher</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>01/10/20</td>
+                <td>G Rovelli</td>
+                <td>Software Engr</td>
+                <td>Yes</td>
+            </tr>
+        </table>
+    </div>
+    <div style="text-align: center">
+        <h6>Do you agree that this is a link?</h6>
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Disagree</a>
+    </div>
+</div>
+
+<a class="waves-effect waves-light btn modal-trigger" id="modal2_fire" href="#modal2">Modal</a>
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <h4>Vetting Details</h4>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Link correct?</th>
+            </tr>
+            <tr>
+                <td>11/06/19</td>
+                <td>J Cleland-Huang</td>
+                <td>Software Engr</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>12/06/19</td>
+                <td>Y Liu</td>
+                <td>Safety Analyst</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>12/20/19</td>
+                <td>J Lin</td>
+                <td>Developer</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>12/24/19</td>
+                <td>R Metoyer</td>
+                <td>Designer</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>01/02/20</td>
+                <td>N Farrell</td>
+                <td>Researcher</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>01/10/20</td>
+                <td>G Rovelli</td>
+                <td>Software Engr</td>
+                <td>Yes</td>
+            </tr>
+        </table>
+    </div>
+    <div style="text-align: center">
+        <h6>Do you agree that this is a link?</h6>
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agrees</a>
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Disagree</a>
+    </div>
+</div>
+
+<!--<ul id="test">-->
+    <!--<li>item 1</li>-->
+    <!--<li>item 2</li>-->
+    <!--<li>item 3</li>-->
+<!--</ul>-->
+
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+        // for(var i=0; i<elems.length; i++){
+        //     document.getElementById(elems[i].id+"_fire").addEventListener("mouseenter", function(){
+        //         var instances = M.Modal.init(elems);
+        //         console.log("hey!")
+        //     // elems[i].addEventListener("click", console.log("Plsss"), false);
+        //
+        // });}
+        var instances = M.Modal.init(elems);
+
+
+
+console.log(elems);
+
+    });
+
+    // let test = document.getElementById("modal2");
+    //
+    // // This handler will be executed only once when the cursor
+    // // moves over the unordered list
+    // test.addEventListener("mouseenter", function( event ) {
+    //     // highlight the mouseenter target
+    //     event.target.style.color = "purple";
+    //
+    //     // reset the color after a short delay
+    //     setTimeout(function() {
+    //         event.target.style.color = "";
+    //     }, 500);
+    // }, false);
+
+//     var elems = document.querySelectorAll('.modal');
+//     for(var i=0; i<elems.length; i++){
+//         document.getElementById(elems[i].id).addEventListener("mouseenter", function(){
+//             console.log("hey!")
+//             // elems[i].addEventListener("click", console.log("Plsss"), false);
+//
+//         });
+//         console.log(elems);
+// }
+
+    // var elements_ = document.getElementsByClassName("modal");
+    // //
+    // // // var elements_ = document.getElementsByClassName("vote_linkss");
+    // // //
+    // //
+    // // //
+    // //
+    // var myFunction = function() {
+    //     // var elems = document.querySelectorAll('.modal');
+    //     var instances = M.Modal.init(this);
+    // };
+    // //
+    // //
+    // for (var i = 0; i < elements_.length; i++) {
+    //     elements_[i].addEventListener('mouseover', myFunction);
+    // }
+
+
+
+</script>
+</html>

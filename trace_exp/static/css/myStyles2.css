@@ -438,7 +438,7 @@ background-color: darkseagreen!important;
     /*background-color: darkseagreen!important;*/
 /*}*/
 
-button.score_btn:hover, button.vetting_btn:hover{
+ button.vetting_btn:hover{
  background-color: lightgrey!important;
 }
 

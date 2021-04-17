@@ -66,7 +66,7 @@ a:link {
 .content-panel{
     background-color: #b0bec5;
     /*height: 200px;*/
-    height: calc(100vh);
+    /*height: calc(100vh);*/
 
     /*height: 50px;*/
 
@@ -93,17 +93,17 @@ a:link {
 }
 
 .content-panel-style2{
-    max-width: calc(100vw / 2.5);
-    max-height: calc(100vh - 200px);
-    height:calc(100vh - 200px) ;
-    width: 950px;
+    /*max-width: calc(100vw / 2.5);*/
+    /*max-height: calc(100vh - 200px);*/
+    /*height:calc(100vh - 200px) ;*/
+    /*width: 950px;*/
     margin-left: 4px;
     /*word-wrap:break-word;*/
 }
 
 .target_list{
     height: calc(100vh - 250px);
-    max-height: calc(100vh - 200px);
+    /*max-height: calc(100vh - 200px);*/
     overflow: scroll;
 }
 
@@ -125,7 +125,7 @@ a:link {
     width: 80%;
     text-align: center;
     margin: auto;
-    height: 100px;
+    height: 120px;
     /*width: 80%;*/
     background-color:#78909c;
     /*margin-top: 70px;*/
@@ -151,12 +151,12 @@ a:link {
 
 .information-panel-content{
     background-color:#b0bec5;
-    height: 80px;
+    height: 100px;
     width: 100%;
     padding: 10px;
     color: black;
     font-size: small;
-    overflow: scroll;
+    /*overflow: scroll;*/
 }
 
 .information-panel-content2{

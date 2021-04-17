@@ -11,399 +11,447 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />-->
-    <link rel="stylesheet" type="text/css" href="../static/css/materialize_select.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
     <!--<link rel="stylesheet" type="text/css" href="../static/css/style3.css" />-->
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../static/css/myStyles2.css" />
 
 </head>
 
-<body class = 'blue-grey lighten-5' >
+<body class = 'blue-grey lighten-5' style="overflow: hidden;">
 
 
 <div class="row">
-<div class = "artifact-panels col s12">
+    <div class = "artifact-panels col s12">
 
-    <div class="content-panel col s4" style="margin-left: 20px">
-        <div  class="art_contents content-panel-style" style="background-color: white">
-            <a id="source_art_name" style="margin-top: -18px" class="waves-effect waves-light blue-grey lighten-4 dim-grey-text btn-small artifact-type disabled">Source Artifact</a>
+        <div class="content-panel col s4" style="margin-left: 20px">
+            <div  class="art_contents content-panel-style" style="background-color: white">
+                <a id="source_art_name" style="margin-top: -18px" class="waves-effect waves-light blue-grey lighten-4 dim-grey-text btn-small artifact-type disabled">Source Artifact</a>
 
-            <p id = "source_artifact">
+                <p id = "source_artifact">
 
-            </p>
-
-        </div>
-    </div>
-
-    <div class="relationship-panel  col s3">
-        <div class="information-panel">
-            <div class="information-panel-content" id = "relationship_update" > </div>
-        </div>
-        <!--<br>-->
-        <div id="tree"></div>
-
-
-
-    </div>
-
-
-
-
-
-
-    <!--<div id="tree"></div><div id = "source_artifact" class="art_contents content-panel-style">-->
-    <div class="content-panel col s5"  style="margin-right: 20px">
-        <!--<ul id="target_artifacts" class="collapsible content-panel-style target_list">-->
-        <!--</ul>-->
-        <div class="content-panel-style2 target_list" style="margin-top: 8px; margin-left: 0px;">
-            <table id="target_artifacts" >
-                <colgroup>
-                    <col span="1" style="width: 60%;">
-                    <col span="1" style="width: 40%;">
-                </colgroup>
-            </table>
-        </div>
-    </div>
-
-
-
-</div>
-</div>
-
-<div class="modal fade  come-from-modal right" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModal1_label">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content" >
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModal1_label">Modal title</h4>
-            </div>
-            <div class="modal-body" style="overflow: scroll; height: 200px">
-                <h5 style="text-align: center">Vetting Details</h5>
-                <table>
-                    <tr>
-                        <th>Date</th>
-                        <th>Name</th>
-                        <th>Role</th>
-                        <th>Link correct?</th>
-                    </tr>
-                    <tr>
-                        <td>11/06/19</td>
-                        <td>J Cleland-Huang</td>
-                        <td>Software Engr</td>
-                        <td>Yes</td>
-                    </tr>
-                    <tr>
-                        <td>12/06/19</td>
-                        <td>Y Liu</td>
-                        <td>Safety Analyst</td>
-                        <td>No</td>
-                    </tr>
-
-
-                </table>
+                </p>
 
             </div>
+        </div>
+
+        <div class="relationship-panel  col s3">
+            <div class="information-panel">
+                <div class="information-panel-content" id = "relationship_update" > </div>
+            </div>
+            <!--<br>-->
+            <div id="tree"></div>
+
+
 
         </div>
-    </div>
-</div>
 
-<div class="modal fade  come-from-modal right" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModal2_label">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content" >
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModal2_label">Modal title</h4>
-            </div>
-            <div class="modal-body" style="overflow: scroll; height: 200px">
-                <h5 style="text-align: center">Vetting Details</h5>
-                <table>
-                    <tr>
-                        <th>Date</th>
-                        <th>Name</th>
-                        <th>Role</th>
-                        <th>Link correct?</th>
-                    </tr>
-                    <tr>
-                        <td>01/02/20</td>
-                        <td>N Farrell</td>
-                        <td>Researcher</td>
-                        <td>No</td>
-                    </tr>
-                    <tr>
-                        <td>01/10/20</td>
-                        <td>G Rovelli</td>
-                        <td>Software Engr</td>
-                        <td>Yes</td>
-                    </tr>
+
+
+
+
+
+        <!--<div id="tree"></div><div id = "source_artifact" class="art_contents content-panel-style">-->
+        <div class="content-panel col s5"  >
+            <!--<ul id="target_artifacts" class="collapsible content-panel-style target_list">-->
+            <!--</ul>-->
+            <div class="content-panel-style2 target_list" style="margin-top: 8px; margin-left: 0px;">
+                <table id="target_artifacts" >
+                    <colgroup>
+                        <col span="1" style="width: 60%;">
+                        <col span="1" style="width: 40%;">
+                    </colgroup>
                 </table>
             </div>
-
         </div>
+
+
+
+
+
+        <!--<div id="user-vote-panel" class="col s0">-->
+        <!--<div id = "user_vote"  style="display: none; position: absolute; top: 150px;" class="art_contents content-panel-style">-->
+        <!--<div id="user_vote_link_pred"><span style="font-size: 1em">Do you agree that this is a link?</span>-->
+        <!--<form id="votingform">-->
+        <!--<label>-->
+        <!--<input name="group1" type="radio" checked />-->
+        <!--<span style="font-size: 1em">Yes</span>-->
+        <!--</label>-->
+        <!--<label>-->
+        <!--<input name="group1" type="radio" />-->
+        <!--<span style= "font-size: 1em">No</span>-->
+        <!--</label>-->
+        <!--<br><br>-->
+        <!--<button type="submit" class="waves-effect waves-green btn-small text-smallt">-->
+        <!--Submit-->
+        <!--</button>-->
+        <!--</form>-->
+
+
+        <!--</div>-->
+        <!--<div id = "vetters_details"  style="display: none; position: absolute; top: 400px; background-color: #78909c; height: 260px" class="art_contents content-panel-style">-->
+        <!--&lt;!&ndash;<div id="user_vote_link_pred2">Do you agree that this is a link?&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="scrollbar" id="style-1" style="margin-top: 5%; position: absolute;">&ndash;&gt;-->
+        <!--<h6 style="font-weight: bold; text-align: center">Other users that have vetted this link</h6>-->
+        <!--<div style="height: 100px; overflow-y: scroll; background: #b0bec5; position: relative">-->
+
+        <!--<div class="force-overflow">-->
+
+        <!--<table>-->
+        <!--<tr>-->
+        <!--<th>Date</th>-->
+        <!--<th>Name</th>-->
+        <!--<th>Role</th>-->
+        <!--<th>Link correct?</th>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>11/06/19</td>-->
+        <!--<td>J Cleland-Huang</td>-->
+        <!--<td>Software Engr</td>-->
+        <!--<td>Yes</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>12/06/19</td>-->
+        <!--<td>Y Liu</td>-->
+        <!--<td>Safety Analyst</td>-->
+        <!--<td>No</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>12/20/19</td>-->
+        <!--<td>J Lin</td>-->
+        <!--<td>Developer</td>-->
+        <!--<td>Yes</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>12/24/19</td>-->
+        <!--<td>R Metoyer</td>-->
+        <!--<td>Designer</td>-->
+        <!--<td>Yes</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>01/02/20</td>-->
+        <!--<td>N Farrell</td>-->
+        <!--<td>Researcher</td>-->
+        <!--<td>No</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>01/10/20</td>-->
+        <!--<td>G Rovelli</td>-->
+        <!--<td>Software Engr</td>-->
+        <!--<td>Yes</td>-->
+        <!--</tr>-->
+        <!--</table>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--&lt;!&ndash;<div class="information-panel-content2">&ndash;&gt;-->
+        <!--<div style="color: black;position: relative; margin-top: 10px; padding: 5px; font-size: 0.8em; background-color: #b0bec5; ">-->
+        <!--<span class="brk"> <b>Link type:</b> Manual</span>-->
+        <!--<span class="brk"> <b>Summary:</b> 4 yes 2 No</span>-->
+        <!--</div>-->
+
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+
+        <!--</div>-->
+
+
+
+
+
+        <!--</div>-->
+        <!--</div>-->
+
+
     </div>
 </div>
 
-<div class="modal fade  come-from-modal right" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModal3_label">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content" >
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModal3_label" style="color: black; text-align: center">Vetting Details</h4>
-            </div>
-            <div class="modal-body" style="overflow: scroll; height: 200px">
+<!--<a class="waves-effect waves-light btn modal-trigger" id="modal1_fire" href="#modal1">Modal</a>-->
+<div id="modal1" class="modal" style="display: none">
+    <div class="modal-content">
+        <h5 style="text-align: center">Vetting Details</h5>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Link correct?</th>
+            </tr>
+            <tr>
+                <td>11/06/19</td>
+                <td>J Cleland-Huang</td>
+                <td>Software Engr</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>12/06/19</td>
+                <td>Y Liu</td>
+                <td>Safety Analyst</td>
+                <td>No</td>
+            </tr>
 
-                <table>
-                    <tr>
-                        <th>Date</th>
-                        <th>Name</th>
-                        <th>Role</th>
-                        <th>Link correct?</th>
-                    </tr>
-                    <tr>
-                        <td>11/06/19</td>
-                        <td>J Cleland-Huang</td>
-                        <td>Software Engr</td>
-                        <td>Yes</td>
-                    </tr>
-                    <tr>
-                        <td>12/06/19</td>
-                        <td>Y Liu</td>
-                        <td>Safety Analyst</td>
-                        <td>No</td>
-                    </tr>
-                    <tr>
-                        <td>12/20/19</td>
-                        <td>J Lin</td>
-                        <td>Developer</td>
-                        <td>Yes</td>
-                    </tr>
-                    <tr>
-                        <td>12/24/19</td>
-                        <td>R Metoyer</td>
-                        <td>Designer</td>
-                        <td>Yes</td>
-                    </tr>
-                    <tr>
-                        <td>01/02/20</td>
-                        <td>N Farrell</td>
-                        <td>Researcher</td>
-                        <td>No</td>
-                    </tr>
-                    <tr>
-                        <td>01/10/20</td>
-                        <td>G Rovelli</td>
-                        <td>Software Engr</td>
-                        <td>Yes</td>
-                    </tr>
-                </table>
 
-            </div>
-
-        </div>
+        </table>
+    </div>
+    <div style="text-align: center">
+        <!--<h6>Do you agree that this is a link?</h6>-->
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
     </div>
 </div>
 
-<div class="modal fade  come-from-modal right" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModal4_label">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content" >
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModal4_label" style="color: black; text-align: center">Vetting Details</h4>
-            </div>
-            <div class="modal-body" style="overflow: scroll; height: 200px">
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <h5 style="text-align: center">Vetting Details</h5>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Link correct?</th>
+            </tr>
+            <tr>
+                <td>01/02/20</td>
+                <td>N Farrell</td>
+                <td>Researcher</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>01/10/20</td>
+                <td>G Rovelli</td>
+                <td>Software Engr</td>
+                <td>Yes</td>
+            </tr>
+        </table>
+    </div>
+    <div style="text-align: center">
+        <!--<h6>Do you agree that this is a link?</h6>-->
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+</div>
 
-                <table>
-                    <tr>
-                        <th>Date</th>
-                        <th>Name</th>
-                        <th>Role</th>
-                        <th>Link correct?</th>
-                    </tr>
-                    <tr>
-                        <td>11/06/19</td>
-                        <td>J Cleland-Huang</td>
-                        <td>Software Engr</td>
-                        <td>Yes</td>
-                    </tr>
-                    <tr>
-                        <td>01/02/20</td>
-                        <td>N Farrell</td>
-                        <td>Researcher</td>
-                        <td>No</td>
-                    </tr>
-                    <tr>
-                        <td>01/10/20</td>
-                        <td>G Rovelli</td>
-                        <td>Software Engr</td>
-                        <td>Yes</td>
-                    </tr>
-                </table>
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <h5 style="text-align: center">Vetting Details</h5>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Link correct?</th>
+            </tr>
+            <tr>
+                <td>11/06/19</td>
+                <td>J Cleland-Huang</td>
+                <td>Software Engr</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>12/06/19</td>
+                <td>Y Liu</td>
+                <td>Safety Analyst</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>12/20/19</td>
+                <td>J Lin</td>
+                <td>Developer</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>12/24/19</td>
+                <td>R Metoyer</td>
+                <td>Designer</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>01/02/20</td>
+                <td>N Farrell</td>
+                <td>Researcher</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>01/10/20</td>
+                <td>G Rovelli</td>
+                <td>Software Engr</td>
+                <td>Yes</td>
+            </tr>
+        </table>
+    </div>
+    <div style="text-align: center">
+        <!--<h6>Do you agree that this is a link?</h6>-->
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+</div>
 
-            </div>
-        </div>
+<div id="modal4" class="modal">
+    <div class="modal-content">
+        <h5 style="text-align: center">Vetting Details</h5>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Link correct?</th>
+            </tr>
+            <tr>
+                <td>11/06/19</td>
+                <td>J Cleland-Huang</td>
+                <td>Software Engr</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>01/02/20</td>
+                <td>N Farrell</td>
+                <td>Researcher</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>01/10/20</td>
+                <td>G Rovelli</td>
+                <td>Software Engr</td>
+                <td>Yes</td>
+            </tr>
+        </table>
+    </div>
+    <div style="text-align: center">
+        <!--<h6>Do you agree that this is a link?</h6>-->
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+</div>
+
+<div id="modal5" class="modal">
+    <div class="modal-content">
+        <h5 style="text-align: center">Vetting Details</h5>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Link correct?</th>
+            </tr>
+            <tr>
+                <td>01/10/20</td>
+                <td>G Rovelli</td>
+                <td>Software Engr</td>
+                <td>Yes</td>
+            </tr>
+        </table>
+    </div>
+    <div style="text-align: center">
+        <!--<h6>Do you agree that this is a link?</h6>-->
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
     </div>
 </div>
 
 
+<div id="modal6" class="modal">
+    <div class="modal-content">
+        <h5 style="text-align: center">Vetting Details</h5>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Link correct?</th>
+            </tr>
+            <tr>
+                <td>11/06/19</td>
+                <td>J Cleland-Huang</td>
+                <td>Software Engr</td>
+                <td>Yes</td>
+            </tr>
 
-<div class="modal fade  come-from-modal right" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModal5_label">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content" >
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModal5_label" style="color: black; text-align: center">Vetting Details</h4>
-            </div>
-            <div class="modal-body" style="overflow: scroll; height: 200px">
-
-                <table>
-                    <tr>
-                        <th>Date</th>
-                        <th>Name</th>
-                        <th>Role</th>
-                        <th>Link correct?</th>
-                    </tr>
-                    <tr>
-                        <td>01/10/20</td>
-                        <td>G Rovelli</td>
-                        <td>Software Engr</td>
-                        <td>Yes</td>
-                    </tr>
-                </table>
-
-            </div>
-        </div>
+        </table>
+    </div>
+    <div style="text-align: center">
+        <!--<h6>Do you agree that this is a link?</h6>-->
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
     </div>
 </div>
 
-<div class="modal fade  come-from-modal right" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModal6_label">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content" >
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModal6_label" style="color: black; text-align: center">Vetting Details</h4>
-            </div>
-            <div class="modal-body" style="overflow: scroll; height: 200px">
-
-                <table>
-                    <tr>
-                        <th>Date</th>
-                        <th>Name</th>
-                        <th>Role</th>
-                        <th>Link correct?</th>
-                    </tr>
-                    <tr>
-                        <td>11/06/19</td>
-                        <td>J Cleland-Huang</td>
-                        <td>Software Engr</td>
-                        <td>Yes</td>
-                    </tr>
-
-                </table>
-
-            </div>
-
-        </div>
+<div id="modal7" class="modal">
+    <div class="modal-content">
+        <h5 style="text-align: center">Vetting Details</h5>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Link correct?</th>
+            </tr>
+            <tr>
+                <td>11/06/19</td>
+                <td>J Cleland-Huang</td>
+                <td>Software Engr</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>12/06/19</td>
+                <td>Y Liu</td>
+                <td>Safety Analyst</td>
+                <td>No</td>
+            </tr>
+        </table>
+    </div>
+    <div style="text-align: center">
+        <!--<h6>Do you agree that this is a link?</h6>-->
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
     </div>
 </div>
 
-<div class="modal fade  come-from-modal right" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModal7_label">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content" >
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModal7_label" style="color: black; text-align: center">Vetting Details</h4>
-            </div>
-            <div class="modal-body" style="overflow: scroll; height: 200px">
-
-                <table>
-                    <tr>
-                        <th>Date</th>
-                        <th>Name</th>
-                        <th>Role</th>
-                        <th>Link correct?</th>
-                    </tr>
-                    <tr>
-                        <td>11/06/19</td>
-                        <td>J Cleland-Huang</td>
-                        <td>Software Engr</td>
-                        <td>Yes</td>
-                    </tr>
-                    <tr>
-                        <td>12/06/19</td>
-                        <td>Y Liu</td>
-                        <td>Safety Analyst</td>
-                        <td>No</td>
-                    </tr>
-                </table>
-
-            </div>
-
-        </div>
+<div id="modal8" class="modal">
+    <div class="modal-content">
+        <h5 style="text-align: center">Vetting Details</h5>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Link correct?</th>
+            </tr>
+            <tr>
+                <td>11/06/19</td>
+                <td>J Cleland-Huang</td>
+                <td>Software Engr</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>12/06/19</td>
+                <td>Y Liu</td>
+                <td>Safety Analyst</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>12/20/19</td>
+                <td>J Lin</td>
+                <td>Developer</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>12/24/19</td>
+                <td>R Metoyer</td>
+                <td>Designer</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>01/02/20</td>
+                <td>N Farrell</td>
+                <td>Researcher</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>01/10/20</td>
+                <td>G Rovelli</td>
+                <td>Software Engr</td>
+                <td>Yes</td>
+            </tr>
+        </table>
     </div>
-</div>
-
-<div class="modal fade  come-from-modal right" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="myModal8_label">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content" >
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModal8_label" style="color: black; text-align: center">Vetting Details</h4>
-            </div>
-            <div class="modal-body" style="overflow: scroll; height: 200px">
-
-                <table>
-                    <tr>
-                        <th>Date</th>
-                        <th>Name</th>
-                        <th>Role</th>
-                        <th>Link correct?</th>
-                    </tr>
-                    <tr>
-                        <td>11/06/19</td>
-                        <td>J Cleland-Huang</td>
-                        <td>Software Engr</td>
-                        <td>Yes</td>
-                    </tr>
-                    <tr>
-                        <td>12/06/19</td>
-                        <td>Y Liu</td>
-                        <td>Safety Analyst</td>
-                        <td>No</td>
-                    </tr>
-                    <tr>
-                        <td>12/20/19</td>
-                        <td>J Lin</td>
-                        <td>Developer</td>
-                        <td>Yes</td>
-                    </tr>
-                    <tr>
-                        <td>12/24/19</td>
-                        <td>R Metoyer</td>
-                        <td>Designer</td>
-                        <td>Yes</td>
-                    </tr>
-                    <tr>
-                        <td>01/02/20</td>
-                        <td>N Farrell</td>
-                        <td>Researcher</td>
-                        <td>No</td>
-                    </tr>
-                    <tr>
-                        <td>01/10/20</td>
-                        <td>G Rovelli</td>
-                        <td>Software Engr</td>
-                        <td>Yes</td>
-                    </tr>
-                </table>
-
-            </div>
-
-        </div>
+    <div style="text-align: center">
+        <!--<h6>Do you agree that this is a link?</h6>-->
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
     </div>
 </div>
 
@@ -462,9 +510,9 @@
     document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.modal');
 
-            var instances = M.Modal.init(elems);
-            // document.body.style.overflow="hidden";
- });
+        var instances = M.Modal.init(elems);
+        document.body.style.overflow="hidden";
+    });
 
 
 
@@ -488,7 +536,7 @@
     function drawTargets(data) {
 
 
-        var target_data = data[0].targets;
+        var target_data = data[0].targets.splice(0, 6);
         console.log(target_data)
 
 
@@ -532,7 +580,6 @@
             // .attr("href", "https://anuyahmaro.github.io")
             // .attr("target", "_blank")
             // .style("background-color", "#7F00FF")
-            .style("text-decoration", "none")
             .attr("id", function (d, i) {
                 return "row" + (i + 1) + "_target_button"
             })
@@ -550,32 +597,27 @@
             .style("box-shadow", "none")
             .style("color", "black")
             .style("margin-left", "2px")
-            // .style()
             .html(function (d) {
-                return "<span style='text-transform: capitalize!important;'><b>Score: </b></span>" + d.score
+                return "<b>Score: </b>" + d.score
             });
 
         table_row_summary_header_buttons_outerdiv.append("button")
             .attr("type", "button")
             .attr("class", "btn btn-small tooltipped vetting-det modal-trigger vetting_btn")
             .style("box-shadow", "none")
-            // .attr("id", function (d, i) {
-            //     return "modal" + (i + 1) + "_fire"
-            // })
-            // .attr("href", function (d, i) {
-            //     return "#modal" + (i + 1)
-            // })
+            .attr("id", function (d, i) {
+                return "modal" + (i + 1) + "_fire"
+            })
+            .attr("href", function (d, i) {
+                return "#modal" + (i + 1)
+            })
             .style("background-color", "white")
             .attr("data-position", "bottom")
             .style("margin-left", "2px")
             .style("color", "black")
             .attr("data-tooltip", "I am a tooltip")
-            .attr("data-toggle", "modal")
-            .attr("data-target", function (d, i) {
-                return "#myModal"+(i+1)
-            })
             .html(function (d) {
-                return "5 <i class='material-icons'  style='font-size: 1em'>thumb_up</i> 2 <i class='material-icons' style='font-size: 1em'>thumb_down</i>"
+                return "5 <i class='material-icons' style='font-size: 1em'>thumb_up</i> 2 <i class='material-icons' style='font-size: 1em'>thumb_down</i>"
             });
 
         table_row_summary_header_buttons.append("p")
@@ -594,18 +636,36 @@
                 return "<div id='row"+(i+1)+"_vote' style='font-size: 0.8em; display:inline-block; padding:7px;'>\n" +
                     "         <label>\n" +
                     "         <input name='group"+(i+1)+"' type='radio' checked/>\n" +
-                    "         <span style='color: black; font-size: 2em; font-weight: normal; padding: 2px'>Link</span>\n" +
+                    "         <span style='color: black'>Link</span>\n" +
                     "         </label>\n" +
                     "         <label>\n" +
                     "             <input name='group"+(i+1)+"' type='radio'  />\n" +
-                    "             <span style='color: black; font-size: 2em; font-weight: normal; padding: 2px'>No link</span>\n" +
+                    "             <span style='color: black'>No link</span>\n" +
                     "         </label>\n" +
                     "         <label>\n" +
                     "             <input  name='group"+(i+1)+"' type='radio'/>\n" +
-                    "             <span style='color: black; font-size: 2em; font-weight: normal; padding: 2px'>Unvetted</span>\n" +
+                    "             <span style='color: black'>Unvetted</span>\n" +
                     "         </label>\n" +
                     "         </div>"
             });
+        // .html("<p style='padding: 8px; font-size: 0.9em'>\n" +
+        //     "                    <label>\n" +
+        //     "                        <input name=\"group1\" type=\"radio\"/>\n" +
+        //     "                        <span style='color: black'>Link</span>\n" +
+        //     "                    </label>\n" +
+        //     "                </p>\n" +
+        //     "                <p style='padding: 8px; font-size: 0.9em'>\n" +
+        //     "                    <label>\n" +
+        //     "                        <input name=\"group1\" type=\"radio\" />\n" +
+        //     "                        <span style='color: black'>No link</span>\n" +
+        //     "                    </label>\n" +
+        //     "                </p>\n" +
+        //     "                <p style='padding: 8px; font-size: 0.9em'>\n" +
+        //     "                    <label>\n" +
+        //     "                        <input name=\"group1\" type=\"radio\"/>\n" +
+        //     "                        <span style='color: black'>Unvetted</span>\n" +
+        //     "                    </label>\n" +
+        //     "                </p>");
 
         var table_rows_content = outer_list.append("tr")
             .attr("class", "collapse-content")
@@ -622,7 +682,7 @@
             })
             .style("display", "none")
             .style("padding", "10px")
-            .style("height", "645px")
+            .style("height", "590px")
             .style("background-color", "#eceff1")
             .text(function (d) {
                 return d.content
@@ -735,269 +795,268 @@
 
             var t_orig_content = document.getElementById("row"+(index_of_current_target+1)+"_content_data").textContent;
 
-                var target_concepts = [];
+            var target_concepts = [];
 
-                var importance_scores_target_concepts = [];
-                var clickedTargetData = [];
-                clickedTargetData.push(target_data[index_of_current_target]);
+            var importance_scores_target_concepts = [];
+            var clickedTargetData = [];
+            clickedTargetData.push(target_data[index_of_current_target]);
 
-                clickedTargetData.forEach(function (d) {
-                    var target_nodes = d['concepts'];
-                    target_nodes.forEach(c => {
-                        target_concepts.push(c)
-                    });
-
-                    d['importance_scores'].forEach(function (k) {
-                        for (const [key, value] of Object.entries(k)) {
-                            importance_scores_target_concepts.push({"name": key, "imp_score": value})
-                        }
-                    });
+            clickedTargetData.forEach(function (d) {
+                var target_nodes = d['concepts'];
+                target_nodes.forEach(c => {
+                    target_concepts.push(c)
                 });
 
-                console.log(clickedTargetData[0].score);
-                //  Update the confidence score confidence-score
-                // var clickedTargetDataScore = clickedTargetData[0].score;
-                // var confidence_score_element = document.getElementById("confidence-score");
-                // confidence_score_element.textContent = clickedTargetDataScore;
-
-
-
-                //Highlight the important words in the clicked target artifact
-                var split_target_words = t_orig_content.split(" ");
-                for (var i = 0; i < split_target_words.length; i++) {
-                    var targetWord = split_target_words[i].replace(".", "").replace(",","");
-                    if (target_concepts.includes(targetWord)) {
-                        var imp_score_t = conceptImportanceScores(targetWord, importance_scores_target_concepts);
-                        // console.log(imp_score_s);
-                        split_target_words[i] = "<a href='' onmouseout='urlMouseAction_leave(this)' onmouseover='urlMouseAction(this)'><span class='"+targetWord+"_t' " +
-                            "style='background-color:"+ colors(targetWord) + ";font-size:" + (1 * (1 + imp_score_t)) +"em'>"  +  split_target_words[i] + "</span></a>";
-
-
-                        var new_t = split_target_words.join(" ");
-
-                        d3.select("#"+"row"+(index_of_current_target+1)+"_content_data")
-                            .html(new_t);
+                d['importance_scores'].forEach(function (k) {
+                    for (const [key, value] of Object.entries(k)) {
+                        importance_scores_target_concepts.push({"name": key, "imp_score": value})
                     }
+                });
+            });
+
+            console.log(clickedTargetData[0].score);
+            //  Update the confidence score confidence-score
+            // var clickedTargetDataScore = clickedTargetData[0].score;
+            // var confidence_score_element = document.getElementById("confidence-score");
+            // confidence_score_element.textContent = clickedTargetDataScore;
 
 
 
+            //Highlight the important words in the clicked target artifact
+            var split_target_words = t_orig_content.split(" ");
+            for (var i = 0; i < split_target_words.length; i++) {
+                var targetWord = split_target_words[i].replace(".", "").replace(",","");
+                if (target_concepts.includes(targetWord)) {
+                    var imp_score_t = conceptImportanceScores(targetWord, importance_scores_target_concepts);
+                    // console.log(imp_score_s);
+                    split_target_words[i] = "<a href='' onmouseout='urlMouseAction_leave(this)' onmouseover='urlMouseAction(this)'><span class='"+targetWord+"_t' " +
+                        "style='background-color:"+ colors(targetWord) + ";font-size:" + (1 * (1 + imp_score_t)) +"em'>"  +  split_target_words[i] + "</span></a>";
+
+
+                    var new_t = split_target_words.join(" ");
+
+                    d3.select("#"+"row"+(index_of_current_target+1)+"_content_data")
+                        .html(new_t);
                 }
 
 
-                // This is the point where we will set the function that will draw the link between the source and the current target
-                var data_node_links_ = {
-                    "Nodes": [],
-                    "links": []
-                };
+
+            }
+
+
+            // This is the point where we will set the function that will draw the link between the source and the current target
+            var data_node_links_ = {
+                "Nodes": [],
+                "links": []
+            };
 
 
 
-                var source_data = data[0].source;
-                var all_data_concepts_ = [
-                ];
+            var source_data = data[0].source;
+            var all_data_concepts_ = [
+            ];
 
-                source_data.forEach(function (d) {
-                    var source_nodes = d['concepts'];
-                    source_nodes.forEach(c => {
-                        data_node_links_["Nodes"].push({"lvl": 0, "name": c, "type": "source"});
-                        all_data_concepts_.push(c)
-                    });
-
+            source_data.forEach(function (d) {
+                var source_nodes = d['concepts'];
+                source_nodes.forEach(c => {
+                    data_node_links_["Nodes"].push({"lvl": 0, "name": c, "type": "source"});
+                    all_data_concepts_.push(c)
                 });
 
+            });
 
-                clickedTargetData.forEach(function (d) {
-                    var target_nodes = d['concepts'];
-                    target_nodes.forEach(c => {
-                        data_node_links_["Nodes"].push({"lvl": 1, "name": c, "type": "target"});
-                        all_data_concepts_.push(c)
-                    });
-                    d['links'].forEach(l => {
-                        data_node_links_["links"].push(l);
-                    })
 
+            clickedTargetData.forEach(function (d) {
+                var target_nodes = d['concepts'];
+                target_nodes.forEach(c => {
+                    data_node_links_["Nodes"].push({"lvl": 1, "name": c, "type": "target"});
+                    all_data_concepts_.push(c)
                 });
+                d['links'].forEach(l => {
+                    data_node_links_["links"].push(l);
+                })
+
+            });
 
 
 
-                const all_unique_concepts = [...new Set(all_data_concepts_)];
-                all_unique_concepts.sort();
+            const all_unique_concepts = [...new Set(all_data_concepts_)];
+            all_unique_concepts.sort();
 
 
-                const concept_definitions_ = [];
-                const concept_importance_scores_ = [];
+            const concept_definitions_ = [];
+            const concept_importance_scores_ = [];
 
-                source_data.forEach(function (d) {
-                    d['definitions'].forEach(function (k) {
-                        for (const [key, value] of Object.entries(k)) {
-                            concept_definitions_.push({"name": key, "definition": value})
-                        }
-                    });
-
-                    d['importance_scores'].forEach(function (k) {
-                        for (const [key, value] of Object.entries(k)) {
-                            concept_importance_scores_.push({"name": key, "imp_score": value})
-                        }
-
-                    });
-
-
-                });
-
-                clickedTargetData.forEach(function (d) {
-                    d['definitions'].forEach(function (k) {
-                        for (const [key, value] of Object.entries(k)) {
-                            concept_definitions_.push({"name": key, "definition": value})
-                        }
-                    });
-
-                    d['importance_scores'].forEach(function (k) {
-                        for (const [key, value] of Object.entries(k)) {
-                            concept_importance_scores_.push({"name": key, "imp_score": value})
-                        }
-
-                    });
-
-                });
-
-                "use strict";
-                var count = [];
-
-                data_node_links_.Nodes.forEach(function (d) {
-                    count[d.lvl] = 0;
-                });
-
-                lvlCount = count.length;
-
-                Nodes = [];
-                data_node_links_.Nodes.forEach(function (d, i) {
-                    // console.log(i);
-                    if (d.lvl === 0){
-                        d.x = margin.left + d.lvl * (boxWidth + gap.width);
+            source_data.forEach(function (d) {
+                d['definitions'].forEach(function (k) {
+                    for (const [key, value] of Object.entries(k)) {
+                        concept_definitions_.push({"name": key, "definition": value})
                     }
-                    else {
-                        d.x = d.lvl * (boxWidth + gap.width) - margin.right;
-                    }
-                    d.y = margin.top + (boxHeight + gap.height) * count[d.lvl];
-                    d.cl =  colors(d.name); //getUniqueColors(d.name, data_concepts_unique);
-                    d.definition = conceptDef(d.name, concept_definitions_);
-                    d.imp_score = conceptImportanceScores(d.name, concept_importance_scores_);
-                    d.id = "n" + i;
-                    count[d.lvl] += 1;
-                    Nodes.push(d);
-                    // plc_Nodes.push(d);
                 });
+
+                d['importance_scores'].forEach(function (k) {
+                    for (const [key, value] of Object.entries(k)) {
+                        concept_importance_scores_.push({"name": key, "imp_score": value})
+                    }
+
+                });
+
+
+            });
+
+            clickedTargetData.forEach(function (d) {
+                d['definitions'].forEach(function (k) {
+                    for (const [key, value] of Object.entries(k)) {
+                        concept_definitions_.push({"name": key, "definition": value})
+                    }
+                });
+
+                d['importance_scores'].forEach(function (k) {
+                    for (const [key, value] of Object.entries(k)) {
+                        concept_importance_scores_.push({"name": key, "imp_score": value})
+                    }
+
+                });
+
+            });
+
+            "use strict";
+            var count = [];
+
+            data_node_links_.Nodes.forEach(function (d) {
+                count[d.lvl] = 0;
+            });
+
+            lvlCount = count.length;
+
+            Nodes = [];
+            data_node_links_.Nodes.forEach(function (d, i) {
+                // console.log(i);
+                if (d.lvl === 0){
+                    d.x = margin.left + d.lvl * (boxWidth + gap.width);
+                }
+                else {
+                    d.x = d.lvl * (boxWidth + gap.width) - margin.right;
+                }
+                d.y = margin.top + (boxHeight + gap.height) * count[d.lvl];
+                d.cl =  colors(d.name); //getUniqueColors(d.name, data_concepts_unique);
+                d.definition = conceptDef(d.name, concept_definitions_);
+                d.imp_score = conceptImportanceScores(d.name, concept_importance_scores_);
+                d.id = "n" + i;
+                count[d.lvl] += 1;
+                Nodes.push(d);
+                // plc_Nodes.push(d);
+            });
 
 
 
 //     // get details about the links and how to draw the path between them
-                links = [];
-                data_node_links_.links.forEach(function (d) {
-                    // links = [];
-                    links.push({
-                        source: find(d.source, "source"),
-                        target: find(d.target, "target"),
+            links = [];
+            data_node_links_.links.forEach(function (d) {
+                // links = [];
+                links.push({
+                    source: find(d.source, "source"),
+                    target: find(d.target, "target"),
 
-                        id: "l" + find(d.source, "source").id + find(d.target, "target").id,
-                        relationship: d.relationship
-                    });
+                    id: "l" + find(d.source, "source").id + find(d.target, "target").id,
+                    relationship: d.relationship
+                });
+            });
+
+            console.log(links);
+            console.log("jj")
+
+            var useful_link = links;
+            // console.log();
+
+            // Draw all of the nodes
+            svg.append("g")
+                .attr("class", "nodes");
+
+            var node = svg.select(".nodes")
+                .selectAll("g")
+                .data(Nodes)
+                .enter()
+                .append("g")
+                .attr("class", "unit");
+
+            node.append("rect")
+                .attr("x", function (d) {
+                    return d.x;
+                })
+                .attr("y", function (d) {
+                    return d.y;
+                })
+                .attr("id", function (d) {
+                    return d.id;
+                })
+                .attr("width", boxWidth)
+                .attr("height", boxHeight)
+                .attr("class", "node")
+                .attr("fill", function (d) {
+                    return  colors(d.name);//getUniqueColors(d.name, data_concepts_unique); // in case we want the color to change based on the color of the text
+                })
+                .attr("fill-opacity", "0.5")
+                .attr("stroke", "darkgrey")
+                .attr("stroke-width", "2px")
+                // // .attr("fill", "blue")
+                .on("mouseover", function () {
+                    mouse_action(d3.select(this).datum(), true);
+                })
+                .on("mouseout", function () {
+                    mouse_action_clear(d3.select(this).datum(), false);
                 });
 
-                console.log(links);
-                console.log("jj")
 
-                var useful_link = links;
-                // console.log();
+            // Add the text to display in the rect (i.e., each node)
+            node.append("text")
+                .attr("class", "label")
+                .attr("x", function (d) {
+                    return d.x + boxWidth / 8;
+                })
+                .attr("y", function (d) {
+                    return d.y + boxHeight / 1.7;
+                })
+                .text(function (d) {
+                    return d.name;
+                })
+                .attr("font-size", (boxWidth * 0.007) + "em");
 
-                // Draw all of the nodes
-                svg.append("g")
-                    .attr("class", "nodes");
 
-                var node = svg.select(".nodes")
-                    .selectAll("g")
-                    .data(Nodes)
-                    .enter()
-                    .append("g")
-                    .attr("class", "unit");
+            links.forEach(function (li) {
+                svg.append("path", "g")
+                    .attr("class", "link_d3")
+                    .attr("stroke", "darkgray")
+                    .attr("id", li.id)
+                    .attr("d", function () {
+                        var oTarget = {
 
-                node.append("rect")
-                    .attr("x", function (d) {
-                        return d.x;
+                            x: li.target.y + 0.5 * boxHeight,
+                            y: li.target.x
+                        };
+                        var oSource = {
+                            x: li.source.y + 0.5 * boxHeight,
+                            y: li.source.x
+                        };
+
+                        if (oSource.y < oTarget.y) {
+                            oSource.y += boxWidth;
+                        } else {
+                            oTarget.y += boxWidth;
+                        }
+                        return diagonal({
+                            source: oSource,
+                            target: oTarget
+                        });
                     })
-                    .attr("y", function (d) {
-                        return d.y;
-                    })
-                    .attr("id", function (d) {
-                        return d.id;
-                    })
-                    .attr("width", boxWidth)
-                    .attr("height", boxHeight)
-                    .attr("class", "node")
-                    .attr("fill", function (d) {
-                        return  colors(d.name);//getUniqueColors(d.name, data_concepts_unique); // in case we want the color to change based on the color of the text
-                    })
-                    .attr("fill-opacity", "0.5")
-                    .attr("stroke", "darkgrey")
-                    .attr("stroke-width", "2px")
-                    // // .attr("fill", "blue")
+                    // .attr("stroke-width", "black")
                     .on("mouseover", function () {
-                        mouse_action(d3.select(this).datum(), true);
+                        mouse_action_link(li);
                     })
                     .on("mouseout", function () {
-                        mouse_action_clear(d3.select(this).datum(), false);
+                        mouse_action_link_clear(li)
                     });
-
-
-                // Add the text to display in the rect (i.e., each node)
-                node.append("text")
-                    .attr("class", "label")
-                    .attr("x", function (d) {
-                        return d.x + boxWidth / 8;
-                    })
-                    .attr("y", function (d) {
-                        return d.y + boxHeight / 1.7;
-                    })
-                    .text(function (d) {
-                        return d.name;
-                    })
-                    .attr("font-size", (boxWidth * 0.007) + "em")
-                    .style("font-weight", "normal");
-
-
-    links.forEach(function (li) {
-                    svg.append("path", "g")
-                        .attr("class", "link_d3")
-                        .attr("stroke", "darkgray")
-                        .attr("id", li.id)
-                        .attr("d", function () {
-                            var oTarget = {
-
-                                x: li.target.y + 0.5 * boxHeight,
-                                y: li.target.x
-                            };
-                            var oSource = {
-                                x: li.source.y + 0.5 * boxHeight,
-                                y: li.source.x
-                            };
-
-                            if (oSource.y < oTarget.y) {
-                                oSource.y += boxWidth;
-                            } else {
-                                oTarget.y += boxWidth;
-                            }
-                            return diagonal({
-                                source: oSource,
-                                target: oTarget
-                            });
-                        })
-                        // .attr("stroke-width", "black")
-                        .on("mouseover", function () {
-                            mouse_action_link(li);
-                        })
-                        .on("mouseout", function () {
-                            mouse_action_link_clear(li)
-                        });
-                });
+            });
 
 
         }

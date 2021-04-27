@@ -85,7 +85,7 @@
             },
             {
                 "id": 682,
-                "text": "The HIE shall support the ability of consumers to request and receive access and disclosure  reports which identify HIE_users who have viewed , updated, or exchanged, or accessed their clinical_data",
+                "text": "The HIE shall support the ability of consumers to request and receive access and disclosure_reports which identify HIE_users who have viewed , updated, or exchanged, or accessed their clinical_data",
                 "concepts": [
                     "consumers",
                     "ability",

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>-->
+    <!--<script src="https://cdn.rawgit.com/Dogfalo/materialize/fc44c862/dist/js/materialize.min.js"></script>-->
+    <!--<script type="text/javascript" src="../static/js/pagination.js"></script>-->
+
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+    <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />-->
+    <!--&lt;!&ndash;<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">&ndash;&gt;-->
+    <!--&lt;!&ndash;<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>&ndash;&gt;-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-->
+    <!--<link rel="stylesheet" type="text/css" href="../static/css/myStyles2.css" />-->
+
+
+    <!--<link rel="stylesheet" type="text/css" href="../static/css/myStyles2.css" />-->
+</head>
+<body>
+
+<!--<div class="container">-->
+    <!--<h2>Simple Collapsible</h2>-->
+    <!--&lt;!&ndash;<p>Click on the button to toggle between showing and hiding content.</p>&ndash;&gt;-->
+
+    <!--<table>-->
+        <!--<colgroup>-->
+            <!--<col span="1" style="width: 70%;">-->
+            <!--<col span="1" style="width: 30%;">-->
+        <!--</colgroup>-->
+        <!--<tr>-->
+            <!--<td >-->
+            <!--<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1">Simple collapsible</button>-->
+        <!--</td>-->
+        <!--<td style="width: 30%">-->
+            <!--<div style='font-size: 0.8em; display:inline-block; padding:7px;'>-->
+           <!--<label>-->
+              <!--<input name='group2' type='radio' checked/>-->
+               <!--<span style='color: black'>Link</span>-->
+               <!--</label>-->
+            <!--<label>-->
+                <!--<input name='group2' type='radio'  />-->
+             <!--<span style='color: black'>No link</span>-->
+               <!--</label>-->
+           <!--<label>-->
+           <!--<input  name='group2' type='radio'/>-->
+            <!--<span style='color: black'>Unvetted</span>-->
+             <!--</label>-->
+            <!--</div>-->
+        <!--</td>-->
+
+        <!--</tr>-->
+
+        <!--<tr>-->
+            <!--<td id="demo1" class="collapse" style="width: 70%">-->
+                <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit,-->
+                <!--sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,-->
+                <!--quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.-->
+            <!--</td>-->
+            <!--<td style="width: 30%"></td>-->
+
+        <!--</tr>-->
+
+    <!--</table>-->
+
+
+    <!--&lt;!&ndash;<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div id="demo" class="collapse">&ndash;&gt;-->
+        <!--&lt;!&ndash;Lorem ipsum dolor sit amet, consectetur adipisicing elit,&ndash;&gt;-->
+        <!--&lt;!&ndash;sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,&ndash;&gt;-->
+        <!--&lt;!&ndash;quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--</div>-->
+
+</body>
+<script src="https://unpkg.com/d3@6.6.1/dist/d3.min.js"></script>
+
+<script>
+    d3.select('body').append('div').attr('id', 'tooltip').attr('style', 'position: absolute; opacity: 0;');
+    d3.select('body').append('svg').attr('width', 300).attr('height', 300);
+    d3.select('svg').selectAll('circle').data(['a','b','c'])
+        .join('circle')
+        .attr('r', 3)
+        .attr('cy', 5)
+        .attr('cx', (d,i) => i*15+15)
+        .on('mouseover', function(d) {
+            d3.select('#tooltip').transition().duration(200).style('opacity', 1).text(d)
+        })
+        .on('mouseout', function() {
+            d3.select('#tooltip').style('opacity', 0)
+        })
+        .on('mousemove', function() {
+            d3.select('#tooltip').style('left', (d3.event.pageX+10) + 'px').style('top', (d3.event.pageY+10) + 'px')
+        })
+
+
+
+</script>
+</html>

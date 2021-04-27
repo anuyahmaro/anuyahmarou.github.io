@@ -22,7 +22,8 @@
                   {"system": 0.11986867564792089},
                   {"online clinical information": 5.544970850672651}
                 ],
-                "query": "source"
+                "query": "source",
+              "type": "Requirement"
             }
         ],
         "targets": [
@@ -52,6 +53,7 @@
                   {  "system": 0.11986867564792089},
                   {  "preliminary_results": 7.367135331994016}],
                 "query": "target",
+              "type": "Design Definition",
                 "score": 0.19312641813510575,
                 "links": [
                     {
@@ -110,6 +112,7 @@
                   { "access": 4.05360088347508}
                 ],
                 "query": "target",
+              "type": "Safety Document",
                 "score": 0.0403885768189279,
                 "links": []
             },
@@ -136,6 +139,7 @@
                   { "system": 0.11986867564792089},
                   {  "functions": 7.203348002979763}],
                 "query": "target",
+              "type": "Design Definition",
                 "score": 0.03262755706581715,
                 "links": [
                     {
@@ -168,70 +172,8 @@
                   {  "system": 0.11986867564792089},
                   { "protectiog": 10.203348002979764}],
                 "query": "target",
+              "type": "Safety Document",
                 "score": 0.05762935709603343,
-                "links": [
-                    {
-                        "source": "system",
-                        "target": "system",
-                        "relationship": "[('system', 'same as', 'system')]"
-                    }
-                ]
-            },
-            {
-                "id": 850,
-                "text": "The system shall provide the ability for a user to whom a result is presented to acknowledge the result.",
-                "concepts": [
-                    "result",
-                    "ability",
-                    "system",
-                    "user"
-                ],
-                "terminilogy": [],
-                "definitions": [{}],
-                "importance_scores": [{
-                    "system": 0.11986867564792089},
-                  {"user": 3.1809801899513084},
-                  { "ability": 0.6202652354768292},
-                  { "result": 7.203348002979763
-                }],
-                "query": "target",
-                "score": 0.000236972289438532,
-                "links": [
-                    {
-                        "source": "results",
-                        "target": "result",
-                        "relationship": "[('results', 'same as', 'result')]"
-                    },
-                    {
-                        "source": "system",
-                        "target": "system",
-                        "relationship": "[('system', 'same as', 'system')]"
-                    }
-                ]
-            },
-            {
-                "id": 8300,
-                "text": "The system shall provide the ability to access reference_information for prescribing/ordering.",
-                "concepts": [
-                    "ability",
-                    "system",
-                    "prescribing/ordering",
-                    "reference_information"
-                ],
-                "terminilogy": [
-                    "prescribing/ordering"
-                ],
-                "definitions": [{
-                    "prescribing/ordering": "placeholder for definition"
-                }],
-                "importance_scores": [{
-                    "reference_information": 4.945498083837741},
-                  {"prescribing/ordering": 4.421800447002389},
-                  {"system": 0.11986867564792089},
-                  {  "ability": 0.6202652354768292
-                }],
-                "query": "target",
-                "score": 0.05080125930229684,
                 "links": [
                     {
                         "source": "system",
@@ -258,6 +200,7 @@
               { "result": 7.203348002979763
               }],
             "query": "target",
+            "type": "Safety Document",
             "score": 0.000236972289438532,
             "links": [
               {
@@ -294,6 +237,7 @@
               {  "ability": 0.6202652354768292
               }],
             "query": "target",
+            "type": "Requirement",
             "score": 0.05080125930229684,
             "links": [
               {

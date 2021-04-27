@@ -63,7 +63,11 @@
                         <col span="1" style="width: 30%;">
                     </colgroup>
                 </table>
-            </div>
+                <!--<div class="col-md-12 center text-center">-->
+                    <!--<span class="left" id="total_reg"></span>-->
+                    <!--<ul class="pagination pager" id="myPager"></ul>-->
+                <!--</div>-->
+            <!--</div>-->
         </div>
 
 
@@ -460,6 +464,7 @@
 
 
 <script src="https://unpkg.com/d3@6.6.1/dist/d3.min.js"></script>
+<!--<script type="text/javascript" src="https://cdn.rawgit.com/pinzon1992/materialize_table_pagination/f9a8478f/js/pagination.js"></script>-->
 <script>
 
     var Nodes = [];
@@ -534,10 +539,11 @@
 
     // console.log();
     function drawTargets(data) {
+        // console.log(stemmer('resulting'));
 
 
         var target_data = data[0].targets.splice(0, 6);
-        console.log(target_data)
+        console.log(target_data);
 
 
         var artifact_data = {
@@ -831,7 +837,7 @@
                     var imp_score_t = conceptImportanceScores(targetWord, importance_scores_target_concepts);
                     // console.log(imp_score_s);
                     split_target_words[i] = "<a href='' onmouseout='urlMouseAction_leave(this)' onmouseover='urlMouseAction(this)'><span class='"+targetWord+"_t' " +
-                        "style='background-color:"+ colors(targetWord) + ";font-size:" + (1 * (1 + imp_score_t)) +"em'>"  +  split_target_words[i] + "</span></a>";
+                        "style='background-color:"+ colors(stemmer(targetWord)) + ";font-size:" + (1 * (1 + imp_score_t)) +"em'>"  +  split_target_words[i] + "</span></a>";
 
 
                     var new_t = split_target_words.join(" ");
@@ -940,7 +946,7 @@
                     d.x = d.lvl * (boxWidth + gap.width) - margin.right;
                 }
                 d.y = margin.top + (boxHeight + gap.height) * count[d.lvl];
-                d.cl =  colors(d.name); //getUniqueColors(d.name, data_concepts_unique);
+                d.cl =  colors(stemmer(d.name)); //getUniqueColors(d.name, data_concepts_unique);
                 d.definition = conceptDef(d.name, concept_definitions_);
                 d.imp_score = conceptImportanceScores(d.name, concept_importance_scores_);
                 d.id = "n" + i;
@@ -995,7 +1001,7 @@
                 .attr("height", boxHeight)
                 .attr("class", "node")
                 .attr("fill", function (d) {
-                    return  colors(d.name);//getUniqueColors(d.name, data_concepts_unique); // in case we want the color to change based on the color of the text
+                    return  colors(stemmer(d.name));//getUniqueColors(d.name, data_concepts_unique); // in case we want the color to change based on the color of the text
                 })
                 .attr("fill-opacity", "0.5")
                 .attr("stroke", "darkgrey")
@@ -1225,7 +1231,7 @@
                     for (var k = 0; k < extractContent_other_source_classes.length; k++) {
 
 
-                        extractContent_other_source_classes[k].style.backgroundColor = colors(otherclassNamesEach) // getUniqueColors(otherclassNamesEach, totalClassNames_);
+                        extractContent_other_source_classes[k].style.backgroundColor = colors(stemmer(otherclassNamesEach)) // getUniqueColors(otherclassNamesEach, totalClassNames_);
 
                     }
 
@@ -1246,7 +1252,7 @@
                     for (var k = 0; k < extractContent_other_target_classes.length; k++) {
 
 
-                        extractContent_other_target_classes[k].style.backgroundColor = colors(otherclassNamesEach_t);//getUniqueColors(otherclassNamesEach_t, totalClassNames_);
+                        extractContent_other_target_classes[k].style.backgroundColor = colors(stemmer(otherclassNamesEach_t));//getUniqueColors(otherclassNamesEach_t, totalClassNames_);
 
                     }
 
@@ -1411,7 +1417,7 @@
                     var extractContent_other_source_classes =  document.getElementsByClassName(otherclassNamesEach+"_s");
                     for (var k = 0; k < extractContent_other_source_classes.length; k++) {
 
-                        extractContent_other_source_classes[k].style.backgroundColor = colors(otherclassNamesEach) // getUniqueColors(otherclassNamesEach, totalClassNames_);
+                        extractContent_other_source_classes[k].style.backgroundColor = colors(stemmer(otherclassNamesEach)) // getUniqueColors(otherclassNamesEach, totalClassNames_);
                     }
 
                 }
@@ -1433,7 +1439,7 @@
                     var extractContent_other_target_classes =  document.getElementsByClassName(otherclassNamesEach_t+"_t");
                     for (var k = 0; k < extractContent_other_target_classes.length; k++) {
 
-                        extractContent_other_target_classes[k].style.backgroundColor = colors(otherclassNamesEach_t); // getUniqueColors(otherclassNamesEach_t, totalClassNames_);
+                        extractContent_other_target_classes[k].style.backgroundColor = colors(stemmer(otherclassNamesEach_t)); // getUniqueColors(otherclassNamesEach_t, totalClassNames_);
                     }
 
                 }
@@ -1515,7 +1521,7 @@
                 d.x = d.lvl * (boxWidth + gap.width) - margin.right;
             }
             d.y = margin.top + (boxHeight + gap.height) * count[d.lvl];
-            d.cl =  colors(d.name); //getUniqueColors(d.name, data_concepts_unique);
+            d.cl =  colors(stemmer(d.name)); //getUniqueColors(d.name, data_concepts_unique);
             d.definition = conceptDef(d.name, concept_definitions_);
             d.imp_score = conceptImportanceScores(d.name, concept_importance_scores_);
             d.id = "n" + i;
@@ -1570,7 +1576,7 @@
                 var imp_score_s = conceptImportanceScores(sourceWord, importance_scores_source_concepts);
                 // console.log(imp_score_s);
                 split_source_words[i] = "<a href='' onmouseout='urlMouseAction_leave(this)' onmouseover='urlMouseAction(this)'><span class='"+sourceWord+"_s' " +
-                    "style='background-color:"+ colors(sourceWord) + ";font-size:" + (1 * (1 + imp_score_s)) +"em'>"  +  split_source_words[i] + "</span></a>";
+                    "style='background-color:"+ colors(stemmer(sourceWord)) + ";font-size:" + (1 * (1 + imp_score_s)) +"em'>"  +  split_source_words[i] + "</span></a>";
 
 
                 var new_s = split_source_words.join(" ");
@@ -1655,6 +1661,222 @@
 
     }
 
+    var stemmer = (function(){
+        var step2list = {
+                "ational" : "ate",
+                "tional" : "tion",
+                "enci" : "ence",
+                "anci" : "ance",
+                "izer" : "ize",
+                "bli" : "ble",
+                "alli" : "al",
+                "entli" : "ent",
+                "eli" : "e",
+                "ousli" : "ous",
+                "ization" : "ize",
+                "ation" : "ate",
+                "ator" : "ate",
+                "alism" : "al",
+                "iveness" : "ive",
+                "fulness" : "ful",
+                "ousness" : "ous",
+                "aliti" : "al",
+                "iviti" : "ive",
+                "biliti" : "ble",
+                "logi" : "log"
+            },
+
+            step3list = {
+                "icate" : "ic",
+                "ative" : "",
+                "alize" : "al",
+                "iciti" : "ic",
+                "ical" : "ic",
+                "ful" : "",
+                "ness" : ""
+            },
+
+            c = "[^aeiou]",          // consonant
+            v = "[aeiouy]",          // vowel
+            C = c + "[^aeiouy]*",    // consonant sequence
+            V = v + "[aeiou]*",      // vowel sequence
+
+            mgr0 = "^(" + C + ")?" + V + C,               // [C]VC... is m>0
+            meq1 = "^(" + C + ")?" + V + C + "(" + V + ")?$",  // [C]VC[V] is m=1
+            mgr1 = "^(" + C + ")?" + V + C + V + C,       // [C]VCVC... is m>1
+            s_v = "^(" + C + ")?" + v;                   // vowel in stem
+
+        function dummyDebug() {}
+
+        function realDebug() {
+            console.log(Array.prototype.slice.call(arguments).join(' '));
+        }
+
+        return function (w, debug) {
+            var
+                stem,
+                suffix,
+                firstch,
+                re,
+                re2,
+                re3,
+                re4,
+                debugFunction,
+                origword = w;
+
+            if (debug) {
+                debugFunction = realDebug;
+            } else {
+                debugFunction = dummyDebug;
+            }
+
+            if (w.length < 3) { return w; }
+
+            firstch = w.substr(0,1);
+            if (firstch == "y") {
+                w = firstch.toUpperCase() + w.substr(1);
+            }
+
+            // Step 1a
+            re = /^(.+?)(ss|i)es$/;
+            re2 = /^(.+?)([^s])s$/;
+
+            if (re.test(w)) {
+                w = w.replace(re,"$1$2");
+                debugFunction('1a',re, w);
+
+            } else if (re2.test(w)) {
+                w = w.replace(re2,"$1$2");
+                debugFunction('1a',re2, w);
+            }
+
+            // Step 1b
+            re = /^(.+?)eed$/;
+            re2 = /^(.+?)(ed|ing)$/;
+            if (re.test(w)) {
+                var fp = re.exec(w);
+                re = new RegExp(mgr0);
+                if (re.test(fp[1])) {
+                    re = /.$/;
+                    w = w.replace(re,"");
+                    debugFunction('1b',re, w);
+                }
+            } else if (re2.test(w)) {
+                var fp = re2.exec(w);
+                stem = fp[1];
+                re2 = new RegExp(s_v);
+                if (re2.test(stem)) {
+                    w = stem;
+                    debugFunction('1b', re2, w);
+
+                    re2 = /(at|bl|iz)$/;
+                    re3 = new RegExp("([^aeiouylsz])\\1$");
+                    re4 = new RegExp("^" + C + v + "[^aeiouwxy]$");
+
+                    if (re2.test(w)) {
+                        w = w + "e";
+                        debugFunction('1b', re2, w);
+
+                    } else if (re3.test(w)) {
+                        re = /.$/;
+                        w = w.replace(re,"");
+                        debugFunction('1b', re3, w);
+
+                    } else if (re4.test(w)) {
+                        w = w + "e";
+                        debugFunction('1b', re4, w);
+                    }
+                }
+            }
+
+            // Step 1c
+            re = new RegExp("^(.*" + v + ".*)y$");
+            if (re.test(w)) {
+                var fp = re.exec(w);
+                stem = fp[1];
+                w = stem + "i";
+                debugFunction('1c', re, w);
+            }
+
+            // Step 2
+            re = /^(.+?)(ational|tional|enci|anci|izer|bli|alli|entli|eli|ousli|ization|ation|ator|alism|iveness|fulness|ousness|aliti|iviti|biliti|logi)$/;
+            if (re.test(w)) {
+                var fp = re.exec(w);
+                stem = fp[1];
+                suffix = fp[2];
+                re = new RegExp(mgr0);
+                if (re.test(stem)) {
+                    w = stem + step2list[suffix];
+                    debugFunction('2', re, w);
+                }
+            }
+
+            // Step 3
+            re = /^(.+?)(icate|ative|alize|iciti|ical|ful|ness)$/;
+            if (re.test(w)) {
+                var fp = re.exec(w);
+                stem = fp[1];
+                suffix = fp[2];
+                re = new RegExp(mgr0);
+                if (re.test(stem)) {
+                    w = stem + step3list[suffix];
+                    debugFunction('3', re, w);
+                }
+            }
+
+            // Step 4
+            re = /^(.+?)(al|ance|ence|er|ic|able|ible|ant|ement|ment|ent|ou|ism|ate|iti|ous|ive|ize)$/;
+            re2 = /^(.+?)(s|t)(ion)$/;
+            if (re.test(w)) {
+                var fp = re.exec(w);
+                stem = fp[1];
+                re = new RegExp(mgr1);
+                if (re.test(stem)) {
+                    w = stem;
+                    debugFunction('4', re, w);
+                }
+            } else if (re2.test(w)) {
+                var fp = re2.exec(w);
+                stem = fp[1] + fp[2];
+                re2 = new RegExp(mgr1);
+                if (re2.test(stem)) {
+                    w = stem;
+                    debugFunction('4', re2, w);
+                }
+            }
+
+            // Step 5
+            re = /^(.+?)e$/;
+            if (re.test(w)) {
+                var fp = re.exec(w);
+                stem = fp[1];
+                re = new RegExp(mgr1);
+                re2 = new RegExp(meq1);
+                re3 = new RegExp("^" + C + v + "[^aeiouwxy]$");
+                if (re.test(stem) || (re2.test(stem) && !(re3.test(stem)))) {
+                    w = stem;
+                    debugFunction('5', re, re2, re3, w);
+                }
+            }
+
+            re = /ll$/;
+            re2 = new RegExp(mgr1);
+            if (re.test(w) && re2.test(w)) {
+                re = /.$/;
+                w = w.replace(re,"");
+                debugFunction('5', re, re2, w);
+            }
+
+            // and turn initial Y back to y
+            if (firstch == "y") {
+                w = firstch.toLowerCase() + w.substr(1);
+            }
+
+
+            return w;
+        }
+    })();
+
 
 
     d3.json("artifact.json").then(data => {
@@ -1670,7 +1892,17 @@
     });
 
 
-
+    // $(document).ready(function(){
+    //     $('#target_artifacts').pageMe({
+    //         pagerSelector:'#myPager',
+    //         activeColor: 'blue',
+    //         prevText:'Anterior',
+    //         nextText:'Siguiente',
+    //         showPrevNext:true,
+    //         hidePageNumbers:false,
+    //         perPage:5
+    //     });
+    // });
 
 </script>
 </html>

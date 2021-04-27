@@ -720,8 +720,21 @@
             .attr("stroke-width", "2.5px");
         ;
 
+
+
+        // var checked_definition = typeof val.definition === 'undefined'? "" : val.definition;
+
+        // console.log(checked_definition);
+
+        if (typeof val.definition === 'undefined'){
+            hover("<span style='text-transform: capitalize'><b></b></span>");
+        }
+        else {
+            hover("<span style='text-transform: capitalize'><b>"+ val.name.replaceAll("_", " ") +"</b></span>: "+ val.definition);
+        }
+
         // Update the information panel data with the definition of the concept
-        hover("<span style='text-transform: capitalize'><b>"+ val.name +"</b></span>: "+ val.definition);
+
 
 
 
@@ -1061,8 +1074,10 @@
 
 
     function urlMouseAction(m){
-        var concept = m.text.replace(".", "").replace(",","");
+        var concept = m.text.replace(".", "").replace(",","").replaceAll(" ", "_");
         var definition;
+
+
 
         // console.log(Nodes);
         for (i = 0; i < Nodes.length; i++){
@@ -1072,11 +1087,21 @@
             }
         }
 
-        var message = "<span style='text-transform: capitalize'><b>"+ concept +"</b></span>: "+ definition;
-        hover(message);
+        // console.log(concept);
+
+        if (typeof definition === 'undefined'){
+            hover("<span style='text-transform: capitalize'><b></b></span>");
+        }
+        else {
+            hover("<span style='text-transform: capitalize'><b>"+ concept.replaceAll("_", " ") +"</b></span>: "+ definition);
+        }
+
+        // var message = "<span style='text-transform: capitalize'><b>"+ concept +"</b></span>: "+ definition;
+        // hover(message);
     }
 
     function hover(message) {
+
         document.getElementById('relationship_update').innerHTML = message;
     }
 

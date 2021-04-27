@@ -10,7 +10,7 @@
                     "system",
                     "online_clinical_information"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "online_clinical_information"
                 ],
                 "definitions": [{
@@ -20,7 +20,7 @@
                   {"accessibility": 10.203348002979764},
                   { "results": 4.530922661008267},
                   {"system": 0.11986867564792089},
-                  {"online clinical information": 5.544970850672651}
+                  {"online_clinical_information": 5.544970850672651}
                 ],
                 "query": "source",
               "type": "Requirement"
@@ -38,8 +38,8 @@
                     "general_laboratory_results",
                     "system"
                 ],
-                "terminilogy": [
-                    "general laboratory results"
+                "terminology": [
+                    "general_laboratory_results"
                 ],
                 "definitions": [{
                     "general_laboratory_results": "placeholder for definition"
@@ -95,7 +95,7 @@
                     "clinical_data",
                     "disclosure_reports"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "HIE_users"
                 ],
                 "definitions": [{
@@ -128,7 +128,7 @@
                     "system",
                     "HIE"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": [{}],
                 "importance_scores": [{
                     "user_type": 4.370236001578173},
@@ -159,7 +159,7 @@
                     "clinical_data",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "protectiog"
                 ],
                 "definitions": [{
@@ -191,7 +191,7 @@
               "system",
               "user"
             ],
-            "terminilogy": [],
+            "terminology": [],
             "definitions": [{}],
             "importance_scores": [{
               "system": 0.11986867564792089},
@@ -224,7 +224,7 @@
               "prescribing/ordering",
               "reference_information"
             ],
-            "terminilogy": [
+            "terminology": [
               "prescribing/ordering"
             ],
             "definitions": [{
@@ -268,7 +268,7 @@
                     "system",
                     "allergies"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "means": 5.559491813205038,
@@ -298,7 +298,7 @@
                     "information",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "adverse reaction list"
                 ],
                 "definitions": {
@@ -340,7 +340,7 @@
                     "users",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "notice warning"
                 ],
                 "definitions": {
@@ -373,7 +373,7 @@
                     "patient record",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "wellness services": 6.149085774590678,
@@ -407,7 +407,7 @@
                     "system",
                     "ability"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "ordering process"
                 ],
                 "definitions": {
@@ -443,7 +443,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -477,7 +477,7 @@
                     "results",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "multiple patients": 5.542383955536081,
@@ -513,7 +513,7 @@
                     "schedule",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -557,7 +557,7 @@
                     "order",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "way": 6.743916384342466,
@@ -579,7 +579,7 @@
                     "system",
                     "selectable date / time range"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "selectable date / time range"
                 ],
                 "definitions": {
@@ -617,7 +617,7 @@
                     "therapeutic class",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "end - users"
                 ],
                 "definitions": {
@@ -661,7 +661,7 @@
                     "completion",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "medication": 2.8024685666975784,
@@ -721,7 +721,7 @@
                     "therapeutic class",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "end - users"
                 ],
                 "definitions": {
@@ -762,7 +762,7 @@
                     "route",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "order details": 4.859222848413173,
@@ -801,7 +801,7 @@
                     "system",
                     "user"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "user": 3.1809801899513084,
@@ -825,7 +825,7 @@
                     "favorites",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "hospital order sets"
                 ],
                 "definitions": {
@@ -869,7 +869,7 @@
                     "favorites",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "orderables"
                 ],
                 "definitions": {
@@ -914,7 +914,7 @@
                     "system",
                     "user"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -939,7 +939,7 @@
                     "date",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -992,7 +992,7 @@
                     "providers",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "cosigned orders"
                 ],
                 "definitions": {
@@ -1042,7 +1042,7 @@
                     "providers",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "cosigned orders"
                 ],
                 "definitions": {
@@ -1089,7 +1089,7 @@
                     "system",
                     "discharge"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "event - delay capability"
                 ],
                 "definitions": {
@@ -1119,7 +1119,7 @@
                     "post-op orders",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "post-op orders"
                 ],
                 "definitions": {
@@ -1166,7 +1166,7 @@
                     "hospital admission",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "office personnel": 8.042383955536081,
@@ -1197,7 +1197,7 @@
                     "discharge",
                     "home medications"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -1237,7 +1237,7 @@
                     "hospital stay",
                     "level"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "provider signature"
                 ],
                 "definitions": {
@@ -1283,7 +1283,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "future date activation"
                 ],
                 "definitions": {
@@ -1331,7 +1331,7 @@
                     "prior medications",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "prior medications"
                 ],
                 "definitions": {
@@ -1379,7 +1379,7 @@
                     "system",
                     "patient discharge"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "radiologic results",
                     "patient discharge"
                 ],
@@ -1412,7 +1412,7 @@
                     "system",
                     "patient discharge"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "patient discharge"
                 ],
                 "definitions": {
@@ -1451,7 +1451,7 @@
                     "system",
                     "allergies"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "discharge medications"
                 ],
                 "definitions": {
@@ -1500,7 +1500,7 @@
                     "system",
                     "particular patient"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "discharge instructions"
                 ],
                 "definitions": {
@@ -1540,7 +1540,7 @@
                     "system",
                     "means"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "discharge instructions"
                 ],
                 "definitions": {
@@ -1577,7 +1577,7 @@
                     "system",
                     "complete order sets"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "complete order sets"
                 ],
                 "definitions": {
@@ -1603,7 +1603,7 @@
                     "primary order",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "primary order": 5.520186895856854,
@@ -1637,7 +1637,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "clinical templates"
                 ],
                 "definitions": {
@@ -1673,7 +1673,7 @@
                     "order information",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -1712,7 +1712,7 @@
                     "system",
                     "drug - drug interactions"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "drug - drug interactions"
                 ],
                 "definitions": {
@@ -1745,7 +1745,7 @@
                     "drug - disease interactions",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "drug - disease interactions"
                 ],
                 "definitions": {
@@ -1793,7 +1793,7 @@
                     "current medication",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -1826,7 +1826,7 @@
                     "current medications",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "medications": 3.7604045071310344,
@@ -1865,7 +1865,7 @@
                     "time parameters",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "duplicate order"
                 ],
                 "definitions": {
@@ -1904,7 +1904,7 @@
                     "time parameters",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "duplicate order"
                 ],
                 "definitions": {
@@ -1941,7 +1941,7 @@
                     "medication prescribing / ordering",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "medication prescribing / ordering",
                     "drug - diagnosis interaction alerts"
                 ],
@@ -1982,7 +1982,7 @@
                     "system",
                     "drug - drug interactions"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "drug - disease interactions",
                     "drug - drug interactions"
                 ],
@@ -2029,7 +2029,7 @@
                     "system",
                     "drug - drug interactions"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "drug - drug interactions"
                 ],
                 "definitions": {
@@ -2064,7 +2064,7 @@
                     "drug pairs",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "therapeutic overlap",
                     "drug - drug interaction",
                     "drug pairs"
@@ -2108,7 +2108,7 @@
                     "structured response",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "drug - drug",
                     "drug - allergy warning"
                 ],
@@ -2149,7 +2149,7 @@
                     "alert providers",
                     "current medication list"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "alert providers": 5.560646893548638,
@@ -2183,7 +2183,7 @@
                     "system",
                     "drug interaction alert"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "drug interaction alert"
                 ],
                 "definitions": {
@@ -2214,7 +2214,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "updates": 7.203348002979763,
@@ -2247,7 +2247,7 @@
                     "system",
                     "free text medication"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "formulary checking",
                     "uncoded medication",
                     "free text medication"
@@ -2298,7 +2298,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "drug interaction warnings"
                 ],
                 "definitions": {
@@ -2336,7 +2336,7 @@
                     "date",
                     "interaction"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "drug - drug",
                     "drug - allergy"
                 ],
@@ -2385,7 +2385,7 @@
                     "orders",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "drug - drug",
                     "drug - allergy",
                     "drug - disease interaction"
@@ -2444,7 +2444,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "potential drug - food interactions"
                 ],
                 "definitions": {
@@ -2480,7 +2480,7 @@
                     "drug - disease interaction alerts",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "medication ordering",
                     "drug - disease interaction alerts"
                 ],
@@ -2518,7 +2518,7 @@
                     "system",
                     "problem"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "drug - disease interaction alerts"
                 ],
                 "definitions": {
@@ -2557,7 +2557,7 @@
                     "drug - allergy interaction warning",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "drug - drug",
                     "medication prescribing / ordering",
                     "drug - allergy interaction warning"
@@ -2606,7 +2606,7 @@
                     "current medication orders",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "current medication orders",
                     "new allergy"
                 ],
@@ -2649,7 +2649,7 @@
                     "current medications",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "medication prescribing / ordering"
                 ],
                 "definitions": {
@@ -2696,7 +2696,7 @@
                     "orders",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "orders": 3.8283085716328378,
@@ -2722,7 +2722,7 @@
                     "progress",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -2765,7 +2765,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "problem / diagnosis list"
                 ],
                 "definitions": {
@@ -2808,7 +2808,7 @@
                     "instructions",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "diagnosis": 5.618385502258607,
@@ -2853,7 +2853,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "problem / diagnosis list"
                 ],
                 "definitions": {
@@ -2897,7 +2897,7 @@
                     "date",
                     "progress"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "note": 5.345367007852191,
@@ -2932,7 +2932,7 @@
                     "ability",
                     "progress"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -2972,7 +2972,7 @@
                     "date",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "progress note": 5.981876255055399,
@@ -3007,7 +3007,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -3038,7 +3038,7 @@
                     "progress",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -3084,7 +3084,7 @@
                     "system",
                     "problem / diagnosis"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "problem / diagnosis"
                 ],
                 "definitions": {
@@ -3131,7 +3131,7 @@
                     "local site",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "hospital work flow patterns"
                 ],
                 "definitions": {
@@ -3164,7 +3164,7 @@
                     "system",
                     "links"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -3200,7 +3200,7 @@
                     "System",
                     "customizations"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "facility": 7.203348002979763,
@@ -3236,7 +3236,7 @@
                     "alerts",
                     "specific clinical situation"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "alerts": 5.618385502258607,
@@ -3266,7 +3266,7 @@
                     "test",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "procedure instructions": 5.9299007730359445,
@@ -3301,7 +3301,7 @@
                     "protocol",
                     "site - specific care plan"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "site - specific care plan"
                 ],
                 "definitions": {
@@ -3332,7 +3332,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "clinical templates"
                 ],
                 "definitions": {
@@ -3370,7 +3370,7 @@
                     "site - specific",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "site - specific",
                     "specific standard care plan"
                 ],
@@ -3414,7 +3414,7 @@
                     "system",
                     "links"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "patient - specific test"
                 ],
                 "definitions": {
@@ -3460,7 +3460,7 @@
                     "system",
                     "links"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "patient - specific test"
                 ],
                 "definitions": {
@@ -3502,7 +3502,7 @@
                     "expert system / decision support capabilities",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "expert system / decision support capabilities"
                 ],
                 "definitions": {
@@ -3527,7 +3527,7 @@
                     "orders",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "same decision support"
                 ],
                 "definitions": {
@@ -3587,7 +3587,7 @@
                     "interaction",
                     "medication list"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "order medication"
                 ],
                 "definitions": {
@@ -3632,7 +3632,7 @@
                     "system",
                     "ability"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "ordering process"
                 ],
                 "definitions": {
@@ -3672,7 +3672,7 @@
                     "process / workflow",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "process / workflow"
                 ],
                 "definitions": {
@@ -3715,7 +3715,7 @@
                     "manufacturer",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "FDA": 9.203348002979764,
@@ -3757,7 +3757,7 @@
                     "decision support",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "allergy": 4.993894637350813,
@@ -3804,7 +3804,7 @@
                     "system",
                     "medication ordering process"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "medication ordering process"
                 ],
                 "definitions": {
@@ -3848,7 +3848,7 @@
                     "patient record",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "intelligent clinical information access"
                 ],
                 "definitions": {
@@ -3878,7 +3878,7 @@
                     "Document Source - Provide",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "IHE ITI",
                     "Register Document Set",
                     "IT Infrastructure",
@@ -3928,7 +3928,7 @@
                     "IHE ITI",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "IHE ITI",
                     "IT Infrastructure",
                     "Document Transaction",
@@ -3977,7 +3977,7 @@
                     "patient summary",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "individual patient?s"
                 ],
                 "definitions": {
@@ -4037,7 +4037,7 @@
                     "system",
                     "allergies"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "electronic report summary information"
                 ],
                 "definitions": {
@@ -4083,7 +4083,7 @@
                     "Document Source Actor",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "IHE ITI",
                     "IT Infrastructure",
                     "Document Source Actor"
@@ -4135,7 +4135,7 @@
                     "hospital systems",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "ED care process"
                 ],
                 "definitions": {
@@ -4206,7 +4206,7 @@
                     "information",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "boilerplate capabilities",
                     "duplicate entry"
                 ],
@@ -4244,7 +4244,7 @@
                     "external application",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -4275,7 +4275,7 @@
                     "System",
                     "allergy information"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "sharing / reuse"
                 ],
                 "definitions": {
@@ -4326,7 +4326,7 @@
                     "RxNorm",
                     "discrete fields"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "standard vocabularies / terminologies",
                     "HITSP IS03 / C32 specification",
                     "Registration Information module subset",
@@ -4404,7 +4404,7 @@
                     "clinical document",
                     "documentation"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "Date / time / user stamp",
                     "machine - entered default information",
                     "Dictation / transcription",
@@ -4506,7 +4506,7 @@
                     "RxNORM",
                     "discrete fields"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "industry - standard vocabularies / terminologies",
                     "HITSP IS03 / C32 specification",
                     "Registration Information module subset",
@@ -4557,7 +4557,7 @@
                     "templates",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "part": 6.115885161729424,
@@ -4595,7 +4595,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "clinical templates"
                 ],
                 "definitions": {
@@ -4631,7 +4631,7 @@
                     "order information",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -4673,7 +4673,7 @@
                     "Conditions",
                     "discrete fields"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "valid HITSP C32 document",
                     "Allergy - coded subset module",
                     "C32",
@@ -4750,7 +4750,7 @@
                     "Medication",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "valid HITSP C32 document",
                     "Immunization History module",
                     "C32",
@@ -4816,7 +4816,7 @@
                     "entries",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "valid HITSP C32 document",
                     "full Level 3",
                     "C32",
@@ -4883,7 +4883,7 @@
                     "schedule",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -4926,7 +4926,7 @@
                     "system",
                     "messages"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "HL - 7 communications protocol"
                 ],
                 "definitions": {
@@ -4965,7 +4965,7 @@
                     "information",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "network protocols / ports",
                     "HL - 7"
                 ],
@@ -5029,7 +5029,7 @@
                     "specification",
                     "HITSP Transaction Package 13"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "HIE SHALL",
                     "2007 IHE XDS - b",
                     "healthcare summary document",
@@ -5101,7 +5101,7 @@
                     "Medicare Part D",
                     "HIE"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "HL7 ePrescribing messages",
                     "bi-directional translation"
                 ],
@@ -5149,7 +5149,7 @@
                     "Lab documents",
                     "HL7 2.5.1 message"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "Lab documents",
                     "HL7 2.5.1 message"
                 ],
@@ -5199,7 +5199,7 @@
                     "Sender",
                     "Component 35 EHR Lab Terminology"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "HIE SHALL",
                     "2.5.1",
                     "HITSP Component 36 Lab Message",
@@ -5249,7 +5249,7 @@
                     "Lab HL7 2.5.1 transactions",
                     "information"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "HITSP C26",
                     "secure peer",
                     "HIE evidence",
@@ -5290,7 +5290,7 @@
                     "Sender",
                     "HITSP Component 48 Encounter Document"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "HIE SHALL",
                     "HITSP Component 48 Encounter Document",
                     "HL7 CDAr2 encounter documents"
@@ -5325,7 +5325,7 @@
                     "peer communications",
                     "HIE"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "secure peer",
                     "Lab HL7 2.5.1 transactions",
                     "peer communications"
@@ -5360,7 +5360,7 @@
                     "HL7 v2 radiology messages",
                     "HITSP Component 41 Radiology Message"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "HIE SHALL",
                     "HL7 v2 radiology messages",
                     "HITSP Component 41 Radiology Message"
@@ -5411,7 +5411,7 @@
                     "HITSP Component 37 Lab Report Document Structure",
                     "HL7 CDA r2"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "HIE SHALL",
                     "HITSP Component 36 Lab Message",
                     "clinical laboratory results",
@@ -5468,7 +5468,7 @@
                     "HL7 v2 encounter messages",
                     "HITSP Component 39 Encounter Message"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "HIE SHALL",
                     "HITSP Component 39 Encounter Message",
                     "HL7 v2 encounter messages"
@@ -5514,7 +5514,7 @@
                     "HITSP Component 47 Resource Utilization Message",
                     "HL7 v2 resource utilization messages"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "HIE SHALL",
                     "HITSP Component 47 Resource Utilization Message",
                     "HL7 v2 resource utilization messages"
@@ -5560,7 +5560,7 @@
                     "role",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "role - based access control",
                     "HL7 Permissions Catalog"
                 ],
@@ -5597,7 +5597,7 @@
                     "HITSP",
                     "2007"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "HIE SHALL",
                     "2007",
                     "HL7 / ASTM CCD healthcare summary document"
@@ -5631,7 +5631,7 @@
                     "medication history",
                     "03 CE - PHR Interoperability Specification HL7 - ASTM CCD"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "HIE SHALL",
                     "03 CE - PHR Interoperability Specification HL7 - ASTM CCD",
                     "IHE XDS / XCA"
@@ -5668,7 +5668,7 @@
                     "other information systems",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "available level",
                     "HL7 Clinical Data Architecture"
                 ],
@@ -5735,7 +5735,7 @@
                     "verification",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "business rules": 7.249902705175503,
@@ -5763,7 +5763,7 @@
                     "patient",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "chart": 6.115885161729424,
@@ -5801,7 +5801,7 @@
                     "American National Standard",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "ANSI INCITS 359-2004",
                     "role - based access control",
                     "RBAC infrastructure"
@@ -5859,7 +5859,7 @@
                     "role",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "role - based access control",
                     "HL7 Permissions Catalog"
                 ],
@@ -5909,7 +5909,7 @@
                     "access rights",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "time - of - day",
                     "user - based",
                     "role - based",
@@ -5967,7 +5967,7 @@
                     "PHI",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "access": 4.05360088347508,
@@ -6010,7 +6010,7 @@
                     "user authentication",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "web services": 6.780602977507575,
@@ -6048,7 +6048,7 @@
                     "information",
                     "HIE"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "HIE": 3.7604045071310344,
@@ -6075,7 +6075,7 @@
                     "system",
                     "HIE"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "user type": 4.370236001578173,
@@ -6113,7 +6113,7 @@
                     "management",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "user roles": 4.568200339743743,
@@ -6152,7 +6152,7 @@
                     "directory",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "users": 5.03342300153745,
@@ -6178,7 +6178,7 @@
                     "system",
                     "user"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "consecutive invalid access attempts"
                 ],
                 "definitions": {
@@ -6228,7 +6228,7 @@
                     "processes",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "users / groups",
                     "rights / privileges"
                 ],
@@ -6306,7 +6306,7 @@
                     "office encounters",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "office encounters"
                 ],
                 "definitions": {
@@ -6362,7 +6362,7 @@
                     "documentation",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "EHR security controls"
                 ],
                 "definitions": {
@@ -6410,7 +6410,7 @@
                     "minimal privileges",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "EHR functionality"
                 ],
                 "definitions": {
@@ -6447,7 +6447,7 @@
                     "user?s privileges",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "user?s privileges"
                 ],
                 "definitions": {
@@ -6493,7 +6493,7 @@
                     "explicit read - access",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "explicit read - access"
                 ],
                 "definitions": {
@@ -6526,7 +6526,7 @@
                     "users",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "notice warning"
                 ],
                 "definitions": {
@@ -6558,7 +6558,7 @@
                     "appropriate privileges",
                     "sensitive diagnoses"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "users": 5.03342300153745,
@@ -6600,7 +6600,7 @@
                     "effect",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "user": 3.1809801899513084,
@@ -6661,7 +6661,7 @@
                     "system",
                     "ability"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -6699,7 +6699,7 @@
                     "individual order sets",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "individual order sets"
                 ],
                 "definitions": {
@@ -6749,7 +6749,7 @@
                     "glass",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -6781,7 +6781,7 @@
                     "system",
                     "individual orders"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "individual orders": 4.723347036945722,
@@ -6812,7 +6812,7 @@
                     "administrators",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "users / groups"
                 ],
                 "definitions": {
@@ -6858,7 +6858,7 @@
                     "patient data",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "reason": 6.2964574073712445,
@@ -6910,7 +6910,7 @@
                     "test",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "procedure instructions": 5.9299007730359445,
@@ -6945,7 +6945,7 @@
                     "authorized authority",
                     "HIE"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "authorized authority",
                     "pseudo-anonymized record"
                 ],
@@ -6971,7 +6971,7 @@
                     "remote access controls",
                     "HIE"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "remote access controls"
                 ],
                 "definitions": {
@@ -7008,7 +7008,7 @@
                     "capacity",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "read - only"
                 ],
                 "definitions": {
@@ -7055,7 +7055,7 @@
                     "project",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "Ambulatory Care Date"
                 ],
                 "definitions": {
@@ -7084,7 +7084,7 @@
                     "system",
                     "diagnoses"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -7114,7 +7114,7 @@
                     "encounter",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "Management billing code",
                     "appropriate CPT Evaluation"
                 ],
@@ -7167,7 +7167,7 @@
                     "date / time",
                     "original source author"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "encounter note",
                     "date / time",
                     "original source author"
@@ -7218,7 +7218,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -7259,7 +7259,7 @@
                     "active order",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "one time medication orders"
                 ],
                 "definitions": {
@@ -7297,7 +7297,7 @@
                     "further care",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "visits": 9.203348002979764,
@@ -7337,7 +7337,7 @@
                     "forms",
                     "text"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "macro substitution dictation",
                     "direct keyboard entry"
                 ],
@@ -7403,7 +7403,7 @@
                     "specific patient encounter",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "discrete data elements",
                     "specific patient encounter"
                 ],
@@ -7459,7 +7459,7 @@
                     "date",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "discrete data elements",
                     "date / time",
                     "multiple discrete reasons"
@@ -7537,7 +7537,7 @@
                     "entire order",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -7573,7 +7573,7 @@
                     "pre-defined progress note templates",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "pre-defined progress note templates"
                 ],
                 "definitions": {
@@ -7595,7 +7595,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "clinical templates"
                 ],
                 "definitions": {
@@ -7635,7 +7635,7 @@
                     "individual practices",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "creation": 7.618385502258606,
@@ -7658,7 +7658,7 @@
                     "alerts",
                     "specific clinical situation"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "alerts": 5.618385502258607,
@@ -7685,7 +7685,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "clinical templates"
                 ],
                 "definitions": {
@@ -7727,7 +7727,7 @@
                     "patient care",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "clinical reminders": 5.388669692939958,
@@ -7752,7 +7752,7 @@
                     "tests",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "tests": 6.881419908092401,
@@ -7787,7 +7787,7 @@
                     "patient record",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "wellness services": 6.149085774590678,
@@ -7823,7 +7823,7 @@
                     "patients",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "provider": 4.743916384342466,
@@ -7868,7 +7868,7 @@
                     "tests",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "reminders": 6.618385502258606,
@@ -7903,7 +7903,7 @@
                     "patient?s",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "patient?s",
                     "clinical messages / reminders"
                 ],
@@ -7949,7 +7949,7 @@
                     "lab test results",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "graphing feature"
                 ],
                 "definitions": {
@@ -7979,7 +7979,7 @@
                     "administration",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "relevant lab results",
                     "medication ordering"
                 ],
@@ -8020,7 +8020,7 @@
                     "vital sign measurements",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "current patient encounter"
                 ],
                 "definitions": {
@@ -8056,7 +8056,7 @@
                     "system",
                     "ability"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "ordering process"
                 ],
                 "definitions": {
@@ -8092,7 +8092,7 @@
                     "time",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -8129,7 +8129,7 @@
                     "results",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "flow sheets": 9.410866752619185,
@@ -8166,7 +8166,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -8204,7 +8204,7 @@
                     "system",
                     "allergies"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "electronic report summary information"
                 ],
                 "definitions": {
@@ -8247,7 +8247,7 @@
                     "trend worksheets",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "trend worksheets"
                 ],
                 "definitions": {
@@ -8286,7 +8286,7 @@
                     "referral report",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -8330,7 +8330,7 @@
                     "lab results",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "request": 7.203348002979763,
@@ -8372,7 +8372,7 @@
                     "system",
                     "Nutritional Assessment"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "Daily Order Summary",
                     "Date Range reports",
                     "Vitals Cumulative",
@@ -8410,7 +8410,7 @@
                     "orders",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -8456,7 +8456,7 @@
                     "electronic output",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "hardcopy": 8.203348002979762,
@@ -8494,7 +8494,7 @@
                     "patient summary",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "individual patient?s"
                 ],
                 "definitions": {
@@ -8549,7 +8549,7 @@
                     "diabetes roster",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "diabetes roster"
                 ],
                 "definitions": {
@@ -8589,7 +8589,7 @@
                     "specific medication lists",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "specific medication lists"
                 ],
                 "definitions": {
@@ -8619,7 +8619,7 @@
                     "patients",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -8655,7 +8655,7 @@
                     "weight",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -8691,7 +8691,7 @@
                     "active orders",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -8720,7 +8720,7 @@
                     "patient record",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "patient record": 2.8297760038863897,
@@ -8750,7 +8750,7 @@
                     "audit capability",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "audit capability": 6.031200049021854,
@@ -8769,7 +8769,7 @@
                     "billing / claim information",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "auditable path",
                     "billing / claim information"
                 ],
@@ -8803,7 +8803,7 @@
                     "application data",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "log / audit files"
                 ],
                 "definitions": {
@@ -8854,7 +8854,7 @@
                     "documentation",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "EHR security controls"
                 ],
                 "definitions": {
@@ -8901,7 +8901,7 @@
                     "audit trail",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "problem / diagnosis list"
                 ],
                 "definitions": {
@@ -8938,7 +8938,7 @@
                     "Profile",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "common audit engine",
                     "Audit Log specification",
                     "ATNA",
@@ -8985,7 +8985,7 @@
                     "other support documentation",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "audit support functionality"
                 ],
                 "definitions": {
@@ -9037,7 +9037,7 @@
                     "encounter",
                     "user steps"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "successive authors"
                 ],
                 "definitions": {
@@ -9087,7 +9087,7 @@
                     "individual provider",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "EHR audit log",
                     "single unique internal provider identifier"
                 ],
@@ -9126,7 +9126,7 @@
                     "correct patient record",
                     "allergies"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "correct patient record",
                     "correct patient records"
                 ],
@@ -9157,7 +9157,7 @@
                     "explicit read - access",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "explicit read - access"
                 ],
                 "definitions": {
@@ -9192,7 +9192,7 @@
                     "audit trail",
                     "correct patient record"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "correct patient record",
                     "correct patient records"
                 ],
@@ -9223,7 +9223,7 @@
                     "correct patient records",
                     "correct patient record"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "correct patient record",
                     "correct patient records"
                 ],
@@ -9282,7 +9282,7 @@
                     "contents",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "user - friendly output version",
                     "unavoidable technical circumstances"
                 ],
@@ -9342,7 +9342,7 @@
                     "operating requirements / limits",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "operating requirements / limits"
                 ],
                 "definitions": {
@@ -9379,7 +9379,7 @@
                     "glass",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "glass": 9.203348002979764,
@@ -9420,7 +9420,7 @@
                     "information",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "two ways",
                     "UTC synchronization"
                 ],
@@ -9477,7 +9477,7 @@
                     "source",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "author": 6.395993080922159,
@@ -9519,7 +9519,7 @@
                     "date / time",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "date / time"
                 ],
                 "definitions": {
@@ -9554,7 +9554,7 @@
                     "Security New",
                     "HIE"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "Security New"
                 ],
                 "definitions": {
@@ -9592,7 +9592,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "outgoing information exchange",
                     "auditable form"
                 ],
@@ -9628,7 +9628,7 @@
                     "Nothing",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "audit trails"
                 ],
                 "definitions": {
@@ -9660,7 +9660,7 @@
                     "regular system audits",
                     "HIE"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "regular system audits"
                 ],
                 "definitions": {
@@ -9688,7 +9688,7 @@
                     "audit record",
                     "HIE"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "password changes": 7.0889386577318225,
@@ -9713,7 +9713,7 @@
                     "diagnosis data",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "ICD - 9 codes"
                 ],
                 "definitions": {
@@ -9741,7 +9741,7 @@
                     "Updates",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "Pharmacy IT system"
                 ],
                 "definitions": {
@@ -9780,7 +9780,7 @@
                     "SNOMED - CT",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "SNOMED - CT"
                 ],
                 "definitions": {
@@ -9818,7 +9818,7 @@
                     "DRU 090",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "message drug segment",
                     "DRU 090",
                     "NEWRX",
@@ -9862,7 +9862,7 @@
                     "LOINC",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "microbiology laboratory": 7.088938657731822,
@@ -9891,7 +9891,7 @@
                     "Allergy information",
                     "automatic text search"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "searchable structured data",
                     "automatic text search"
                 ],
@@ -9932,7 +9932,7 @@
                     "SIG instructions",
                     "electronic prescription"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "HIE SHALL",
                     "NCPDP Script 11.1",
                     "SIG instructions"
@@ -9985,7 +9985,7 @@
                     "ICD - 9",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "ICD - 9"
                 ],
                 "definitions": {
@@ -10034,7 +10034,7 @@
                     "appropriate CPT Evaluation",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "appropriate CPT Evaluation"
                 ],
                 "definitions": {
@@ -10077,7 +10077,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "list": 4.115885161729423,
@@ -10105,7 +10105,7 @@
                     "electronic prescription",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "SIG instructions"
                 ],
                 "definitions": {
@@ -10158,7 +10158,7 @@
                     "DRU 090",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "message drug segment",
                     "DRU 090",
                     "NCPDP Script v8 .1",
@@ -10201,7 +10201,7 @@
                     "system",
                     "ability"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "store": 5.345367007852191,
@@ -10231,7 +10231,7 @@
                     "encounter",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "Management billing code",
                     "appropriate CPT Evaluation"
                 ],
@@ -10276,7 +10276,7 @@
                     "System",
                     "database"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "#",
                     "parameters / attributes"
                 ],
@@ -10315,7 +10315,7 @@
                     "vendor - provided medication database",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "vendor - provided medication database",
                     "standard medication codes"
                 ],
@@ -10354,7 +10354,7 @@
                     "clinical problem",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "clinical problem": 4.803707192218802,
@@ -10397,7 +10397,7 @@
                     "unique identifier",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -10474,7 +10474,7 @@
                     "ease",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -10510,7 +10510,7 @@
                     "UCUM",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "UCUM"
                 ],
                 "definitions": {
@@ -10546,7 +10546,7 @@
                     "ICD - 9",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "ICD - 9"
                 ],
                 "definitions": {
@@ -10595,7 +10595,7 @@
                     "diagnosis / problem code",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "prescription / medication order",
                     "diagnosis / problem code"
                 ],
@@ -10640,7 +10640,7 @@
                     "orders",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "codified problems"
                 ],
                 "definitions": {
@@ -10674,7 +10674,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -10707,7 +10707,7 @@
                     "codes",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "standardized nomenclatures"
                 ],
                 "definitions": {
@@ -10768,7 +10768,7 @@
                     "adverse reaction",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "lists": 6.2964574073712445,
@@ -10809,7 +10809,7 @@
                     "system",
                     "patient history"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -10845,7 +10845,7 @@
                     "other information systems",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "available level",
                     "HL7 Clinical Data Architecture"
                 ],
@@ -10923,7 +10923,7 @@
                     "number",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "Guardian / legal representative"
                 ],
                 "definitions": {
@@ -10964,7 +10964,7 @@
                     "quantitative fashion",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "past tobacco use"
                 ],
                 "definitions": {
@@ -10998,7 +10998,7 @@
                     "system",
                     "date stamp"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -11031,7 +11031,7 @@
                     "family history",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "specific risk factor panel / display"
                 ],
                 "definitions": {
@@ -11078,7 +11078,7 @@
                     "system",
                     "diagnosis - related information"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "discharge summary hospitalization data",
                     "diagnosis - related information"
                 ],
@@ -11105,7 +11105,7 @@
                     "ability",
                     "diagnosis"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "diagnosis": 5.618385502258607,
@@ -11148,7 +11148,7 @@
                     "system",
                     "allergies"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "electronic report summary information"
                 ],
                 "definitions": {
@@ -11193,7 +11193,7 @@
                     "further care",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "visits": 9.203348002979764,
@@ -11238,7 +11238,7 @@
                     "hospital stay",
                     "level"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "provider signature"
                 ],
                 "definitions": {
@@ -11289,7 +11289,7 @@
                     "surgical summaries",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "CV 06.05",
                     "surgical summaries"
                 ],
@@ -11342,7 +11342,7 @@
                     "system",
                     "patient discharge"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "radiologic results",
                     "patient discharge"
                 ],
@@ -11375,7 +11375,7 @@
                     "system",
                     "patient discharge"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "patient discharge"
                 ],
                 "definitions": {
@@ -11411,7 +11411,7 @@
                     "system",
                     "particular patient"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "discharge instructions"
                 ],
                 "definitions": {
@@ -11455,7 +11455,7 @@
                     "system",
                     "allergies"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "discharge medications"
                 ],
                 "definitions": {
@@ -11503,7 +11503,7 @@
                     "system",
                     "means"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "discharge instructions"
                 ],
                 "definitions": {
@@ -11538,7 +11538,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -11576,7 +11576,7 @@
                     "instructions",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "acuity assignment"
                 ],
                 "definitions": {
@@ -11650,7 +11650,7 @@
                     "results",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "actions": 8.618385502258606,
@@ -11692,7 +11692,7 @@
                     "history",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "immunizations": 6.881419908092401,
@@ -11717,7 +11717,7 @@
                     "Medication",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "intact documents",
                     "CCD documents",
                     "Immunization History module",
@@ -11791,7 +11791,7 @@
                     "Medication",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "intact documents",
                     "CCD documents",
                     "Immunization History module",
@@ -11864,7 +11864,7 @@
                     "immunizations",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "immunizations": 6.881419908092401,
@@ -11912,7 +11912,7 @@
                     "analysis - of - needs mechanism",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "documentation grid",
                     "analysis - of - needs mechanism",
                     "reference immunization schedule"
@@ -11980,7 +11980,7 @@
                     "date",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "last immunization dose"
                 ],
                 "definitions": {
@@ -12022,7 +12022,7 @@
                     "Medication",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "intact documents",
                     "CCD documents",
                     "Immunization History information",
@@ -12096,7 +12096,7 @@
                     "entries",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "intact documents",
                     "CCD documents",
                     "Immunization History information",
@@ -12165,7 +12165,7 @@
                     "immunizations",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "documentation grid",
                     "reference immunization schedule"
                 ],
@@ -12223,7 +12223,7 @@
                     "system",
                     "ability"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "immunization administration"
                 ],
                 "definitions": {
@@ -12261,7 +12261,7 @@
                     "date",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "immunization administration history"
                 ],
                 "definitions": {
@@ -12304,7 +12304,7 @@
                     "system",
                     "administration"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "immunization order"
                 ],
                 "definitions": {
@@ -12339,7 +12339,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "immunization administration record"
                 ],
                 "definitions": {
@@ -12376,7 +12376,7 @@
                     "system",
                     "other schedules"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "CDC": 8.618385502258606,
@@ -12413,7 +12413,7 @@
                     "immunization registry",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "import immunization record"
                 ],
                 "definitions": {
@@ -12463,7 +12463,7 @@
                     "immunization registry",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "patient immunizations"
                 ],
                 "definitions": {
@@ -12514,7 +12514,7 @@
                     "Medication",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "valid HITSP C32 document",
                     "Immunization History module",
                     "C32",
@@ -12575,7 +12575,7 @@
                     "Medication",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "Level 2 CCD documents",
                     "Immunization History information module",
                     "HITSP C32 specification"
@@ -12619,7 +12619,7 @@
                     "system",
                     "immunization histories"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "public health immunization registry"
                 ],
                 "definitions": {
@@ -12676,7 +12676,7 @@
                     "RxNorm",
                     "discrete fields"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "standard vocabularies / terminologies",
                     "HITSP IS03 / C32 specification",
                     "Immunization History module subset",
@@ -12750,7 +12750,7 @@
                     "Medication",
                     "discrete fields"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "industry - standard vocabularies / terminologies",
                     "HITSP IS03 / C32 specification",
                     "Immunization History module subset",
@@ -12811,7 +12811,7 @@
                     "immunization administration documentation",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "immunization administration documentation"
                 ],
                 "definitions": {
@@ -12848,7 +12848,7 @@
                     "system",
                     "ability"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "tasks / assessments",
                     "immunization administration"
                 ],
@@ -12886,7 +12886,7 @@
                     "system",
                     "allergy / adverse reaction"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "specific immunization",
                     "allergy / adverse reaction"
                 ],
@@ -12928,7 +12928,7 @@
                     "clinician",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "immunizations": 6.881419908092401,
@@ -12974,7 +12974,7 @@
                     "date",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "immunization administration details",
                     "immunization type"
                 ],
@@ -13023,7 +13023,7 @@
                     "allergy / adverse reaction",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "specific immunization",
                     "allergy / adverse reaction"
                 ],
@@ -13070,7 +13070,7 @@
                     "problem immunization episode",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "problem immunization episode"
                 ],
                 "definitions": {
@@ -13118,7 +13118,7 @@
                     "results",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -13145,7 +13145,7 @@
                     "Sender",
                     "Component 35 EHR Lab Terminology"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "HIE SHALL",
                     "2.5.1",
                     "HITSP Component 36 Lab Message",
@@ -13197,7 +13197,7 @@
                     "HITSP Component 37 Lab Report Document Structure",
                     "HL7 CDA r2"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "HIE SHALL",
                     "HITSP Component 35 EHR Lab Terminology",
                     "clinical laboratory results",
@@ -13256,7 +13256,7 @@
                     "HITSP Component 37 Lab Report Document Structure",
                     "HL7 CDA r2"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "HIE SHALL",
                     "HITSP Component 36 Lab Message",
                     "clinical laboratory results",
@@ -13311,7 +13311,7 @@
                     "SNOMED - CT",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "SNOMED - CT"
                 ],
                 "definitions": {
@@ -13345,7 +13345,7 @@
                     "general laboratory results",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "general laboratory results"
                 ],
                 "definitions": {
@@ -13399,7 +13399,7 @@
                     "LOINC",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "microbiology laboratory": 7.088938657731822,
@@ -13428,7 +13428,7 @@
                     "text",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "organisms": 9.203348002979764,
@@ -13458,7 +13458,7 @@
                     "referral report",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -13505,7 +13505,7 @@
                     "dosing",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "consideration": 8.618385502258606,
@@ -13545,7 +13545,7 @@
                     "system",
                     "ability"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "specific laboratory test results"
                 ],
                 "definitions": {
@@ -13588,7 +13588,7 @@
                     "orders",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -13622,7 +13622,7 @@
                     "ability",
                     "query"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "query": 5.8110305802010025,
@@ -13654,7 +13654,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "historical test results"
                 ],
                 "definitions": {
@@ -13690,7 +13690,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -13722,7 +13722,7 @@
                     "system",
                     "ability"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "ordering process"
                 ],
                 "definitions": {
@@ -13760,7 +13760,7 @@
                     "instructions",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -13793,7 +13793,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "radiology tests": 7.381419908092401,
@@ -13824,7 +13824,7 @@
                     "system",
                     "patient discharge"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "patient discharge"
                 ],
                 "definitions": {
@@ -13861,7 +13861,7 @@
                     "query",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -13894,7 +13894,7 @@
                     "system",
                     "ability"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -13930,7 +13930,7 @@
                     "dosing",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -13973,7 +13973,7 @@
                     "results",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -14027,7 +14027,7 @@
                     "imaging studies",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "order types": 5.151704098773752,
@@ -14070,7 +14070,7 @@
                     "imaging studies",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "labs": 9.203348002979764,
@@ -14107,7 +14107,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -14144,7 +14144,7 @@
                     "local stocks",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "full auditing"
                 ],
                 "definitions": {
@@ -14171,7 +14171,7 @@
                     "system",
                     "orderable medications"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "orderable medications"
                 ],
                 "definitions": {
@@ -14211,7 +14211,7 @@
                     "system",
                     "ability"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -14231,7 +14231,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -14268,7 +14268,7 @@
                     "system",
                     "clinical trial"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "data": 3.053600883475081,
@@ -14317,7 +14317,7 @@
                     "date",
                     "internal patient ID number"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "internal patient ID number"
                 ],
                 "definitions": {
@@ -14364,7 +14364,7 @@
                     "capability",
                     "risk"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "capability": 6.502908284838671,
@@ -14387,7 +14387,7 @@
                     "system",
                     "patient history"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "patient history": 3.6982588009694926,
@@ -14419,7 +14419,7 @@
                     "immunizations",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "immunizations": 6.881419908092401,
@@ -14458,7 +14458,7 @@
                     "discrete lab results",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "discrete lab results"
                 ],
                 "definitions": {
@@ -14500,7 +14500,7 @@
                     "record",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "text - based"
                 ],
                 "definitions": {
@@ -14541,7 +14541,7 @@
                     "information",
                     "HIE"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "locations / systems"
                 ],
                 "definitions": {
@@ -14579,7 +14579,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "HITSP C / 48 document"
                 ],
                 "definitions": {
@@ -14611,7 +14611,7 @@
                     "system",
                     "drug - drug interactions"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "drug - drug interactions"
                 ],
                 "definitions": {
@@ -14646,7 +14646,7 @@
                     "system ID",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "key identifier information"
                 ],
                 "definitions": {
@@ -14687,7 +14687,7 @@
                     "alert providers",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "new vaccine dosing schedules",
                     "official CDC schedule updates"
                 ],
@@ -14730,7 +14730,7 @@
                     "adverse effects",
                     "risk"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "medication prescribing / ordering"
                 ],
                 "definitions": {
@@ -14784,7 +14784,7 @@
                     "patient annotations",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "patient annotations"
                 ],
                 "definitions": {
@@ -14831,7 +14831,7 @@
                     "adverse effects",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "time": 3.0844069302562556,
@@ -14879,7 +14879,7 @@
                     "potential interaction",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "new allergy"
                 ],
                 "definitions": {
@@ -14919,7 +14919,7 @@
                     "discrete data",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "demographic information": 4.614015577476527,
@@ -14945,7 +14945,7 @@
                     "system",
                     "patient record"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "lab result data elements"
                 ],
                 "definitions": {
@@ -14986,7 +14986,7 @@
                     "security",
                     "risk analysis"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "record format": 4.812668146217433,
@@ -15023,7 +15023,7 @@
                     "system",
                     "ability"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "store": 5.345367007852191,
@@ -15050,7 +15050,7 @@
                     "system",
                     "privacy notices"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -15076,7 +15076,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -15101,7 +15101,7 @@
                     "order action",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -15129,7 +15129,7 @@
                     "demographic information",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "separate discrete data fields"
                 ],
                 "definitions": {
@@ -15176,7 +15176,7 @@
                     "record",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "patient": 2.2375637183176758,
@@ -15210,7 +15210,7 @@
                     "record",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "medication details": 4.549462987034412,
@@ -15252,7 +15252,7 @@
                     "family history",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "specific risk factor panel / display"
                 ],
                 "definitions": {
@@ -15296,7 +15296,7 @@
                     "current medication orders",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "current medication orders",
                     "new allergy"
                 ],
@@ -15334,7 +15334,7 @@
                     "external documents",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -15367,7 +15367,7 @@
                     "system",
                     "patient history"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "conditions": 9.203348002979764,
@@ -15408,7 +15408,7 @@
                     "relevant providers",
                     "new results"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -15442,7 +15442,7 @@
                     "patients",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "medical record numbers": 5.747907264897823,
@@ -15468,7 +15468,7 @@
                     "patients",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "facility": 7.203348002979763,
@@ -15513,7 +15513,7 @@
                     "date",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "order screens"
                 ],
                 "definitions": {
@@ -15558,7 +15558,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "patient": 2.2375637183176758,
@@ -15593,7 +15593,7 @@
                     "weight",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -15634,7 +15634,7 @@
                     "date",
                     "internal patient ID number"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "internal patient ID number"
                 ],
                 "definitions": {
@@ -15678,7 +15678,7 @@
                     "hospital",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "other ADT system"
                 ],
                 "definitions": {
@@ -15729,7 +15729,7 @@
                     "system ID",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "key identifier information"
                 ],
                 "definitions": {
@@ -15766,7 +15766,7 @@
                     "specific medication lists",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "specific medication lists"
                 ],
                 "definitions": {
@@ -15794,7 +15794,7 @@
                     "system",
                     "single patient record"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "single patient record"
                 ],
                 "definitions": {
@@ -15840,7 +15840,7 @@
                     "office encounters",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "office encounters"
                 ],
                 "definitions": {
@@ -15881,7 +15881,7 @@
                     "patients",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "secure electronic messaging"
                 ],
                 "definitions": {
@@ -15923,7 +15923,7 @@
                     "information",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "patient name": 3.816778399619917,
@@ -15972,7 +15972,7 @@
                     "field",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -16004,7 +16004,7 @@
                     "ability",
                     "patient record"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "one identifier"
                 ],
                 "definitions": {
@@ -16042,7 +16042,7 @@
                     "correct patient records",
                     "correct patient record"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "correct patient record",
                     "correct patient records"
                 ],
@@ -16090,7 +16090,7 @@
                     "patient summary",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "individual patient?s"
                 ],
                 "definitions": {
@@ -16159,7 +16159,7 @@
                     "date",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "immunization administration details",
                     "immunization type"
                 ],
@@ -16206,7 +16206,7 @@
                     "specific medication",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -16246,7 +16246,7 @@
                     "transaction ID",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "patient chart output / document",
                     "patient chart outputs"
                 ],
@@ -16311,7 +16311,7 @@
                     "minimum state",
                     "UPIN number"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -16350,7 +16350,7 @@
                     "historic information",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "prior names"
                 ],
                 "definitions": {
@@ -16392,7 +16392,7 @@
                     "system",
                     "single patient record"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "two",
                     "single patient record"
                 ],
@@ -16444,7 +16444,7 @@
                     "number",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -16489,7 +16489,7 @@
                     "specific problems / diagnoses",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "specific problems / diagnoses"
                 ],
                 "definitions": {
@@ -16535,7 +16535,7 @@
                     "DOQ - IT quality improvement measures",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "DOQ - IT quality improvement measures"
                 ],
                 "definitions": {
@@ -16573,7 +16573,7 @@
                     "system",
                     "procedure 2"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "multiple selection capability",
                     "multiple input capability",
                     "procedure 2"
@@ -16649,7 +16649,7 @@
                     "system",
                     "procedure 2"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "discrete data elements",
                     "multiple input capability",
                     "multiple selection capability",
@@ -16719,7 +16719,7 @@
                     "capacity",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "capacity": 7.881419908092401,
@@ -16761,7 +16761,7 @@
                     "invalid data",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "dose type"
                 ],
                 "definitions": {
@@ -16804,7 +16804,7 @@
                     "minimum",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "administrator": 7.395993080922159,
@@ -16847,7 +16847,7 @@
                     "orders",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -16879,7 +16879,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -16916,7 +16916,7 @@
                     "other support documentation",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "audit support functionality"
                 ],
                 "definitions": {
@@ -16972,7 +16972,7 @@
                     "system",
                     "procedure 2"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "multiple input capability",
                     "multiple selection capability",
                     "procedure 2"
@@ -17039,7 +17039,7 @@
                     "documentation",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "performance messages"
                 ],
                 "definitions": {
@@ -17082,7 +17082,7 @@
                     "Medication",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "orderable files"
                 ],
                 "definitions": {
@@ -17112,7 +17112,7 @@
                     "imaging studies",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "order types": 5.151704098773752,
@@ -17154,7 +17154,7 @@
                     "system",
                     "ability"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -17185,7 +17185,7 @@
                     "appropriate medication list",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "appropriate medication list"
                 ],
                 "definitions": {
@@ -17227,7 +17227,7 @@
                     "dosing",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "complex medication orders"
                 ],
                 "definitions": {
@@ -17266,7 +17266,7 @@
                     "medication administration",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "medication screening alerts"
                 ],
                 "definitions": {
@@ -17313,7 +17313,7 @@
                     "system",
                     "ability"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -17347,7 +17347,7 @@
                     "medication name",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "medication purpose"
                 ],
                 "definitions": {
@@ -17395,7 +17395,7 @@
                     "ability",
                     "medication"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -17429,7 +17429,7 @@
                     "decision support",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "allergy": 4.993894637350813,
@@ -17474,7 +17474,7 @@
                     "orders",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "default order details"
                 ],
                 "definitions": {
@@ -17516,7 +17516,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "nonformulary medications"
                 ],
                 "definitions": {
@@ -17559,7 +17559,7 @@
                     "signature",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "prescriptions": 6.203348002979762,
@@ -17583,7 +17583,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "prescription message"
                 ],
                 "definitions": {
@@ -17628,7 +17628,7 @@
                     "system",
                     "ability"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "prescriptions": 6.203348002979762,
@@ -17672,7 +17672,7 @@
                     "NEWRX",
                     "allergies"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "discharge medications",
                     "NEWRX",
                     "NCPDP SCRIPT 8.1"
@@ -17720,7 +17720,7 @@
                     "system",
                     "ability"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "electronic prescription eligibility checking"
                 ],
                 "definitions": {
@@ -17765,7 +17765,7 @@
                     "CHGRES",
                     "prescription change"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "NCPDP Script 8.1",
                     "HIE SHALL",
                     "CHGRES",
@@ -17819,7 +17819,7 @@
                     "sufficient information",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "correct filling",
                     "other medication orders"
                 ],
@@ -17878,7 +17878,7 @@
                     "CANRX",
                     "CANRES"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "HIE SHALL",
                     "prescription message",
                     "NCPDP Script 8.1",
@@ -17932,7 +17932,7 @@
                     "NCPDP Script 8.1",
                     "NEWRX"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "HIE SHALL",
                     "NEWRX",
                     "NCPDP Script 8.1"
@@ -17981,7 +17981,7 @@
                     "SIG instructions",
                     "electronic prescription"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "HIE SHALL",
                     "NCPDP Script 11.1",
                     "SIG instructions"
@@ -18027,7 +18027,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -18070,7 +18070,7 @@
                     "diagnosis",
                     "associated problem"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "associated problem"
                 ],
                 "definitions": {
@@ -18119,7 +18119,7 @@
                     "related events",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -18157,7 +18157,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "pharmacy": 5.8110305802010025,
@@ -18200,7 +18200,7 @@
                     "electronic prescription",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "SIG instructions"
                 ],
                 "definitions": {
@@ -18250,7 +18250,7 @@
                     "pharmacies",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "recipients": 9.203348002979764,
@@ -18289,7 +18289,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -18317,7 +18317,7 @@
                     "durable items",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "outpatient prescriptions": 7.042383955536081,
@@ -18346,7 +18346,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -18397,7 +18397,7 @@
                     "specifications",
                     "text"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -18454,7 +18454,7 @@
                     "orders",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -18488,7 +18488,7 @@
                     "prescription change",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "request": 7.203348002979763,
@@ -18537,7 +18537,7 @@
                     "order entry",
                     "building"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "external lab services"
                 ],
                 "definitions": {
@@ -18568,7 +18568,7 @@
                     "studies / procedures",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "studies / procedures"
                 ],
                 "definitions": {
@@ -18606,7 +18606,7 @@
                     "external application",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -18637,7 +18637,7 @@
                     "administrative data",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "external reporting tools"
                 ],
                 "definitions": {
@@ -18675,7 +18675,7 @@
                     "administrative data",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "external reporting tools"
                 ],
                 "definitions": {
@@ -18720,7 +18720,7 @@
                     "PHI",
                     "Note"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "network?via SSL",
                     "the?capability"
                 ],
@@ -18764,7 +18764,7 @@
                     "discrete lab results",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "discrete lab results"
                 ],
                 "definitions": {
@@ -18803,7 +18803,7 @@
                     "lab results",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "request": 7.203348002979763,
@@ -18835,7 +18835,7 @@
                     "system",
                     "patient record"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "lab result data elements"
                 ],
                 "definitions": {
@@ -18875,7 +18875,7 @@
                     "record",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "patient": 2.2375637183176758,
@@ -18909,7 +18909,7 @@
                     "Billing / Practice Management systems",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "open source integration platform",
                     "Billing / Practice Management systems"
                 ],
@@ -18947,7 +18947,7 @@
                     "open networks",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "S / MIME"
                 ],
                 "definitions": {
@@ -19000,7 +19000,7 @@
                     "origin",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "assurance manner"
                 ],
                 "definitions": {
@@ -19046,7 +19046,7 @@
                     "system",
                     "reference information"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -19092,7 +19092,7 @@
                     "Document Source - Provide",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "IHE ITI",
                     "Register Document Set",
                     "IT Infrastructure",
@@ -19142,7 +19142,7 @@
                     "IHE ITI",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "IHE ITI",
                     "IT Infrastructure",
                     "Document Transaction",
@@ -19188,7 +19188,7 @@
                     "system",
                     "patient registration data"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "internal practice management system",
                     "patient registration data"
                 ],
@@ -19236,7 +19236,7 @@
                     "system",
                     "disease management guidelines"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "associated reference material",
                     "disease management guidelines"
                 ],
@@ -19277,7 +19277,7 @@
                     "discrete lab results",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "discrete lab results"
                 ],
                 "definitions": {
@@ -19316,7 +19316,7 @@
                     "lab results",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "request": 7.203348002979763,
@@ -19350,7 +19350,7 @@
                     "system",
                     "clinics"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "physicians": 10.203348002979764,
@@ -19388,7 +19388,7 @@
                     "Document Source Actor",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "IHE ITI",
                     "IT Infrastructure",
                     "Document Source Actor"
@@ -19432,7 +19432,7 @@
                     "system",
                     "patient record"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "lab result data elements"
                 ],
                 "definitions": {
@@ -19476,7 +19476,7 @@
                     "hospital systems",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "ED care process"
                 ],
                 "definitions": {
@@ -19542,7 +19542,7 @@
                     "system",
                     "DEA policy"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "outpatient medication orders",
                     "schedule 2",
                     "schedule 2n"
@@ -19576,7 +19576,7 @@
                     "date",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -19616,7 +19616,7 @@
                     "co-signature",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "configure orders"
                 ],
                 "definitions": {
@@ -19650,7 +19650,7 @@
                     "comment",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -19696,7 +19696,7 @@
                     "administration",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "correct filling"
                 ],
                 "definitions": {
@@ -19746,7 +19746,7 @@
                     "durable items",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "outpatient prescriptions": 7.042383955536081,
@@ -19776,7 +19776,7 @@
                     "orders",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -19816,7 +19816,7 @@
                     "system",
                     "HIE"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "Physicians office EMR",
                     "Discharge Medications",
                     "outpatient documentation sources",
@@ -19878,7 +19878,7 @@
                     "orders",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "ordering clinician",
                     "co signature"
                 ],
@@ -19928,7 +19928,7 @@
                     "route",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "route": 6.115885161729424,
@@ -19979,7 +19979,7 @@
                     "system",
                     "hospital policy"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "medical record entries"
                 ],
                 "definitions": {
@@ -20022,7 +20022,7 @@
                     "electronic signature",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "electronic signature": 5.6374195226753665,
@@ -20048,7 +20048,7 @@
                     "date",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -20086,7 +20086,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -20117,7 +20117,7 @@
                     "date",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -20165,7 +20165,7 @@
                     "system",
                     "allergies"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "electronic report summary information"
                 ],
                 "definitions": {
@@ -20208,7 +20208,7 @@
                     "co-signature",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "configure orders"
                 ],
                 "definitions": {
@@ -20243,7 +20243,7 @@
                     "route",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "order activation",
                     "ordering provider"
                 ],
@@ -20285,7 +20285,7 @@
                     "orders",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -20319,7 +20319,7 @@
                     "digital signature standards",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "patient medical record": 3.759312503343795,
@@ -20350,7 +20350,7 @@
                     "orders",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "ordering clinician",
                     "co signature"
                 ],
@@ -20401,7 +20401,7 @@
                     "date",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "date": 3.395993080922158,
@@ -20434,7 +20434,7 @@
                     "orders",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "provider": 4.743916384342466,
@@ -20472,7 +20472,7 @@
                     "system",
                     "hospital policy"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "medical record entries"
                 ],
                 "definitions": {
@@ -20513,7 +20513,7 @@
                     "user class hierarchy",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "user class hierarchy"
                 ],
                 "definitions": {
@@ -20553,7 +20553,7 @@
                     "access rights",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "time - of - day",
                     "user - based",
                     "role - based",
@@ -20611,7 +20611,7 @@
                     "user?s privileges",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "user?s privileges"
                 ],
                 "definitions": {
@@ -20656,7 +20656,7 @@
                     "tasks",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -20692,7 +20692,7 @@
                     "system",
                     "HIE"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "user type": 4.370236001578173,
@@ -20730,7 +20730,7 @@
                     "management",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "user roles": 4.568200339743743,
@@ -20769,7 +20769,7 @@
                     "directory",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "users": 5.03342300153745,
@@ -20798,7 +20798,7 @@
                     "role",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "role - based access control",
                     "HL7 Permissions Catalog"
                 ],
@@ -20839,7 +20839,7 @@
                     "system",
                     "individual"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "access": 4.05360088347508,
@@ -20882,7 +20882,7 @@
                     "role",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "verbal orders": 5.612150826277498,
@@ -20926,7 +20926,7 @@
                     "individual order sets",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "individual order sets"
                 ],
                 "definitions": {
@@ -20975,7 +20975,7 @@
                     "system",
                     "individual orders"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "individual orders": 4.723347036945722,
@@ -21006,7 +21006,7 @@
                     "tasks",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -21046,7 +21046,7 @@
                     "tools",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "documents": 4.955420489536177,
@@ -21080,7 +21080,7 @@
                     "entries",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "intact documents",
                     "CCD documents",
                     "Registration Summary information",
@@ -21140,7 +21140,7 @@
                     "administrators",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "users / groups"
                 ],
                 "definitions": {
@@ -21183,7 +21183,7 @@
                     "system",
                     "report parameters"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -21223,7 +21223,7 @@
                     "Conditions",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "intact documents",
                     "CCD documents",
                     "HITSP C32 specification"
@@ -21284,7 +21284,7 @@
                     "Medication",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "Level 2 CCD documents",
                     "Immunization History information module",
                     "HITSP C32 specification"
@@ -21329,7 +21329,7 @@
                     "Format Level 2 CCD documents",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "Format Level 2 CCD documents",
                     "Registration subset",
                     "HITSP C32 specification"
@@ -21378,7 +21378,7 @@
                     "entries",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "intact documents",
                     "CCD documents",
                     "Immunization History information",
@@ -21443,7 +21443,7 @@
                     "system",
                     "something"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "something": 10.203348002979764,
@@ -21480,7 +21480,7 @@
                     "access rights",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "time - of - day",
                     "user - based",
                     "role - based",
@@ -21537,7 +21537,7 @@
                     "administrators",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "users / groups"
                 ],
                 "definitions": {
@@ -21583,7 +21583,7 @@
                     "information",
                     "HIE"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "HIE": 3.7604045071310344,
@@ -21607,7 +21607,7 @@
                     "users",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "notice warning"
                 ],
                 "definitions": {
@@ -21641,7 +21641,7 @@
                     "system",
                     "HIE"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "user type": 4.370236001578173,
@@ -21675,7 +21675,7 @@
                     "directory",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "users": 5.03342300153745,
@@ -21706,7 +21706,7 @@
                     "American National Standard",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "ANSI INCITS 359-2004",
                     "role - based access control",
                     "RBAC infrastructure"
@@ -21764,7 +21764,7 @@
                     "role",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "role - based access control",
                     "HL7 Permissions Catalog"
                 ],
@@ -21803,7 +21803,7 @@
                     "glass",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -21841,7 +21841,7 @@
                     "capacity",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "read - only"
                 ],
                 "definitions": {
@@ -21881,7 +21881,7 @@
                     "vital sign measurement",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "preset normal range",
                     "vital sign measurement"
                 ],
@@ -21928,7 +21928,7 @@
                     "operating requirements / limits",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "operating requirements / limits"
                 ],
                 "definitions": {
@@ -21962,7 +21962,7 @@
                     "system",
                     "ability"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -22008,7 +22008,7 @@
                     "processes",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "users / groups",
                     "rights / privileges"
                 ],
@@ -22090,7 +22090,7 @@
                     "variety",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "implementation - specific policies",
                     "HIPAA - mandated risk analysis",
                     "implementation - specific",
@@ -22140,7 +22140,7 @@
                     "PHI",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "access": 4.05360088347508,
@@ -22191,7 +22191,7 @@
                     "information",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "two ways",
                     "UTC synchronization"
                 ],
@@ -22255,7 +22255,7 @@
                     "Such overrides",
                     "scope"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "jurisdictional law",
                     "high level authorization",
                     "child abuse photographs"
@@ -22303,7 +22303,7 @@
                     "information",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "user classes": 5.531200049021854,
@@ -22322,7 +22322,7 @@
                     "system",
                     "ability"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -22356,7 +22356,7 @@
                     "management",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "user roles": 4.568200339743743,
@@ -22398,7 +22398,7 @@
                     "HIE identifier",
                     "HIE"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "unique user identity",
                     "HIE identifier"
                 ],
@@ -22433,7 +22433,7 @@
                     "system",
                     "ability"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -22473,7 +22473,7 @@
                     "user authentication",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "web services": 6.780602977507575,
@@ -22513,7 +22513,7 @@
                     "identifiers",
                     "electronic output"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "actual PHI data",
                     "HIPAA definition"
                 ],
@@ -22549,7 +22549,7 @@
                     "specific service",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "hospital - wide"
                 ],
                 "definitions": {
@@ -22579,7 +22579,7 @@
                     "teams",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "teams": 8.203348002979762,
@@ -22653,7 +22653,7 @@
                     "therapeutic class",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "end - users"
                 ],
                 "definitions": {
@@ -22694,7 +22694,7 @@
                     "management",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "user roles": 4.568200339743743,
@@ -22734,7 +22734,7 @@
                     "ability",
                     "clinicians"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "system archives health record information"
                 ],
                 "definitions": {
@@ -22767,7 +22767,7 @@
                     "system",
                     "individual orders"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "individual orders": 4.723347036945722,
@@ -22798,7 +22798,7 @@
                     "therapeutic class",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "end - users"
                 ],
                 "definitions": {
@@ -22840,7 +22840,7 @@
                     "VistA",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "complement security keys"
                 ],
                 "definitions": {
@@ -22865,7 +22865,7 @@
                     "other users",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "result": 7.203348002979763,
@@ -22897,7 +22897,7 @@
                     "American National Standard",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "ANSI INCITS 359-2004",
                     "role - based access control",
                     "RBAC infrastructure"
@@ -22955,7 +22955,7 @@
                     "role",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "role - based access control",
                     "HL7 Permissions Catalog"
                 ],
@@ -22994,7 +22994,7 @@
                     "system ID",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "key identifier information"
                 ],
                 "definitions": {
@@ -23034,7 +23034,7 @@
                     "individual order sets",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "individual order sets"
                 ],
                 "definitions": {
@@ -23083,7 +23083,7 @@
                     "system",
                     "individual orders"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "individual orders": 4.723347036945722,
@@ -23117,7 +23117,7 @@
                     "system",
                     "hospital policy"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "medical record entries"
                 ],
                 "definitions": {
@@ -23157,7 +23157,7 @@
                     "system",
                     "infinite hierarchies"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "User Hierarchy Class structure",
                     "infinite hierarchies"
                 ],
@@ -23188,7 +23188,7 @@
                     "System",
                     "database"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "#",
                     "parameters / attributes"
                 ],
@@ -23228,7 +23228,7 @@
                     "user?s privileges",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "user?s privileges"
                 ],
                 "definitions": {
@@ -23277,7 +23277,7 @@
                     "identifiers",
                     "electronic output"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "actual PHI data",
                     "HIPAA definition"
                 ],
@@ -23311,7 +23311,7 @@
                     "tasks",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -23351,7 +23351,7 @@
                     "system",
                     "higher level"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "roles": 5.955420489536178,
@@ -23377,7 +23377,7 @@
                     "original document",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "document type": 4.870236001578173,
@@ -23420,7 +23420,7 @@
                     "source",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "author": 6.395993080922159,
@@ -23462,7 +23462,7 @@
                     "administrators",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "users / groups"
                 ],
                 "definitions": {
@@ -23506,7 +23506,7 @@
                     "tasks",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -23542,7 +23542,7 @@
                     "system",
                     "HIE"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "user type": 4.370236001578173,
@@ -23582,7 +23582,7 @@
                     "date",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "date": 3.395993080922158,
@@ -23617,7 +23617,7 @@
                     "role",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "role - based access control",
                     "HL7 Permissions Catalog"
                 ],
@@ -23655,7 +23655,7 @@
                     "medical teams",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "assignments": 9.203348002979764,
@@ -23713,7 +23713,7 @@
                     "specialty",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "hospital": 5.448460500816294,
@@ -23757,7 +23757,7 @@
                     "Format Level 2 CCD documents",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "Format Level 2 CCD documents",
                     "HITSP C32 specification"
                 ],
@@ -23795,7 +23795,7 @@
                     "Format Level 2 CCD documents",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "Format Level 2 CCD documents",
                     "Registration subset",
                     "HITSP C32 specification"
@@ -23834,7 +23834,7 @@
                     "tasks",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -23873,7 +23873,7 @@
                     "TIU",
                     "Consults / Request Tracking"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "Consults / Request Tracking",
                     "document - handling system"
                 ],
@@ -23903,7 +23903,7 @@
                     "progress",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "ability": 0.6202652354768292,
@@ -23951,7 +23951,7 @@
                     "patients",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "facility": 7.203348002979763,
@@ -23995,7 +23995,7 @@
                     "progress",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "date / time / author"
                 ],
                 "definitions": {
@@ -24047,7 +24047,7 @@
                     "further care",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "visits": 9.203348002979764,
@@ -24092,7 +24092,7 @@
                     "date",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "current weight": 5.6208945396419185,
@@ -24142,7 +24142,7 @@
                     "system",
                     "allergies"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "discharge medications"
                 ],
                 "definitions": {
@@ -24190,7 +24190,7 @@
                     "system",
                     "means"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "discharge instructions"
                 ],
                 "definitions": {
@@ -24232,7 +24232,7 @@
                     "system",
                     "HIE"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "Physicians office EMR",
                     "Discharge Medications",
                     "outpatient documentation sources",
@@ -24293,7 +24293,7 @@
                     "documentation",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "clinical follow - up"
                 ],
                 "definitions": {
@@ -24340,7 +24340,7 @@
                     "progress",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -24388,7 +24388,7 @@
                     "HITSP Transaction Package 13",
                     "HIE"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "IHE XCA",
                     "summary patient record data",
                     "2007 IHE XDS - b",
@@ -24434,7 +24434,7 @@
                     "results",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "actions": 8.618385502258606,
@@ -24478,7 +24478,7 @@
                     "role",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "user class file",
                     "other VistA applications"
                 ],
@@ -24520,7 +24520,7 @@
                     "information",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "network protocols / ports",
                     "HL - 7"
                 ],
@@ -24572,7 +24572,7 @@
                     "American National Standard",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "ANSI INCITS 359-2004",
                     "role - based access control",
                     "RBAC infrastructure"
@@ -24630,7 +24630,7 @@
                     "role",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "role - based access control",
                     "HL7 Permissions Catalog"
                 ],
@@ -24667,7 +24667,7 @@
                     "patient data",
                     "secure remote access"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "need": 8.618385502258606,
@@ -24704,7 +24704,7 @@
                     "firewall protections",
                     "HIE"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "firewall protections": 9.203348002979764,
@@ -24727,7 +24727,7 @@
                     "PHI",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "access": 4.05360088347508,
@@ -24767,7 +24767,7 @@
                     "system",
                     "ability"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "EHR application"
                 ],
                 "definitions": {
@@ -24799,7 +24799,7 @@
                     "application data",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "log / audit files"
                 ],
                 "definitions": {
@@ -24845,7 +24845,7 @@
                     "date",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "location": 6.881419908092401,
@@ -24876,7 +24876,7 @@
                     "date",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "physical location": 7.749902705175503,
@@ -24948,7 +24948,7 @@
                     "date",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "encounter characteristics"
                 ],
                 "definitions": {
@@ -25004,7 +25004,7 @@
                     "system",
                     "patient record"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -25035,7 +25035,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -25075,7 +25075,7 @@
                     "system",
                     "timeout"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "timeout": 8.203348002979762,
@@ -25105,7 +25105,7 @@
                     "effect",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "user": 3.1809801899513084,
@@ -25185,7 +25185,7 @@
                     "events",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "PHI import",
                     "user login / logout",
                     "node - authentication failure",
@@ -25264,7 +25264,7 @@
                     "entry",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "access code": 5.5435119425062656,
@@ -25291,7 +25291,7 @@
                     "American National Standard",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "ANSI INCITS 359-2004",
                     "role - based access control",
                     "RBAC infrastructure"
@@ -25349,7 +25349,7 @@
                     "role",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "role - based access control",
                     "HL7 Permissions Catalog"
                 ],
@@ -25387,7 +25387,7 @@
                     "Five Rights information",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "Five Rights information"
                 ],
                 "definitions": {
@@ -25438,7 +25438,7 @@
                     "remote access controls",
                     "HIE"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "remote access controls"
                 ],
                 "definitions": {
@@ -25470,7 +25470,7 @@
                     "user authentication",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "web services": 6.780602977507575,
@@ -25511,7 +25511,7 @@
                     "names",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "users": 5.03342300153745,
@@ -25532,7 +25532,7 @@
                     "remote access controls",
                     "HIE"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "remote access controls"
                 ],
                 "definitions": {
@@ -25566,7 +25566,7 @@
                     "record",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "remote location": 7.042383955536081,
@@ -25586,7 +25586,7 @@
                     "remote access controls",
                     "HIE"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "remote access controls"
                 ],
                 "definitions": {
@@ -25613,7 +25613,7 @@
                     "regular system audits",
                     "HIE"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "regular system audits"
                 ],
                 "definitions": {
@@ -25648,7 +25648,7 @@
                     "sites",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "remote retrievable data"
                 ],
                 "definitions": {
@@ -25673,7 +25673,7 @@
                     "remote access controls",
                     "HIE"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "remote access controls"
                 ],
                 "definitions": {
@@ -25702,7 +25702,7 @@
                     "system",
                     "user"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "consecutive invalid access attempts"
                 ],
                 "definitions": {
@@ -25749,7 +25749,7 @@
                     "clinical user",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "problem list options",
                     "clinical user",
                     "ORES / ORELSE / PROVIDER keys"
@@ -25783,7 +25783,7 @@
                     "role",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "role - based access control",
                     "HL7 Permissions Catalog"
                 ],
@@ -25824,7 +25824,7 @@
                     "OREMAS key",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "clerical user",
                     "OREMAS key",
                     "removed options"
@@ -25863,7 +25863,7 @@
                     "processes",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "users / groups",
                     "rights / privileges"
                 ],
@@ -25948,7 +25948,7 @@
                     "system",
                     "unique match"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "auto - select",
                     "MEDICATION ROUTES file # 51.2",
                     "inpatient medications",
@@ -25990,7 +25990,7 @@
                     "unique identifier",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -26068,7 +26068,7 @@
                     "different formats",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -26096,7 +26096,7 @@
                     "system",
                     "UTC"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "1994",
                     "1994-11-05T08:15:30 - 05:00",
                     "November 5",
@@ -26156,7 +26156,7 @@
                     "system",
                     "user"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "user": 3.1809801899513084,
@@ -26179,7 +26179,7 @@
                     "system",
                     "individual orders"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "pre-selected order details",
                     "clinician review"
                 ],
@@ -26237,7 +26237,7 @@
                     "home medications",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "home medications": 5.1316563959848525,
@@ -26289,7 +26289,7 @@
                     "provider review",
                     "level"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "active medication orders",
                     "admission / transfer orders"
                 ],
@@ -26350,7 +26350,7 @@
                     "entry",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "auto - select"
                 ],
                 "definitions": {
@@ -26384,7 +26384,7 @@
                     "HIE identifier",
                     "HIE"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "unique user identity",
                     "HIE identifier"
                 ],
@@ -26427,7 +26427,7 @@
                     "system",
                     "one patient"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "last four digits",
                     "one patient"
                 ],
@@ -26458,7 +26458,7 @@
                     "system",
                     "query"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "query": 5.8110305802010025,
@@ -26491,7 +26491,7 @@
                     "one form",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "patient": 2.2375637183176758,
@@ -26548,7 +26548,7 @@
                     "ward",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "provider": 4.743916384342466,
@@ -26576,7 +26576,7 @@
                     "members",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "care": 5.074064986034796,
@@ -26644,7 +26644,7 @@
                     "medical services",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "patient?s ability"
                 ],
                 "definitions": {
@@ -26672,7 +26672,7 @@
                     "encounter",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "Management billing code",
                     "appropriate CPT Evaluation"
                 ],
@@ -26716,7 +26716,7 @@
                     "system",
                     "record"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "record": 3.4219882894551032,
@@ -26737,7 +26737,7 @@
                     "appropriate privileges",
                     "sensitive diagnoses"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "users": 5.03342300153745,
@@ -26783,7 +26783,7 @@
                     "system",
                     "clinics"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "wards": 10.203348002979764,
@@ -26815,7 +26815,7 @@
                     "members",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "care": 5.074064986034796,
@@ -26884,7 +26884,7 @@
                     "teams",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "teams": 8.203348002979762,
@@ -26958,7 +26958,7 @@
                     "medical teams",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "assignments": 9.203348002979764,
@@ -27013,7 +27013,7 @@
                     "tasks",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "medical team": 6.410866752619185,
@@ -27056,7 +27056,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "individual member assignments"
                 ],
                 "definitions": {
@@ -27107,7 +27107,7 @@
                     "patients",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "patients": 4.881419908092401,
@@ -27128,7 +27128,7 @@
                     "specific medication",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -27169,7 +27169,7 @@
                     "notification",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "user": 3.1809801899513084,
@@ -27192,7 +27192,7 @@
                     "ordering clinician",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "ordering clinician"
                 ],
                 "definitions": {
@@ -27230,7 +27230,7 @@
                     "orders",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "provider": 4.743916384342466,
@@ -27269,7 +27269,7 @@
                     "codes",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "codes": 7.203348002979763,
@@ -27292,7 +27292,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -27328,7 +27328,7 @@
                     "system",
                     "option"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "IRM personnel",
                     "specified date",
                     "CPT code validity"
@@ -27368,7 +27368,7 @@
                     "ICD - 9",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "ICD - 9"
                 ],
                 "definitions": {
@@ -27419,7 +27419,7 @@
                     "ICD - 9",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "ICD - 9"
                 ],
                 "definitions": {
@@ -27468,7 +27468,7 @@
                     "system",
                     "symbol"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "inactive codes"
                 ],
                 "definitions": {
@@ -27493,7 +27493,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -27525,7 +27525,7 @@
                     "ability",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -27551,7 +27551,7 @@
                     "problems",
                     "system"
                 ],
-                "terminilogy": [],
+                "terminology": [],
                 "definitions": {},
                 "importance_scores": {
                     "system": 0.11986867564792089,
@@ -27583,7 +27583,7 @@
                     "Yes",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "NEW PERSON file",
                     "RESTRICT PATIENT SELECTION prompt"
                 ],
@@ -27617,7 +27617,7 @@
                     "system",
                     "delays"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "account / node",
                     "configurable time period",
                     "configurable delay algorithm",
@@ -27665,7 +27665,7 @@
                     "individual order sets",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "individual order sets"
                 ],
                 "definitions": {
@@ -27721,7 +27721,7 @@
                     "new user",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "CPRS GUI"
                 ],
                 "definitions": {
@@ -27753,7 +27753,7 @@
                     "administrators",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "users / groups"
                 ],
                 "definitions": {
@@ -27797,7 +27797,7 @@
                     "individual order sets",
                     "system"
                 ],
-                "terminilogy": [
+                "terminology": [
                     "individual order sets"
                 ],
                 "definitions": {

@@ -63,8 +63,9 @@ input[type="radio"] {
     overflow: scroll;
 }
 
-.collapsed_content_data{
-    height: calc((100vh - 310px) - 105px);
+.collapsed_content_data {
+    /*height: calc((100vh - 310px) - 105px);*/
+    height: calc((100vh - 190px - 10px) - 160px);
     /*background-color: red;*/
 }
 

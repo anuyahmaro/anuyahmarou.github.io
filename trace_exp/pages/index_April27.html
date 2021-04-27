@@ -66,7 +66,7 @@
                     </colgroup>
                 </table>
 
-                <div class="col-md-12 center text-center">
+                <div class="col-md-12 center text-center" id="pagination_panel">
                     <span class="left" id="total_reg" style="color: black; background-color: whitesmoke; padding: 4px"></span>
                     <ul class="pagination pager" style="text-align: center" id="myPager"></ul>
                 </div>
@@ -1413,7 +1413,9 @@
 
                 }
 
+                document.getElementById("pagination_panel").style.display="none";
                 clicked = true;
+
 
 
                 var t_orig_content = document.getElementById("row" + (index_of_current_target + 1) + "_content_data").textContent;

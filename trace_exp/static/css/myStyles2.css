@@ -50,9 +50,10 @@ input[type="radio"] {
     font-size: 1em;
     /*width: 500px;*/
     /*width: 90%;*/
-    height: calc(100vh - 245px);
-    margin-top: 8px;
-    /*margin-bottom: 80px;*/
+    /*height: calc(100vh - 245px);*/
+    height: calc((100vh - 190px  - 10px) - 10px);
+    margin-top: 10px;
+    /*margin-bottom: 100px;*/
     /*text-align: justify;*/
     padding: 30px;
     /*margin-right: 20px;*/

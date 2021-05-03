@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53120068-35ce-4fad-9bea-d5c9e2da7296" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/trace_exp/pages/index_May3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trace_exp/pages/index_April27.html" beforeDir="false" afterPath="$PROJECT_DIR$/trace_exp/pages/index_April27.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trace_exp/static/css/myStyles2.css" beforeDir="false" afterPath="$PROJECT_DIR$/trace_exp/static/css/myStyles2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trace_exp/pages/index_May3.html" beforeDir="false" afterPath="$PROJECT_DIR$/trace_exp/pages/index_May3.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -206,8 +204,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/trace_exp/pages/index_May3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="1352" lean-forward="true" selection-start-line="1352" selection-end-line="1352" />
+            <state relative-caret-position="386">
+              <caret line="1759" column="16" selection-start-line="1759" selection-start-column="19" selection-end-line="1770" selection-end-column="69" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
@@ -497,18 +495,18 @@
       <workItem from="1619579581141" duration="701000" />
       <workItem from="1619630528648" duration="933000" />
       <workItem from="1619717067752" duration="819000" />
-      <workItem from="1619995522828" duration="8394000" />
+      <workItem from="1619995522828" duration="8719000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="413483000" />
+    <option name="totallyTimeSpent" value="413808000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36630037" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.36630037" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -523,7 +521,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.15408163" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.15408163" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -981,8 +979,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/trace_exp/pages/index_May3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="1352" lean-forward="true" selection-start-line="1352" selection-end-line="1352" />
+        <state relative-caret-position="386">
+          <caret line="1759" column="16" selection-start-line="1759" selection-start-column="19" selection-end-line="1770" selection-end-column="69" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />

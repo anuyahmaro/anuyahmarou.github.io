@@ -575,13 +575,13 @@
 
 
             var highlight_source = d3.select("#" + source_info.id)
-                .attr("fill-opacity", "0.6")
+                // .attr("fill-opacity", "0.6")
                 .attr("stroke", "darkgrey")
                 .attr("stroke-width", "2px");
             ;
 
             var highlight_target = d3.select("#" + target_info.id)
-                .attr("fill-opacity", "0.6")
+                // .attr("fill-opacity", "0.6")
                 .attr("stroke", "darkgray")
                 .attr("stroke-width", "2px");
             ;
@@ -813,7 +813,7 @@
         "use strict";
         d3.select("#" + val.id)
             .attr("fill", val.cl)
-            .attr("fill-opacity", "0.6")
+            // .attr("fill-opacity", "0.6")
             .attr("stroke", "darkgray")
             .attr("stroke-width", "2px");
         // d3.select("#" + val.id).classed("active_d3", stat);
@@ -1744,7 +1744,7 @@
                     .attr("fill", function (d) {
                         return colors(stemmer(d.name));//getUniqueColors(d.name, data_concepts_unique); // in case we want the color to change based on the color of the text
                     })
-                    .attr("fill-opacity", "0.5")
+                    // .attr("fill-opacity", "0.5")
                     .attr("stroke", "darkgrey")
                     .attr("stroke-width", "2px")
                     // // .attr("fill", "blue")
@@ -1769,6 +1769,7 @@
                         return d.name.replaceAll("_", " ");
                     })
                     .attr("font-size", (boxWidth * 0.007) + "em");
+                    // .attr("width", "2px");
 
 
                 links.forEach(function (li) {

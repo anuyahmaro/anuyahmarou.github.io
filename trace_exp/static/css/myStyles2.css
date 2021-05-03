@@ -40,6 +40,19 @@ input[type="radio"] {
     margin-top: 70px;
 }
 
+
+.content-panel{
+    background-color: #b0bec5;
+    /*height: 200px;*/
+    /*height: calc(100vh);*/
+
+    /*height: 50px;*/
+
+    /*display:flex;*/
+
+}
+
+
 /*a:link {*/
     /*text-decoration: underline;*/
 /*}*/
@@ -69,16 +82,6 @@ input[type="radio"] {
     /*background-color: red;*/
 }
 
-.content-panel{
-    background-color: #b0bec5;
-    /*height: 200px;*/
-    /*height: calc(100vh);*/
-
-    /*height: 50px;*/
-
-    /*display:flex;*/
-
-}
 
 .header{
     color: black;
@@ -431,23 +434,23 @@ rect {
     background-color: #555;
 }
 
-/*table {*/
-    /*font-family: arial, sans-serif;*/
-    /*font-size: 1em;*/
-    /*border-collapse: collapse;*/
-    /*width: 100%;*/
-    /*color: black;*/
-/*}*/
+table {
+    font-family: arial, sans-serif;
+    font-size: 1em;
+    border-collapse: collapse;
+    width: 100%;
+    color: black;
+}
 
-/*td, th {*/
-    /*border: 1px solid #dddddd;*/
-    /*text-align: left;*/
-    /*padding: 3px;*/
-/*}*/
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 3px;
+}
 
-/*tr:nth-child(even) {*/
-    /*background-color: #cfd8dc;*/
-/*}*/
+tr:nth-child(even) {
+    background-color: #cfd8dc;
+}
 
 
 .link-status{

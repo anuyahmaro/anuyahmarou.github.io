@@ -380,6 +380,9 @@
     var Nodes = [];
     var links = [];
     var lvlCount = 0;
+    var numArtifacts = 4;
+
+
 
 
     var width = Math.round(screen.width * 25 / 100),
@@ -660,23 +663,6 @@
                 }
 
             }
-
-
-            // for (var j = 0; j < classNames_s.length; j++) {
-            //     var otherclassNamesEach = classNames_s[j].className;
-            //     if (otherclassNamesEach !== source_info.name +"_s"){
-            //         var extractContent_other_source_classes =  document.getElementsByClassName(otherclassNamesEach);
-            //         for (var k = 0; k < extractContent_other_source_classes.length; k++) {
-            //
-            //
-            //             extractContent_other_source_classes[k].style.backgroundColor = colors(extractContent_other_source_classes[k].textContent.split(" ").join("_").replace(".","").replace(")",""));
-            //
-            //         }
-            //
-            //     }
-            //
-            // }
-
 
 
 
@@ -1022,12 +1008,12 @@
 
 
 
-        const data_concepts_unique = [...new Set(source_concepts)];
-        data_concepts_unique.sort();
-        // console.log(data_concepts_unique);
-
+        // const data_concepts_unique = [...new Set(source_concepts)];
+        // data_concepts_unique.sort();
+        // // console.log(data_concepts_unique);
+        //
         var s_orig_content = artifact_data['info'][0].content;
-
+        //
         var split_source_words = s_orig_content.split(" ");
         for (var i = 0; i < split_source_words.length; i++) {
             var sourceWord = split_source_words[i].replace(".", "").replace(",","").replace(")","");
@@ -1035,7 +1021,7 @@
                 var imp_score_s = conceptImportanceScores(sourceWord, importance_scores_source_concepts);
                 // console.log(imp_score_s);
                 split_source_words[i] = "<a href='' onmouseout='urlMouseAction_leave(this)' onmouseover='urlMouseAction(this)'><span class='"+sourceWord+"_s' " +
-                    "style='background-color:"+ colors(stemmer(sourceWord)) + ";font-size:" + (1 * (1 + imp_score_s/ 10)) +"em'>"  +  split_source_words[i].replaceAll("_", " ")  + "</span></a>";
+                    "style='font-size:" + (1 * (1 + imp_score_s/ 10)) +"em'>"  +  split_source_words[i].replaceAll("_", " ")  + "</span></a>";
 
 
                 var new_s = split_source_words.join(" ");
@@ -1048,7 +1034,8 @@
 
         }
 
-
+        // d3.select("#source_artifact")
+        //             .html(s_orig_content.replaceAll("_", " "));
 
 
 
@@ -1193,9 +1180,6 @@
 
         table_row_summary_header_buttons_outerdiv.append("a")
             .attr("class", "targ_art_name waves-effect waves-light blue-grey lighten-3 dim-grey-text btn-small artifact-type collapsible_new")
-            // .attr("href", "https://anuyahmaro.github.io")
-            // .attr("target", "_blank")
-            // .style("background-color", "#7F00FF")
             .attr("id", function (d, i) {
                 return "row" + (i + 1) + "_target_button"
             })
@@ -1289,7 +1273,8 @@
             .attr("id", function (d, i) {
                 return "row" + (i + 1) + "_content";
             })
-            .style("background-color", "white");
+            .style("background-color", "white")
+            .style("display", "none");
 
         table_rows_content.append("td")
 
@@ -1317,8 +1302,10 @@
                 nextText: 'Next',
                 showPrevNext: true,
                 hidePageNumbers: false,
-                perPage: 6
+                perPage: numArtifacts * 2
             });
+
+
         });
 
 
@@ -1336,6 +1323,15 @@
 
         var coll_new = document.getElementsByClassName("collapsible_new");
 
+        // var coll_content = document.getElementsByClassName("collapse-content");
+
+        // for (var i = 0; i < coll_content.length; i++) {
+        //     coll_content[i].style.display = "none";
+        // }
+
+
+
+
         for (var i = 0; i < coll_new.length; i++) {
             coll_new[i].addEventListener("click", fnb);
         }
@@ -1352,27 +1348,63 @@
 
             if (clicked === true) {
                 clicked = false;
-                ref();
-                // ref()
-               //  var currentElem = document.getElementById("currently_clicked_target");
-               //
-               // var show_summary =  document.getElementsByClassName("art_summary");
-               //
-               // for (var k = 0; k < show_summary.length; k++){
-               //     show_summary[k].style.display = "block";
-               // }
-               //
-               //  // current_q.getElementsByClassName("art_summary")[0].style.display = "none"
-               //
-               //  var currentElemContent = currentElem.nextElementSibling;
-               //
-               //  var content_data_ = document.getElementById(currentElemContent.id + "_data");
-               //  //
-               //  // console.log(currentElemContent);
-               //  //
-               //  // currentElemContent.style.display = "none";
+                // ref();
+                ref()
 
-
+                // var target_this_id_ = this.id.split("_")[0];
+                // // console.log(target_this_id);
+                //
+                // console.log(target_this_id_);
+                //
+                // var target_this_ = document.getElementsByClassName("active")[0];
+                // var content_ = target_this_.nextElementSibling;
+                //
+                // // console.log(content);
+                //
+                // var content_data = document.getElementById(content_.id + "_data");
+                //
+                //
+                // content_data.style.display = "none";
+                // console.log(target_this_.nextElementSibling);
+                // //
+                // target_this_.classList.remove("active");
+                //
+                //
+                // var ddd = document.getElementsByClassName("collapsible_");
+                //
+                //
+                // for (var j = 0; j < ddd.length; j++){
+                //     ddd[j].id = "row"+(j+1);
+                //     ddd[j].style.display="table-row";
+                //
+                //
+                // }
+                //
+                // // ddd
+                //
+                //
+                //  //
+                //  // console.log(currentElemContent);
+                //  //
+                //  // currentElemContent.style.display = "none";
+                //
+                //
+                //
+                //
+                //
+                // $(document).ready(function () {
+                //     $('#myTable').pageMe({
+                //         pagerSelector: '#myPager',
+                //         activeColor: 'blue',
+                //         prevText: 'Previous',
+                //         nextText: 'Next',
+                //         showPrevNext: true,
+                //         hidePageNumbers: false,
+                //         perPage: numArtifacts * 2
+                //     });
+                //
+                //
+                // });
 
 
             }
@@ -1387,10 +1419,21 @@
 
 
                 target_this.classList.toggle("active");
+
+
+                // for (var i = 0; i < coll_content.length; i++) {
+                //     coll_content[i].style.display = "table-row";
+                // }
+
                 //
+
+                var active_class = document.getElementsByClassName("active");
                 var index_of_current_target;
 
                 // console.log(document.getElementById(this.nextElementSibling.id + "_data").style.display);
+
+                // var all_collapse_content = document.sel
+
 
                 for (var q = 0; q < coll_new.length; q++) {
                     var current_q_id = coll_new[q].id.split("_")[0];
@@ -1403,7 +1446,7 @@
 
                         var content = target_this.nextElementSibling;
 
-                        // console.log(content);
+                        console.log(content);
 
                         var content_data = document.getElementById(content.id + "_data");
                         // console.log(content_data.style.display);
@@ -1416,6 +1459,7 @@
                         if (content_data.style.display === "block") {
                             console.log("It is closed right now");
                             content_data.style.display = "none";
+
 
                             //
                             //
@@ -1436,13 +1480,17 @@
                         // coll_2[q].classList.remove("collapsible_");
                         current_q.style.display = "none";
                         current_q.setAttribute("id", "");
-                        current_q.nextElementSibling.setAttribute("id", "");
+                        // current_q.nextElementSibling.setAttribute("id", "");
                         current_q.nextElementSibling.style.display = "none";
+                        // current_q.classList.add("unopened")
 
 
                     }
 
                 }
+
+
+
 
                 document.getElementById("pagination_panel").style.display="none";
                 clicked = true;
@@ -1493,7 +1541,53 @@
                 }
 
 
+                //Highlight the important words in the source artifact
+                var source_data = [data[0].source[0]];
+                var source_concepts = [];
 
+                var importance_scores_source_concepts = [];
+
+
+
+                source_data.forEach(function (d) {
+                    var source_nodes = d['concepts'];
+                    source_nodes.forEach(c => {
+                        source_concepts.push(c)
+                    });
+
+                    d['importance_scores'].forEach(function (k) {
+                        for (const [key, value] of Object.entries(k)) {
+                            importance_scores_source_concepts.push({"name": key, "imp_score": value})
+                        }
+                    });
+                });
+
+
+
+
+                // console.log(source_data);
+                var s_orig_content = source_data[0].text;
+
+                var split_source_words = s_orig_content.split(" ");
+                for (var i = 0; i < split_source_words.length; i++) {
+                    var sourceWord = split_source_words[i].replace(".", "").replace(",","").replace(")","");
+                    // console.log(sourceWord)
+                    if (source_concepts.includes(sourceWord)) {
+                        var imp_score_s = conceptImportanceScores(sourceWord, importance_scores_source_concepts);
+                        // console.log(imp_score_s);
+                        split_source_words[i] = "<a href='' onmouseout='urlMouseAction_leave(this)' onmouseover='urlMouseAction(this)'><span class='"+sourceWord+"_s' " +
+                            "style='background-color:"+ colors(stemmer(sourceWord)) + ";font-size:" + (1 * (1 + imp_score_s/ 10)) +"em'>"  +  split_source_words[i].replaceAll("_", " ")  + "</span></a>";
+
+
+                        var new_s = split_source_words.join(" ");
+
+                        d3.select("#source_artifact")
+                            .html(new_s);
+                    }
+
+
+
+                }
 
 
 
@@ -1950,11 +2044,6 @@
 
 
     d3.json("annotated_link_v2.json").then(data => {
-
-
-
-        // console.log(data[0].targets);
-        // regenerateTargetData(data)
         drawTargets(data);
         drawSource(data);
 

@@ -449,7 +449,7 @@ td, th {
 }
 
 tr:nth-child(even) {
-    background-color: #cfd8dc;
+    background-color: #cfd8dc; !important;
 }
 
 

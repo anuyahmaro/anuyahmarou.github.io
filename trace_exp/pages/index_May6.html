@@ -381,6 +381,8 @@
     var links = [];
     var lvlCount = 0;
     var numArtifacts = 4;
+    var filtered_source_concepts = [];
+    var filtered_target_concepts = [];
 
 
 
@@ -575,31 +577,31 @@
 
 
             var highlight_source = d3.select("#" + source_info.id)
-            // .attr("fill-opacity", "0.6")
+                // .attr("fill-opacity", "0.6")
                 .attr("stroke", "darkgrey")
                 .attr("stroke-width", "2px");
             ;
 
             var highlight_target = d3.select("#" + target_info.id)
-            // .attr("fill-opacity", "0.6")
+                // .attr("fill-opacity", "0.6")
                 .attr("stroke", "darkgray")
                 .attr("stroke-width", "2px");
             ;
 
             resetInfoBoardMsg();
 
-            var classNames_s = document.querySelectorAll("[class*=_s]");
-            var classNames_t = document.querySelectorAll("[class*=_t]");
-            var totalClassNames = [];
-            classNames_s.forEach(q=>{
-                totalClassNames.push(q.textContent.replace("_s", "").replace(".","").replace(",", ""));
-            });
-            classNames_t.forEach(q =>{
-                totalClassNames.push(q.textContent.replace("_t", "").replace(".","").replace(",", ""));
-            });
-
-            var totalClassNames_ = [...new Set(totalClassNames)];
-            totalClassNames_.sort();
+            // var classNames_s = document.querySelectorAll("[class*=_s]");
+            // var classNames_t = document.querySelectorAll("[class*=_t]");
+            // var totalClassNames = [];
+            // classNames_s.forEach(q=>{
+            //     totalClassNames.push(q.textContent.replace("_s", "").replace(".","").replace(",", ""));
+            // });
+            // classNames_t.forEach(q =>{
+            //     totalClassNames.push(q.textContent.replace("_t", "").replace(".","").replace(",", ""));
+            // });
+            //
+            // var totalClassNames_ = [...new Set(totalClassNames)];
+            // totalClassNames_.sort();
 
 
             var updateStyleSource =  document.getElementsByClassName(source_info.name + "_s");
@@ -608,10 +610,10 @@
                 updateStyleSource[i].style.borderStyle = "none";
             }
 
-            for (var j = 0; j < classNames_s.length; j++) {
-                var otherclassNamesEach = classNames_s[j].className;
-                if (otherclassNamesEach !== source_info.name +"_s"){
-                    var extractContent_other_source_classes =  document.getElementsByClassName(otherclassNamesEach);
+            for (var j = 0; j < filtered_source_concepts.length; j++) {
+                var otherclassNamesEach = filtered_source_concepts[j];
+                if (otherclassNamesEach !== source_info.name){
+                    var extractContent_other_source_classes =  document.getElementsByClassName(otherclassNamesEach + "_s");
                     for (var k = 0; k < extractContent_other_source_classes.length; k++) {
 
 
@@ -624,24 +626,6 @@
             }
 
 
-            // var extractContent =  document.getElementsByClassName(val.name+"_s");
-            // for (var i = 0; i < extractContent.length; i++) {
-            //     extractContent[i].style.borderStyle = "none";
-            //
-            // }
-            //
-            // for (var j = 0; j < classNames_s.length; j++) {
-            //     var otherclassNamesEach = classNames_s[j].className;;
-            //     if (otherclassNamesEach !== val.name + "_s"){
-            //         var extractContent_other_source_classes =  document.getElementsByClassName(otherclassNamesEach);
-            //         for (var k = 0; k < extractContent_other_source_classes.length; k++) {
-            //
-            //             extractContent_other_source_classes[k].style.backgroundColor = colors(extractContent_other_source_classes[k].textContent.split(" ").join("_").replace(".","").replace(")",""));
-            //         }
-            //
-            //     }
-            //
-            // }
 
 
             var updateStyleTarget =  document.getElementsByClassName(target_info.name + "_t");
@@ -649,10 +633,10 @@
                 updateStyleTarget[i].style.borderStyle = "none";
             }
 
-            for (var j = 0; j < classNames_t.length; j++) {
-                var otherclassNamesEach_t = classNames_t[j].className;
-                if (otherclassNamesEach_t !== target_info.name +"_t"){
-                    var extractContent_other_target_classes =  document.getElementsByClassName(otherclassNamesEach_t);
+            for (var j = 0; j < filtered_target_concepts.length; j++) {
+                var otherclassNamesEach_t = filtered_target_concepts[j];
+                if (otherclassNamesEach_t !== target_info.name){
+                    var extractContent_other_target_classes =  document.getElementsByClassName(otherclassNamesEach_t + "_t");
                     for (var k = 0; k < extractContent_other_target_classes.length; k++) {
 
 
@@ -702,7 +686,7 @@
         d3.select("#" + val.id)
             .attr("fill", val.cl)
             .attr("fill-opacity", "1")
-            .attr("stroke", "green")
+            .attr("stroke", "red")
             .attr("stroke-width", "2.5px");
         ;
 
@@ -821,31 +805,40 @@
 
         var classNames_s = document.querySelectorAll("[class*=_s]");
         var classNames_t = document.querySelectorAll("[class*=_t]");
-        var totalClassNames = [];
-        classNames_s.forEach(q=>{
-            totalClassNames.push(q.textContent.replace("_s", "").replace(".","").replace(",", ""));
-        });
-        classNames_t.forEach(q =>{
-            totalClassNames.push(q.textContent.replace("_t", "").replace(".","").replace(",", ""));
-        });
 
-        var totalClassNames_ = [...new Set(totalClassNames)];
-        totalClassNames_.sort();
 
-        if (concept_type===0){
+        // console.log(filtered_source_concepts);
+        // var totalClassNames = [];
+        // classNames_s.forEach(q =>{
+        //     totalClassNames.push(q.textContent.replace("_s", "").replace(".","").replace(",", ""));
+        // });
+        // classNames_t.forEach(q =>{
+        //     totalClassNames.push(q.textContent.replace("_t", "").replace(".","").replace(",", ""));
+        // });
+
+        // con
+
+        // var totalClassNames_ = [...new Set(totalClassNames)];
+        // totalClassNames_.sort();
+
+        if (concept_type === 0){
             var extractContent =  document.getElementsByClassName(val.name+"_s");
             for (var i = 0; i < extractContent.length; i++) {
                 extractContent[i].style.borderStyle = "none";
 
             }
 
-            for (var j = 0; j < classNames_s.length; j++) {
-                var otherclassNamesEach = classNames_s[j].className;;
-                if (otherclassNamesEach !== val.name + "_s"){
-                    var extractContent_other_source_classes =  document.getElementsByClassName(otherclassNamesEach);
+            for (var j = 0; j < filtered_source_concepts.length; j++) {
+                // var otherclassNamesEach = classNames_s[j].className;
+                var otherclassNamesEach = filtered_source_concepts[j];
+                if (otherclassNamesEach !== val.name){
+                    var extractContent_other_source_classes =  document.getElementsByClassName(otherclassNamesEach+"_s");
                     for (var k = 0; k < extractContent_other_source_classes.length; k++) {
 
-                        extractContent_other_source_classes[k].style.backgroundColor = colors(stemmer(extractContent_other_source_classes[k].textContent.split(" ").join("_").replace(".","").replace(")","")));
+                        // if (filtered_source_concepts.includes(extractContent_other_source_classes[k])) {
+                            extractContent_other_source_classes[k].style.backgroundColor = colors(stemmer(extractContent_other_source_classes[k].textContent.split(" ").join("_").replace(".", "").replace(")", "")));
+                        // }
+
                     }
 
                 }
@@ -861,16 +854,12 @@
 
 
 
-            for (var j = 0; j < classNames_t.length; j++) {
-                var otherclassNamesEach_t = classNames_t[j].className;//classNames_t[j].textContent.replace(".","").replace(",", "");
-                // console.log(val.name)
-                // console.log(classNames_t[j].className);
+            for (var j = 0; j < filtered_target_concepts.length; j++) {
+                var otherclassNamesEach_t = filtered_target_concepts[j];//classNames_t[j].textContent.replace(".","").replace(",", "");
 
-                // console.log(val.name+"_t", " hey ", classNames_t[j].className);
-
-                if (otherclassNamesEach_t !== val.name+"_t"){
+                if (otherclassNamesEach_t !== val.name){
                     // console.log(val.name);
-                    var extractContent_other_target_classes =  document.getElementsByClassName(otherclassNamesEach_t);
+                    var extractContent_other_target_classes =  document.getElementsByClassName(otherclassNamesEach_t + "_t");
                     // console.log(extractContent_other_target_classes)
                     for (var k = 0; k < extractContent_other_target_classes.length; k++) {
 
@@ -1215,9 +1204,9 @@
                 var acronym = matches.join('');
                 return "<b>Type: </b>" + acronym + "<span class='tooltiptext_' style='text-transform: capitalize;'>"+d.type+"</span>";
             });
-        // .on("mouseover", function () {
-        //     show_hover(d3.select(this).datum());
-        // });
+            // .on("mouseover", function () {
+            //     show_hover(d3.select(this).datum());
+            // });
 
         table_row_summary_header_buttons_outerdiv.append("button")
             .attr("type", "button")
@@ -1409,6 +1398,7 @@
 
             }
             else {
+                clicked = true;
 
                 // console.log(this.id);
                 var target_this_id = this.id.split("_")[0];
@@ -1493,7 +1483,7 @@
 
 
                 document.getElementById("pagination_panel").style.display="none";
-                clicked = true;
+
 
 
 
@@ -1520,74 +1510,13 @@
 
                 // console.log(clickedTargetData[0].score)
 
-                //Highlight the important words in the clicked target artifact
-                var split_target_words = t_orig_content.split(" ");
-                for (var i = 0; i < split_target_words.length; i++) {
-                    var targetWord = split_target_words[i].replace(".", "").replace(",", "").replace(")", "");
-                    if (target_concepts.includes(targetWord)) {
-                        var imp_score_t = conceptImportanceScores(targetWord, importance_scores_target_concepts);
-                        // console.log(imp_score_s);
-                        split_target_words[i] = "<a href='' onmouseout='urlMouseAction_leave(this)' onmouseover='urlMouseAction(this)'><span class='" + targetWord + "_t' " +
-                            "style='background-color:" + colors(stemmer(targetWord)) + ";font-size:" + (1 * (1 + imp_score_t / 10)) + "em'>" + split_target_words[i].replaceAll("_", " ") + "</span></a>";
-
-
-                        var new_t = split_target_words.join(" ");
-
-                        d3.select("#" + "row" + (index_of_current_target + 1) + "_content_data")
-                            .html(new_t);
-                    }
-
-
-                }
-
-
-                //Highlight the important words in the source artifact
-                var source_data = [data[0].source[0]];
-                var source_concepts = [];
-
-                var importance_scores_source_concepts = [];
-
-
-
-                source_data.forEach(function (d) {
-                    var source_nodes = d['concepts'];
-                    source_nodes.forEach(c => {
-                        source_concepts.push(c)
-                    });
-
-                    d['importance_scores'].forEach(function (k) {
-                        for (const [key, value] of Object.entries(k)) {
-                            importance_scores_source_concepts.push({"name": key, "imp_score": value})
-                        }
-                    });
-                });
 
 
 
 
-                // console.log(source_data);
-                var s_orig_content = source_data[0].text;
-
-                var split_source_words = s_orig_content.split(" ");
-                for (var i = 0; i < split_source_words.length; i++) {
-                    var sourceWord = split_source_words[i].replace(".", "").replace(",","").replace(")","");
-                    // console.log(sourceWord)
-                    if (source_concepts.includes(sourceWord)) {
-                        var imp_score_s = conceptImportanceScores(sourceWord, importance_scores_source_concepts);
-                        // console.log(imp_score_s);
-                        split_source_words[i] = "<a href='' onmouseout='urlMouseAction_leave(this)' onmouseover='urlMouseAction(this)'><span class='"+sourceWord+"_s' " +
-                            "style='background-color:"+ colors(stemmer(sourceWord)) + ";font-size:" + (1 * (1 + imp_score_s/ 10)) +"em'>"  +  split_source_words[i].replaceAll("_", " ")  + "</span></a>";
-
-
-                        var new_s = split_source_words.join(" ");
-
-                        d3.select("#source_artifact")
-                            .html(new_s);
-                    }
 
 
 
-                }
 
 
 
@@ -1614,6 +1543,10 @@
                 });
 
 
+
+                var source_linked_to = [];
+                var target_linked_to = [];
+
                 clickedTargetData.forEach(function (d) {
                     var target_nodes = d['concepts'];
                     target_nodes.forEach(c => {
@@ -1622,6 +1555,8 @@
                     });
                     d['links'].forEach(l => {
                         data_node_links_["links"].push(l);
+                        source_linked_to.push(l['source']);
+                        target_linked_to.push(l['target']);
                     })
 
                 });
@@ -1633,12 +1568,17 @@
 
                 const concept_definitions_ = [];
                 const concept_importance_scores_ = [];
+                var has_source_definitions = [];
+                var has_target_definitions = [];
 
                 source_data.forEach(function (d) {
-                    var terminology = d["terminilogy"];
+                    var terminology = d["terminology"];
                     d['definitions'].forEach(function (k) {
                         for (const [key, value] of Object.entries(k)) {
                             concept_definitions_.push({"name": key, "definition": value})
+                            has_source_definitions.push(key);
+                            // filtered_source_concepts.append(key);
+
                         }
                     });
 
@@ -1657,6 +1597,7 @@
                     d['definitions'].forEach(function (k) {
                         for (const [key, value] of Object.entries(k)) {
                             concept_definitions_.push({"name": key, "definition": value})
+                            has_target_definitions.push(key);
                         }
                     });
 
@@ -1669,6 +1610,100 @@
 
                 });
 
+
+
+
+                //Highlight the important words in the source artifact
+                var source_data = [data[0].source[0]];
+                var source_concepts = [];
+
+                var importance_scores_source_concepts = [];
+
+
+
+                source_data.forEach(function (d) {
+                    var source_nodes = d['concepts'];
+                    source_nodes.forEach(c => {
+                        source_concepts.push(c)
+                    });
+
+                    d['importance_scores'].forEach(function (k) {
+                        for (const [key, value] of Object.entries(k)) {
+                            importance_scores_source_concepts.push({"name": key, "imp_score": value})
+                        }
+                    });
+                });
+
+
+
+
+                // Highlight source words
+                var s_orig_content = source_data[0].text;
+                filtered_source_concepts = [];
+                filtered_target_concepts = [];
+
+                var split_source_words = s_orig_content.split(" ");
+                for (var i = 0; i < split_source_words.length; i++) {
+                    var sourceWord = split_source_words[i].replace(".", "").replace(",","").replace(")","");
+                    // console.log(sourceWord)
+                    if (source_concepts.includes(sourceWord)) {
+                        // var imp_score_s = conceptImportanceScores(sourceWord, importance_scores_source_concepts);
+                        if (has_source_definitions.includes(sourceWord) || source_linked_to.includes(sourceWord)) {
+
+                            filtered_source_concepts.push(sourceWord);
+                            document.getElementsByClassName(sourceWord+"_s")[0].style.backgroundColor = colors(stemmer(sourceWord));
+                        }
+
+
+                    }
+
+
+
+                }
+
+                //Highlight the important words in the clicked target artifact ronald
+
+                var split_target_words = t_orig_content.split(" ");
+                for (var i = 0; i < split_target_words.length; i++) {
+                    var targetWord = split_target_words[i].replace(".", "").replace(",", "").replace(")", "");
+                    if (target_concepts.includes(targetWord)) {
+                        var imp_score_t = conceptImportanceScores(targetWord, importance_scores_target_concepts);
+                        var colorToUse;
+                        // console.log(imp_score_s);
+                        if (has_target_definitions.includes(targetWord) || target_linked_to.includes(targetWord)) {
+                            filtered_target_concepts.push(targetWord);
+                            colorToUse = colors(stemmer(targetWord));
+
+                        }
+                        else {
+                            colorToUse = "none";
+                        }
+                        // console.log(targetWord +" : "+colorToUse);
+
+
+                        split_target_words[i] = "<a href='' onmouseout='urlMouseAction_leave(this)' onmouseover='urlMouseAction(this)'><span class='" + targetWord + "_t' " +
+                            "style='background-color:" + colorToUse + ";font-size:" + (1 * (1 + imp_score_t / 10)) + "em'>" + split_target_words[i].replaceAll("_", " ") + "</span></a>";
+
+
+                        var new_t = split_target_words.join(" ");
+
+                        d3.select("#" + "row" + (index_of_current_target + 1) + "_content_data")
+                            .html(new_t);
+                    }
+
+
+                }
+
+
+
+
+
+
+
+
+
+
+
                 "use strict";
                 var count = [];
 
@@ -1678,23 +1713,43 @@
 
                 lvlCount = count.length;
 
+
+                // Concepts in the source artifact that have either a link or definition
+                // var filtered_source_concepts = [];
+
+
+                // console.log("Help me plss__")
+
+
                 Nodes = [];
                 data_node_links_.Nodes.forEach(function (d, i) {
-                    // console.log(i);
-                    if (d.lvl === 0) {
-                        d.x = margin.left + d.lvl * (boxWidth + gap.width);
+                    if (has_source_definitions.includes(d.name) || source_linked_to.includes(d.name) ||
+                        has_target_definitions.includes(d.name) || target_linked_to.includes(d.name)) {
+
+                        //     console.log(d.name)
+                        // }
+                        // console.log(i);
+                        if (d.lvl === 0) {
+                            // if (has_source_definitions.includes(d.name) || source_linked_to.includes(d.name) ) {
+                            d.x = margin.left + d.lvl * (boxWidth + gap.width);
+                            // }
+                        }
+                        else {
+                            // if (has_target_definitions.includes(d.name) || target_linked_to.includes(d.name)) {
+                            d.x = d.lvl * (boxWidth + gap.width) - margin.right;
+                            // }
+                        }
+                        d.y = margin.top + (boxHeight + gap.height) * count[d.lvl];
+                        d.cl = colors(stemmer(d.name)); //getUniqueColors(d.name, data_concepts_unique);
+                        d.definition = conceptDef(d.name, concept_definitions_);
+                        d.imp_score = conceptImportanceScores(d.name, concept_importance_scores_);
+                        d.id = "n" + i;
+                        count[d.lvl] += 1;
+                        Nodes.push(d);
+
+
+                        // plc_Nodes.push(d);
                     }
-                    else {
-                        d.x = d.lvl * (boxWidth + gap.width) - margin.right;
-                    }
-                    d.y = margin.top + (boxHeight + gap.height) * count[d.lvl];
-                    d.cl = colors(stemmer(d.name)); //getUniqueColors(d.name, data_concepts_unique);
-                    d.definition = conceptDef(d.name, concept_definitions_);
-                    d.imp_score = conceptImportanceScores(d.name, concept_importance_scores_);
-                    d.id = "n" + i;
-                    count[d.lvl] += 1;
-                    Nodes.push(d);
-                    // plc_Nodes.push(d);
                 });
 
 
@@ -1711,10 +1766,11 @@
                     });
                 });
 
+                // console.log("mm")
                 // console.log(links);
                 // console.log("jj")
 
-                var useful_link = links;
+                // var useful_link = links;
                 // console.log();
 
                 // Draw all of the nodes
@@ -1769,7 +1825,7 @@
                         return d.name.replaceAll("_", " ");
                     })
                     .attr("font-size", (boxWidth * 0.007) + "em");
-                // .attr("width", "2px");
+                    // .attr("width", "2px");
 
 
                 links.forEach(function (li) {
@@ -2044,7 +2100,7 @@
 
 
 
-    d3.json("annotated_link_v2.json").then(data => {
+    d3.json("annotated_links_v2.1.1.json").then(data => {
         drawTargets(data);
         drawSource(data);
 

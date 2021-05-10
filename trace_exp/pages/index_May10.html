@@ -111,8 +111,8 @@
         </table>
     </div>
     <!--<div style="text-align: center">-->
-        <!--&lt;!&ndash;<h6>Do you agree that this is a link?</h6>&ndash;&gt;-->
-        <!--<a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>-->
+    <!--&lt;!&ndash;<h6>Do you agree that this is a link?</h6>&ndash;&gt;-->
+    <!--<a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>-->
     <!--</div>-->
 </div>
 
@@ -141,8 +141,8 @@
         </table>
     </div>
     <!--<div style="text-align: center">-->
-        <!--&lt;!&ndash;<h6>Do you agree that this is a link?</h6>&ndash;&gt;-->
-        <!--<a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>-->
+    <!--&lt;!&ndash;<h6>Do you agree that this is a link?</h6>&ndash;&gt;-->
+    <!--<a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>-->
     <!--</div>-->
 </div>
 
@@ -195,8 +195,8 @@
         </table>
     </div>
     <!--<div style="text-align: center">-->
-        <!--&lt;!&ndash;<h6>Do you agree that this is a link?</h6>&ndash;&gt;-->
-        <!--<a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>-->
+    <!--&lt;!&ndash;<h6>Do you agree that this is a link?</h6>&ndash;&gt;-->
+    <!--<a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>-->
     <!--</div>-->
 </div>
 
@@ -231,8 +231,8 @@
         </table>
     </div>
     <!--<div style="text-align: center">-->
-        <!--&lt;!&ndash;<h6>Do you agree that this is a link?</h6>&ndash;&gt;-->
-        <!--<a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>-->
+    <!--&lt;!&ndash;<h6>Do you agree that this is a link?</h6>&ndash;&gt;-->
+    <!--<a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>-->
     <!--</div>-->
 </div>
 
@@ -255,8 +255,8 @@
         </table>
     </div>
     <!--<div style="text-align: center">-->
-        <!--&lt;!&ndash;<h6>Do you agree that this is a link?</h6>&ndash;&gt;-->
-        <!--<a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>-->
+    <!--&lt;!&ndash;<h6>Do you agree that this is a link?</h6>&ndash;&gt;-->
+    <!--<a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>-->
     <!--</div>-->
 </div>
 
@@ -281,8 +281,8 @@
         </table>
     </div>
     <!--<div style="text-align: center">-->
-        <!--&lt;!&ndash;<h6>Do you agree that this is a link?</h6>&ndash;&gt;-->
-        <!--<a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>-->
+    <!--&lt;!&ndash;<h6>Do you agree that this is a link?</h6>&ndash;&gt;-->
+    <!--<a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>-->
     <!--</div>-->
 </div>
 
@@ -311,8 +311,8 @@
         </table>
     </div>
     <!--<div style="text-align: center">-->
-        <!--&lt;!&ndash;<h6>Do you agree that this is a link?</h6>&ndash;&gt;-->
-        <!--<a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>-->
+    <!--&lt;!&ndash;<h6>Do you agree that this is a link?</h6>&ndash;&gt;-->
+    <!--<a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>-->
     <!--</div>-->
 </div>
 
@@ -365,8 +365,8 @@
         </table>
     </div>
     <!--<div style="text-align: center">-->
-        <!--&lt;!&ndash;<h6>Do you agree that this is a link?</h6>&ndash;&gt;-->
-        <!--<a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>-->
+    <!--&lt;!&ndash;<h6>Do you agree that this is a link?</h6>&ndash;&gt;-->
+    <!--<a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>-->
     <!--</div>-->
 </div>
 
@@ -378,6 +378,7 @@
 <script>
 
     var Nodes = [];
+    var Definitions_ = [];
     var links = [];
     var lvlCount = 0;
     var numArtifacts = 4;
@@ -577,13 +578,13 @@
 
 
             var highlight_source = d3.select("#" + source_info.id)
-                // .attr("fill-opacity", "0.6")
+            // .attr("fill-opacity", "0.6")
                 .attr("stroke", "darkgrey")
                 .attr("stroke-width", "2px");
             ;
 
             var highlight_target = d3.select("#" + target_info.id)
-                // .attr("fill-opacity", "0.6")
+            // .attr("fill-opacity", "0.6")
                 .attr("stroke", "darkgray")
                 .attr("stroke-width", "2px");
             ;
@@ -836,7 +837,7 @@
                     for (var k = 0; k < extractContent_other_source_classes.length; k++) {
 
                         // if (filtered_source_concepts.includes(extractContent_other_source_classes[k])) {
-                            extractContent_other_source_classes[k].style.backgroundColor = colors(stemmer(extractContent_other_source_classes[k].textContent.split(" ").join("_").replace(".", "").replace(")", "")));
+                        extractContent_other_source_classes[k].style.backgroundColor = colors(stemmer(extractContent_other_source_classes[k].textContent.split(" ").join("_").replace(".", "").replace(")", "")));
                         // }
 
                     }
@@ -906,8 +907,12 @@
 
             d['definitions'].forEach(function (k) {
                 for (const [key, value] of Object.entries(k)) {
-                    concept_definitions_.push({"name": key, "definition": value})
+                    concept_definitions_.push({"name": key, "definition": value});
+                    Definitions_.push({"name": key,
+                        "definition" : value});
                 }
+
+
             });
 
 
@@ -979,10 +984,15 @@
         var source_concepts = [];
 
         var importance_scores_source_concepts = [];
+        var has_source_terminologies = [];
 
 
 
         source_data.forEach(function (d) {
+            d["terminology"].forEach(k => {
+                has_source_terminologies.push(k);
+            });
+
             var source_nodes = d['concepts'];
             source_nodes.forEach(c => {
                 source_concepts.push(c)
@@ -1008,9 +1018,22 @@
             var sourceWord = split_source_words[i].replace(".", "").replace(",","").replace(")","");
             if (source_concepts.includes(sourceWord)) {
                 var imp_score_s = conceptImportanceScores(sourceWord, importance_scores_source_concepts);
+                var text_decor;
+
+
+                if (has_source_terminologies.includes(sourceWord)){
+                    console.log(sourceWord + ": yup");
+                    text_decor = "underline";
+                }
+                else {
+                    console.log(sourceWord + ": nope");
+                    text_decor = "none"
+                }
+
+                console.log(has_source_terminologies);
                 // console.log(imp_score_s);
-                split_source_words[i] = "<a href='' onmouseout='urlMouseAction_leave(this)' onmouseover='urlMouseAction(this)'><span class='"+sourceWord+"_s' " +
-                    "style='font-size:" + (1 * (1 + imp_score_s/ 10)) +"em'>"  +  split_source_words[i].replaceAll("_", " ")  + "</span></a>";
+                split_source_words[i] = "<a href='' style='color: black; text-decoration:"+text_decor+"; text-decoration-style: dotted;' onmouseout='urlMouseAction_leave(this)' onmouseover='urlMouseAction(this)'><span class='"+sourceWord+"_s' " +
+                    "style='font-size:" + (1 * (1.25 + imp_score_s/ 10)) +"em'>"  +  split_source_words[i].replaceAll("_", " ")  + "</span></a>";
 
 
                 var new_s = split_source_words.join(" ");
@@ -1050,15 +1073,19 @@
 
 
     function urlMouseAction(m){
-        var concept = m.text.replace(".", "").replace(",","").replaceAll(" ", "_");
+        var concept = m.text.replace(".", "").replace(",","").replaceAll(" ", "_").replace(")", "");
         var definition;
+        console.log(concept);
 
 
 
         // console.log(Nodes);
-        for (i = 0; i < Nodes.length; i++){
-            if (Nodes[i].name === concept){
-                definition = Nodes[i].definition;
+        for (var i = 0; i < Definitions_.length; i++){
+            console.log("uuuiiii");
+            console.log(Definitions_[i].name +" : " + concept);
+            if (Definitions_[i].name === concept){
+                definition = Definitions_[i].definition;
+
 
             }
         }
@@ -1204,9 +1231,9 @@
                 var acronym = matches.join('');
                 return "<b>Type: </b>" + acronym + "<span class='tooltiptext_' style='text-transform: capitalize;'>"+d.type+"</span>";
             });
-            // .on("mouseover", function () {
-            //     show_hover(d3.select(this).datum());
-            // });
+        // .on("mouseover", function () {
+        //     show_hover(d3.select(this).datum());
+        // });
 
         table_row_summary_header_buttons_outerdiv.append("button")
             .attr("type", "button")
@@ -1570,12 +1597,18 @@
                 const concept_importance_scores_ = [];
                 var has_source_definitions = [];
                 var has_target_definitions = [];
+                var has_source_terminologies = [];
+                var has_target_terminologies = [];
 
                 source_data.forEach(function (d) {
                     var terminology = d["terminology"];
+                    d["terminology"].forEach(d => {
+                        has_source_terminologies.push(d)
+                    });
+
                     d['definitions'].forEach(function (k) {
                         for (const [key, value] of Object.entries(k)) {
-                            concept_definitions_.push({"name": key, "definition": value})
+                            concept_definitions_.push({"name": key, "definition": value});
                             has_source_definitions.push(key);
                             // filtered_source_concepts.append(key);
 
@@ -1593,7 +1626,18 @@
 
                 });
 
+                // console.log("yasss")
+                // console.log(has_target_terminologies);
+                // console.log("yasssie")
+
+
                 clickedTargetData.forEach(function (d) {
+                    var terminology = d["terminology"];
+                    d["terminology"].forEach(d => {
+                        has_target_terminologies.push(d)
+                    });
+
+
                     d['definitions'].forEach(function (k) {
                         for (const [key, value] of Object.entries(k)) {
                             concept_definitions_.push({"name": key, "definition": value})
@@ -1648,7 +1692,7 @@
                     // console.log(sourceWord)
                     if (source_concepts.includes(sourceWord)) {
                         // var imp_score_s = conceptImportanceScores(sourceWord, importance_scores_source_concepts);
-                        if (has_source_definitions.includes(sourceWord) || source_linked_to.includes(sourceWord)) {
+                        if (source_linked_to.includes(sourceWord)) {
 
                             filtered_source_concepts.push(sourceWord);
                             document.getElementsByClassName(sourceWord+"_s")[0].style.backgroundColor = colors(stemmer(sourceWord));
@@ -1668,9 +1712,9 @@
                     var targetWord = split_target_words[i].replace(".", "").replace(",", "").replace(")", "");
                     if (target_concepts.includes(targetWord)) {
                         var imp_score_t = conceptImportanceScores(targetWord, importance_scores_target_concepts);
-                        var colorToUse;
+                        var colorToUse, text_decor, tex;
                         // console.log(imp_score_s);
-                        if (has_target_definitions.includes(targetWord) || target_linked_to.includes(targetWord)) {
+                        if (target_linked_to.includes(targetWord)) {
                             filtered_target_concepts.push(targetWord);
                             colorToUse = colors(stemmer(targetWord));
 
@@ -1678,11 +1722,20 @@
                         else {
                             colorToUse = "none";
                         }
-                        // console.log(targetWord +" : "+colorToUse);
 
+                        if (has_target_terminologies.includes(targetWord)){
+                            console.log(targetWord + ": yup");
+                            text_decor = "underline";
+                        }
+                        else {
+                            console.log(targetWord + ": nope");
+                            text_decor = "none"
+                        }
+                        console.log(has_target_terminologies);
 
-                        split_target_words[i] = "<a href='' onmouseout='urlMouseAction_leave(this)' onmouseover='urlMouseAction(this)'><span class='" + targetWord + "_t' " +
-                            "style='background-color:" + colorToUse + ";font-size:" + (1 * (1 + imp_score_t / 10)) + "em'>" + split_target_words[i].replaceAll("_", " ") + "</span></a>";
+                        // "+text_decor+"
+                        split_target_words[i] = "<a href='' style='color: black; text-decoration:"+text_decor+"; text-decoration-style: dotted;' onmouseout='urlMouseAction_leave(this)' onmouseover='urlMouseAction(this)'><span class='" + targetWord + "_t' " +
+                            "style='background-color:" + colorToUse + ";font-size:" + (1 * (1.25 + imp_score_t / 10)) + "em'>" + split_target_words[i].replaceAll("_", " ") + "</span></a>";
 
 
                         var new_t = split_target_words.join(" ");
@@ -1722,9 +1775,13 @@
 
 
                 Nodes = [];
+                Definitions_ = [];
                 data_node_links_.Nodes.forEach(function (d, i) {
-                    if (has_source_definitions.includes(d.name) || source_linked_to.includes(d.name) ||
-                        has_target_definitions.includes(d.name) || target_linked_to.includes(d.name)) {
+                    Definitions_.push({"name": d.name,
+                    "definition" : conceptDef(d.name, concept_definitions_)});
+
+                    if (source_linked_to.includes(d.name) ||
+                        target_linked_to.includes(d.name)) {
 
                         //     console.log(d.name)
                         // }
@@ -1750,7 +1807,9 @@
 
                         // plc_Nodes.push(d);
                     }
+
                 });
+
 
 
 //     // get details about the links and how to draw the path between them
@@ -1825,7 +1884,7 @@
                         return d.name.replaceAll("_", " ");
                     })
                     .attr("font-size", (boxWidth * 0.007) + "em");
-                    // .attr("width", "2px");
+                // .attr("width", "2px");
 
 
                 links.forEach(function (li) {

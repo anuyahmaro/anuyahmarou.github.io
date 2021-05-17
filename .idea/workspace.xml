@@ -51,7 +51,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="2024" />
-          <entry key="html" value="47837" />
+          <entry key="html" value="47848" />
           <entry key="js" value="77" />
           <entry key="json" value="1394" />
         </counts>
@@ -59,7 +59,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="2024" />
-          <entry key="HTML" value="47837" />
+          <entry key="HTML" value="47848" />
           <entry key="JSON" value="1394" />
           <entry key="JavaScript" value="77" />
         </counts>
@@ -200,10 +200,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/trace_exp/pages/index_May10.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="909" selection-start-line="909" selection-end-line="909" />
+            <state relative-caret-position="195">
+              <caret line="34" column="71" selection-start-line="34" selection-start-column="71" selection-end-line="34" selection-end-column="71" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
@@ -606,15 +605,16 @@
       <workItem from="1620752185794" duration="439000" />
       <workItem from="1620836999117" duration="2035000" />
       <workItem from="1620916329489" duration="5496000" />
-      <workItem from="1621216843515" duration="24017000" />
+      <workItem from="1621216843515" duration="24255000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="463830000" />
+    <option name="totallyTimeSpent" value="464068000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1892552" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1157,10 +1157,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/trace_exp/pages/index_May10.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="909" selection-start-line="909" selection-end-line="909" />
+        <state relative-caret-position="195">
+          <caret line="34" column="71" selection-start-line="34" selection-start-column="71" selection-end-line="34" selection-end-column="71" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />

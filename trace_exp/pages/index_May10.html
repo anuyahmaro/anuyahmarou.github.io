@@ -34,7 +34,7 @@
         <form id="myform" action="" >
             <div class="col s2" style="margin-top: 10px; margin-left: 10px">
     <select id="select_source" name="source" >
-        <option id="current_source" value="0"> Select Source </option>
+        <!--<option id="current_source" value="0"> Select Source </option>-->
         <!--<option value="0" >Source 1</option>-->
         <!--<option value="1" >Source 2</option>-->
         <!--<option value="2">Source 3</option>-->
@@ -480,17 +480,6 @@
 
 
 
-    function GetSelectedSource(){
-        var e = document.getElementById("select_source");
-        // var result = e.options[e.selectedIndex].text;
-
-
-        // console.log(e.options[e.selectedIndex].text + " : " + e.options[e.selectedIndex].value);
-
-        return e.options[e.selectedIndex].value
-
-    }
-
 
 
 
@@ -918,14 +907,6 @@
 
 
     function loadSourceDropdown(data) {
-        // var all_data = [];
-
-        // data.forEach(d => {
-        //     d.source.forEach(k => {
-        //         all_data.push({"id": k.id});
-        //     })
-        //
-        // });
 
         var source_dropdown = d3.select("#select_source")
             .selectAll("option")
@@ -936,13 +917,12 @@
                 return i;
             })
             .text(function (d) {
+
                 return "Source " + d.id;
             });
 
-
-
-
-        console.log(source_dropdown);
+        // var e = document.getElementById("select_source");
+        // e.options[e.selectedIndex].text = "Source " + data[source].id;
     }
 
 

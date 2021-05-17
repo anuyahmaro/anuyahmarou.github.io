@@ -24,7 +24,34 @@
 <body class = 'blue-grey lighten-5' >
 
 
+
+
+
 <div class="row">
+
+
+
+        <form id="myform" action="" >
+            <div class="col s2" style="margin-top: 10px; margin-left: 10px">
+    <select id="select_source" name="source" >
+        <option id="current_source" value="0"> Select Source </option>
+        <!--<option value="0" >Source 1</option>-->
+        <!--<option value="1" >Source 2</option>-->
+        <!--<option value="2">Source 3</option>-->
+    </select>
+            </div>
+            <div class="col s2" style="margin-top: 20px; ">
+                <!--<input type="submit" value="Search"/>-->
+                <button class="btn waves-effect waves-light" type="submit">Search
+                    <!--<i class="material-icons right">send</i>-->
+                </button>
+            </div>
+        </form>
+        <!--&lt;!&ndash;<label>Materialize Select</label>&ndash;&gt;-->
+
+
+
+
     <div class = "artifact-panels col s12">
 
         <div class="content-panel col s4">
@@ -384,6 +411,17 @@
     var numArtifacts = 4;
     var filtered_source_concepts = [];
     var filtered_target_concepts = [];
+    var source;
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    source = +urlParams.get('source');
+
+    var data_ = [{"id": 4}, {"id": 9}, {"id": 8}, {"id": 90}, {"id": 900}, {"id": 41900}];
+
+    // typeof urlParams === "object" ? source = 0 : source = urlParams.get('source');
+
+    // console.log(source);
+    // source = urlParams.get('source');
 
 
 
@@ -438,6 +476,25 @@
 
 
 
+
+
+
+
+    function GetSelectedSource(){
+        var e = document.getElementById("select_source");
+        // var result = e.options[e.selectedIndex].text;
+
+
+        // console.log(e.options[e.selectedIndex].text + " : " + e.options[e.selectedIndex].value);
+
+        return e.options[e.selectedIndex].value
+
+    }
+
+
+
+
+
     const colors = d3.scaleOrdinal()
         .range(d3.schemeSet3);
 
@@ -459,7 +516,7 @@
 
 
     function show_hover(val) {
-        console.log(val.score)
+        // console.log(val.score)
 
     }
 
@@ -505,10 +562,10 @@
             var classNames_t = document.querySelectorAll("[class*=_t]");
             var totalClassNames = [];
             classNames_s.forEach(q=>{
-                totalClassNames.push(q.textContent.replace("_s", "").replace(".","").replace(",", ""));
+                totalClassNames.push(q.textContent.replace("_s", "").replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,""));
             });
             classNames_t.forEach(q =>{
-                totalClassNames.push(q.textContent.replace("_t", "").replace(".","").replace(",", ""));
+                totalClassNames.push(q.textContent.replace("_t", "").replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,""));
             });
 
             var totalClassNames_ = [...new Set(totalClassNames)];
@@ -618,7 +675,7 @@
                     for (var k = 0; k < extractContent_other_source_classes.length; k++) {
 
 
-                        extractContent_other_source_classes[k].style.backgroundColor = colors(stemmer(extractContent_other_source_classes[k].textContent.split(" ").join("_").replace(".","").replace(")","")));
+                        extractContent_other_source_classes[k].style.backgroundColor = colors(stemmer(extractContent_other_source_classes[k].textContent.split(" ").join("_").replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"")));
 
                     }
 
@@ -641,7 +698,7 @@
                     for (var k = 0; k < extractContent_other_target_classes.length; k++) {
 
 
-                        extractContent_other_target_classes[k].style.backgroundColor = colors(stemmer(extractContent_other_target_classes[k].textContent.split(" ").join("_").replace(".","").replace(")","")));
+                        extractContent_other_target_classes[k].style.backgroundColor = colors(stemmer(extractContent_other_target_classes[k].textContent.split(" ").join("_").replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"")));
 
                     }
 
@@ -680,22 +737,13 @@
         "use strict";
         var concept = val.name;
         var concept_type = val.lvl;
-        // var all_concepts = [];
-
-        // console.log(val);
 
         d3.select("#" + val.id)
             .attr("fill", val.cl)
             .attr("fill-opacity", "1")
             .attr("stroke", "red")
             .attr("stroke-width", "2.5px");
-        ;
 
-
-
-        // var checked_definition = typeof val.definition === 'undefined'? "" : val.definition;
-
-        // console.log(checked_definition);
 
         if (typeof val.definition === 'undefined'){
             hover("<span style='text-transform: capitalize'><b></b></span>");
@@ -713,10 +761,10 @@
         var classNames_t = document.querySelectorAll("[class*=_t]");
         var totalClassNames = [];
         classNames_s.forEach(q=>{
-            totalClassNames.push(q.textContent.replace("_s", "").replace(".","").replace(",", ""));
+            totalClassNames.push(q.textContent.replace("_s", "").replace(/[.,\#!$%\^&\*;:{}=\-`~()]/g,""));
         });
         classNames_t.forEach(q =>{
-            totalClassNames.push(q.textContent.replace("_t", "").replace(".","").replace(",", ""));
+            totalClassNames.push(q.textContent.replace("_t", "").replace(/[.,\#!$%\^&\*;:{}=\-`~()]/g,""));
         });
 
         var totalClassNames_ = [...new Set(totalClassNames)];
@@ -730,8 +778,6 @@
             var extractContent =  document.getElementsByClassName(val.name+"_s");
             // extractContent.style("background-color: pink");
             for (var i = 0; i < extractContent.length; i++) {
-
-                // extractContent[i].style.fontSize = "1.5em";
                 extractContent[i].style.borderStyle = "solid";
                 extractContent[i].style.borderColor = "red";
             }
@@ -798,7 +844,6 @@
         "use strict";
         d3.select("#" + val.id)
             .attr("fill", val.cl)
-            // .attr("fill-opacity", "0.6")
             .attr("stroke", "darkgray")
             .attr("stroke-width", "2px");
         // d3.select("#" + val.id).classed("active_d3", stat);
@@ -807,20 +852,6 @@
         var classNames_s = document.querySelectorAll("[class*=_s]");
         var classNames_t = document.querySelectorAll("[class*=_t]");
 
-
-        // console.log(filtered_source_concepts);
-        // var totalClassNames = [];
-        // classNames_s.forEach(q =>{
-        //     totalClassNames.push(q.textContent.replace("_s", "").replace(".","").replace(",", ""));
-        // });
-        // classNames_t.forEach(q =>{
-        //     totalClassNames.push(q.textContent.replace("_t", "").replace(".","").replace(",", ""));
-        // });
-
-        // con
-
-        // var totalClassNames_ = [...new Set(totalClassNames)];
-        // totalClassNames_.sort();
 
         if (concept_type === 0){
             var extractContent =  document.getElementsByClassName(val.name+"_s");
@@ -837,7 +868,8 @@
                     for (var k = 0; k < extractContent_other_source_classes.length; k++) {
 
                         // if (filtered_source_concepts.includes(extractContent_other_source_classes[k])) {
-                        extractContent_other_source_classes[k].style.backgroundColor = colors(stemmer(extractContent_other_source_classes[k].textContent.split(" ").join("_").replace(".", "").replace(")", "")));
+                        console.log("debugging")
+                        extractContent_other_source_classes[k].style.backgroundColor = colors(stemmer(extractContent_other_source_classes[k].textContent.split(" ").join("_").replace(/[.,\#!$%\^&\*;:{}=\-`~()]/g,"")));
                         // }
 
                     }
@@ -865,7 +897,7 @@
                     for (var k = 0; k < extractContent_other_target_classes.length; k++) {
 
 
-                        extractContent_other_target_classes[k].style.backgroundColor = colors(stemmer(extractContent_other_target_classes[k].textContent.split(" ").join("_").replace(".","").replace(")","")));
+                        extractContent_other_target_classes[k].style.backgroundColor = colors(stemmer(extractContent_other_target_classes[k].textContent.split(" ").join("_").replace(/[.,\#!$%\^&\*;:{}=\-`~()]/g,"")));
 
                     }
 
@@ -885,11 +917,51 @@
 
 
 
-    function drawSource(data){
+    function loadSourceDropdown(data) {
+        // var all_data = [];
+
+        // data.forEach(d => {
+        //     d.source.forEach(k => {
+        //         all_data.push({"id": k.id});
+        //     })
+        //
+        // });
+
+        var source_dropdown = d3.select("#select_source")
+            .selectAll("option")
+            .data(data)
+            .enter()
+            .append("option")
+            .attr("value", function (d, i) {
+                return i;
+            })
+            .text(function (d) {
+                return "Source " + d.id;
+            });
+
+
+
+
+        console.log(source_dropdown);
+    }
+
+
+
+
+    function drawSource(data, val){
+
+        data.forEach(d => {
+            d.source.forEach(k => {
+                data_.push({"id": k.id});
+            })
+
+        });
+
+
         Nodes = [];
 
 
-        var source_data = [data[0].source[0]];
+        var source_data = [data[val].source[0]];
 
 
 
@@ -914,6 +986,7 @@
 
 
             });
+
 
 
 
@@ -1015,22 +1088,21 @@
         //
         var split_source_words = s_orig_content.split(" ");
         for (var i = 0; i < split_source_words.length; i++) {
-            var sourceWord = split_source_words[i].replace(".", "").replace(",","").replace(")","");
+            var sourceWord = split_source_words[i].replace(/[.,\#!$%\^&\*;:{}=\-`~()]/g,"");
+            console.log("my source word", sourceWord)
             if (source_concepts.includes(sourceWord)) {
                 var imp_score_s = conceptImportanceScores(sourceWord, importance_scores_source_concepts);
                 var text_decor;
 
 
                 if (has_source_terminologies.includes(sourceWord)){
-                    console.log(sourceWord + ": yup");
                     text_decor = "underline";
                 }
                 else {
-                    console.log(sourceWord + ": nope");
                     text_decor = "none"
                 }
 
-                console.log(has_source_terminologies);
+                // console.log(has_source_terminologies);
                 // console.log(imp_score_s);
                 split_source_words[i] = "<a href='' style='color: black; text-decoration:"+text_decor+"; text-decoration-style: dotted;' onmouseout='urlMouseAction_leave(this)' onmouseover='urlMouseAction(this)'><span class='"+sourceWord+"_s' " +
                     "style='font-size:" + (1 * (1.25 + imp_score_s/ 10)) +"em'>"  +  split_source_words[i].replaceAll("_", " ")  + "</span></a>";
@@ -1056,6 +1128,10 @@
 
 
 
+
+
+
+
     function find(text, tp) {
         // "use strict";
         var i;
@@ -1073,15 +1149,16 @@
 
 
     function urlMouseAction(m){
-        var concept = m.text.replace(".", "").replace(",","").replaceAll(" ", "_").replace(")", "");
+        var concept = m.text.replace(/[.,\/#!$%\^&\*;:{}=\-`~()]/g,"");
+        concept = concept.split(" ").join("_");
         var definition;
-        console.log(concept);
+        // console.log(concept);
 
 
 
         // console.log(Nodes);
         for (var i = 0; i < Definitions_.length; i++){
-            console.log("uuuiiii");
+            // console.log("uuuiiii");
             console.log(Definitions_[i].name +" : " + concept);
             if (Definitions_[i].name === concept){
                 definition = Definitions_[i].definition;
@@ -1138,17 +1215,16 @@
     }
 
 
+    console.log(Nodes);
 
 
 
-    function drawTargets(data) {
+    function drawTargets(data, val) {
 
 
-        var target_data = data[0].targets;
 
-        console.log("Helo1")
-        console.log(target_data);
-        console.log("Helo")
+        var target_data = data[val].targets;
+
 
         var artifact_data = {
             "info": []
@@ -1463,7 +1539,7 @@
 
                         var content = target_this.nextElementSibling;
 
-                        console.log(content);
+                        // console.log(content);
 
                         var content_data = document.getElementById(content.id + "_data");
                         // console.log(content_data.style.display);
@@ -1535,7 +1611,7 @@
                     });
                 });
 
-                // console.log(clickedTargetData[0].score)
+                // console.log(clickedTargetdata[0].score)
 
 
 
@@ -1557,7 +1633,7 @@
                 };
 
 
-                var source_data = data[0].source;
+                var source_data = data[val].source;
                 var all_data_concepts_ = [];
 
                 source_data.forEach(function (d) {
@@ -1587,6 +1663,8 @@
                     })
 
                 });
+
+                console.log("from this moment on", data_node_links_["links"]);
 
 
                 const all_unique_concepts = [...new Set(all_data_concepts_)];
@@ -1658,7 +1736,7 @@
 
 
                 //Highlight the important words in the source artifact
-                var source_data = [data[0].source[0]];
+                var source_data = [data[val].source[0]];
                 var source_concepts = [];
 
                 var importance_scores_source_concepts = [];
@@ -1688,7 +1766,7 @@
 
                 var split_source_words = s_orig_content.split(" ");
                 for (var i = 0; i < split_source_words.length; i++) {
-                    var sourceWord = split_source_words[i].replace(".", "").replace(",","").replace(")","");
+                    var sourceWord = split_source_words[i].replace(/[.,\#!$%\^&\*;:{}=\-`~()]/g,"");
                     // console.log(sourceWord)
                     if (source_concepts.includes(sourceWord)) {
                         // var imp_score_s = conceptImportanceScores(sourceWord, importance_scores_source_concepts);
@@ -1709,7 +1787,8 @@
 
                 var split_target_words = t_orig_content.split(" ");
                 for (var i = 0; i < split_target_words.length; i++) {
-                    var targetWord = split_target_words[i].replace(".", "").replace(",", "").replace(")", "");
+                    var targetWord = split_target_words[i].replace(/[.,\#!$%\^&\*;:{}=\-`~()]/g,"");
+                    console.log("my target word", targetWord);
                     if (target_concepts.includes(targetWord)) {
                         var imp_score_t = conceptImportanceScores(targetWord, importance_scores_target_concepts);
                         var colorToUse, text_decor, tex;
@@ -1724,14 +1803,12 @@
                         }
 
                         if (has_target_terminologies.includes(targetWord)){
-                            console.log(targetWord + ": yup");
                             text_decor = "underline";
                         }
                         else {
-                            console.log(targetWord + ": nope");
                             text_decor = "none"
                         }
-                        console.log(has_target_terminologies);
+
 
                         // "+text_decor+"
                         split_target_words[i] = "<a href='' style='color: black; text-decoration:"+text_decor+"; text-decoration-style: dotted;' onmouseout='urlMouseAction_leave(this)' onmouseover='urlMouseAction(this)'><span class='" + targetWord + "_t' " +
@@ -1768,69 +1845,99 @@
 
 
                 // Concepts in the source artifact that have either a link or definition
-                // var filtered_source_concepts = [];
 
 
-                // console.log("Help me plss__")
+                var valid_sources = [];
+                var valid_targets = [];
+
+                data_node_links_.links.forEach(function (d) {
+                    if (stemmer(d.source) !== stemmer(d.target)) {
+                        valid_sources.push(d.source + "_s");
+                        valid_targets.push(d.target + '_t');
+                    }
+                });
+
+
+                console.log("valid sources", valid_sources);
+                console.log("valid targets", valid_targets);
 
 
                 Nodes = [];
                 Definitions_ = [];
+
                 data_node_links_.Nodes.forEach(function (d, i) {
                     Definitions_.push({"name": d.name,
-                    "definition" : conceptDef(d.name, concept_definitions_)});
+                        "definition" : conceptDef(d.name, concept_definitions_)});
 
                     if (source_linked_to.includes(d.name) ||
                         target_linked_to.includes(d.name)) {
 
-                        //     console.log(d.name)
-                        // }
-                        // console.log(i);
-                        if (d.lvl === 0) {
-                            // if (has_source_definitions.includes(d.name) || source_linked_to.includes(d.name) ) {
-                            d.x = margin.left + d.lvl * (boxWidth + gap.width);
-                            // }
-                        }
-                        else {
-                            // if (has_target_definitions.includes(d.name) || target_linked_to.includes(d.name)) {
-                            d.x = d.lvl * (boxWidth + gap.width) - margin.right;
-                            // }
-                        }
-                        d.y = margin.top + (boxHeight + gap.height) * count[d.lvl];
-                        d.cl = colors(stemmer(d.name)); //getUniqueColors(d.name, data_concepts_unique);
-                        d.definition = conceptDef(d.name, concept_definitions_);
-                        d.imp_score = conceptImportanceScores(d.name, concept_importance_scores_);
-                        d.id = "n" + i;
-                        count[d.lvl] += 1;
-                        Nodes.push(d);
 
+                        if ((valid_sources.includes(d.name+"_s") && d.type==="source") || (valid_targets.includes(d.name+"_t") && d.type==="target")) {
+                            console.log("huuu", d.name)
 
-                        // plc_Nodes.push(d);
+                            if (d.lvl === 0 ) {
+
+                                d.x = margin.left + d.lvl * (boxWidth + gap.width);
+
+                            }
+                            else if(d.lvl === 1) {
+                                d.x = d.lvl * (boxWidth + gap.width) - margin.right;
+
+                            }
+                            d.y = margin.top + (boxHeight + gap.height) * count[d.lvl];
+                            d.cl = colors(stemmer(d.name)); //getUniqueColors(d.name, data_concepts_unique);
+                            d.definition = conceptDef(d.name, concept_definitions_);
+                            d.imp_score = conceptImportanceScores(d.name, concept_importance_scores_);
+                            d.id = "n" + i;
+                            count[d.lvl] += 1;
+                            Nodes.push(d);
+                        }
                     }
+
+
 
                 });
 
 
 
-//     // get details about the links and how to draw the path between them
+                console.log("TS", Nodes);
+
+
                 links = [];
                 data_node_links_.links.forEach(function (d) {
                     // links = [];
-                    links.push({
-                        source: find(d.source, "source"),
-                        target: find(d.target, "target"),
 
-                        id: "l" + find(d.source, "source").id + find(d.target, "target").id,
-                        relationship: d.relationship
-                    });
+                    // console.log("myttt", d);
+                    if (stemmer(d.source) !== stemmer(d.target)) {
+                        links.push({
+                            source: find(d.source, "source"),
+                            target: find(d.target, "target"),
+
+                            id: "l" + find(d.source, "source").id + find(d.target, "target").id,
+                            relationship: d.relationship
+                        });
+                    }
+
+                    // console.log("relationship", JSON.parse('{ "name":"John", "age":30, "city":"New York"}'))
                 });
 
-                // console.log("mm")
-                // console.log(links);
-                // console.log("jj")
 
-                // var useful_link = links;
-                // console.log();
+
+
+
+
+
+
+
+
+
+                console.log("mm");
+                console.log(data_node_links_.links);
+                console.log(valid_sources);
+                console.log(valid_targets);
+                console.log("jj");
+
 
                 // Draw all of the nodes
                 svg.append("g")
@@ -2158,14 +2265,38 @@
 
 
 
+    function loadD(data){
+        var myData = [];
 
-    d3.json("annotated_links_v2.1.1.json").then(data => {
-        drawTargets(data);
-        drawSource(data);
+        console.log("maya", data);
+        data.forEach(d => {
+            d.source.forEach(k => {
+                myData.push({"id": k.id});
+            })
+
+        });
+
+        loadSourceDropdown(myData);
+
+        var elems = document.querySelectorAll('select');
+        var instances = M.FormSelect.init(elems);
+
+    }
+
+
+
+    d3.json("annotated_links_v2.2.json").then(data => {
+        selected_source = +document.getElementById("select_source").value;
+        drawSource(data, source);
+        drawTargets(data, source);
+        document.addEventListener('DOMContentLoaded', loadD(data));
+
 
 
 
     });
+
+
 
 
 

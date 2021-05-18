@@ -1087,7 +1087,7 @@
                 // console.log(has_source_terminologies);
                 // console.log(imp_score_s);
                 split_source_words[i] = "<a href='' style='color: black; text-decoration:"+text_decor+"; text-decoration-style: dotted;' onmouseout='urlMouseAction_leave(this)' onmouseover='urlMouseAction(this)'><span class='"+sourceWord+"_s' " +
-                    "style='font-size:" + (1 * (1.25 + imp_score_s/ 10)) +"em'>"  +  split_source_words[i].replaceAll("_", " ")  + "</span></a>";
+                    "style='font-size:" + (1 + (imp_score_s * 1.5)) +"em'>"  +  split_source_words[i].replaceAll("_", " ")  + "</span></a>";
 
 
                 var new_s = split_source_words.join(" ");
@@ -1100,8 +1100,6 @@
 
         }
 
-        // d3.select("#source_artifact")
-        //             .html(s_orig_content.replaceAll("_", " "));
 
 
 
@@ -1794,7 +1792,7 @@
 
                         // "+text_decor+"
                         split_target_words[i] = "<a href='' style='color: black; text-decoration:"+text_decor+"; text-decoration-style: dotted;' onmouseout='urlMouseAction_leave(this)' onmouseover='urlMouseAction(this)'><span class='" + targetWord + "_t' " +
-                            "style='background-color:" + colorToUse + ";font-size:" + (1 * (1.25 + imp_score_t / 10)) + "em'>" + split_target_words[i].replaceAll("_", " ") + "</span></a>";
+                            "style='background-color:" + colorToUse + ";font-size:" + (1 + (imp_score_t * 1.5)) + "em'>" + split_target_words[i].replaceAll("_", " ") + "</span></a>";
 
 
                         var new_t = split_target_words.join(" ");
@@ -2267,7 +2265,7 @@
 
 
 
-    d3.json("annotated_links_v2.2.json").then(data => {
+    d3.json("annotated_links_v2.2.1.json").then(data => {
         selected_source = +document.getElementById("select_source").value;
         drawSource(data, source);
         drawTargets(data, source);

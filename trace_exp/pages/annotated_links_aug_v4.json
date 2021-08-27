@@ -1,0 +1,437 @@
+[
+  {
+    "source": [
+      {
+        "id": 1675,
+        "text": "The system shall provide a means to view patient_demographics, allergies and adverse_reactions, postings (cautions, warnings, allergies, and advance_directives), clinical_reminders, current_medications, problems, appointments, etc.",
+        "concepts": [
+          "allergies",
+          "postings",
+          "advance_directives",
+          "warnings",
+          "patient_demographics",
+          "means",
+          "appointments",
+          "problems",
+          "adverse_reactions",
+          "current_medications",
+          "clinical_reminders"
+        ],
+        "terminology": [
+          "allergies",
+          "postings",
+          "warnings",
+          "patient_demographics",
+          "appointments",
+          "adverse_reactions",
+          "current_medications",
+          "clinical_reminders"
+        ],
+        "definitions": [
+          {
+            "postings": "placeholder for definition"
+          },
+          {
+            "patient_demographics": "placeholder for definition"
+          },
+          {
+            "current_medications": "placeholder for definition"
+          },
+          {
+            "warnings": "placeholder for definition"
+          },
+          {
+            "allergies": "placeholder for definition"
+          },
+          {
+            "appointments": "placeholder for definition"
+          },
+          {
+            "adverse_reactions": "placeholder for definition"
+          },
+          {
+            "clinical_reminders": "placeholder for definition"
+          }
+        ],
+        "acronyms": [
+          {"adverse_reactions": "acronym for adverse reactions."}],
+        "contexts": [
+          {}
+        ],
+        "importance_scores": [
+          {
+            "means": 0.5398823012448425
+          },
+          {
+            "postings": 1.0
+          },
+          {
+            "advance_directives": 0.7569103007683534
+          },
+          {
+            "patient_demographics": 0.3794191434463664
+          },
+          {
+            "current_medications": 0.34560492927751907
+          },
+          {
+            "warnings": 0.7438794509142856
+          },
+          {
+            "allergies": 0.4032980553340079
+          },
+          {
+            "problems": 0.45907431018005
+          },
+          {
+            "appointments": 0.8429604043185464
+          },
+          {
+            "adverse_reactions": 0.5649672536991053
+          },
+          {
+            "clinical_reminders": 0.5119396561384925
+          }
+        ],
+        "query": "source",
+        "type": "Requirements"
+      }
+    ],
+    "target": [
+      {
+        "id": 164,
+        "text": "The system shall provide the ability to display information which has been inactivated or removed from the allergy and adverse_reaction_list.",
+        "concepts": [
+          "information",
+          "adverse_reaction_list",
+          "allergy"
+        ],
+        "terminology": [
+          "information",
+          "adverse_reaction_list",
+          "allergy"
+        ],
+        "definitions": [
+          {
+            "allergy": "placeholder for definition"
+          },
+          {
+            "adverse_reaction_list": "placeholder for definition"
+          },
+          {
+            "information": "placeholder for definition"
+          }
+        ],
+        "acronyms": [
+          {}],
+        "contexts": [
+          {}
+        ],
+        "importance_scores": [
+          {
+            "allergy": 0.4032980553340079
+          },
+          {
+            "adverse_reaction_list": 0.5000073978211604
+          },
+          {
+            "information": 0.3132959367997613
+          }
+        ],
+        "query": "target",
+        "score": 0.319,
+        "links": [
+          {
+            "source": "allergies",
+            "target": "allergy",
+            "relationship": [
+              {
+                "concept_1": "allergies",
+                "relation_type": "same_as",
+                "concept_2": "allergy"
+              }
+            ]
+          },
+          {
+            "source": "adverse_reactions",
+            "target": "adverse_reaction_list",
+            "relationship": [
+              {
+                "concept_1": "adverse_reactions",
+                "relation_type": "parent_of",
+                "concept_2": "adverse_reaction_list"
+              }
+            ]
+          }
+        ],
+        "type": "Regulatory code"
+      }
+    ]
+  },
+  {
+    "source": [
+      {
+        "id": 1677,
+        "text": "The system shall provide a way for user to quickly click on the specifications that he or she wants for each order placed.",
+        "concepts": [
+          "order",
+          "specifications",
+          "way",
+          "user"
+        ],
+        "terminology": [
+          "user",
+          "order",
+          "way"
+        ],
+        "definitions": [
+          {
+            "way": "placeholder for definition"
+          },
+          {
+            "order": "placeholder for definition"
+          },
+          {
+            "user": "placeholder for definition"
+          }
+        ],
+        "acronyms": [
+          {}],
+        "contexts": [
+          {}
+        ],
+        "importance_scores": [
+          {
+            "way": 0.6447984975100248
+          },
+          {
+            "order": 0.2641986078716574
+          },
+          {
+            "specifications": 0.5186666113829808
+          },
+          {
+            "user": 0.27633444001492763
+          }
+        ],
+        "query": "source",
+        "type": "Requirements"
+      }
+    ],
+    "target": [
+      {
+        "id": 992,
+        "text": "The system shall provide the ability to present medications to be administered over a selectable_date_/_time_range.",
+        "concepts": [
+          "medications",
+          "selectable_date_/_time_range"
+        ],
+        "terminology": [
+          "medications",
+          "selectable_date_/_time_range"
+        ],
+        "definitions": [
+          {
+            "selectable_date_/_time_range": "placeholder for definition"
+          },
+          {
+            "medications": "placeholder for definition"
+          }
+        ],
+        "acronyms": [
+          {}],
+        "contexts": [
+          {}
+        ],
+        "importance_scores": [
+          {
+            "selectable_date_/_time_range": 0.5054652559698383
+          },
+          {
+            "medications": 0.22204121908550642
+          }
+        ],
+        "query": "target",
+        "score": 0.008,
+        "links": [
+          {
+            "source": "order",
+            "target": "selectable_date_/_time_range",
+            "relationship": [
+              {
+                "concept_1": "order",
+                "relation_type": "synonym_of",
+                "concept_2": "selectable_date_/_time_range"
+              }
+            ]
+          }
+        ],
+        "type": "Regulatory code"
+      }
+    ]
+  },
+  {
+    "source": [
+      {
+        "id": 1674,
+        "text": "The system shall improve accessibility of online_clinical_information and results.",
+        "concepts": [
+          "results",
+          "accessibility",
+          "online_clinical_information"
+        ],
+        "terminology": [
+          "results",
+          "accessibility",
+          "online_clinical_information"
+        ],
+        "definitions": [
+          {
+            "accessibility": "placeholder for definition"
+          },
+          {
+            "results": "Outcome of a the action carried out"
+          },
+          {
+            "online_clinical_information": "placeholder for definition"
+          }
+        ],
+        "acronyms": [
+          {"results": "This is an acronym for results"},
+          {
+            "accessibility": "placeholder for accessibility acronym BBB"
+
+          },
+          {
+            "online_clinical_information": "online clinical information acronym"
+          }
+        ],
+        "contexts": [
+          {"results": "This is a context definition for results"}
+        ],
+        "importance_scores": [
+          {
+            "accessibility": 1.0
+          },
+          {
+            "results": 0.4195856579787199
+          },
+          {
+            "online_clinical_information": 0.538443550432786
+          }
+        ],
+        "query": "source",
+        "type": "Requirements"
+      }
+    ],
+    "target": [
+      {
+        "id": 263,
+        "text": "The system shall provide the ability to receive and store general_laboratory_results (includes ability to differentiate preliminary_results and final_results and the ability to process a corrected result)",
+        "concepts": [
+          "result",
+          "final_results",
+          "preliminary_results",
+          "general_laboratory_results"
+        ],
+        "terminology": [
+          "result",
+          "final_results",
+          "preliminary_results",
+          "general_laboratory_results"
+        ],
+        "definitions": [
+          {
+            "general_laboratory_results": "placeholder for definition"
+          },
+          {
+            "result": "placeholder for definition"
+          },
+          {
+            "final_results": "placeholder for definition"
+          },
+          {
+            "preliminary_results": "placeholder for definition"
+          }
+        ],
+        "acronyms": [
+          {"general_laboratory_results": "This is an acronym for general laboratory results"},
+          {
+            "preliminary_results": "Preliminary results acronym"
+          }
+        ],
+        "contexts": [
+          {"general_laboratory_results": "This is a context definition for general laboratory results"}
+        ],
+        "importance_scores": [
+          {
+            "general_laboratory_results": 0.653155986407854
+          },
+          {
+            "result": 0.4195856579787199
+          },
+          {
+            "final_results": 0.5611713988829687
+          },
+          {
+            "preliminary_results": 0.70979282898936
+          }
+        ],
+        "query": "target",
+        "score": 0.27,
+        "links": [
+          {
+            "source": "results",
+            "target": "result",
+            "relationship": [
+              {
+                "concept_1": "results",
+                "relation_type": "same_as",
+                "concept_2": "result"
+              }
+            ]
+          },
+          {
+            "source": "results",
+            "target": "final_results",
+            "relationship": [
+              {
+                "concept_1": "results",
+                "relation_type": "parent_of",
+                "concept_2": "final_results"
+              }
+            ]
+          },
+          {
+            "source": "results",
+            "target": "preliminary_results",
+            "relationship": [
+              {
+                "concept_1": "results",
+                "relation_type": "parent_of",
+                "concept_2": "preliminary_results"
+              }
+            ]
+          },
+          {
+            "source": "results",
+            "target": "general_laboratory_results",
+            "relationship": [
+              {
+                "concept_1": "results",
+                "relation_type": "parent_of",
+                "concept_2": "laboratory_results"
+              },
+              {
+                "concept_1": "laboratory_results",
+                "relation_type": "parent_of",
+                "concept_2": "general_laboratory_results"
+              }
+            ]
+          }
+        ],
+        "type": "Regulatory code"
+      }
+    ]
+  }]
+

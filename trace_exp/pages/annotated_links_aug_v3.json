@@ -1,0 +1,621 @@
+[
+  {
+    "source": [
+      {
+        "id": 1674,
+        "text": "The system shall improve accessibility of online_clinical_information and results.",
+        "concepts": [
+          "results",
+          "accessibility",
+          "online_clinical_information"
+        ],
+        "terminology": [
+          "results",
+          "accessibility",
+          "online_clinical_information"
+        ],
+        "definitions": [
+          {
+            "accessibility": "placeholder for definition"
+          },
+          {
+            "results": "Outcome of a the action carried out"
+          },
+          {
+            "online_clinical_information": "placeholder for definition"
+          }
+        ],
+        "acronyms": [
+          {"results": "This is an acronym for results"},
+          {
+            "accessibility": "placeholder for accessibility acronym BBB"
+
+          },
+          {
+            "online_clinical_information": "online clinical information acronym"
+          }
+        ],
+        "contexts": [
+          {"results": "This is a context definition for results"}
+        ],
+        "importance_scores": [
+          {
+            "accessibility": 1.0
+          },
+          {
+            "results": 0.4195856579787199
+          },
+          {
+            "online_clinical_information": 0.538443550432786
+          }
+        ],
+        "query": "source",
+        "type": "Requirements"
+      }
+    ],
+    "target": [
+      {
+        "id": 263,
+        "text": "The system shall provide the ability to receive and store general_laboratory_results (includes ability to differentiate preliminary_results and final_results and the ability to process a corrected result)",
+        "concepts": [
+          "result",
+          "final_results",
+          "preliminary_results",
+          "general_laboratory_results"
+        ],
+        "terminology": [
+          "result",
+          "final_results",
+          "preliminary_results",
+          "general_laboratory_results"
+        ],
+        "definitions": [
+          {
+            "general_laboratory_results": "placeholder for definition"
+          },
+          {
+            "result": "placeholder for definition"
+          },
+          {
+            "final_results": "placeholder for definition"
+          },
+          {
+            "preliminary_results": "placeholder for definition"
+          }
+        ],
+        "acronyms": [
+          {"general_laboratory_results": "This is an acronym for general laboratory results"},
+          {
+            "preliminary_results": "Preliminary results acronym"
+          }
+        ],
+        "contexts": [
+          {"general_laboratory_results": "This is a context definition for general laboratory results"}
+        ],
+        "importance_scores": [
+          {
+            "general_laboratory_results": 0.653155986407854
+          },
+          {
+            "result": 0.4195856579787199
+          },
+          {
+            "final_results": 0.5611713988829687
+          },
+          {
+            "preliminary_results": 0.70979282898936
+          }
+        ],
+        "query": "target",
+        "score": 0.99,
+        "links": [
+          {
+            "source": "results",
+            "target": "result",
+            "relationship": [
+              {
+                "concept_1": "results",
+                "relation_type": "same_as",
+                "concept_2": "result"
+              }
+            ]
+          },
+          {
+            "source": "results",
+            "target": "final_results",
+            "relationship": [
+              {
+                "concept_1": "results",
+                "relation_type": "parent_of",
+                "concept_2": "final_results"
+              }
+            ]
+          },
+          {
+            "source": "results",
+            "target": "preliminary_results",
+            "relationship": [
+              {
+                "concept_1": "results",
+                "relation_type": "parent_of",
+                "concept_2": "preliminary_results"
+              }
+            ]
+          },
+          {
+            "source": "results",
+            "target": "general_laboratory_results",
+            "relationship": [
+              {
+                "concept_1": "results",
+                "relation_type": "parent_of",
+                "concept_2": "laboratory_results"
+              },
+              {
+                "concept_1": "laboratory_results",
+                "relation_type": "parent_of",
+                "concept_2": "general_laboratory_results"
+              }
+            ]
+          }
+        ],
+        "type": "Regulatory code"
+      }
+    ]
+  },
+  {
+    "source": [
+      {
+        "id": 1695,
+        "text": "This is the second one system shall improve accessibility of online_clinical_information and results.",
+        "concepts": [
+          "results",
+          "accessibility",
+          "online_clinical_information"
+        ],
+        "terminology": [
+          "results",
+          "accessibility",
+          "online_clinical_information"
+        ],
+        "definitions": [
+          {
+            "accessibility": "placeholder for definition"
+          },
+          {
+            "results": "Outcome of a the action carried out"
+          },
+          {
+            "online_clinical_information": "placeholder for definition"
+          }
+        ],
+        "acronyms": [
+          {"results": "This is an acronym for results"},
+          {
+            "accessibility": "placeholder for accessibility acronym"
+          }
+        ],
+        "contexts": [
+          {"results": "This is a context definition for results"}
+        ],
+        "importance_scores": [
+          {
+            "accessibility": 1.0
+          },
+          {
+            "results": 0.4195856579787199
+          },
+          {
+            "online_clinical_information": 0.538443550432786
+          }
+        ],
+        "query": "source",
+        "type": "Requirements"
+      }
+    ],
+    "target": [
+      {
+        "id": 270,
+        "text": "This is the second target system shall provide the ability to receive and store general_laboratory_results (includes ability to differentiate preliminary_results and final_results and the ability to process a corrected result)",
+        "concepts": [
+          "result",
+          "final_results",
+          "general_laboratory_results"
+        ],
+        "terminology": [
+          "result",
+          "final_results",
+          "general_laboratory_results"
+        ],
+        "definitions": [
+          {
+            "general_laboratory_results": "placeholder for definition"
+          },
+          {
+            "result": "placeholder for definition"
+          },
+          {
+            "final_results": "placeholder for definition"
+          }
+        ],
+        "acronyms": [
+          {"general_laboratory_results": "This is an acronym for results"}
+        ],
+        "contexts": [
+          {"general_laboratory_results": "This is a context definition for results"}
+        ],
+        "importance_scores": [
+          {
+            "general_laboratory_results": 0.653155986407854
+          },
+          {
+            "result": 0.4195856579787199
+          },
+          {
+            "final_results": 0.5611713988829687
+          },
+          {
+            "preliminary_results": 0.70979282898936
+          }
+        ],
+        "query": "target",
+        "score": 0.35,
+        "links": [
+          {
+            "source": "results",
+            "target": "result",
+            "relationship": [
+              {
+                "concept_1": "results",
+                "relation_type": "same_as",
+                "concept_2": "result"
+              }
+            ]
+          },
+          {
+            "source": "results",
+            "target": "final_results",
+            "relationship": [
+              {
+                "concept_1": "results",
+                "relation_type": "parent_of",
+                "concept_2": "final_results"
+              }
+            ]
+          },
+          {
+            "source": "results",
+            "target": "general_laboratory_results",
+            "relationship": [
+              {
+                "concept_1": "results",
+                "relation_type": "parent_of",
+                "concept_2": "laboratory_results"
+              },
+              {
+                "concept_1": "laboratory_results",
+                "relation_type": "parent_of",
+                "concept_2": "general_laboratory_results"
+              }
+            ]
+          }
+        ],
+        "type": "Regulatory code"
+      }
+    ]
+  },
+  {
+    "source": [
+      {
+        "id": 1698,
+        "text": "This is the third one system shall improve accessibility of online_clinical_information and results.",
+        "concepts": [
+          "results",
+          "accessibility",
+          "online_clinical_information"
+        ],
+        "terminology": [
+          "results",
+          "accessibility",
+          "online_clinical_information"
+        ],
+        "definitions": [
+          {
+            "accessibility": "placeholder for definition"
+          },
+          {
+            "results": "Outcome of a the action carried out"
+          },
+          {
+            "online_clinical_information": "placeholder for definition"
+          }
+        ],
+        "acronyms": [
+          {"results": "This is an acronym for results"},
+          {
+            "accessibility": "placeholder for accessibility acronym"
+          }
+        ],
+        "contexts": [
+          {"results": "This is a context definition for results"}
+        ],
+        "importance_scores": [
+          {
+            "accessibility": 1.0
+          },
+          {
+            "results": 0.4195856579787199
+          },
+          {
+            "online_clinical_information": 0.538443550432786
+          }
+        ],
+        "query": "source",
+        "type": "Requirements"
+      }
+    ],
+    "target": [
+      {
+        "id": 224,
+        "text": "This is the third target system shall provide the ability to receive and store general_laboratory_results (includes ability to differentiate preliminary_results and final_results and the ability to process a corrected result)",
+        "concepts": [
+          "result",
+          "final_results",
+          "preliminary_results",
+          "general_laboratory_results"
+        ],
+        "terminology": [
+          "result",
+          "final_results",
+          "preliminary_results",
+          "general_laboratory_results"
+        ],
+        "definitions": [
+          {
+            "general_laboratory_results": "placeholder for definition"
+          },
+          {
+            "result": "placeholder for definition"
+          },
+          {
+            "final_results": "placeholder for definition"
+          },
+          {
+            "preliminary_results": "placeholder for definition"
+          }
+        ],
+        "acronyms": [
+          {"general_laboratory_results": "This is an acronym for results"}
+        ],
+        "contexts": [
+          {"general_laboratory_results": "This is a context definition for results"}
+        ],
+        "importance_scores": [
+          {
+            "general_laboratory_results": 0.653155986407854
+          },
+          {
+            "result": 0.4195856579787199
+          },
+          {
+            "final_results": 0.5611713988829687
+          },
+          {
+            "preliminary_results": 0.70979282898936
+          }
+        ],
+        "query": "target",
+        "score": 0.92,
+        "links": [
+          {
+            "source": "results",
+            "target": "result",
+            "relationship": [
+              {
+                "concept_1": "results",
+                "relation_type": "same_as",
+                "concept_2": "result"
+              }
+            ]
+          },
+          {
+            "source": "results",
+            "target": "final_results",
+            "relationship": [
+              {
+                "concept_1": "results",
+                "relation_type": "parent_of",
+                "concept_2": "final_results"
+              }
+            ]
+          },
+          {
+            "source": "results",
+            "target": "preliminary_results",
+            "relationship": [
+              {
+                "concept_1": "results",
+                "relation_type": "parent_of",
+                "concept_2": "preliminary_results"
+              }
+            ]
+          },
+          {
+            "source": "results",
+            "target": "general_laboratory_results",
+            "relationship": [
+              {
+                "concept_1": "results",
+                "relation_type": "parent_of",
+                "concept_2": "laboratory_results"
+              },
+              {
+                "concept_1": "laboratory_results",
+                "relation_type": "parent_of",
+                "concept_2": "general_laboratory_results"
+              }
+            ]
+          }
+        ],
+        "type": "Regulatory code"
+      }
+    ]
+  },
+  {
+    "source": [
+      {
+        "id": 1674,
+        "text": "This is the fourth and last one system shall improve accessibility of online_clinical_information and results.",
+        "concepts": [
+          "results",
+          "accessibility",
+          "online_clinical_information"
+        ],
+        "terminology": [
+          "results",
+          "accessibility",
+          "online_clinical_information"
+        ],
+        "definitions": [
+          {
+            "accessibility": "placeholder for definition"
+          },
+          {
+            "results": "Outcome of a the action carried out"
+          },
+          {
+            "online_clinical_information": "placeholder for definition"
+          }
+        ],
+        "acronyms": [
+          {"results": "This is an acronym for results"},
+          {
+            "accessibility": "placeholder for accessibility acronym"
+          }
+        ],
+        "contexts": [
+          {"results": "This is a context definition for results"}
+        ],
+        "importance_scores": [
+          {
+            "accessibility": 1.0
+          },
+          {
+            "results": 0.4195856579787199
+          },
+          {
+            "online_clinical_information": 0.538443550432786
+          }
+        ],
+        "query": "source",
+        "type": "Requirements"
+      }
+    ],
+    "target": [
+      {
+        "id": 269,
+        "text": "This is the fourth and lasttarget system shall provide the ability to receive and store general_laboratory_results (includes ability to differentiate preliminary_results and final_results and the ability to process a corrected result)",
+        "concepts": [
+          "result",
+          "final_results",
+          "preliminary_results",
+          "general_laboratory_results"
+        ],
+        "terminology": [
+          "result",
+          "final_results",
+          "preliminary_results",
+          "general_laboratory_results"
+        ],
+        "definitions": [
+          {
+            "general_laboratory_results": "placeholder for definition"
+          },
+          {
+            "result": "placeholder for definition"
+          },
+          {
+            "final_results": "placeholder for definition"
+          },
+          {
+            "preliminary_results": "placeholder for definition"
+          }
+        ],
+        "acronyms": [
+          {"general_laboratory_results": "This is an acronym for results"}
+        ],
+        "contexts": [
+          {"general_laboratory_results": "This is a context definition for results"}
+        ],
+        "importance_scores": [
+          {
+            "general_laboratory_results": 0.653155986407854
+          },
+          {
+            "result": 0.4195856579787199
+          },
+          {
+            "final_results": 0.5611713988829687
+          },
+          {
+            "preliminary_results": 0.70979282898936
+          }
+        ],
+        "query": "target",
+        "score": 0.44,
+        "links": [
+          {
+            "source": "results",
+            "target": "result",
+            "relationship": [
+              {
+                "concept_1": "results",
+                "relation_type": "same_as",
+                "concept_2": "result"
+              }
+            ]
+          },
+          {
+            "source": "results",
+            "target": "final_results",
+            "relationship": [
+              {
+                "concept_1": "results",
+                "relation_type": "parent_of",
+                "concept_2": "final_results"
+              }
+            ]
+          },
+          {
+            "source": "results",
+            "target": "preliminary_results",
+            "relationship": [
+              {
+                "concept_1": "results",
+                "relation_type": "parent_of",
+                "concept_2": "preliminary_results"
+              }
+            ]
+          },
+          {
+            "source": "results",
+            "target": "general_laboratory_results",
+            "relationship": [
+              {
+                "concept_1": "results",
+                "relation_type": "parent_of",
+                "concept_2": "laboratory_results"
+              },
+              {
+                "concept_1": "laboratory_results",
+                "relation_type": "parent_of",
+                "concept_2": "general_laboratory_results"
+              }
+            ]
+          }
+        ],
+        "type": "Regulatory code"
+      }
+    ]
+  }
+]

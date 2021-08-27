@@ -112,6 +112,9 @@
     </div>
 </div>
 
+
+
+
 <!--<a class="waves-effect waves-light btn modal-trigger" id="modal1_fire" href="#modal1">Modal</a>-->
 <div id="modal1" class="modal" style="display: none">
     <div class="modal-content">
@@ -125,14 +128,44 @@
             </tr>
             <tr>
                 <td>11/06/19</td>
-                <td>J Cleland-Huang</td>
+                <td>Anon name 1</td>
                 <td>Software Engr</td>
                 <td>Yes</td>
             </tr>
             <tr>
                 <td>12/06/19</td>
-                <td>Y Liu</td>
+                <td>Anon name 2</td>
                 <td>Safety Analyst</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>11/06/19</td>
+                <td>Anon name 3</td>
+                <td>Software Engr</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>12/06/19</td>
+                <td>Anon name 4</td>
+                <td>Safety Analyst</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>11/06/19</td>
+                <td>Anon name 5</td>
+                <td>Software Engr</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>12/06/19</td>
+                <td>Anon name 6</td>
+                <td>Safety Analyst</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>11/06/19</td>
+                <td>Anon name 7</td>
+                <td>Requirements Engr</td>
                 <td>No</td>
             </tr>
 
@@ -544,8 +577,22 @@
                 "<span style='text-transform: uppercase'><b><u>"+ val.relationship +"</u></b></span> " +
                 "<span style='text-transform: capitalize'>"+ target_info.name + "</span>";
 
-            hover(message);
+            var msg = "<ul>"
 
+
+
+
+
+
+            console.log("Today is Thursday im June");
+            for(var b = 0; b < val.relationship.length; b++){
+                msg = msg + "<li> <span class='material-icons' style='font-size: 10px'>fiber_manual_record</span>&nbsp;&nbsp;&nbsp; " + val.relationship[b].concept_1 + " is a <b>" + val.relationship[b].relation_type  + "</b> " + val.relationship[b].concept_2.replaceAll("_", " ") + "</li>";
+                console.log(val.relationship[b])
+            }
+            console.log(msg+"</ul>");
+            console.log("Today is Thursday in June x");
+
+            hover(msg);
 
 
             // get all of the class names in the document that has both concepts in the source and target artifacts
@@ -1219,11 +1266,7 @@
 
         });
 
-        // console.log("info", artifact_data);
 
-        // artifact_data['info'].sort((a, b) => (a.score < b.score) ? 1 : -1)
-
-        // console.log(artifact_data);
 
         var outer_list =  d3.select("#myTable")
             .selectAll("tbody")
@@ -1806,14 +1849,6 @@
 
 
 
-
-
-
-
-
-
-
-
                 "use strict";
                 var count = [];
 
@@ -2266,7 +2301,7 @@
 
 
     d3.json("annotated_links_v2.2.1.json").then(data => {
-        selected_source = +document.getElementById("select_source").value;
+        // selected_source = +document.getElementById("select_source").value;
         drawSource(data, source);
         drawTargets(data, source);
         document.addEventListener('DOMContentLoaded', loadD(data));

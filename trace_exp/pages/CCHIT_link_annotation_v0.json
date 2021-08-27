@@ -1,0 +1,789 @@
+[
+    {
+        "source": [
+            {
+                "id": "1783",
+                "text": "The system shall update diagnostic and procedure codes used for billing purposes so codes are applicable at the time the service was provided .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": []
+            }
+        ],
+        "target": [
+            {
+                "id": "369",
+                "text": "The system shall provide the ability to link procedure_data with patient diagnosis .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "procedure_data"
+                ],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "procedure_data": 0.2571850894737938
+                    }
+                ],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "1691",
+                "text": "The system shall use HL_-_7 communications protocol for transferring messages among packages.",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "HL_-_7"
+                ],
+                "terminology": [
+                    "HL_-_7"
+                ],
+                "definitions": [
+                    {
+                        "HL_-_7": "HL7 is an American National Standards Institute (ANSI) - approved clinical message standard used widely in the United States and internationally."
+                    }
+                ],
+                "acronyms": [
+                    {
+                        "HL_-_7": "Health Level 7"
+                    }
+                ],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "HL_-_7": 0.5522670399299167
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "641",
+                "text": "The HIE SHALL have the ability to perform the roles of Document_Consumer , Document Source , Document Repository , Document Registry and PATIENT Identity Source as documented in HITSP Transaction Package 13 Manage Sharing of Documents , as updated in 2007 IHE XDS - b and IHE XCA , and using HITSP Component 32 Registration Summary and Medication History for the specification of the HL7 / ASTM Continuity of Care_Document ( CCD ) healthcare_summary_document , as updated by HITSP in 2007 .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "HL7",
+                    "HITSP",
+                    "PATIENT",
+                    "ASTM",
+                    "Care_Document",
+                    "IHE",
+                    "Document_Consumer",
+                    "XDS",
+                    "healthcare_summary_document",
+                    "XCA",
+                    "HIE"
+                ],
+                "terminology": [
+                    "HL7",
+                    "HITSP",
+                    "PATIENT",
+                    "ASTM",
+                    "IHE",
+                    "XDS",
+                    "XCA",
+                    "HIE"
+                ],
+                "definitions": [
+                    {
+                        "HIE": "HIE is a condition in newborns in which the blood and oxygen supply to the brain are interrupted."
+                    },
+                    {
+                        "PATIENT": "The patient is an adult man who presented to our institution after developing the acute onset of transient left - sided body numbness while lifting weights."
+                    },
+                    {
+                        "HL7": "HL7 is an American National Standards Institute (ANSI) - approved clinical message standard used widely in the United States and internationally."
+                    }
+                ],
+                "acronyms": [
+                    {
+                        "HIE": "Health Information Exchange"
+                    },
+                    {
+                        "HITSP": "Healthcare Information Technology Standards Panel"
+                    },
+                    {
+                        "IHE": "Integrated Health Enterprise"
+                    },
+                    {
+                        "XDS": "XML Data Store"
+                    },
+                    {
+                        "XCA": "X - ray contrast agent"
+                    },
+                    {
+                        "HL7": "Health Level 7"
+                    },
+                    {
+                        "ASTM": "Association of Materials Testing"
+                    }
+                ],
+                "contexts": [
+                    {
+                        "HIE": "ConclusionSince HIE and hypoglycemia were the most common cause of neonatal seizures, efforts should be made to improve care during delivery and early breastfeeding."
+                    },
+                    {
+                        "PATIENT": "The patient was treated with steroids, with no increase in serum creatinine."
+                    },
+                    {
+                        "IHE": "Case IHe was the third child of healthy unrelated parents, born at term by caesarean section weighing 2 - 8 kg; there were no neonatal problems and no relevant family history."
+                    },
+                    {
+                        "XDS": "XDS provides a registry for querying which patient records are in an EHR repository and methods for retrieving the documents."
+                    },
+                    {
+                        "XCA": "XCA provides access to all medical data including diagnostic reports and imaging manifests."
+                    },
+                    {
+                        "ASTM": "ASTM provides information regarding the record identifier (ID), including the inclusive ID, in the header section and presents the insurance information in the body section."
+                    },
+                    {
+                        "HL7": "HL7 provides standards for the structure and organization of clinical messages, defining data types, and structure of the \"records\" in the message."
+                    }
+                ],
+                "importance_scores": [
+                    {
+                        "HL7": 0.47117484633967127
+                    },
+                    {
+                        "HITSP": 0.19802486293472754
+                    },
+                    {
+                        "PATIENT": 1.0
+                    },
+                    {
+                        "ASTM": 0.7904579905025688
+                    },
+                    {
+                        "Care_Document": 0.6637027101543223
+                    },
+                    {
+                        "IHE": 0.45961170872372653
+                    },
+                    {
+                        "Document_Consumer": 0.5102159624584417
+                    },
+                    {
+                        "XDS": 0.542641385674183
+                    },
+                    {
+                        "healthcare_summary_document": 0.4969689438491638
+                    },
+                    {
+                        "XCA": 0.5809159810051379
+                    },
+                    {
+                        "HIE": 0.14820235394574538
+                    }
+                ],
+                "score": 0,
+                "links": [
+                    {
+                        "source": "HL_-_7",
+                        "target": "HL7",
+                        "relationship": [
+                            {
+                                "concept_1": "hl_-_7",
+                                "relation_type": "same_as",
+                                "concept_2": "hl7"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "1696",
+                "text": "The system shall include clinical reminders to provide relevant information to providers , at the point of care , for improving patient care .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": []
+            }
+        ],
+        "target": [
+            {
+                "id": "45",
+                "text": "In areas where results from multiple patients are displayed , the system shall provide the ability to filter or sort results by patient .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "1765",
+                "text": "The system shall allow the creation of patient lists or team_lists that simplify tasks such as reviewing patient charts , ordering , and signing_orders and notes and these lists can be based on wards , clinics , teams , or other groups .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "team_lists",
+                    "signing_orders"
+                ],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "team_lists": 0.5434328149327808
+                    },
+                    {
+                        "signing_orders": 0.5124867049333725
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "502",
+                "text": "The system shall provide the ability to display and manage ( assign , remove and modify ) the assignments of medical teams and / or individual team members to patients .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "1694",
+                "text": "The system shall have pre-defined progress_note_templates .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "progress_note_templates"
+                ],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "progress_note_templates": 0.46485612549213157
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "68",
+                "text": "The system shall have the ability to provide filtered displays of encounters based on encounter_characteristics , including date of service , encounter PROVIDER and associated diagnosis .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "encounter_characteristics",
+                    "PROVIDER"
+                ],
+                "terminology": [
+                    "encounter_characteristics",
+                    "PROVIDER"
+                ],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [
+                    {
+                        "PROVIDER": "Each provider was classified as government, private, nongovernment organization (NGO), or NGO partnership.Results Oral morphine use for Kerala was 1.32 mg/capita and increased over the study period 27% (from 1.23 mg/capita to 1.56 mg/capita)."
+                    },
+                    {
+                        "encounter_characteristics": "Patient encounter characteristics of computerized physician order entry... | Download Table"
+                    }
+                ],
+                "importance_scores": [
+                    {
+                        "encounter_characteristics": 0.7052175486295504
+                    },
+                    {
+                        "PROVIDER": 1.0
+                    }
+                ],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "1701",
+                "text": "The system shall support requirements for codified data , including diagnosis data using ICD - 9 codes .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "ICD"
+                ],
+                "terminology": [
+                    "ICD"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "ICD": "implantable cardioverter - defibrilator"
+                    }
+                ],
+                "contexts": [
+                    {
+                        "ICD": "ICD implant duration was 29 \u00b1 27 months."
+                    }
+                ],
+                "importance_scores": [
+                    {
+                        "ICD": 0.7355874231698355
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "68",
+                "text": "The system shall have the ability to provide filtered displays of encounters based on encounter_characteristics , including date of service , encounter PROVIDER and associated diagnosis .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "encounter_characteristics",
+                    "PROVIDER"
+                ],
+                "terminology": [
+                    "encounter_characteristics",
+                    "PROVIDER"
+                ],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [
+                    {
+                        "PROVIDER": "Each provider was classified as government, private, nongovernment organization (NGO), or NGO partnership.Results Oral morphine use for Kerala was 1.32 mg/capita and increased over the study period 27% (from 1.23 mg/capita to 1.56 mg/capita)."
+                    },
+                    {
+                        "encounter_characteristics": "Patient encounter characteristics of computerized physician order entry... | Download Table"
+                    }
+                ],
+                "importance_scores": [
+                    {
+                        "encounter_characteristics": 0.7052175486295504
+                    },
+                    {
+                        "PROVIDER": 1.0
+                    }
+                ],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "1731",
+                "text": "The system shall allow document types to inherit authorizations from a higher level when using classes to assign roles .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": []
+            }
+        ],
+        "target": [
+            {
+                "id": "224",
+                "text": "The system shall provide the ability to index and retrieve scanned documents based on the document type , the date of the original document .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "1675",
+                "text": "The system shall provide a means to view patient demographics , allergies and adverse reactions , postings ( cautions , warnings , allergies , and advance directives ) , clinical reminders , current medications , problems , appointments , etc. .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": []
+            }
+        ],
+        "target": [
+            {
+                "id": "64",
+                "text": "The system shall have the ability to provide access to standard care plan , protocol and guideline documents when requested at the time of the clinical encounter . These documents may reside within the system or be provided through links to external sources .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "1695",
+                "text": "The system shall allow creation of personalized templates to fit the specific needs of individual practices .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": []
+            }
+        ],
+        "target": [
+            {
+                "id": "74",
+                "text": "The system shall provide a method for archiving health_record_information .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "health_record_information"
+                ],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "health_record_information": 0.20216085282728125
+                    }
+                ],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "1692",
+                "text": "The system shall allow setting of business rules , document types , user classes , etc. to control access to documents , reports , verification , signing , and so on",
+                "query": "source",
+                "type": "R1",
+                "concepts": [],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": []
+            }
+        ],
+        "target": [
+            {
+                "id": "401",
+                "text": "If role - based access control ( RBAC ) is supported , the system shall be able to provide role based access control that is in compliance with the HL7 Permissions Catalog .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "HL7"
+                ],
+                "terminology": [
+                    "HL7"
+                ],
+                "definitions": [
+                    {
+                        "HL7": "HL7 is an American National Standards Institute (ANSI) - approved clinical message standard used widely in the United States and internationally."
+                    }
+                ],
+                "acronyms": [
+                    {
+                        "HL7": "Health Level 7"
+                    }
+                ],
+                "contexts": [
+                    {
+                        "HL7": "HL7 provides standards for the structure and organization of clinical messages, defining data types, and structure of the \"records\" in the message."
+                    }
+                ],
+                "importance_scores": [
+                    {
+                        "HL7": 0.47117484633967127
+                    }
+                ],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "1737",
+                "text": "The document - handling system ( TIU ) shall include Consults_/_Request_Tracking , Discharge_Summary , and Progress Notes .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "Discharge_Summary",
+                    "Consults_/_Request_Tracking",
+                    "TIU"
+                ],
+                "terminology": [
+                    "Discharge_Summary",
+                    "TIU"
+                ],
+                "definitions": [
+                    {
+                        "Discharge_Summary": "The discharge summary and the patient care referral forms from the discharging institution are often in disagreement."
+                    },
+                    {
+                        "TIU": "The TIU is typically a local application and typically installed and configured on a machine - by - machine basis."
+                    }
+                ],
+                "acronyms": [
+                    {
+                        "TIU": "Trypsin Inhibitory Units"
+                    }
+                ],
+                "contexts": [
+                    {
+                        "Discharge_Summary": "The discharge summary and the patient care referral form did not match in 104 of 199  SNF admissions."
+                    },
+                    {
+                        "TIU": "The TIU can be supplemented with a couple of different setup options that offer some automation and flexibility for the transcriptionists to be as productive as possible."
+                    }
+                ],
+                "importance_scores": [
+                    {
+                        "Discharge_Summary": 0.7804101080965784
+                    },
+                    {
+                        "Consults_/_Request_Tracking": 0.7604446011865171
+                    },
+                    {
+                        "TIU": 0.7904579905025688
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "567",
+                "text": "The system shall send Current Medication List and discharge_medications ( patient home medications and medications prescribed upon discharge ) to outpatient_documentation_sources ( e.g. , Physicians office EMR ) , or Health Information Exchange ( HIE ) / network",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "discharge_medications",
+                    "EMR",
+                    "outpatient_documentation_sources"
+                ],
+                "terminology": [
+                    "discharge_medications",
+                    "EMR"
+                ],
+                "definitions": [
+                    {
+                        "EMR": "An EMR is an electronic medical record software package."
+                    }
+                ],
+                "acronyms": [
+                    {
+                        "EMR": "Electronic Medical Records"
+                    }
+                ],
+                "contexts": [
+                    {
+                        "EMR": "The EMR of the patient kept by doctor B might not contain the history of the patient\u2019s broken arm that was recorded in the EMR kept by hospital A, and of course, the EMR kept by hospital A might not necessarily contain the history of the patient\u2019s sore throat that was recorded in the EMR kept by doctor B."
+                    },
+                    {
+                        "discharge_medications": "Discharge medications were analyzed, and a medication score (MEDS) was developed."
+                    }
+                ],
+                "importance_scores": [
+                    {
+                        "discharge_medications": 0.2837551849696332
+                    },
+                    {
+                        "EMR": 0.8677937115849179
+                    },
+                    {
+                        "outpatient_documentation_sources": 0.5067695027146754
+                    }
+                ],
+                "score": 0,
+                "links": [
+                    {
+                        "source": "Discharge_Summary",
+                        "target": "EMR",
+                        "relationship": [
+                            {
+                                "concept_1": "discharge_summary",
+                                "relation_type": "recorded_in",
+                                "concept_2": "diagnosis"
+                            },
+                            {
+                                "concept_1": "diagnosis",
+                                "relation_type": "contains",
+                                "concept_2": "emr"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "Discharge_Summary",
+                        "target": "discharge_medications",
+                        "relationship": [
+                            {
+                                "concept_1": "discharge_summary",
+                                "relation_type": "listed_within",
+                                "concept_2": "discharge_medication"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "1703",
+                "text": "The system shall document Discharge_Summary hospitalization data , as well as procedure and diagnosis - related information .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "Discharge_Summary"
+                ],
+                "terminology": [
+                    "Discharge_Summary"
+                ],
+                "definitions": [
+                    {
+                        "Discharge_Summary": "The discharge summary and the patient care referral forms from the discharging institution are often in disagreement."
+                    }
+                ],
+                "acronyms": [],
+                "contexts": [
+                    {
+                        "Discharge_Summary": "The discharge summary and the patient care referral form did not match in 104 of 199  SNF admissions."
+                    }
+                ],
+                "importance_scores": [
+                    {
+                        "Discharge_Summary": 0.7804101080965784
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "66",
+                "text": "The system shall have the ability to provide assistance with selecting an appropriate CPT Evaluation and Management_billing_code based on codified clinical information in the encounter .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "Management_billing_code",
+                    "CPT"
+                ],
+                "terminology": [
+                    "CPT"
+                ],
+                "definitions": [
+                    {
+                        "CPT": "CPT is the model for comparing two decisions amounts regarding two pairs of sets, the positive and negative features of the alternatives."
+                    }
+                ],
+                "acronyms": [
+                    {
+                        "CPT": "Current Procedural Terminology"
+                    }
+                ],
+                "contexts": [
+                    {
+                        "CPT": "CPT - 11 is converted to its active metabolite, SN - 38, which is conjugated by hepatic uridine diphosphate glucuronosyl transferase to SN - 38 glucuronide (SN - 38G)."
+                    }
+                ],
+                "importance_scores": [
+                    {
+                        "Management_billing_code": 0.720610654003425
+                    },
+                    {
+                        "CPT": 0.5809159810051379
+                    }
+                ],
+                "score": 0,
+                "links": [
+                    {
+                        "source": "Discharge_Summary",
+                        "target": "Management_billing_code",
+                        "relationship": [
+                            {
+                                "concept_1": "discharge_summary",
+                                "relation_type": "recorded_in",
+                                "concept_2": "diagnosis"
+                            },
+                            {
+                                "concept_1": "diagnosis",
+                                "relation_type": "using",
+                                "concept_2": "icd_-_9_code"
+                            },
+                            {
+                                "concept_1": "icd_-_9_code",
+                                "relation_type": "been_used",
+                                "concept_2": "billing"
+                            },
+                            {
+                                "concept_1": "billing",
+                                "relation_type": "match",
+                                "concept_2": "management_billing_code"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

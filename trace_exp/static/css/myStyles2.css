@@ -78,7 +78,7 @@ input[type="radio"] {
 
 .collapsed_content_data {
     /*height: calc((100vh - 310px) - 105px);*/
-    height: calc((100vh - 190px - 10px) - 160px);
+    height: calc((100vh - 190px - 10px) - 180px);
     /*background-color: red;*/
 }
 
@@ -139,10 +139,10 @@ input[type="radio"] {
     /*font-family: Tahoma, Verdana, Segoe, sans-serif;*/
     font-family: arial, sans-serif;
     padding: 10px;
-    width: 80%;
+    width: 95%;
     text-align: center;
     margin: auto;
-    height: 120px;
+    height: 300px;
     /*width: 80%;*/
     background-color:#78909c;
     /*margin-top: 70px;*/
@@ -168,12 +168,24 @@ input[type="radio"] {
 
 .information-panel-content{
     background-color:#b0bec5;
-    height: 100px;
+    height: 280px;
     width: 100%;
     padding: 10px;
     color: black;
     font-size: small;
     /*overflow: scroll;*/
+}
+
+#tree {
+    /*background-color: lightsteelblue;*/
+    padding-top: 10px;
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    /*text-align: center;*/
+    /*width: 60%;*/
+    /*border: 3px solid #73AD21;*/
+
 }
 
 .information-panel-content2{
@@ -362,16 +374,7 @@ rect {
 /*stroke-width: 2px;*/
 /*}*/
 
-#tree {
-    /*background-color: lightsteelblue;*/
-    padding-top: 10px;
-    width: 100%;
-    margin: auto;
-    /*text-align: center;*/
-    /*width: 60%;*/
-    /*border: 3px solid #73AD21;*/
 
-}
 
 .tooltip_ {
     position: relative;

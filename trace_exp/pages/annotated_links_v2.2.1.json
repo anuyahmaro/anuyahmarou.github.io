@@ -19,7 +19,7 @@
                         "accessibility": "placeholder for definition"
                     },
                     {
-                        "results": "placeholder for definition"
+                        "results": "Outcome of a the action carried out"
                     },
                     {
                         "online_clinical_information": "placeholder for definition"
@@ -127,8 +127,13 @@
                             {
                                 "concept_1": "results",
                                 "relation_type": "parent_of",
-                                "concept_2": "general_laboratory_results"
-                            }
+                                "concept_2": "laboratory_results"
+                            },
+                          {
+                            "concept_1": "laboratory_results",
+                            "relation_type": "parent_of",
+                            "concept_2": "general_laboratory_results"
+                          }
                         ]
                     }
                 ],
@@ -355,7 +360,7 @@
                         "relationship": [
                             {
                                 "concept_1": "online_clinical_information",
-                                "relation_type": "information synonym_of data,clinical same_as clinical",
+                                "relation_type": "information synonym_of data, clinical same_as clinical",
                                 "concept_2": "clinical_data"
                             }
                         ]

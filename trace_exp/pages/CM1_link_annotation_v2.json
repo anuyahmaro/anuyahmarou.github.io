@@ -1,0 +1,1602 @@
+[
+    {
+        "source": [
+            {
+                "id": "SRS5.13.1.3",
+                "text": "The DPU - TMALI shall provide a function which sets the current event_bit ordering mode in the DCI driver .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "DCI",
+                    "TMALI",
+                    "DPU",
+                    "event_bit"
+                ],
+                "terminology": [
+                    "DCI",
+                    "TMALI",
+                    "DPU"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "TMALI": "Telescope Module Access Library Interface CSC"
+                    },
+                    {
+                        "DCI": "Data Capture Interface"
+                    },
+                    {
+                        "DPU": "Data Processing Unit"
+                    }
+                ],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "DCI": 0.08051812566451025
+                    },
+                    {
+                        "TMALI": 0.08051812566451025
+                    },
+                    {
+                        "DPU": -0.019053159304457206
+                    },
+                    {
+                        "event_bit": 0.4005066573875722
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "DPUSDS5.13.1.6.1",
+                "text": "Setting DCI bit_arrangement The bit bit_arrangement the DCI control / status register can be set via tmaliBitArrangementSet ( ) .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "DCI",
+                    "bit_arrangement",
+                    "tmaliBitArrangementSet"
+                ],
+                "terminology": [
+                    "DCI"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "DCI": "Data Capture Interface"
+                    }
+                ],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "DCI": 0.08051812566451025
+                    },
+                    {
+                        "bit_arrangement": 0.6750886242295313
+                    },
+                    {
+                        "tmaliBitArrangementSet": 0.8043838599212754
+                    }
+                ],
+                "score": 0,
+                "links": [
+                    {
+                        "source": "DCI",
+                        "target": "DCI",
+                        "relationship": [
+                            {
+                                "concept_1": "DCI",
+                                "relation_type": "synonym",
+                                "concept_2": "DCI"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "SRS5.12.3.3",
+                "text": "The DPU - CCM shall collect a TASK_HBEAT from DPU - SCUI , DPU - CCM , DPU - DCX , DPU - TMALI , and DPU - DPA . Non-responsive tasks will be reported in DPU_HK .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "TMALI",
+                    "DPU",
+                    "DPU_HK",
+                    "TASK_HBEAT",
+                    "DPA",
+                    "CCM",
+                    "DCX",
+                    "SCUI"
+                ],
+                "terminology": [
+                    "TMALI",
+                    "DCX",
+                    "SCUI",
+                    "DPA",
+                    "DPU",
+                    "CCM"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "TMALI": "Telescope Module Access Library Interface CSC"
+                    },
+                    {
+                        "DPU": "Data Processing Unit"
+                    },
+                    {
+                        "DCX": "Data Compression CSC"
+                    },
+                    {
+                        "CCM": "Command and Control Module CSC"
+                    },
+                    {
+                        "SCUI": "SCU Interface CSC"
+                    },
+                    {
+                        "DPA": "Data Processing Algorithm CSC"
+                    }
+                ],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "TMALI": 0.08051812566451025
+                    },
+                    {
+                        "DPU": -0.019053159304457206
+                    },
+                    {
+                        "DPU_HK": 0.6087677198425504
+                    },
+                    {
+                        "TASK_HBEAT": 1.0
+                    },
+                    {
+                        "DPA": 0.4943396133606796
+                    },
+                    {
+                        "CCM": 0.11511827074916084
+                    },
+                    {
+                        "DCX": 1.0
+                    },
+                    {
+                        "SCUI": 0.6899557534394043
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "DPUSDS5.12.1.5.1",
+                "text": "Error_Collection and Reporting The DPU - CCM CSC provides a centralized error_reporting_interface , ccmErrEnq ( ) , that other FSW tasks use to report errors . Each time it wakes , ccmTask ( ) checks to see if it is time to form an error_/_event_packet for transmission to the ground . If so , ccmTask ( ) calls ccmHkMkError ( ) to actually create the packet and forward it to DPU - SCUI for transmission to the ground .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "DPU",
+                    "error_/_event_packet",
+                    "ccmHkMkError",
+                    "error_reporting_interface",
+                    "ccmErrEnq",
+                    "ccmTask",
+                    "FSW",
+                    "CCM",
+                    "Error_Collection",
+                    "CSC",
+                    "SCUI"
+                ],
+                "terminology": [
+                    "SCUI",
+                    "FSW",
+                    "CSC",
+                    "DPU",
+                    "CCM"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "DPU": "Data Processing Unit"
+                    },
+                    {
+                        "CSC": "Computer Software Component"
+                    },
+                    {
+                        "CCM": "Command and Control Module CSC"
+                    },
+                    {
+                        "FSW": "Flight Software"
+                    },
+                    {
+                        "SCUI": "SCU Interface CSC"
+                    }
+                ],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "DPU": -0.019053159304457206
+                    },
+                    {
+                        "error_/_event_packet": 0.35160262236789097
+                    },
+                    {
+                        "ccmHkMkError": 1.0
+                    },
+                    {
+                        "error_reporting_interface": 0.3455874855841118
+                    },
+                    {
+                        "ccmErrEnq": 0.37991150687880865
+                    },
+                    {
+                        "ccmTask": 0.8043838599212754
+                    },
+                    {
+                        "FSW": 0.4131515797638255
+                    },
+                    {
+                        "CCM": 0.11511827074916084
+                    },
+                    {
+                        "Error_Collection": 0.4222584309098709
+                    },
+                    {
+                        "CSC": 0.16903681648595026
+                    },
+                    {
+                        "SCUI": 0.6899557534394043
+                    }
+                ],
+                "score": 0,
+                "links": [
+                    {
+                        "source": "DPU_HK",
+                        "target": "DPU",
+                        "relationship": [
+                            {
+                                "concept_1": "DPU_HK",
+                                "relation_type": "parent",
+                                "concept_2": "DPU"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "SCUI",
+                        "target": "SCUI",
+                        "relationship": [
+                            {
+                                "concept_1": "SCUI",
+                                "relation_type": "synonym",
+                                "concept_2": "SCUI"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "DPU",
+                        "target": "DPU",
+                        "relationship": [
+                            {
+                                "concept_1": "DPU",
+                                "relation_type": "synonym",
+                                "concept_2": "DPU"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "CCM",
+                        "target": "CCM",
+                        "relationship": [
+                            {
+                                "concept_1": "CCM",
+                                "relation_type": "synonym",
+                                "concept_2": "CCM"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "SRS5.12.3.6",
+                "text": "The DPU - CCM shall , in rejecting a command , report an error in DPU_HK indicating the byte_-_code of the command being rejected in the LSB of the errno as described in 03691 - DPUSDP_-_01 .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "byte_-_code",
+                    "DPU_HK",
+                    "DPUSDP_-_01",
+                    "DPU",
+                    "CCM"
+                ],
+                "terminology": [
+                    "DPU",
+                    "CCM"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "DPU": "Data Processing Unit"
+                    },
+                    {
+                        "CCM": "Command and Control Module CSC"
+                    }
+                ],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "byte_-_code": 0.2820087422548173
+                    },
+                    {
+                        "DPU_HK": 0.6087677198425504
+                    },
+                    {
+                        "DPUSDP_-_01": 0.646178344546649
+                    },
+                    {
+                        "DPU": -0.019053159304457206
+                    },
+                    {
+                        "CCM": 0.11511827074916084
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "DPUSDS5.12.1.5.1",
+                "text": "Error_Collection and Reporting The DPU - CCM CSC provides a centralized error_reporting_interface , ccmErrEnq ( ) , that other FSW tasks use to report errors . Each time it wakes , ccmTask ( ) checks to see if it is time to form an error_/_event_packet for transmission to the ground . If so , ccmTask ( ) calls ccmHkMkError ( ) to actually create the packet and forward it to DPU - SCUI for transmission to the ground .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "DPU",
+                    "error_/_event_packet",
+                    "SCUI",
+                    "ccmHkMkError",
+                    "error_reporting_interface",
+                    "ccmErrEnq",
+                    "ccmTask",
+                    "FSW",
+                    "Error_Collection",
+                    "CSC",
+                    "CCM"
+                ],
+                "terminology": [
+                    "FSW",
+                    "CSC",
+                    "CCM",
+                    "DPU",
+                    "SCUI"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "CSC": "Computer Software Component"
+                    },
+                    {
+                        "DPU": "Data Processing Unit"
+                    },
+                    {
+                        "CCM": "Command and Control Module CSC"
+                    },
+                    {
+                        "FSW": "Flight Software"
+                    },
+                    {
+                        "SCUI": "SCU Interface CSC"
+                    }
+                ],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "DPU": -0.019053159304457206
+                    },
+                    {
+                        "error_/_event_packet": 0.35160262236789097
+                    },
+                    {
+                        "SCUI": 0.6899557534394043
+                    },
+                    {
+                        "ccmHkMkError": 1.0
+                    },
+                    {
+                        "error_reporting_interface": 0.3455874855841118
+                    },
+                    {
+                        "ccmErrEnq": 0.37991150687880865
+                    },
+                    {
+                        "ccmTask": 0.8043838599212754
+                    },
+                    {
+                        "FSW": 0.4131515797638255
+                    },
+                    {
+                        "Error_Collection": 0.4222584309098709
+                    },
+                    {
+                        "CSC": 0.16903681648595026
+                    },
+                    {
+                        "CCM": 0.11511827074916084
+                    }
+                ],
+                "score": 0,
+                "links": [
+                    {
+                        "source": "DPU_HK",
+                        "target": "DPU",
+                        "relationship": [
+                            {
+                                "concept_1": "DPU_HK",
+                                "relation_type": "parent",
+                                "concept_2": "DPU"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "DPU",
+                        "target": "DPU",
+                        "relationship": [
+                            {
+                                "concept_1": "DPU",
+                                "relation_type": "synonym",
+                                "concept_2": "DPU"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "CCM",
+                        "target": "CCM",
+                        "relationship": [
+                            {
+                                "concept_1": "CCM",
+                                "relation_type": "synonym",
+                                "concept_2": "CCM"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "SRS5.12.3.1",
+                "text": "The DPU - CCM shall record an error to the LAST_BOOT_IVEC location in EEPROM and discontinue strobing the Watchdog Timer should an unrecoverable software error occur . An unrecoverable software error is defined as an error that causes a loss of commandability or ground_communication .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "ground_communication",
+                    "LAST_BOOT_IVEC_location",
+                    "DPU",
+                    "commandability",
+                    "CCM"
+                ],
+                "terminology": [
+                    "DPU",
+                    "CCM"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "DPU": "Data Processing Unit"
+                    },
+                    {
+                        "CCM": "Command and Control Module CSC"
+                    }
+                ],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "ground_communication": 0.725418033158041
+                    },
+                    {
+                        "LAST_BOOT_IVEC_location": 0.7065757898819127
+                    },
+                    {
+                        "DPU": -0.019053159304457206
+                    },
+                    {
+                        "commandability": 1.0
+                    },
+                    {
+                        "CCM": 0.11511827074916084
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "DPUSDS5.13.1.3.3",
+                "text": "Data Transfer to Queue Once the events in the Ping_-_Pong_buffer have been completely transferred to the TMALI_EVENT_QUEUE , the tamliTask ( ) function must re-arm the hardware to swap the Ping - Pong Ping_-_Pong_buffer In the event that TMALI does not finish transferring the data from the ping buffer before the pong buffer is full , the DCI Driver will issue an error interrupt , invoking the tmaliDciErrorReportedISR ( ) . In response , the tmaliDciErrorReportedISR ( ) will set an error flag so that the tmaliTask ( ) can recover . The tmaliDciErrorReportedISR ( ) also gives the semDciWait semaphore to awaken the tmaliTask ( ) even though it is likely already awake , since it is possible that the tmaliTask ( ) has just completed transfer of the data at the time the error occurs . The error will also be counted in TMALI_HK . The DCI hardware will discard events until the tmaliTask ( ) function completes the prior transfer , recognizes the error flag , and in response manually forces a Ping_-_Pong_swap and re-enables_data_acquisition . This guarantees that only complete frames end up in the Ping - Pong buffer and will Ping_-_Pong_buffer . In normal operation this error should not occur as the TMALI task should be fast enough to retrieve data from the DCI Ping - Pong buffer . When events ca n\u2019t Ping_-_Pong_buffer the problem should result in an TMALI queue full condition which is reported as an S_TMALI_QUEUE_FULL error using the ccmErrEnq ( ) mechanism .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "tmaliTask",
+                    "re-enables_data_acquisition",
+                    "TMALI",
+                    "DCI",
+                    "TMALI_HK",
+                    "S_TMALI_QUEUE_FULL_error",
+                    "Ping_-_Pong_buffer",
+                    "ccmErrEnq",
+                    "TMALI_EVENT_QUEUE",
+                    "tmaliDciErrorReportedISR",
+                    "Ping_-_Pong_swap"
+                ],
+                "terminology": [
+                    "DCI",
+                    "TMALI"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "DCI": "Data Capture Interface"
+                    },
+                    {
+                        "TMALI": "Telescope Module Access Library Interface CSC"
+                    }
+                ],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "tmaliTask": 0.4131515797638255
+                    },
+                    {
+                        "re-enables_data_acquisition": 0.6058729844188522
+                    },
+                    {
+                        "TMALI": 0.08051812566451025
+                    },
+                    {
+                        "DCI": 0.08051812566451025
+                    },
+                    {
+                        "TMALI_HK": 0.5457933885377871
+                    },
+                    {
+                        "S_TMALI_QUEUE_FULL_error": 0.44798531849842466
+                    },
+                    {
+                        "Ping_-_Pong_buffer": 0.220663353549412
+                    },
+                    {
+                        "ccmErrEnq": 0.37991150687880865
+                    },
+                    {
+                        "TMALI_EVENT_QUEUE": 0.5457933885377871
+                    },
+                    {
+                        "tmaliDciErrorReportedISR": 0.8043838599212754
+                    },
+                    {
+                        "Ping_-_Pong_swap": 0.3756854768297099
+                    }
+                ],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "SRS5.12.2.1",
+                "text": "The DPU - CCM shall implement a mechanism whereby large memory loads and dumps can be accomplished incrementally .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "DPU",
+                    "CCM"
+                ],
+                "terminology": [
+                    "DPU",
+                    "CCM"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "DPU": "Data Processing Unit"
+                    },
+                    {
+                        "CCM": "Command and Control Module CSC"
+                    }
+                ],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "DPU": -0.019053159304457206
+                    },
+                    {
+                        "CCM": 0.11511827074916084
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "DPUSDS5.12.1.2.2",
+                "text": "Control and Monitoring The DPU produces eight types of housekeeping packets .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "SRS5.13.1.2",
+                "text": "The DPU - TMALI shall be capable of making data available from the DCI to DPU - DPA . DPU - TMALI will populate a ring buffer with frames of data for application_task_retrieval .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "application_task_retrieval",
+                    "DPA",
+                    "DPU",
+                    "TMALI"
+                ],
+                "terminology": [
+                    "DPA",
+                    "DPU",
+                    "TMALI"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "DPA": "Data Processing Algorithm CSC"
+                    },
+                    {
+                        "DPU": "Data Processing Unit"
+                    },
+                    {
+                        "TMALI": "Telescope Module Access Library Interface CSC"
+                    }
+                ],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "application_task_retrieval": 0.5766962517792902
+                    },
+                    {
+                        "DPA": 0.4943396133606796
+                    },
+                    {
+                        "DPU": -0.019053159304457206
+                    },
+                    {
+                        "TMALI": 0.08051812566451025
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "DPUSDS5.13.0.2",
+                "text": "Telescope_Module_Access_Library and Interface CSC The TMALI CSC includes the following components : * A queue , TMALI_EVENT_QUEUE , implemented using a ring buffer , which contains the detector_events which have been received over the data_capture_interface from the DCI Driver , but which have not yet been retrieved by the DPA CSC ; * An API which facilitates the retrieval of detector detector_events the queue by the DPA CSC . The API consists of the tmaliNextEvent ( ) and tmaliWait ( ) functions . * An set of API functions used by the DPA CSC to configure the DCI interface , including tmaliBitArrangementSet ( ) , tmaliDciFrameDepthGet ( ) , tmaliDciFrameDepthSet ( ) , tmaliDciWindowSet ( ) , tmaliDataTimeoutSet ( ) , and tmaliDataTimeoutGet ( ) . * An API housekeeping function , tmaliHkGet ( ) , which gathers CSC housekeeping data at the request of the Command and Control Task . * The task_tmaliTask ( ) and an ISR_tmaliTransferToQueueISR ( ) work together via a semaphore to synchronize the transfer of data from the DCI to the queue An error handling ISR , tmaliDciErrorReportedISR ( ) , is installed as a hook_routine to the DCI Driver , and is used to keep track of the number of errors reported by the DCI driver .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "TMALI",
+                    "tmaliHkGet",
+                    "data_capture_interface",
+                    "DCI",
+                    "tmaliNextEvent",
+                    "tmaliTransferToQueueISR",
+                    "tmaliWait",
+                    "hook_routine",
+                    "API",
+                    "tmaliBitArrangementSet",
+                    "tmaliTask",
+                    "tmaliDataTimeoutGet",
+                    "ISR_tmaliTransferToQueueISR",
+                    "DPA",
+                    "TMALI_EVENT_QUEUE",
+                    "tmaliDciFrameDepthSet",
+                    "Telescope_Module_Access_Library",
+                    "detector_events",
+                    "CSC",
+                    "tmaliDciErrorReportedISR",
+                    "task_tmaliTask"
+                ],
+                "terminology": [
+                    "TMALI",
+                    "DCI",
+                    "DPA",
+                    "API",
+                    "CSC"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "DCI": "Data Capture Interface"
+                    },
+                    {
+                        "TMALI": "Telescope Module Access Library Interface CSC"
+                    },
+                    {
+                        "API": "Application Programming Interface"
+                    },
+                    {
+                        "DPA": "Data Processing Algorithm CSC"
+                    },
+                    {
+                        "CSC": "Computer Software Component"
+                    }
+                ],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "TMALI": 0.08051812566451025
+                    },
+                    {
+                        "tmaliHkGet": 0.6899557534394043
+                    },
+                    {
+                        "data_capture_interface": 0.5025249022319869
+                    },
+                    {
+                        "DCI": 0.08051812566451025
+                    },
+                    {
+                        "tmaliNextEvent": 0.6087677198425504
+                    },
+                    {
+                        "tmaliTransferToQueueISR": 0.6899557534394043
+                    },
+                    {
+                        "tmaliWait": 0.6087677198425504
+                    },
+                    {
+                        "hook_routine": 0.5200665009492332
+                    },
+                    {
+                        "API": 0.6087677198425504
+                    },
+                    {
+                        "tmaliBitArrangementSet": 0.8043838599212754
+                    },
+                    {
+                        "tmaliTask": 0.4131515797638255
+                    },
+                    {
+                        "tmaliDataTimeoutGet": 1.0
+                    },
+                    {
+                        "ISR_tmaliTransferToQueueISR": 0.5200665009492332
+                    },
+                    {
+                        "DPA": 0.4943396133606796
+                    },
+                    {
+                        "TMALI_EVENT_QUEUE": 0.5457933885377871
+                    },
+                    {
+                        "tmaliDciFrameDepthSet": 0.8043838599212754
+                    },
+                    {
+                        "Telescope_Module_Access_Library": 0.8043838599212754
+                    },
+                    {
+                        "detector_events": 0.6087677198425504
+                    },
+                    {
+                        "CSC": 0.16903681648595026
+                    },
+                    {
+                        "tmaliDciErrorReportedISR": 0.8043838599212754
+                    },
+                    {
+                        "task_tmaliTask": 0.3244503608705084
+                    }
+                ],
+                "score": 0,
+                "links": [
+                    {
+                        "source": "DPA",
+                        "target": "DPA",
+                        "relationship": [
+                            {
+                                "concept_1": "DPA",
+                                "relation_type": "synonym",
+                                "concept_2": "DPA"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "TMALI",
+                        "target": "TMALI",
+                        "relationship": [
+                            {
+                                "concept_1": "TMALI",
+                                "relation_type": "synonym",
+                                "concept_2": "TMALI"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "TMALI",
+                        "target": "TMALI_EVENT_QUEUE",
+                        "relationship": [
+                            {
+                                "concept_1": "TMALI",
+                                "relation_type": "parent",
+                                "concept_2": "TMALI_EVENT_QUEUE"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "SRS5.12.2.2",
+                "text": "The DPU - CCM shall process real - time_non-deferred_commands within B_ms of receipt from the ICU or the SCU .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "time_non-deferred_commands",
+                    "DPU",
+                    "CCM",
+                    "B_ms"
+                ],
+                "terminology": [
+                    "DPU",
+                    "CCM"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "DPU": "Data Processing Unit"
+                    },
+                    {
+                        "CCM": "Command and Control Module CSC"
+                    }
+                ],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "time_non-deferred_commands": 0.5079018787250892
+                    },
+                    {
+                        "DPU": -0.019053159304457206
+                    },
+                    {
+                        "CCM": 0.11511827074916084
+                    },
+                    {
+                        "B_ms": 1.0
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "DPUSDS5.13.1.5.2",
+                "text": "Ring_buffer_data_structure The pIn and pOut_pointers are defined as follows : * pIn_-_last_location filled with data * pOut - last empty location",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "pIn_-_last_location",
+                    "pOut_pointers",
+                    "Ring_buffer_data_structure",
+                    "pOut_pointer"
+                ],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "pIn_-_last_location": 0.3553884684304964
+                    },
+                    {
+                        "pOut_pointers": 0.6493617366409773
+                    },
+                    {
+                        "Ring_buffer_data_structure": 0.31428356157349935
+                    },
+                    {
+                        "pOut_pointer": 0.6087677198425504
+                    }
+                ],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "SRS5.13.2.2",
+                "text": "The DPU - TMALI shall configure the ping_-_pong_frame_limit at startup as specified by TMALI_PP_LIMIT provided during initialization . The default value shall be M_frames and shall be capable of being modified dynamically .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "TMALI",
+                    "ping_-_pong_frame_limit",
+                    "DPU",
+                    "frame_limit",
+                    "M_frames",
+                    "TMALI_PP_LIMIT"
+                ],
+                "terminology": [
+                    "TMALI",
+                    "DPU"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "TMALI": "Telescope Module Access Library Interface CSC"
+                    },
+                    {
+                        "DPU": "Data Processing Unit"
+                    }
+                ],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "TMALI": 0.08051812566451025
+                    },
+                    {
+                        "ping_-_pong_frame_limit": 0.5138444106177747
+                    },
+                    {
+                        "DPU": -0.019053159304457206
+                    },
+                    {
+                        "frame_limit": 0.510959649803188
+                    },
+                    {
+                        "M_frames": 0.6899557534394043
+                    },
+                    {
+                        "TMALI_PP_LIMIT": 1.0
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "DPUSDS5.13.2.3",
+                "text": "Public Functions This function sets the frame_depth of the Ping_-_Pong_buffers used by the DCI CSC . The frame frame_depth how many frames are read into the selected Ping_-_Pong_buffer before interrupting . The initial value for the frame_depth_setting is determined by the parameter provided when starting the tmaliTask . The maximum value to which the frame depth frame_depth commanded is 64 frames , an attempt to command the frame depth to frame_depth larger than this maximum will result in setting the timeout to the default value of V_frames.The_actual_setting of the frame depth could be frame_depth a small amount of time if there is activity on the DCI bus , and is typically changed when the DCI has just reported a frame level reached or timeout_condition . This minimizes the chance of changing the setting while the hardware is close to detecting a frame_event . Changing the frame depth while the DCI frame_depth processing data could cause unpredictable results . When a new \u2018 tmaliDciFrameDepthSet \u2019 command is send before the previous setting has been activated the new request will overwrite the previous request and the DCI will be commanded to the new value at the first available opportunity .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "V_frames.The_actual_setting",
+                    "tmaliTask",
+                    "DCI",
+                    "timeout_condition",
+                    "frame_depth_setting",
+                    "Ping_-_Pong_buffer",
+                    "frame_depth",
+                    "tmaliDciFrameDepthSet",
+                    "frame_event",
+                    "Ping_-_Pong_buffers",
+                    "CSC"
+                ],
+                "terminology": [
+                    "DCI",
+                    "CSC"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "DCI": "Data Capture Interface"
+                    },
+                    {
+                        "CSC": "Computer Software Component"
+                    }
+                ],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "V_frames.The_actual_setting": 0.8864483471344468
+                    },
+                    {
+                        "tmaliTask": 0.4131515797638255
+                    },
+                    {
+                        "DCI": 0.08051812566451025
+                    },
+                    {
+                        "timeout_condition": 0.5638315999085759
+                    },
+                    {
+                        "frame_depth_setting": 0.5225708960480544
+                    },
+                    {
+                        "Ping_-_Pong_buffer": 0.220663353549412
+                    },
+                    {
+                        "frame_depth": 0.510959649803188
+                    },
+                    {
+                        "tmaliDciFrameDepthSet": 0.8043838599212754
+                    },
+                    {
+                        "frame_event": 0.33418575300059133
+                    },
+                    {
+                        "Ping_-_Pong_buffers": 0.32678144181002866
+                    },
+                    {
+                        "CSC": 0.16903681648595026
+                    }
+                ],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "SRS5.12.2.1",
+                "text": "The DPU - CCM shall implement a mechanism whereby large memory loads and dumps can be accomplished incrementally .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "DPU",
+                    "CCM"
+                ],
+                "terminology": [
+                    "DPU",
+                    "CCM"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "DPU": "Data Processing Unit"
+                    },
+                    {
+                        "CCM": "Command and Control Module CSC"
+                    }
+                ],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "DPU": -0.019053159304457206
+                    },
+                    {
+                        "CCM": 0.11511827074916084
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "DPUSDS5.12.1.4.5",
+                "text": "Memory_Upload and Download Handling The command D_MEM_BLK_DNLD is used to download data from a file contained in the EEPROM filesystem . As in the upload_command , only the block number need be provided , and the entire contents of the filename formed from the block number will be downloaded . To download data from any location other than the EEPROM filesystem , the command D_MEM_DAT_DNLD is used . As described previously , downloads handled in a deferred fashion to avoid consuming excessive CPU time . A single \u201c virtual \u201d download will appear on the ground as a series of download_packets , the contents of which must be extracted and concatenated in order to recreated the original data sequence .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "Memory_Upload",
+                    "command_D_MEM_BLK_DNLD",
+                    "EEPROM",
+                    "upload_command",
+                    "download_packets"
+                ],
+                "terminology": [
+                    "upload_command",
+                    "EEPROM"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "EEPROM": "Electrically Erasable Programmable Read-Only Memory"
+                    }
+                ],
+                "contexts": [
+                    {
+                        "upload_command": "The upload command will accept an AppleScript alias or a POSIX - style path as a value for its file parameter."
+                    },
+                    {
+                        "EEPROM": "EEPROM VERIFY ERROR: Addr = 0x%lx\\n\", (uint32)(EEPROM_PageWindow.LowerAddress + i)); */"
+                    }
+                ],
+                "importance_scores": [
+                    {
+                        "Memory_Upload": 0.5457933885377871
+                    },
+                    {
+                        "command_D_MEM_BLK_DNLD": 0.6178745709885957
+                    },
+                    {
+                        "EEPROM": 0.4943396133606796
+                    },
+                    {
+                        "upload_command": 0.39077126525748923
+                    },
+                    {
+                        "download_packets": 0.8449778767197021
+                    }
+                ],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "SRS5.13.3.2",
+                "text": "The DPU - TMALI shall install a callback routine to respond to the DCI Error Interrupt .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "DCI",
+                    "TMALI",
+                    "DPU"
+                ],
+                "terminology": [
+                    "DCI",
+                    "TMALI",
+                    "DPU"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "TMALI": "Telescope Module Access Library Interface CSC"
+                    },
+                    {
+                        "DCI": "Data Capture Interface"
+                    },
+                    {
+                        "DPU": "Data Processing Unit"
+                    }
+                ],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "DCI": 0.08051812566451025
+                    },
+                    {
+                        "TMALI": 0.08051812566451025
+                    },
+                    {
+                        "DPU": -0.019053159304457206
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "DPUSDS5.13.1.3.3",
+                "text": "Data Transfer to Queue Once the events in the Ping_-_Pong_buffer have been completely transferred to the TMALI_EVENT_QUEUE , the tamliTask ( ) function must re-arm the hardware to swap the Ping - Pong Ping_-_Pong_buffer In the event that TMALI does not finish transferring the data from the ping buffer before the pong buffer is full , the DCI Driver will issue an error interrupt , invoking the tmaliDciErrorReportedISR ( ) . In response , the tmaliDciErrorReportedISR ( ) will set an error flag so that the tmaliTask ( ) can recover . The tmaliDciErrorReportedISR ( ) also gives the semDciWait semaphore to awaken the tmaliTask ( ) even though it is likely already awake , since it is possible that the tmaliTask ( ) has just completed transfer of the data at the time the error occurs . The error will also be counted in TMALI_HK . The DCI hardware will discard events until the tmaliTask ( ) function completes the prior transfer , recognizes the error flag , and in response manually forces a Ping_-_Pong_swap and re-enables_data_acquisition . This guarantees that only complete frames end up in the Ping - Pong buffer and will Ping_-_Pong_buffer . In normal operation this error should not occur as the TMALI task should be fast enough to retrieve data from the DCI Ping - Pong buffer . When events ca n\u2019t Ping_-_Pong_buffer the problem should result in an TMALI queue full condition which is reported as an S_TMALI_QUEUE_FULL error using the ccmErrEnq ( ) mechanism .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "tmaliTask",
+                    "re-enables_data_acquisition",
+                    "TMALI",
+                    "DCI",
+                    "TMALI_HK",
+                    "S_TMALI_QUEUE_FULL_error",
+                    "Ping_-_Pong_buffer",
+                    "ccmErrEnq",
+                    "TMALI_EVENT_QUEUE",
+                    "tmaliDciErrorReportedISR",
+                    "Ping_-_Pong_swap"
+                ],
+                "terminology": [
+                    "DCI",
+                    "TMALI"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "DCI": "Data Capture Interface"
+                    },
+                    {
+                        "TMALI": "Telescope Module Access Library Interface CSC"
+                    }
+                ],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "tmaliTask": 0.4131515797638255
+                    },
+                    {
+                        "re-enables_data_acquisition": 0.6058729844188522
+                    },
+                    {
+                        "TMALI": 0.08051812566451025
+                    },
+                    {
+                        "DCI": 0.08051812566451025
+                    },
+                    {
+                        "TMALI_HK": 0.5457933885377871
+                    },
+                    {
+                        "S_TMALI_QUEUE_FULL_error": 0.44798531849842466
+                    },
+                    {
+                        "Ping_-_Pong_buffer": 0.220663353549412
+                    },
+                    {
+                        "ccmErrEnq": 0.37991150687880865
+                    },
+                    {
+                        "TMALI_EVENT_QUEUE": 0.5457933885377871
+                    },
+                    {
+                        "tmaliDciErrorReportedISR": 0.8043838599212754
+                    },
+                    {
+                        "Ping_-_Pong_swap": 0.3756854768297099
+                    }
+                ],
+                "score": 0,
+                "links": [
+                    {
+                        "source": "DCI",
+                        "target": "DCI",
+                        "relationship": [
+                            {
+                                "concept_1": "DCI",
+                                "relation_type": "synonym",
+                                "concept_2": "DCI"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "TMALI",
+                        "target": "TMALI",
+                        "relationship": [
+                            {
+                                "concept_1": "TMALI",
+                                "relation_type": "synonym",
+                                "concept_2": "TMALI"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "TMALI",
+                        "target": "S_TMALI_QUEUE_FULL_error",
+                        "relationship": [
+                            {
+                                "concept_1": "TMALI",
+                                "relation_type": "parent",
+                                "concept_2": "S_TMALI_QUEUE_FULL_error"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "TMALI",
+                        "target": "TMALI_HK",
+                        "relationship": [
+                            {
+                                "concept_1": "TMALI",
+                                "relation_type": "parent",
+                                "concept_2": "TMALI_HK"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "TMALI",
+                        "target": "TMALI_EVENT_QUEUE",
+                        "relationship": [
+                            {
+                                "concept_1": "TMALI",
+                                "relation_type": "parent",
+                                "concept_2": "TMALI_EVENT_QUEUE"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "SRS5.12.3.7",
+                "text": "The DPU - CCM shall maintain counts of both the number of commands successfully received and rejected and report the parameters in DPU_HK .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "CCM",
+                    "DPU",
+                    "DPU_HK"
+                ],
+                "terminology": [
+                    "DPU",
+                    "CCM"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "DPU": "Data Processing Unit"
+                    },
+                    {
+                        "CCM": "Command and Control Module CSC"
+                    }
+                ],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "CCM": 0.11511827074916084
+                    },
+                    {
+                        "DPU": -0.019053159304457206
+                    },
+                    {
+                        "DPU_HK": 0.6087677198425504
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "DPUSDS5.12.1.5.1",
+                "text": "Error_Collection and Reporting The DPU - CCM CSC provides a centralized error_reporting_interface , ccmErrEnq ( ) , that other FSW tasks use to report errors . Each time it wakes , ccmTask ( ) checks to see if it is time to form an error_/_event_packet for transmission to the ground . If so , ccmTask ( ) calls ccmHkMkError ( ) to actually create the packet and forward it to DPU - SCUI for transmission to the ground .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "DPU",
+                    "error_/_event_packet",
+                    "SCUI",
+                    "ccmHkMkError",
+                    "error_reporting_interface",
+                    "ccmErrEnq",
+                    "ccmTask",
+                    "FSW",
+                    "Error_Collection",
+                    "CSC",
+                    "CCM"
+                ],
+                "terminology": [
+                    "FSW",
+                    "CSC",
+                    "CCM",
+                    "DPU",
+                    "SCUI"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "CSC": "Computer Software Component"
+                    },
+                    {
+                        "DPU": "Data Processing Unit"
+                    },
+                    {
+                        "CCM": "Command and Control Module CSC"
+                    },
+                    {
+                        "FSW": "Flight Software"
+                    },
+                    {
+                        "SCUI": "SCU Interface CSC"
+                    }
+                ],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "DPU": -0.019053159304457206
+                    },
+                    {
+                        "error_/_event_packet": 0.35160262236789097
+                    },
+                    {
+                        "SCUI": 0.6899557534394043
+                    },
+                    {
+                        "ccmHkMkError": 1.0
+                    },
+                    {
+                        "error_reporting_interface": 0.3455874855841118
+                    },
+                    {
+                        "ccmErrEnq": 0.37991150687880865
+                    },
+                    {
+                        "ccmTask": 0.8043838599212754
+                    },
+                    {
+                        "FSW": 0.4131515797638255
+                    },
+                    {
+                        "Error_Collection": 0.4222584309098709
+                    },
+                    {
+                        "CSC": 0.16903681648595026
+                    },
+                    {
+                        "CCM": 0.11511827074916084
+                    }
+                ],
+                "score": 0,
+                "links": [
+                    {
+                        "source": "DPU_HK",
+                        "target": "DPU",
+                        "relationship": [
+                            {
+                                "concept_1": "DPU_HK",
+                                "relation_type": "parent",
+                                "concept_2": "DPU"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "DPU",
+                        "target": "DPU",
+                        "relationship": [
+                            {
+                                "concept_1": "DPU",
+                                "relation_type": "synonym",
+                                "concept_2": "DPU"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "CCM",
+                        "target": "CCM",
+                        "relationship": [
+                            {
+                                "concept_1": "CCM",
+                                "relation_type": "synonym",
+                                "concept_2": "CCM"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "SRS5.13.1.1",
+                "text": "The DPU - TMALI shall install callbacks for handling all DPU - DCI interrupts including Error interrupt , Ping - Pong_Timeout interrupt , and Ping_-_Pong_Complete_Flag interrupt .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "Pong_Timeout",
+                    "TMALI",
+                    "DPU",
+                    "DCI",
+                    "Ping_-_Pong_Complete_Flag"
+                ],
+                "terminology": [
+                    "DCI",
+                    "TMALI",
+                    "DPU"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "TMALI": "Telescope Module Access Library Interface CSC"
+                    },
+                    {
+                        "DCI": "Data Capture Interface"
+                    },
+                    {
+                        "DPU": "Data Processing Unit"
+                    }
+                ],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "Pong_Timeout": 0.592147683400042
+                    },
+                    {
+                        "TMALI": 0.08051812566451025
+                    },
+                    {
+                        "DPU": -0.019053159304457206
+                    },
+                    {
+                        "DCI": 0.08051812566451025
+                    },
+                    {
+                        "Ping_-_Pong_Complete_Flag": 0.539671609479513
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "DPUSDS5.13.1.6.4",
+                "text": "Setting data_timeout in DCI During nominal operation , frames arrive approximately every 11 msecs . The DCI hardware will generate an interrupt if event data has been received in one of the Ping_-_Pong_buffers , and a configurable amount of time has passed during which no additional events have been received . A data data_timeout is not an error , but rather typically indicates that the current exposure has been completed . The data timeout data_timeout the TMALI CSC to retrieve the \u201c trailing \u201d events from the DCI Ping_-_Pong_buffer . The function_tmaliDciTimeoutSet ( ) provides an API to the DCI Driver to allow the timeout setting to be altered .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "TMALI",
+                    "DCI",
+                    "Ping_-_Pong_buffers",
+                    "data_timeout",
+                    "CSC",
+                    "function_tmaliDciTimeoutSet",
+                    "Ping_-_Pong_buffer"
+                ],
+                "terminology": [
+                    "DCI",
+                    "TMALI",
+                    "CSC"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "DCI": "Data Capture Interface"
+                    },
+                    {
+                        "TMALI": "Telescope Module Access Library Interface CSC"
+                    },
+                    {
+                        "CSC": "Computer Software Component"
+                    }
+                ],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "TMALI": 0.08051812566451025
+                    },
+                    {
+                        "DCI": 0.08051812566451025
+                    },
+                    {
+                        "Ping_-_Pong_buffers": 0.32678144181002866
+                    },
+                    {
+                        "data_timeout": 0.1682572166155788
+                    },
+                    {
+                        "CSC": 0.16903681648595026
+                    },
+                    {
+                        "function_tmaliDciTimeoutSet": 0.6002131481396955
+                    },
+                    {
+                        "Ping_-_Pong_buffer": 0.220663353549412
+                    }
+                ],
+                "score": 0,
+                "links": [
+                    {
+                        "source": "TMALI",
+                        "target": "TMALI",
+                        "relationship": [
+                            {
+                                "concept_1": "TMALI",
+                                "relation_type": "synonym",
+                                "concept_2": "TMALI"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "DCI",
+                        "target": "DCI",
+                        "relationship": [
+                            {
+                                "concept_1": "DCI",
+                                "relation_type": "synonym",
+                                "concept_2": "DCI"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -33,12 +33,12 @@
 
         <div class="content-panel col s4">
             <div  class="art_contents content-panel-style" style="background-color: white">
-                <a id="source_art_name" style="margin-top: -18px" class="waves-effect waves-light blue-grey lighten-4 dim-grey-text btn-small artifact-type disabled">Source Artifact</a>
+                <a style="margin-top: -18px" class="waves-effect waves-light blue-grey lighten-4 dim-grey-text btn-small artifact-type disabled"><b>Source:</b> <span id="source_art_name"></span></a>
                 <!--<a id="source_art_type" style="margin-top: -18px" class="btn btn-small type_btn tooltip_ score-btn" style="background-color: white; cursor: unset; box-shadow: none; color: black;">Source Artifact</a>-->
-                <button type="button" class="btn btn-small type_btn tooltip_" style="margin-top: -18px; background-color: white; cursor: unset; box-shadow: none; color: black; "><b>Type: </b> <span id="source_type"></span><span class="tooltiptext_" id="source_type_text" style="text-transform: capitalize"></span></button>
+                <button type="button" class="btn btn-small type_btn tooltip_" style="margin-top: -18px; background-color: white; cursor: unset; box-shadow: none; color: black; "><b>Type: </b> <span id="source_type">R1</span><span class="tooltiptext_" id="source_type_text" style="text-transform: capitalize"></span></button>
 
                 <p id = "source_artifact">
-
+                    The system shall be accessible to color blind users.
                 </p>
 
             </div>
@@ -56,7 +56,7 @@
 
 
         <div class="content-panel col s5"  >
-            <div class="content-panel-style2 " style="margin-top: 10px; margin-left: 0px; overflow: scroll">
+            <div class="content-panel-style2 " style="margin-top: 10px; margin-left: 0px;">
                 <table cellpadding="1" cellspacing="1" class="table table-hover" id="myTable">
                     <colgroup>
                         <col span="1" style="width: 75%;">
@@ -68,46 +68,52 @@
                         <td>
                             <div>
                                 <div class="action_btn" style="margin-top: 12px; margin-bottom: 12px;">
-                                    <a class="targ_art_name_ waves-effect waves-light blue-grey lighten-3 dim-grey-text btn-small artifact-type collapsible_new disabled" id="targ_art_name" style="color: black; margin-left: 10px;">Target </a>
+                                    <a class="targ_art_name_ waves-effect waves-light blue-grey lighten-3 dim-grey-text btn-small artifact-type collapsible_new disabled" style="color: black; margin-left: 10px;"><b>Target:</b> <span id="targ_art_name" ></span> </a>
 
                                     <!--Target score-->
                                     <!--<button type="button" class="btn btn-small score_btn" id="target_score_btn" style="background-color: white; cursor: unset; box-shadow: none; color: black;">-->
-                                        <!--<b>Score: </b>0.2</button>-->
+                                    <!--<b>Score: </b>0.2</button>-->
 
 
                                     <button type="button" class="btn btn-small score_btn" style="background-color: white; cursor: unset; box-shadow: none; color: black; "><b>Score: </b> <span id="target_score_btn" ></span></button>
 
 
                                     <!--Target type Aim to spell in full-->
-                                    <button type="button" class="btn btn-small type_btn tooltip_" style="background-color: white; cursor: unset; box-shadow: none; color: black; "><b>Type: </b> <span id="targ_type"></span><span class="tooltiptext_" id="targ_type_text" style="text-transform: capitalize"></span></button>
+                                    <button type="button" class="btn btn-small type_btn tooltip_" style="background-color: white; cursor: unset; box-shadow: none; color: black; "><b>Type: </b> <span id="targ_type">D1</span><span class="tooltiptext_" id="targ_type_text" style="text-transform: capitalize"></span></button>
 
                                     <button type="button" class="btn btn-small" style="background-color: white; display: none; cursor: unset; box-shadow: none; color: black; "><b>ID: </b><span id="art_num_"></span></button>
 
                                 </div>
-                                <p class="art_summary" style="display: none; font-size: 0.9em; padding: 10px; margin-left: 20px;">The system shall provide the ability to receive and store general laboratory results (includes ability to differentiate preliminary results and final results and the ability to process a corrected result)...</p>
+                                <!--<p class="art_summary" style="display: none; font-size: 0.9em; padding: 10px; margin-left: 20px;">The system shall provide the ability to receive and store general laboratory results (includes ability to differentiate preliminary results and final results and the ability to process a corrected result)...</p>-->
                             </div>
                         </td>
                         <td>
                             <div id="row1_vote" style="font-size: 0.8em; display:inline-block; padding:7px;">
-                        <label>
-                            <input name="group1" type="radio" checked="">
-                            <span style="color: black">Correct</span>
-                        </label>
-                        <label>
-                            <input name="group1" type="radio">
-                            <span style="color: black">Incorrect</span>
-                        </label>
-                        <label>
-                            <input name="group1" type="radio">
-                            <span style="color: black">Don't know</span>
-                        </label>
+                                <label>
+                                    <input name="group1" type="radio" checked="">
+                                    <span style="color: black">Correct</span>
+                                </label>
+                                <label>
+                                    <input name="group1" type="radio">
+                                    <span style="color: black">Incorrect</span>
+                                </label>
+                                <label>
+                                    <input name="group1" type="radio">
+                                    <span style="color: black">Don't know</span>
+                                </label>
+                                <button class="btn-small " id="artifact_num" type="submit">Submit
+                                    <!--<i class="material-icons right">send</i>-->
+                                    <!--<a href="javascript:;;" class="waves-effect waves-light green dim-grey-text" id="artifact_num" style="color: black; margin-left: 10px;">SUBMIT</a>-->
 
-                    </div>
+                                </button>
+
+                            </div>
                         </td>
                     </tr>
                     <tr class="collapse-content" id="row1_content" style="background-color: white;">
                         <td>
-                            <div id="target_content_data" class="collapsed_content_data" style="display: block; padding: 10px; color: black; background-color: rgb(236, 239, 241);">
+                            <div id="target_content_data" class="collapsed_content_data" style="display: block; overflow: scroll; padding: 10px; color: black; background-color: rgb(236, 239, 241);">
+                                The UI configurator shall provide the option of a colorblind-friendly palette.
                             </div>
                         </td>
                         <td>
@@ -118,16 +124,17 @@
                 </table>
 
                 <!--<form id="myform" action="">-->
-                <div style="margin-top: 25px">
-                    <button class="btn " id="artifact_num" type="submit">Start
-                        <!--<i class="material-icons right">send</i>-->
-                    <!--<a href="javascript:;;" class="waves-effect waves-light green dim-grey-text" id="artifact_num" style="color: black; margin-left: 10px;">SUBMIT</a>-->
 
-                    </button>
-                </div>
                 <!--</form>-->
 
             </div>
+            <!--<div>-->
+            <!--<button class="btn " id="artifact_num" type="submit">Submit-->
+            <!--&lt;!&ndash;<i class="material-icons right">send</i>&ndash;&gt;-->
+            <!--&lt;!&ndash;<a href="javascript:;;" class="waves-effect waves-light green dim-grey-text" id="artifact_num" style="color: black; margin-left: 10px;">SUBMIT</a>&ndash;&gt;-->
+
+            <!--</button>-->
+            <!--</div>-->
 
 
 
@@ -165,7 +172,7 @@
     var width = Math.round(screen.width * 25 / 100),
         height = 500,
         boxWidth = Math.round(width / 4),
-        boxHeight = height/10,
+        boxHeight = height/7.25,
         margin = {
             top: 16,
             right: width/8,
@@ -231,7 +238,7 @@
         var source_data = [data[val].source[0]];
 
         var source_ = +document.getElementById("art_num_").textContent;
-         // console.log("ooo plsss", source_);
+        // console.log("ooo plsss", source_);
         var artifact_data = {
             "info": []
         };
@@ -288,7 +295,7 @@
 
         // Draw the raw data on the source artifact panel
         document.getElementById("source_artifact").textContent = artifact_data.info[0].content;
-        document.getElementById("source_art_name").textContent = "Source " + artifact_data.info[0].aid;
+        document.getElementById("source_art_name").textContent = artifact_data.info[0].aid;
 
         var str = artifact_data.info[0].type;
         var matches = str.match(/\b(\w)/g); // ['J','S','O','N']
@@ -449,7 +456,7 @@
 
         // // Draw the raw data on the source artifact panel
         document.getElementById("target_content_data").textContent = artifact_data.info[0].content;
-        document.getElementById("targ_art_name").textContent = "Target " + artifact_data.info[0].aid;
+        document.getElementById("targ_art_name").textContent = artifact_data.info[0].aid;
         document.getElementById("target_score_btn").textContent = artifact_data.info[0].score;
         document.getElementById("targ_type").textContent = artifact_data.info[0].type;
         document.getElementById("targ_type_text").textContent = artifact_data.info[0].type;
@@ -882,11 +889,15 @@
                 return d.x + boxWidth / 8;
             })
             .attr("y", function (d) {
-                return d.y + boxHeight / 1.7;
+                return d.y + 1 ;
             })
             .text(function (d) {
                 return d.name.replaceAll("_", " ");
             })
+            .call(wrap, 20)
+            // .html(function (d) {
+            //     return "<p>" + "hi" + "</p>" //d.name.replaceAll("_", " ");
+            // })
             .attr("font-size", (boxWidth * 0.007) + "em");
         // .attr("width", "2px");
 
@@ -929,9 +940,100 @@
         });
 
 
-    links = [];
-    Nodes = [];
+        links = [];
+        Nodes = [];
         // console.log("Links:::", links);
+
+
+
+    }
+
+
+    function wrap(text, width) {
+        text.each(function () {
+            var text = d3.select(this),
+                words = text.text().split(/\s+/).reverse(),
+                word,
+                line = [],
+                lineNumber = 0,
+                lineHeight = 1.1, // ems
+                x = text.attr("x"),
+                y = text.attr("y"),
+                dy = 0, //parseFloat(text.attr("dy")),
+                tspan = text.text(null)
+                    .append("tspan")
+                    .attr("x", x)
+                    .attr("y", y)
+                    .attr("dy", dy + "em");
+            while (word = words.pop()) {
+                line.push(word);
+                tspan.text(line.join(" "));
+                if (tspan.node().getComputedTextLength() > width) {
+                    line.pop();
+                    tspan.text(line.join(" "));
+                    line = [word];
+                    tspan = text.append("tspan")
+                        .attr("x", x)
+                        .attr("y", y)
+                        .attr("dy", ++lineNumber * lineHeight + dy + "em")
+                        .text(word);
+                }
+            }
+        });
+    }
+
+
+
+
+
+
+    function urlMouseAction(m){
+        var concept = m.text.replace(/[.,\/#!$%\^&\*;:{}=`~()]/g,"");
+        concept = concept.split(" ").join("_");
+        var definition, acronyms, contexts;
+        console.log("urlMouseAction", Acronyms_);
+
+
+
+        // console.log(Nodes);
+        for (var i = 0; i < Definitions_.length; i++){
+            // console.log("uuuiiii");
+            // console.log(Definitions_[i].name +" : " + concept);
+            if (Definitions_[i].name === concept){
+                definition = Definitions_[i].definition;
+
+
+            }
+        }
+
+        for (var i = 0; i < Acronyms_.length; i++){
+            if (Acronyms_[i].name === concept){
+                acronyms =  Acronyms_[i].acronym;
+
+
+            }
+        }
+
+
+        for (var i = 0; i < Contexts_.length; i++){
+            if (Contexts_[i].name === concept){
+                contexts = Contexts_[i].context;
+
+
+            }
+        }
+
+
+        var message1, message2, message3, message;
+        message = "<ul style='text-align: left; padding :10px; margin:10px;'>";
+
+        message1 = typeof definition ==="undefined" ? "" : "<li style='margin-top: 10px;'><span style='text-transform: capitalize'><b>Definition</b></span>: "+ definition +"</li>";
+        message2 = typeof acronyms ==="undefined" ? "" : "<li style='margin-top: 10px;'><span style='text-transform: capitalize'><b>Acronyms</b></span>: "+ acronyms + "</li>";
+        message3 = typeof contexts ==="undefined" ? "" : "<li style='margin-top: 10px;'><span style='text-transform: capitalize'><b>Contexts</b></span>: "+ contexts + "</li>";
+
+        message += message1 + message2 + message3+ "</ul>";
+
+        hover(message);
 
 
 
@@ -966,28 +1068,6 @@
         message += message1 + message2 + message3+ "</ul>";
 
         hover(message);
-
-        // message1 = typeof definition ==="undefined" ? "" : "<span style='text-transform: capitalize'><b>Definition</b></span>: "+ definition;
-        // message2 = typeof acronyms ==="undefined" ? "" : "<span style='text-transform: capitalize'><b>Acronyms</b></span>: "+ acronyms;
-        // message3 = typeof contexts ==="undefined" ? "" : "<span style='text-transform: capitalize'><b>Contexts</b></span>: "+ contexts;
-        //
-        // message = message1 +"<br/>" + message2 +"<br/>" + message3;
-
-
-        // message = message1 +"<br/>" + message2 +"<br/>" + message3;
-
-        // hover(message);
-
-        // if (typeof val.definition === 'undefined'){
-        //     hover("<span style='text-transform: capitalize'><b></b></span>");
-        // }
-        // else {
-        //     hover("<span style='text-transform: capitalize'><b>"+ val.name.replaceAll("_", " ") +"</b></span>: "+ val.definition);
-        // }
-
-        // Update the information panel data with the definition of the concept
-
-
 
 
         var classNames_s = document.querySelectorAll("[class*=_s]");
@@ -1073,135 +1153,11 @@
 
 
 
-    function urlMouseAction(m){
-        var concept = m.text.replace(/[.,\/#!$%\^&\*;:{}=`~()]/g,"");
-        concept = concept.split(" ").join("_");
-        var definition, acronyms, contexts;
-        console.log("urlMouseAction", Acronyms_);
-
-
-
-        // console.log(Nodes);
-        for (var i = 0; i < Definitions_.length; i++){
-            // console.log("uuuiiii");
-            // console.log(Definitions_[i].name +" : " + concept);
-            if (Definitions_[i].name === concept){
-                definition = Definitions_[i].definition;
-
-
-            }
-        }
-
-        for (var i = 0; i < Acronyms_.length; i++){
-            if (Acronyms_[i].name === concept){
-                acronyms =  Acronyms_[i].acronym;
-
-
-            }
-        }
-
-
-        for (var i = 0; i < Contexts_.length; i++){
-            if (Contexts_[i].name === concept){
-                contexts = Contexts_[i].context;
-
-
-            }
-        }
-
-
-        var message1, message2, message3, message;
-        message = "<ul style='text-align: left; padding :10px; margin:10px;'>";
-
-        message1 = typeof definition ==="undefined" ? "" : "<li style='margin-top: 10px;'><span style='text-transform: capitalize'><b>Definition</b></span>: "+ definition +"</li>";
-        message2 = typeof acronyms ==="undefined" ? "" : "<li style='margin-top: 10px;'><span style='text-transform: capitalize'><b>Acronyms</b></span>: "+ acronyms + "</li>";
-        message3 = typeof contexts ==="undefined" ? "" : "<li style='margin-top: 10px;'><span style='text-transform: capitalize'><b>Contexts</b></span>: "+ contexts + "</li>";
-
-        message += message1 + message2 + message3+ "</ul>";
-
-        hover(message);
-
-
-
-    }
-
-
-    function mouse_action_clear(val, stat) {
-        var concept = val.name;
-        var concept_type = val.lvl;
-        "use strict";
-        d3.select("#" + val.id)
-            .attr("fill", val.cl)
-            .attr("stroke", "darkgray")
-            .attr("stroke-width", "2px");
-        // d3.select("#" + val.id).classed("active_d3", stat);
-        resetInfoBoardMsg();
-
-        var classNames_s = document.querySelectorAll("[class*=_s]");
-        var classNames_t = document.querySelectorAll("[class*=_t]");
-
-
-        if (concept_type === 0){
-            var extractContent =  document.getElementsByClassName(val.name+"_s");
-            for (var i = 0; i < extractContent.length; i++) {
-                extractContent[i].style.borderStyle = "none";
-
-            }
-
-            for (var j = 0; j < filtered_source_concepts.length; j++) {
-                // var otherclassNamesEach = classNames_s[j].className;
-                var otherclassNamesEach = filtered_source_concepts[j];
-                if (otherclassNamesEach !== val.name){
-                    var extractContent_other_source_classes =  document.getElementsByClassName(otherclassNamesEach+"_s");
-                    for (var k = 0; k < extractContent_other_source_classes.length; k++) {
-
-                        // if (filtered_source_concepts.includes(extractContent_other_source_classes[k])) {
-                        // console.log("debugging")
-                        extractContent_other_source_classes[k].style.backgroundColor = colors(stemmer(extractContent_other_source_classes[k].textContent.split(" ").join("_").replace(/[.,\#!$%\^&\*;:{}=`~()]/g,"")));
-                        // }
-
-                    }
-
-                }
-
-            }
-        }
-        else {
-            var extractContent =  document.getElementsByClassName(val.name+"_t");
-
-            for (var i = 0; i < extractContent.length; i++) {
-                extractContent[i].style.borderStyle = "none";
-            }
-
-
-
-            for (var j = 0; j < filtered_target_concepts.length; j++) {
-                var otherclassNamesEach_t = filtered_target_concepts[j];//classNames_t[j].textContent.replace(".","").replace(",", "");
-
-                if (otherclassNamesEach_t !== val.name){
-                    // console.log(val.name);
-                    var extractContent_other_target_classes =  document.getElementsByClassName(otherclassNamesEach_t + "_t");
-                    // console.log(extractContent_other_target_classes)
-                    for (var k = 0; k < extractContent_other_target_classes.length; k++) {
-
-
-                        extractContent_other_target_classes[k].style.backgroundColor = colors(stemmer(extractContent_other_target_classes[k].textContent.split(" ").join("_").replace(/[.,\#!$%\^&\*;:{}=`~()]/g,"")));
-
-                    }
-
-                }
-
-            }
-
-
-        }
-
-
-    }
 
     function resetInfoBoardMsg(){
         document.getElementById('relationship_update').innerHTML = "";
     }
+
 
     function mouse_action_link(val) {
 
@@ -1308,8 +1264,9 @@
                     var extractContent_other_target_classes =  document.getElementsByClassName(otherclassNamesEach_t);
                     for (var k = 0; k < extractContent_other_target_classes.length; k++) {
 
-
+                        console.log("Just testing before: ", extractContent_other_target_classes[k]);
                         extractContent_other_target_classes[k].style.backgroundColor = "transparent";
+
 
                     }
 
@@ -1398,8 +1355,10 @@
                     for (var k = 0; k < extractContent_other_target_classes.length; k++) {
 
 
-                        extractContent_other_target_classes[k].style.backgroundColor = colors(stemmer(extractContent_other_target_classes[k].textContent.split(" ").join("_").replace(/[.,\/#!$%\^&\*;:{}=_`~()]/g,"")));
 
+                        extractContent_other_target_classes[k].style.backgroundColor = colors(stemmer(extractContent_other_target_classes[k].textContent.split(" ").join("_").replace(/[.,\#!$%\^&\*;:{}=`~()]/g,"")));
+
+                        console.log("Just testing after: ", extractContent_other_target_classes[k]);
                     }
 
                 }
@@ -1418,6 +1377,82 @@
     }
 
 
+    function mouse_action_clear(val, stat) {
+        var concept = val.name;
+        var concept_type = val.lvl;
+        "use strict";
+        d3.select("#" + val.id)
+            .attr("fill", val.cl)
+            .attr("stroke", "darkgray")
+            .attr("stroke-width", "2px");
+        // d3.select("#" + val.id).classed("active_d3", stat);
+        resetInfoBoardMsg();
+
+        var classNames_s = document.querySelectorAll("[class*=_s]");
+        var classNames_t = document.querySelectorAll("[class*=_t]");
+
+
+        if (concept_type === 0){
+            var extractContent =  document.getElementsByClassName(val.name+"_s");
+            for (var i = 0; i < extractContent.length; i++) {
+                extractContent[i].style.borderStyle = "none";
+
+            }
+
+            for (var j = 0; j < filtered_source_concepts.length; j++) {
+                // var otherclassNamesEach = classNames_s[j].className;
+                var otherclassNamesEach = filtered_source_concepts[j];
+                if (otherclassNamesEach !== val.name){
+                    var extractContent_other_source_classes =  document.getElementsByClassName(otherclassNamesEach+"_s");
+                    for (var k = 0; k < extractContent_other_source_classes.length; k++) {
+
+                        // if (filtered_source_concepts.includes(extractContent_other_source_classes[k])) {
+                        // console.log("debugging")
+                        extractContent_other_source_classes[k].style.backgroundColor = colors(stemmer(extractContent_other_source_classes[k].textContent.split(" ").join("_").replace(/[.,\#!$%\^&\*;:{}=`~()]/g,"")));
+                        // }
+
+                    }
+
+                }
+
+            }
+        }
+        else {
+            var extractContent =  document.getElementsByClassName(val.name+"_t");
+
+            for (var i = 0; i < extractContent.length; i++) {
+                extractContent[i].style.borderStyle = "none";
+            }
+
+
+
+            for (var j = 0; j < filtered_target_concepts.length; j++) {
+                var otherclassNamesEach_t = filtered_target_concepts[j];//classNames_t[j].textContent.replace(".","").replace(",", "");
+
+                if (otherclassNamesEach_t !== val.name){
+                    // console.log(val.name);
+                    var extractContent_other_target_classes =  document.getElementsByClassName(otherclassNamesEach_t + "_t");
+                    // console.log(extractContent_other_target_classes)
+                    for (var k = 0; k < extractContent_other_target_classes.length; k++) {
+
+
+                        extractContent_other_target_classes[k].style.backgroundColor = colors(stemmer(extractContent_other_target_classes[k].textContent.split(" ").join("_").replace(/[.,\#!$%\^&\*;:{}=`~()]/g,"")));
+
+                    }
+
+                }
+
+            }
+
+
+        }
+
+
+    }
+
+
+
+
     function find(text, tp) {
         // "use strict";
         var i;
@@ -1432,8 +1467,55 @@
         return null;
     }
 
+    // const colors = d3.scaleOrdinal()
+    //     .range(d3.schemeSet3);
+
     const colors = d3.scaleOrdinal()
-        .range(d3.schemeSet3);
+        .range(["#a9a9a9",
+            // "#2f4f4f",
+            "#556b2f",
+            "#a0522d",
+            "#2e8b57",
+            // "#800000",
+            // "#191960",
+            // "#708090",
+            "#bc8f8f",
+            // "#663399",
+            // "#008080",
+            "#bdb76b",
+            "#9acd32",
+            "#daa520",
+            "#8fbc8f",
+            // "#8b008b",
+            "#b03060",
+            "#6b8e23",
+            "#cd853f",
+            "#ffa500",
+            // "#c71585",
+            // "#0000cd",
+            // "#006400",
+            "#4682b4",
+            "#20b2aa",
+            "#ffd700",
+            "#4169e1",
+            // "#dc143c",
+            "#00bfff",
+            "#9370db",
+            // "#0000ff",
+            "#f08080",
+            "#ff6347",
+            "#db7093",
+            "#eee8aa",
+            "#ffb6c1",
+            "#afeeee",
+            "#da70d6",
+            // "#8b4513",
+            "#1e90ff",
+            "#ffff00",
+            "#3cb371",
+            "#afeeee",
+            // "#b22222"
+        ]);
 
 
     var stemmer = (function(){
@@ -1757,7 +1839,7 @@
     }
 
     function myFunction() {
-        location.replace("http://localhost:63342/anuyahmaro.github.io/trace_exp/pages/thank%20you%20page.html?_ijt=ha3k1vrar8hr6e9bucp7v6a4ol")
+        location.replace("http://localhost:63342/anuyahmaro.github.io/trace_exp/pages/index_Aug_CCHIT.html?_ijt=d6gp7f9r1i4fsvua36re8jsmk1")
     }
 
     var a_list = [0,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
@@ -1786,7 +1868,7 @@
         }
 
 
-        d3.json("CCHIT_link_annotation_v0.json").then(data => {
+        d3.json("CCHIT_link_annotation_v2.json").then(data => {
 
             drawSource(data, a_val);
             drawTargets(data, a_val);
@@ -1794,13 +1876,13 @@
 
 
         });
-            return artifact_val;
+        return artifact_val;
 
 
     }
 
 
 
-    </script>
+</script>
 
 </html>

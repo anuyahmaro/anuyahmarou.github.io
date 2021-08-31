@@ -1,0 +1,1521 @@
+[
+    {
+        "source": [
+            {
+                "id": "PTC.SDD.7444",
+                "text": "Any critical failure during the Active Mode will force the OBU to enter the Failed Mode ( see transition_A-F in PTC.SDD .6534 ) .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "PTC.SDD",
+                    "transition_A-F"
+                ],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "PTC.SDD": 0.1604975840813126
+                    },
+                    {
+                        "transition_A-F": 0.6972725590469079
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "PTC.SRS.459",
+                "text": "The Trainguard PTC System shall have a Failed Mode where the Locomotive segment_transitions if a vital hardware or software failure has been detected [ REQ1433 Base_Source : PTCDP ] .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "segment_transitions",
+                    "Base_Source",
+                    "PTC",
+                    "PTCDP"
+                ],
+                "terminology": [
+                    "PTC"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "PTC": "Positive Train Control"
+                    }
+                ],
+                "contexts": [
+                    {
+                        "PTC": "PTC can automatically reduce a train\u00e2\u0080\u0099s speed or even stop it to avoid a collision or derailment."
+                    }
+                ],
+                "importance_scores": [
+                    {
+                        "segment_transitions": 0.5112726724098762
+                    },
+                    {
+                        "Base_Source": 0.1764327298421173
+                    },
+                    {
+                        "PTC": -0.016394751063233067
+                    },
+                    {
+                        "PTCDP": 0.4612464235898584
+                    }
+                ],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "PTC.SDD.1693",
+                "text": "As illustrated in PTC.SDD_.6501_status of field elements is consumed by the WIU which in turn creates a wayside_status_message and broadcasts that message out to any train within range .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "PTC.SDD_.6501_status",
+                    "wayside_status_message",
+                    "PTC.SDD"
+                ],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "PTC.SDD_.6501_status": 0.5234306471912925
+                    },
+                    {
+                        "wayside_status_message": 0.3893837788648478
+                    },
+                    {
+                        "PTC.SDD": 0.1604975840813126
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "PTC.SRS.139",
+                "text": "The Wayside_Segment shall transmit information to the Locomotive_Segment in the form of wayside_status_messages ( WSMs ) [ REQ0392 Base_Source : / Caltrain_RFP / ] .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "Base_Source",
+                    "WSMs",
+                    "Locomotive_Segment",
+                    "Caltrain_RFP",
+                    "wayside_status_messages",
+                    "Wayside_Segment"
+                ],
+                "terminology": [
+                    "wayside_status_messages"
+                ],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [
+                    {
+                        "wayside_status_messages": "Wayside Status Messages (WSM) handle time critical communications from wayside to trains, relaxing the communication demands between the office and the field as compared to the existing centralized interlocking architectures."
+                    }
+                ],
+                "importance_scores": [
+                    {
+                        "Base_Source": 0.1764327298421173
+                    },
+                    {
+                        "WSMs": 0.7781985656384834
+                    },
+                    {
+                        "Locomotive_Segment": 0.3789741523840712
+                    },
+                    {
+                        "Caltrain_RFP": 0.537552326750073
+                    },
+                    {
+                        "wayside_status_messages": 0.4024566428276443
+                    },
+                    {
+                        "Wayside_Segment": 0.3491185750370901
+                    }
+                ],
+                "score": 0,
+                "links": [
+                    {
+                        "source": "wayside_status_message",
+                        "target": "Wayside_Segment",
+                        "relationship": [
+                            {
+                                "concept_1": "wayside_status_message",
+                                "relation_type": "handle",
+                                "concept_2": "time_critical_communication"
+                            },
+                            {
+                                "concept_1": "time_critical_communication",
+                                "relation_type": "from",
+                                "concept_2": "wayside"
+                            },
+                            {
+                                "concept_1": "wayside",
+                                "relation_type": "match",
+                                "concept_2": "wayside_segment"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "wayside_status_message",
+                        "target": "wayside_status_messages",
+                        "relationship": [
+                            {
+                                "concept_1": "wayside_status_message",
+                                "relation_type": "synonym",
+                                "concept_2": "wayside_status_messages"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "wayside_status_message",
+                        "target": "Locomotive_Segment",
+                        "relationship": [
+                            {
+                                "concept_1": "wayside_status_message",
+                                "relation_type": "to",
+                                "concept_2": "locomotive"
+                            },
+                            {
+                                "concept_1": "locomotive",
+                                "relation_type": "match",
+                                "concept_2": "locomotive_segment"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "PTC.SDD.6714",
+                "text": "The implementation of the abstraction layer will provide the overall flexibility needed by the TG - PTC to provide a common set of internal calls to the interface while allowing for specific interface changes when integrating with a railroad_-_specific_Dispatch_System .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "PTC",
+                    "Dispatch_System",
+                    "railroad_-_specific_Dispatch_System"
+                ],
+                "terminology": [
+                    "PTC"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "PTC": "Positive Train Control"
+                    }
+                ],
+                "contexts": [
+                    {
+                        "PTC": "PTC can automatically reduce a train\u00e2\u0080\u0099s speed or even stop it to avoid a collision or derailment."
+                    }
+                ],
+                "importance_scores": [
+                    {
+                        "PTC": -0.016394751063233067
+                    },
+                    {
+                        "Dispatch_System": 0.3159053584673524
+                    },
+                    {
+                        "railroad_-_specific_Dispatch_System": 0.247523811556232
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "PTC.SRS.46",
+                "text": "5.3.1 Office_Segment PTC.SRS .48 shows the Office Office_Segment boundaries . The components contained in the thatched rectangle in PTC.SRS .48 are part of or are users of the Office Segment Office_Segment BOS and its maintenance_workstations and interfaces ) . The Operations_Control_System ( OCS ) and Wayside_Locomotive and Communication Segments are not considered part of the BOS system environment though BOS may interface with them directly or indirectly . In addition to the above the Employee in Charge ( EIC ) terminal is equipment which is used in the field by maintenance crews . The EIC_terminal will be allocated to one of the four PTC segments when its requirements specification is available .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "Office_Segment",
+                    "Communication_Segment",
+                    "maintenance_workstations",
+                    "EIC_terminal",
+                    "BOS",
+                    "PTC.SRS",
+                    "Operations_Control_System",
+                    "PTC",
+                    "Office_Segment_system_boundaries",
+                    "Wayside_Locomotive",
+                    "Office_Segment_PTC.SRS_.48"
+                ],
+                "terminology": [
+                    "BOS",
+                    "PTC"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "PTC": "Positive Train Control"
+                    },
+                    {
+                        "BOS": "Back Office Server"
+                    }
+                ],
+                "contexts": [
+                    {
+                        "PTC": "PTC can automatically reduce a train\u00e2\u0080\u0099s speed or even stop it to avoid a collision or derailment."
+                    }
+                ],
+                "importance_scores": [
+                    {
+                        "Office_Segment": 0.414319870058426
+                    },
+                    {
+                        "Communication_Segment": 0.3935595045091624
+                    },
+                    {
+                        "maintenance_workstations": 0.7603475373366616
+                    },
+                    {
+                        "EIC_terminal": 0.6315957918540814
+                    },
+                    {
+                        "BOS": 0.1993890336319926
+                    },
+                    {
+                        "PTC.SRS": 0.7781985656384834
+                    },
+                    {
+                        "Operations_Control_System": 0.5265814874369293
+                    },
+                    {
+                        "PTC": -0.016394751063233067
+                    },
+                    {
+                        "Office_Segment_system_boundaries": 0.39491633620189454
+                    },
+                    {
+                        "Wayside_Locomotive": 0.3721325532005561
+                    },
+                    {
+                        "Office_Segment_PTC.SRS_.48": 0.6517095764388339
+                    }
+                ],
+                "score": 0,
+                "links": [
+                    {
+                        "source": "PTC",
+                        "target": "PTC",
+                        "relationship": [
+                            {
+                                "concept_1": "PTC",
+                                "relation_type": "synonym",
+                                "concept_2": "PTC"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "railroad_-_specific_Dispatch_System",
+                        "target": "Wayside_Locomotive",
+                        "relationship": [
+                            {
+                                "concept_1": "railroad_-_specific_dispatch_system",
+                                "relation_type": "match",
+                                "concept_2": "railroad"
+                            },
+                            {
+                                "concept_1": "railroad",
+                                "relation_type": "need",
+                                "concept_2": "wius"
+                            },
+                            {
+                                "concept_1": "wius",
+                                "relation_type": "generated_from",
+                                "concept_2": "wayside_status_message"
+                            },
+                            {
+                                "concept_1": "wayside_status_message",
+                                "relation_type": "handle",
+                                "concept_2": "time_critical_communication"
+                            },
+                            {
+                                "concept_1": "time_critical_communication",
+                                "relation_type": "from",
+                                "concept_2": "wayside"
+                            },
+                            {
+                                "concept_1": "wayside",
+                                "relation_type": "match",
+                                "concept_2": "wayside_locomotive"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "PTC.SDD.7062",
+                "text": "The goal of ITC Systems Management ( ITCSM ) is to keep all ITC systems operational . ITCSM will do the following for ITC assets ( i.e. OBUs_wayside_interface_units_base_stations ) : Establish a security infrastructure for distributing sensitive dataEnable_interoperabilityEnforce_access_controlsEnable over the air_updates ( e.g. configuration software ) Support_problem_diagnosis through the generation and distribution of notifications and logs.The overall ITCSM architecture is depicted in PTC.SDD .7412 .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "PTC.SDD",
+                    "dataEnable_interoperabilityEnforce_access_controlsEnable",
+                    "ITCSM",
+                    "ITC",
+                    "OBUs_wayside_interface_units_base_stations",
+                    "wayside_interface_units",
+                    "air_updates",
+                    "Support_problem_diagnosis"
+                ],
+                "terminology": [
+                    "ITC",
+                    "ITCSM"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "ITCSM": "ITC System Management"
+                    },
+                    {
+                        "ITC": "Interoperable Train Control"
+                    }
+                ],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "PTC.SDD": 0.1604975840813126
+                    },
+                    {
+                        "dataEnable_interoperabilityEnforce_access_controlsEnable": 0.8681698914740618
+                    },
+                    {
+                        "ITCSM": 0.7133258047846575
+                    },
+                    {
+                        "ITC": 0.3740923008889212
+                    },
+                    {
+                        "OBUs_wayside_interface_units_base_stations": 0.5840460027240992
+                    },
+                    {
+                        "wayside_interface_units": 0.5189764440339858
+                    },
+                    {
+                        "air_updates": 0.6445969742452385
+                    },
+                    {
+                        "Support_problem_diagnosis": 0.7446736264859934
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "PTC.SRS.44",
+                "text": "Physical System_Hardware_Overview_Diagram",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "System_Hardware_Overview_Diagram"
+                ],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "System_Hardware_Overview_Diagram": 0.6961721611488887
+                    }
+                ],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "PTC.SDD.7411",
+                "text": "ITCSM will consist of an ITCSM Gateway hosted by each railroad back office . Each ITC Asset ( e.g. WIU OBU 220 Radio messaging system components ) will be assigned to exactly one Gateway and will have an ITCSM Agent that manages it . An ITCSM Agent may either be embedded with an ITC Asset ( ITCSM Embedded Agent ) or run on a single board computer that is connected to the ITC Asset ( ITCSM Remote Agent ) via LAN . For the TG - PTC whether an asset will use an embedded or Remote agent_configuration will be decided during design of the particular asset .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "Remote",
+                    "ITCSM",
+                    "OBU",
+                    "ITC",
+                    "PTC",
+                    "agent_configuration",
+                    "WIU"
+                ],
+                "terminology": [
+                    "Remote",
+                    "OBU",
+                    "ITCSM",
+                    "WIU",
+                    "ITC",
+                    "PTC"
+                ],
+                "definitions": [
+                    {
+                        "Remote": "Used to refer to an area or asset which is not an office (that is, locomotive or wayside). Also used to refer to a radio on the other side of an RF connection from the radio under discussion."
+                    }
+                ],
+                "acronyms": [
+                    {
+                        "OBU": "On Board Units"
+                    },
+                    {
+                        "WIU": "Wayside Interface Unit"
+                    },
+                    {
+                        "PTC": "Positive Train Control"
+                    },
+                    {
+                        "ITCSM": "ITC System Management"
+                    },
+                    {
+                        "ITC": "Interoperable Train Control"
+                    }
+                ],
+                "contexts": [
+                    {
+                        "OBU": "The OBU provides a safety overlay for railroad operations through brake enforcement."
+                    },
+                    {
+                        "PTC": "PTC can automatically reduce a train\u00e2\u0080\u0099s speed or even stop it to avoid a collision or derailment."
+                    }
+                ],
+                "importance_scores": [
+                    {
+                        "Remote": 0.7424965090348398
+                    },
+                    {
+                        "ITCSM": 0.7133258047846575
+                    },
+                    {
+                        "OBU": 0.09119558772263789
+                    },
+                    {
+                        "ITC": 0.3740923008889212
+                    },
+                    {
+                        "PTC": -0.016394751063233067
+                    },
+                    {
+                        "agent_configuration": 0.6075880374655434
+                    },
+                    {
+                        "WIU": 0.3202581176169614
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "PTC.SRS.48",
+                "text": "Office_System_Segment_Boundarie",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "Office_System_Segment_Boundarie"
+                ],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "Office_System_Segment_Boundarie": 0.49543314821458134
+                    }
+                ],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "PTC.SDD.4426",
+                "text": "The functionality provided will be similar to that of system_software_updates that occur when a laptop is powered up and connected to a network .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "system_software_updates"
+                ],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "system_software_updates": 0.34288284759316806
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "PTC.SRS.191",
+                "text": "6.3.1 Initializing_Mode ( REQ0758 ) The Trainguard PTC System shall enter Initializing Initializing_Mode the start of a new mission and occupies this mode until Track_Database update crew identification operational data initialization and departure_test_procedures have completed successfully [ REQ0758 Base_Source : / PTCDP / ] .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "Base_Source",
+                    "PTCDP",
+                    "Initializing_Mode",
+                    "departure_test_procedures",
+                    "Track_Database",
+                    "PTC",
+                    "departure_test"
+                ],
+                "terminology": [
+                    "PTC",
+                    "Track_Database"
+                ],
+                "definitions": [
+                    {
+                        "Track_Database": "A database onboard a locomotive with information about the track and waysides along a route. This information is used by the ETMS/TMC to implement PTC functionality."
+                    }
+                ],
+                "acronyms": [
+                    {
+                        "PTC": "Positive Train Control"
+                    }
+                ],
+                "contexts": [
+                    {
+                        "PTC": "PTC can automatically reduce a train\u00e2\u0080\u0099s speed or even stop it to avoid a collision or derailment."
+                    }
+                ],
+                "importance_scores": [
+                    {
+                        "Base_Source": 0.1764327298421173
+                    },
+                    {
+                        "PTCDP": 0.4612464235898584
+                    },
+                    {
+                        "Initializing_Mode": 0.4716979835523592
+                    },
+                    {
+                        "departure_test_procedures": 0.5029411591824084
+                    },
+                    {
+                        "Track_Database": 0.7833615155001277
+                    },
+                    {
+                        "PTC": -0.016394751063233067
+                    },
+                    {
+                        "departure_test": 0.47105022327348495
+                    }
+                ],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "PTC.SDD.6873",
+                "text": "The TG - PTC can only perform predictive enforcement when wayside_interface_units are available and operational .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "PTC",
+                    "wayside_interface_units"
+                ],
+                "terminology": [
+                    "PTC"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "PTC": "Positive Train Control"
+                    }
+                ],
+                "contexts": [
+                    {
+                        "PTC": "PTC can automatically reduce a train\u00e2\u0080\u0099s speed or even stop it to avoid a collision or derailment."
+                    }
+                ],
+                "importance_scores": [
+                    {
+                        "PTC": -0.016394751063233067
+                    },
+                    {
+                        "wayside_interface_units": 0.5189764440339858
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "PTC.SRS.164",
+                "text": "6.2.18 Predictive_Enforcement ( REQ1112 ) The Trainguard PTC System shall predictively enforce track_bulletins forms based authorities track devices speed limits derails or switches and consist or lading_speed_restrictions which includes train based permanent speed restrictions [ REQ1112 Base_Sources : / CONOPS / Section 5.11.2 / AAR S - 9052B / ] .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "Base_Source",
+                    "AAR",
+                    "lading_speed_restrictions",
+                    "Predictive_Enforcement",
+                    "track_bulletins",
+                    "PTC",
+                    "track_bulletin",
+                    "Base_Sources"
+                ],
+                "terminology": [
+                    "PTC",
+                    "AAR"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "PTC": "Positive Train Control"
+                    },
+                    {
+                        "AAR": "American  Association of Railroads"
+                    }
+                ],
+                "contexts": [
+                    {
+                        "PTC": "PTC can automatically reduce a train\u00e2\u0080\u0099s speed or even stop it to avoid a collision or derailment."
+                    },
+                    {
+                        "AAR": "AAR welcomes renewed call for Positive Train Control implementation extension"
+                    }
+                ],
+                "importance_scores": [
+                    {
+                        "Base_Source": 0.1764327298421173
+                    },
+                    {
+                        "AAR": 0.23807162530482118
+                    },
+                    {
+                        "lading_speed_restrictions": 0.5415088718182393
+                    },
+                    {
+                        "Predictive_Enforcement": 0.8157978959270408
+                    },
+                    {
+                        "track_bulletins": 0.4018069346436761
+                    },
+                    {
+                        "PTC": -0.016394751063233067
+                    },
+                    {
+                        "track_bulletin": 0.46366054634900994
+                    },
+                    {
+                        "Base_Sources": 0.2539827942748542
+                    }
+                ],
+                "score": 0,
+                "links": [
+                    {
+                        "source": "PTC",
+                        "target": "PTC",
+                        "relationship": [
+                            {
+                                "concept_1": "PTC",
+                                "relation_type": "synonym",
+                                "concept_2": "PTC"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "wayside_interface_units",
+                        "target": "lading_speed_restrictions",
+                        "relationship": [
+                            {
+                                "concept_1": "wayside_interface_unit",
+                                "relation_type": "acronym",
+                                "concept_2": "wiu"
+                            },
+                            {
+                                "concept_1": "wiu",
+                                "relation_type": "served_by",
+                                "concept_2": "wayside_device"
+                            },
+                            {
+                                "concept_1": "wayside_device",
+                                "relation_type": "assume",
+                                "concept_2": "obu"
+                            },
+                            {
+                                "concept_1": "obu",
+                                "relation_type": "to_enforce",
+                                "concept_2": "speed_restriction"
+                            },
+                            {
+                                "concept_1": "speed_restriction",
+                                "relation_type": "match",
+                                "concept_2": "lading_speed_restriction"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "PTC.SDD.6713",
+                "text": "The TG - PTC will interface to a railroad_-_specific_Dispatch_System to receive the current set of Mandatory Directives_Track_Bulletins_Movement_Authorities ( Train Mission ) and the other enforceable operational conditions . These Dispatch_Systems are specific to the various railroads and as such require the TG - PTC to be flexible enough to interface with all of them . The TG - PTC will provide an abstraction layer between it and the Dispatch Dispatch_Systems all specific Dispatch_System_interface_requirements are contained within the abstraction layer . The TG - PTC will utilize the internal side of the abstraction layer which will only change if the TG - PTC requires it to . All specific implementation changes will be limited to the Dispatch_System_side of the abstraction layer .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "Dispatch_Systems",
+                    "Directives_Track_Bulletins_Movement_Authorities",
+                    "railroad_-_specific_Dispatch_System",
+                    "Dispatch_System_interface_requirements",
+                    "Track_Bulletins",
+                    "PTC",
+                    "Dispatch_System_side",
+                    "Dispatch_System"
+                ],
+                "terminology": [
+                    "PTC"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "PTC": "Positive Train Control"
+                    }
+                ],
+                "contexts": [
+                    {
+                        "PTC": "PTC can automatically reduce a train\u00e2\u0080\u0099s speed or even stop it to avoid a collision or derailment."
+                    }
+                ],
+                "importance_scores": [
+                    {
+                        "Dispatch_Systems": 0.5175574977350991
+                    },
+                    {
+                        "Directives_Track_Bulletins_Movement_Authorities": 0.7308282273347667
+                    },
+                    {
+                        "railroad_-_specific_Dispatch_System": 0.247523811556232
+                    },
+                    {
+                        "Dispatch_System_interface_requirements": 0.31520797380129917
+                    },
+                    {
+                        "Track_Bulletins": 0.6546097700175476
+                    },
+                    {
+                        "PTC": -0.016394751063233067
+                    },
+                    {
+                        "Dispatch_System_side": 0.4853457463000401
+                    },
+                    {
+                        "Dispatch_System": 0.3159053584673524
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "PTC.SRS.48",
+                "text": "Office_System_Segment_Boundarie",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "Office_System_Segment_Boundarie"
+                ],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "Office_System_Segment_Boundarie": 0.49543314821458134
+                    }
+                ],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "PTC.SDD.7413",
+                "text": "There are several communication channels for ITCSM . Each owning railroad back office hosts an ITCSM Gateway with which it will communicate . The interface between Gateway and back office will be railroad specific . ITCSM Gateways from different railroads will communicate with each other to support interoperability between railroads . This communication is done through the Interoperable Systems Management Protocol ( ISMP ) which is an application_-_level_protocol built on top of EMP and thus supports existing ITCM_communications_infrastructure .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "Interoperable",
+                    "application_-_level_protocol",
+                    "ITCSM",
+                    "ITCM_communications_infrastructure",
+                    "ITCM"
+                ],
+                "terminology": [
+                    "Interoperable",
+                    "ITCSM"
+                ],
+                "definitions": [
+                    {
+                        "Interoperable": "Communications directly between the remote asset of one railroad and the office of another railroad."
+                    }
+                ],
+                "acronyms": [
+                    {
+                        "ITCSM": "ITC System Management"
+                    }
+                ],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "Interoperable": 0.7424965090348398
+                    },
+                    {
+                        "application_-_level_protocol": 0.35799536211049904
+                    },
+                    {
+                        "ITCSM": 0.7133258047846575
+                    },
+                    {
+                        "ITCM_communications_infrastructure": 0.6625186553582287
+                    },
+                    {
+                        "ITCM": 0.8890992828192418
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "PTC.SRS.44",
+                "text": "Physical System_Hardware_Overview_Diagram",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "System_Hardware_Overview_Diagram"
+                ],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "System_Hardware_Overview_Diagram": 0.6961721611488887
+                    }
+                ],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "PTC.SDD.6713",
+                "text": "The TG - PTC will interface to a railroad_-_specific_Dispatch_System to receive the current set of Mandatory Directives_Track_Bulletins_Movement_Authorities ( Train Mission ) and the other enforceable operational conditions . These Dispatch_Systems are specific to the various railroads and as such require the TG - PTC to be flexible enough to interface with all of them . The TG - PTC will provide an abstraction layer between it and the Dispatch Dispatch_Systems all specific Dispatch_System_interface_requirements are contained within the abstraction layer . The TG - PTC will utilize the internal side of the abstraction layer which will only change if the TG - PTC requires it to . All specific implementation changes will be limited to the Dispatch_System_side of the abstraction layer .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "Dispatch_Systems",
+                    "Directives_Track_Bulletins_Movement_Authorities",
+                    "railroad_-_specific_Dispatch_System",
+                    "Dispatch_System_interface_requirements",
+                    "Track_Bulletins",
+                    "PTC",
+                    "Dispatch_System_side",
+                    "Dispatch_System"
+                ],
+                "terminology": [
+                    "PTC"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "PTC": "Positive Train Control"
+                    }
+                ],
+                "contexts": [
+                    {
+                        "PTC": "PTC can automatically reduce a train\u00e2\u0080\u0099s speed or even stop it to avoid a collision or derailment."
+                    }
+                ],
+                "importance_scores": [
+                    {
+                        "Dispatch_Systems": 0.5175574977350991
+                    },
+                    {
+                        "Directives_Track_Bulletins_Movement_Authorities": 0.7308282273347667
+                    },
+                    {
+                        "railroad_-_specific_Dispatch_System": 0.247523811556232
+                    },
+                    {
+                        "Dispatch_System_interface_requirements": 0.31520797380129917
+                    },
+                    {
+                        "Track_Bulletins": 0.6546097700175476
+                    },
+                    {
+                        "PTC": -0.016394751063233067
+                    },
+                    {
+                        "Dispatch_System_side": 0.4853457463000401
+                    },
+                    {
+                        "Dispatch_System": 0.3159053584673524
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "PTC.SRS.60",
+                "text": "5.4.3 Human Factors_Engineering ( REQ1094 ) The Trainguard PTC System shall sufficiently incorporate human factors Factors_Engineering is appropriate to the intended operators and complexity of the system [ REQ1094 Base_Source : / PTC Final Rule / 49 CFR_236_Subpart I Appendix E / AAR S - 9052A / ] . Guidance : The Siemens Trainguard HMI design shall be accompanied by a human factors engineering Factors_Engineering for train operators and user_maintenance_personnel .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "Base_Source",
+                    "AAR",
+                    "HMI",
+                    "PTC",
+                    "Factors_Engineering",
+                    "CFR_236_Subpart",
+                    "user_maintenance_personnel"
+                ],
+                "terminology": [
+                    "PTC",
+                    "AAR",
+                    "HMI"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "AAR": "American  Association of Railroads"
+                    },
+                    {
+                        "PTC": "Positive Train Control"
+                    },
+                    {
+                        "HMI": "human - machine interface"
+                    }
+                ],
+                "contexts": [
+                    {
+                        "AAR": "AAR welcomes renewed call for Positive Train Control implementation extension"
+                    },
+                    {
+                        "PTC": "PTC can automatically reduce a train\u00e2\u0080\u0099s speed or even stop it to avoid a collision or derailment."
+                    }
+                ],
+                "importance_scores": [
+                    {
+                        "Base_Source": 0.1764327298421173
+                    },
+                    {
+                        "AAR": 0.23807162530482118
+                    },
+                    {
+                        "HMI": 0.4266516095693147
+                    },
+                    {
+                        "PTC": -0.016394751063233067
+                    },
+                    {
+                        "Factors_Engineering": 0.9445496414096208
+                    },
+                    {
+                        "CFR_236_Subpart": 0.4232508100919267
+                    },
+                    {
+                        "user_maintenance_personnel": 0.6462320499065987
+                    }
+                ],
+                "score": 0,
+                "links": [
+                    {
+                        "source": "railroad_-_specific_Dispatch_System",
+                        "target": "CFR_236_Subpart",
+                        "relationship": [
+                            {
+                                "concept_1": "railroad_-_specific_dispatch_system",
+                                "relation_type": "match",
+                                "concept_2": "railroad"
+                            },
+                            {
+                                "concept_1": "railroad",
+                                "relation_type": "be_to_installed_under",
+                                "concept_2": "subpart"
+                            },
+                            {
+                                "concept_1": "subpart",
+                                "relation_type": "match",
+                                "concept_2": "cfr_236_subpart"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "railroad_-_specific_Dispatch_System",
+                        "target": "AAR",
+                        "relationship": [
+                            {
+                                "concept_1": "railroad_-_specific_dispatch_system",
+                                "relation_type": "match",
+                                "concept_2": "railroad"
+                            },
+                            {
+                                "concept_1": "railroad",
+                                "relation_type": "worked",
+                                "concept_2": "fra"
+                            },
+                            {
+                                "concept_1": "fra",
+                                "relation_type": "acronym",
+                                "concept_2": "federal_railroad_administration"
+                            },
+                            {
+                                "concept_1": "federal_railroad_administration",
+                                "relation_type": "to",
+                                "concept_2": "cab_distraction"
+                            },
+                            {
+                                "concept_1": "cab_distraction",
+                                "relation_type": "causing",
+                                "concept_2": "ptc_implementation"
+                            },
+                            {
+                                "concept_1": "ptc_implementation",
+                                "relation_type": "said_that",
+                                "concept_2": "aar"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "PTC",
+                        "target": "PTC",
+                        "relationship": [
+                            {
+                                "concept_1": "PTC",
+                                "relation_type": "synonym",
+                                "concept_2": "PTC"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "PTC.SDD.6752",
+                "text": "Whenever time_drift occurs the receiver shall always compare the message_timestamp with their internal clock for validity_purposes .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "validity_purposes",
+                    "message_timestamp",
+                    "time_drift"
+                ],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "validity_purposes": 0.752722917637287
+                    },
+                    {
+                        "message_timestamp": 0.6058297698231704
+                    },
+                    {
+                        "time_drift": 0.511629011339165
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "PTC.SRS.324",
+                "text": "5.11.12 Wayside_Time_Synchronization ( REQ1433 ) The Wayside_Segment WIU shall maintain its clock synchronization with an external time source as per design needs of the owning and operating railroads [ REQ1433 Base_Source : / S_-_9052D / ] .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "Wayside_Time_Synchronization",
+                    "Base_Source",
+                    "operating_railroad",
+                    "S_-_9052D",
+                    "Wayside_Segment",
+                    "WIU"
+                ],
+                "terminology": [
+                    "WIU"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "WIU": "Wayside Interface Unit"
+                    }
+                ],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "Wayside_Time_Synchronization": 0.5623995241641047
+                    },
+                    {
+                        "Base_Source": 0.1764327298421173
+                    },
+                    {
+                        "operating_railroad": 0.3384158477284001
+                    },
+                    {
+                        "S_-_9052D": 0.18928951422157975
+                    },
+                    {
+                        "Wayside_Segment": 0.3491185750370901
+                    },
+                    {
+                        "WIU": 0.3202581176169614
+                    }
+                ],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "PTC.SDD.1790",
+                "text": "For interoperability purposes this interface is prescribed by the AAR ITC Committee . The interface is defined within the IDD OBU WIU / PTC - D - 0003 / . The ICD describes the message formats . The communications network connecting these subsystems uses the standard protocols described in EMP Specification / S - 9354 / ; Class_C Messaging Specification / S - 9355 / ; and Class_D Messaging Specification / S - 9356 / .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "OBU",
+                    "WIU",
+                    "Class_D",
+                    "EMP",
+                    "AAR",
+                    "Class_C",
+                    "ITC",
+                    "PTC"
+                ],
+                "terminology": [
+                    "OBU",
+                    "WIU",
+                    "Class_D",
+                    "EMP",
+                    "AAR",
+                    "Class_C",
+                    "ITC",
+                    "PTC"
+                ],
+                "definitions": [
+                    {
+                        "Class_C": "An AAR published protocol which is substantially based upon UDP/IP."
+                    },
+                    {
+                        "Class_D": "A protocol that converts a stream based TCP protocol to a message or transaction based protocol. Class D also adds support for features such as connection monitoring/persistence and high availability. See section6.3.1."
+                    }
+                ],
+                "acronyms": [
+                    {
+                        "EMP": "Edge Message Protocol"
+                    },
+                    {
+                        "AAR": "American  Association of Railroads"
+                    },
+                    {
+                        "ITC": "Interoperable Train Control"
+                    },
+                    {
+                        "PTC": "Positive Train Control"
+                    },
+                    {
+                        "WIU": "Wayside Interface Unit"
+                    },
+                    {
+                        "OBU": "On Board Units"
+                    }
+                ],
+                "contexts": [
+                    {
+                        "AAR": "AAR welcomes renewed call for Positive Train Control implementation extension"
+                    },
+                    {
+                        "PTC": "PTC can automatically reduce a train\u00e2\u0080\u0099s speed or even stop it to avoid a collision or derailment."
+                    },
+                    {
+                        "OBU": "The OBU provides a safety overlay for railroad operations through brake enforcement."
+                    }
+                ],
+                "importance_scores": [
+                    {
+                        "OBU": 0.09119558772263789
+                    },
+                    {
+                        "WIU": 0.3202581176169614
+                    },
+                    {
+                        "Class_D": 0.48799247783649374
+                    },
+                    {
+                        "EMP": 0.6315957918540813
+                    },
+                    {
+                        "AAR": 0.23807162530482118
+                    },
+                    {
+                        "Class_C": 0.5533317004046764
+                    },
+                    {
+                        "ITC": 0.3740923008889212
+                    },
+                    {
+                        "PTC": -0.016394751063233067
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "PTC.SRS.302",
+                "text": "5.7.7.2 Interoperability_Betweeen_Wayside and Locomotive ( REQ1413 ) The Wayside_Segment through railroads standalone or integrated interfaces shall be designed to communicate with PTC / ITC Onboard System compliant Locomotives [ REQ1413 Base_Source : / S_-_9052D / ] .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "Interoperability_Betweeen_Wayside",
+                    "Base_Source",
+                    "ITC",
+                    "S_-_9052D",
+                    "PTC",
+                    "Wayside_Segment"
+                ],
+                "terminology": [
+                    "ITC",
+                    "PTC"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "ITC": "Interoperable Train Control"
+                    },
+                    {
+                        "PTC": "Positive Train Control"
+                    }
+                ],
+                "contexts": [
+                    {
+                        "PTC": "PTC can automatically reduce a train\u00e2\u0080\u0099s speed or even stop it to avoid a collision or derailment."
+                    }
+                ],
+                "importance_scores": [
+                    {
+                        "Interoperability_Betweeen_Wayside": 0.6635766732614686
+                    },
+                    {
+                        "Base_Source": 0.1764327298421173
+                    },
+                    {
+                        "ITC": 0.3740923008889212
+                    },
+                    {
+                        "S_-_9052D": 0.18928951422157975
+                    },
+                    {
+                        "PTC": -0.016394751063233067
+                    },
+                    {
+                        "Wayside_Segment": 0.3491185750370901
+                    }
+                ],
+                "score": 0,
+                "links": [
+                    {
+                        "source": "OBU",
+                        "target": "Wayside_Segment",
+                        "relationship": [
+                            {
+                                "concept_1": "obu",
+                                "relation_type": "assume",
+                                "concept_2": "wayside_device"
+                            },
+                            {
+                                "concept_1": "wayside_device",
+                                "relation_type": "associated_with",
+                                "concept_2": "wius"
+                            },
+                            {
+                                "concept_1": "wius",
+                                "relation_type": "generated_from",
+                                "concept_2": "wayside_status_message"
+                            },
+                            {
+                                "concept_1": "wayside_status_message",
+                                "relation_type": "handle",
+                                "concept_2": "time_critical_communication"
+                            },
+                            {
+                                "concept_1": "time_critical_communication",
+                                "relation_type": "from",
+                                "concept_2": "wayside"
+                            },
+                            {
+                                "concept_1": "wayside",
+                                "relation_type": "match",
+                                "concept_2": "wayside_segment"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "OBU",
+                        "target": "Interoperability_Betweeen_Wayside",
+                        "relationship": [
+                            {
+                                "concept_1": "obu",
+                                "relation_type": "assume",
+                                "concept_2": "wayside_device"
+                            },
+                            {
+                                "concept_1": "wayside_device",
+                                "relation_type": "associated_with",
+                                "concept_2": "wius"
+                            },
+                            {
+                                "concept_1": "wius",
+                                "relation_type": "generated_from",
+                                "concept_2": "wayside_status_message"
+                            },
+                            {
+                                "concept_1": "wayside_status_message",
+                                "relation_type": "handle",
+                                "concept_2": "time_critical_communication"
+                            },
+                            {
+                                "concept_1": "time_critical_communication",
+                                "relation_type": "from",
+                                "concept_2": "wayside"
+                            },
+                            {
+                                "concept_1": "wayside",
+                                "relation_type": "match",
+                                "concept_2": "interoperability_betweeen_wayside"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "WIU",
+                        "target": "Wayside_Segment",
+                        "relationship": [
+                            {
+                                "concept_1": "wiu",
+                                "relation_type": "served_by",
+                                "concept_2": "wayside_device"
+                            },
+                            {
+                                "concept_1": "wayside_device",
+                                "relation_type": "associated_with",
+                                "concept_2": "wius"
+                            },
+                            {
+                                "concept_1": "wius",
+                                "relation_type": "generated_from",
+                                "concept_2": "wayside_status_message"
+                            },
+                            {
+                                "concept_1": "wayside_status_message",
+                                "relation_type": "handle",
+                                "concept_2": "time_critical_communication"
+                            },
+                            {
+                                "concept_1": "time_critical_communication",
+                                "relation_type": "from",
+                                "concept_2": "wayside"
+                            },
+                            {
+                                "concept_1": "wayside",
+                                "relation_type": "match",
+                                "concept_2": "wayside_segment"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "WIU",
+                        "target": "Interoperability_Betweeen_Wayside",
+                        "relationship": [
+                            {
+                                "concept_1": "wiu",
+                                "relation_type": "served_by",
+                                "concept_2": "wayside_device"
+                            },
+                            {
+                                "concept_1": "wayside_device",
+                                "relation_type": "associated_with",
+                                "concept_2": "wius"
+                            },
+                            {
+                                "concept_1": "wius",
+                                "relation_type": "generated_from",
+                                "concept_2": "wayside_status_message"
+                            },
+                            {
+                                "concept_1": "wayside_status_message",
+                                "relation_type": "handle",
+                                "concept_2": "time_critical_communication"
+                            },
+                            {
+                                "concept_1": "time_critical_communication",
+                                "relation_type": "from",
+                                "concept_2": "wayside"
+                            },
+                            {
+                                "concept_1": "wayside",
+                                "relation_type": "match",
+                                "concept_2": "interoperability_betweeen_wayside"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "ITC",
+                        "target": "ITC",
+                        "relationship": [
+                            {
+                                "concept_1": "ITC",
+                                "relation_type": "synonym",
+                                "concept_2": "ITC"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "PTC",
+                        "target": "PTC",
+                        "relationship": [
+                            {
+                                "concept_1": "PTC",
+                                "relation_type": "synonym",
+                                "concept_2": "PTC"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

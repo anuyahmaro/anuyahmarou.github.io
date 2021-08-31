@@ -1,0 +1,699 @@
+[
+    {
+        "source": [
+            {
+                "id": "1694",
+                "text": "The system shall have pre-defined progress_note_templates .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "progress_note_templates"
+                ],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "progress_note_templates": 0.46485612549213157
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "68",
+                "text": "The system shall have the ability to provide filtered displays of encounters based on encounter characteristics , including date of service , encounter provider and associated diagnosis .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "provider",
+                    "encounter"
+                ],
+                "terminology": [
+                    "provider",
+                    "encounter"
+                ],
+                "definitions": [
+                    {
+                        "encounter": "A contact between a patient and a provider who has the primary responsibility of assessing and treating the patient. A patient may have multiple encounters per visit. Outpatient encounters include scheduled appointments and walk-in unscheduled visits. A clinician\u2019s telephone communications with a patient may be represented by a separate visit entry. If the patient is seen in an outpatient clinic while an inpatient, this is treated as a separate encounter.\nprovider\nvisit"
+                    },
+                    {
+                        "provider": "The actual provider of care performing the procedure. This provider can be a doctor, nurse, technician, or any designated team of medical professionals.\nThe entity that furnishes health care to consumers. An individual or defined group of individuals who provide a defined unit of health care services (defined = codable) to one or more individuals at a single session.\nHealth Care Provider\nUnder HIPAA, this is \"\u2026a provider of services as defined in the section 1861(u) of the [Social Security] Act, 42 USC 1395x(u), a provider of medical or other health services as defined in section 1861(s) of the Act, 42 USC 1395(s), and any other person or organization who furnishes, bills, or is paid for health care in the normal course of business.\" [45 CFR 160.103]\nmeans a provider of services (as defined in section 1861(u) of the Act, 42 U.S.C. 1395x(u)), a provider of medical or health services (as defined in section 1861(s) of the Act, 42 U.S.C. 1395x(s)), and any other person or organization who furnishes, bills, or is paid for health care in the normal course of business."
+                    }
+                ],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "provider": 0.27822880884401874
+                    },
+                    {
+                        "encounter": 0.4104350972591009
+                    }
+                ],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "1692",
+                "text": "The system shall allow setting of business rules , document types , user classes , etc. to control access to documents , reports , verification , signing , and so on",
+                "query": "source",
+                "type": "R1",
+                "concepts": [],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": []
+            }
+        ],
+        "target": [
+            {
+                "id": "401",
+                "text": "If role - based access control ( RBAC ) is supported , the system shall be able to provide role based access control that is in compliance with the HL7_Permissions_Catalog .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "HL7_Permissions_Catalog"
+                ],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "HL7_Permissions_Catalog": 0.8237249487798904
+                    }
+                ],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "1675",
+                "text": "The system shall provide a means to view patient demographics , allergies and adverse reactions , postings ( cautions , warnings , allergies , and advance directives ) , clinical reminders , current medications , problems , appointments , etc. .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": []
+            }
+        ],
+        "target": [
+            {
+                "id": "64",
+                "text": "The system shall have the ability to provide access to standard care plan , protocol and guideline documents when requested at the time of the clinical encounter . These documents may reside within the system or be provided through links to external sources .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "1695",
+                "text": "The system shall allow creation of personalized templates to fit the specific needs of individual practices .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": []
+            }
+        ],
+        "target": [
+            {
+                "id": "74",
+                "text": "The system shall provide a method for archiving health record information .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "record"
+                ],
+                "terminology": [
+                    "record"
+                ],
+                "definitions": [
+                    {
+                        "record": "Set of related data treated as a unit. An entry in a VA FileMan file constitutes a record. A collection of data items that refer to a specific entity (e.g., in a name-address-phone number file, each record would contain a collection of data relating to one person)."
+                    }
+                ],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "record": 0.10346160186734002
+                    }
+                ],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "1765",
+                "text": "The system shall allow the creation of patient lists or team_lists that simplify tasks such as reviewing patient charts , ordering , and signing_orders and notes and these lists can be based on wards , clinics , teams , or other groups .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "team_lists",
+                    "signing_orders"
+                ],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "team_lists": 0.5434328149327808
+                    },
+                    {
+                        "signing_orders": 0.5124867049333725
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "502",
+                "text": "The system shall provide the ability to display and manage ( assign , remove and modify ) the assignments of medical teams and / or individual team members to patients .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "1703",
+                "text": "The system shall document Discharge_Summary hospitalization data , as well as procedure and diagnosis - related information .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "Discharge_Summary",
+                    "data"
+                ],
+                "terminology": [
+                    "Discharge_Summary",
+                    "data"
+                ],
+                "definitions": [
+                    {
+                        "data": "A representation of facts, concepts, or instructions in a formalized manner for communication, interpretation, or processing by humans or by automatic means. The information you enter for the computer to store and retrieve. Characters stored in the computer system, which are the values of local or global variables. VA FileMan fields hold data values for file entries."
+                    },
+                    {
+                        "Discharge_Summary": "Discharge summaries are summaries of a patient\u2019s medical care during a single hospitalization, including the pertinent diagnostic and therapeutic tests and procedures as well as the conclusions generated by those tests. They are required for all discharges and transfers from a VA medical center, domiciliary, or nursing home care. The automated Discharge Summary module of TIU provides an efficient and immediate mechanism for clinicians to capture transcribed patient discharge summaries online, where they\u2019re available for review, signing, adding addendum, etc."
+                    }
+                ],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "Discharge_Summary": 0.7804101080965784
+                    },
+                    {
+                        "data": 0.05475847022386125
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "66",
+                "text": "The system shall have the ability to provide assistance with selecting an appropriate CPT Evaluation and Management_billing_code based on codified clinical information in the encounter .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "CPT",
+                    "Management_billing_code"
+                ],
+                "terminology": [
+                    "CPT"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "CPT": "Current Procedural Terminology"
+                    }
+                ],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "CPT": 0.5809159810051379
+                    },
+                    {
+                        "Management_billing_code": 0.720610654003425
+                    }
+                ],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "1731",
+                "text": "The system shall allow document types to inherit authorizations from a higher level when using classes to assign roles .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": []
+            }
+        ],
+        "target": [
+            {
+                "id": "224",
+                "text": "The system shall provide the ability to index and retrieve scanned documents based on the document type , the date of the original document .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "1701",
+                "text": "The system shall support requirements for codified data , including diagnosis data using ICD - 9 codes .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "ICD"
+                ],
+                "terminology": [
+                    "ICD"
+                ],
+                "definitions": [],
+                "acronyms": [
+                    {
+                        "ICD": "ICN"
+                    }
+                ],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "ICD": 0.7355874231698355
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "68",
+                "text": "The system shall have the ability to provide filtered displays of encounters based on encounter characteristics , including date of service , encounter provider and associated diagnosis .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "provider",
+                    "encounter"
+                ],
+                "terminology": [
+                    "provider",
+                    "encounter"
+                ],
+                "definitions": [
+                    {
+                        "encounter": "A contact between a patient and a provider who has the primary responsibility of assessing and treating the patient. A patient may have multiple encounters per visit. Outpatient encounters include scheduled appointments and walk-in unscheduled visits. A clinician\u2019s telephone communications with a patient may be represented by a separate visit entry. If the patient is seen in an outpatient clinic while an inpatient, this is treated as a separate encounter.\nprovider\nvisit"
+                    },
+                    {
+                        "provider": "The actual provider of care performing the procedure. This provider can be a doctor, nurse, technician, or any designated team of medical professionals.\nThe entity that furnishes health care to consumers. An individual or defined group of individuals who provide a defined unit of health care services (defined = codable) to one or more individuals at a single session.\nHealth Care Provider\nUnder HIPAA, this is \"\u2026a provider of services as defined in the section 1861(u) of the [Social Security] Act, 42 USC 1395x(u), a provider of medical or other health services as defined in section 1861(s) of the Act, 42 USC 1395(s), and any other person or organization who furnishes, bills, or is paid for health care in the normal course of business.\" [45 CFR 160.103]\nmeans a provider of services (as defined in section 1861(u) of the Act, 42 U.S.C. 1395x(u)), a provider of medical or health services (as defined in section 1861(s) of the Act, 42 U.S.C. 1395x(s)), and any other person or organization who furnishes, bills, or is paid for health care in the normal course of business."
+                    }
+                ],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "provider": 0.27822880884401874
+                    },
+                    {
+                        "encounter": 0.4104350972591009
+                    }
+                ],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "1783",
+                "text": "The system shall update diagnostic and procedure codes used for billing purposes so codes are applicable at the time the service was provided .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": []
+            }
+        ],
+        "target": [
+            {
+                "id": "369",
+                "text": "The system shall provide the ability to link Procedure data with patient diagnosis .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "Procedure",
+                    "data"
+                ],
+                "terminology": [
+                    "Procedure",
+                    "data"
+                ],
+                "definitions": [
+                    {
+                        "data": "A representation of facts, concepts, or instructions in a formalized manner for communication, interpretation, or processing by humans or by automatic means. The information you enter for the computer to store and retrieve. Characters stored in the computer system, which are the values of local or global variables. VA FileMan fields hold data values for file entries."
+                    },
+                    {
+                        "Procedure": "A test or action done for or to a patient that can be coded with the CPT coding process."
+                    }
+                ],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "Procedure": 0.8677937115849179
+                    },
+                    {
+                        "data": 0.05475847022386125
+                    }
+                ],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "1737",
+                "text": "The document - handling system ( TIU ) shall include Consults_/_Request_Tracking , Discharge_Summary , and Progress Notes .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "Discharge_Summary",
+                    "TIU",
+                    "Consults_/_Request_Tracking"
+                ],
+                "terminology": [
+                    "Discharge_Summary",
+                    "TIU"
+                ],
+                "definitions": [
+                    {
+                        "Discharge_Summary": "Discharge summaries are summaries of a patient\u2019s medical care during a single hospitalization, including the pertinent diagnostic and therapeutic tests and procedures as well as the conclusions generated by those tests. They are required for all discharges and transfers from a VA medical center, domiciliary, or nursing home care. The automated Discharge Summary module of TIU provides an efficient and immediate mechanism for clinicians to capture transcribed patient discharge summaries online, where they\u2019re available for review, signing, adding addendum, etc."
+                    }
+                ],
+                "acronyms": [
+                    {
+                        "TIU": "Text Integration Utility"
+                    }
+                ],
+                "contexts": [
+                    {
+                        "TIU": "The TIU can be supplemented with a couple of different setup options that offer some automation and flexibility for the transcriptionists to be as productive as possible."
+                    }
+                ],
+                "importance_scores": [
+                    {
+                        "Discharge_Summary": 0.7804101080965784
+                    },
+                    {
+                        "TIU": 0.7904579905025688
+                    },
+                    {
+                        "Consults_/_Request_Tracking": 0.7604446011865171
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "567",
+                "text": "The system shall send Current Medication List and Discharge_Medications ( patient home medications and medications prescribed upon discharge ) to outpatient_documentation_sources ( e.g. , Physicians office EMR ) , or Health Information Exchange ( HIE ) / network",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "Discharge_Medications",
+                    "EMR",
+                    "outpatient_documentation_sources"
+                ],
+                "terminology": [
+                    "Discharge_Medications",
+                    "EMR"
+                ],
+                "definitions": [
+                    {
+                        "EMR": "An EMR is an electronic medical record software package."
+                    }
+                ],
+                "acronyms": [
+                    {
+                        "EMR": "Electronic Medical Records"
+                    }
+                ],
+                "contexts": [
+                    {
+                        "Discharge_Medications": "Discharge medications can be listed within discharge summaries (DS), patient discharge instructions (DI), or the electronically - generated discharge medication list (eDML) given to the patient in the after visit summary (AVS)."
+                    },
+                    {
+                        "EMR": "An EMR contains the patient\u2019s medical history, diagnoses and treatments by a particular physician, nurse practitioner, specialist, dentist, surgeon or clinic."
+                    }
+                ],
+                "importance_scores": [
+                    {
+                        "Discharge_Medications": 0.8677937115849179
+                    },
+                    {
+                        "EMR": 0.8677937115849179
+                    },
+                    {
+                        "outpatient_documentation_sources": 0.5067695027146754
+                    }
+                ],
+                "score": 0,
+                "links": [
+                    {
+                        "source": "Discharge_Summary",
+                        "target": "Discharge_Medications",
+                        "relationship": [
+                            {
+                                "concept_1": "discharge_summary",
+                                "relation_type": "listed_within",
+                                "concept_2": "discharge_medication"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "1696",
+                "text": "The system shall include clinical reminders to provide relevant information to providers , at the point of care , for improving patient care .",
+                "query": "source",
+                "type": "R1",
+                "concepts": [],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": []
+            }
+        ],
+        "target": [
+            {
+                "id": "45",
+                "text": "In areas where results from multiple patients are displayed , the system shall provide the ability to filter or sort results by patient .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [],
+                "terminology": [],
+                "definitions": [],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [],
+                "score": 0,
+                "links": []
+            }
+        ]
+    },
+    {
+        "source": [
+            {
+                "id": "1691",
+                "text": "The system shall use HL - 7 communications protocol for transferring messages among packages",
+                "query": "source",
+                "type": "R1",
+                "concepts": [
+                    "protocol"
+                ],
+                "terminology": [
+                    "protocol"
+                ],
+                "definitions": [
+                    {
+                        "protocol": "A set of procedures for establishing and controlling data transmission.\nEntry in the PROTOCOL file (#101). Used by the Order Entry/Results Reporting (OE/RR) package to support the ordering of medical tests and other activities."
+                    }
+                ],
+                "acronyms": [],
+                "contexts": [],
+                "importance_scores": [
+                    {
+                        "protocol": 0.5608202161931569
+                    }
+                ]
+            }
+        ],
+        "target": [
+            {
+                "id": "641",
+                "text": "The HIE SHALL have the ability to perform the roles of Document_Consumer , Document Source , Document Repository , Document Registry and Patient_Identity_Source as documented in HITSP transaction package 13 Manage Sharing of Documents , as updated in 2007 IHE XDS - b and IHE XCA , and using HITSP Component 32 Registration Summary and Medication History for the specification of the HL7 / ASTM Continuity of Care_Document ( CCD ) healthcare_summary_document , as updated by HITSP in 2007 .",
+                "query": "target",
+                "type": "R2",
+                "concepts": [
+                    "ASTM",
+                    "healthcare_summary_document",
+                    "package",
+                    "HIE",
+                    "transaction",
+                    "Document_Consumer",
+                    "Care_Document",
+                    "XDS",
+                    "XCA",
+                    "Patient_Identity_Source",
+                    "HITSP",
+                    "IHE"
+                ],
+                "terminology": [
+                    "ASTM",
+                    "package",
+                    "HIE",
+                    "transaction",
+                    "XDS",
+                    "XCA",
+                    "HITSP",
+                    "IHE"
+                ],
+                "definitions": [
+                    {
+                        "package": "A set of MUMPS routines, files, documentation and installation procedures that support a specific function within DHCP."
+                    },
+                    {
+                        "transaction": "the transmission of information between two parties to carry out financial or administrative activities related to health care. It includes the following types of information transmissions:\n(1) Health care claims or equivalent encounter information.\n(2) Health care payment and remittance advice.\n(3) Coordination of benefits.\n(4) Health care claim status.\n(5) Enrollment and disenrollment in a health plan.\n(6) Eligibility for a health plan.\n(7) Health plan premium payments.\n(8) Referral certification and authorization.\n(9) First report of injury.\n(10) Health claims attachments.\n(11) Other transactions that the Secretary may prescribe by regulation."
+                    }
+                ],
+                "acronyms": [
+                    {
+                        "HITSP": "Healthcare Information Technology Standards Panel"
+                    },
+                    {
+                        "IHE": "Integrating the Healthcare Enterprise"
+                    },
+                    {
+                        "HIE": "Health Information Exchange"
+                    }
+                ],
+                "contexts": [
+                    {
+                        "XDS": "XDS provides a registry for querying which patient records are in an EHR repository and methods for retrieving the documents."
+                    },
+                    {
+                        "XCA": "XCA provides access to all medical data including diagnostic reports and imaging manifests."
+                    },
+                    {
+                        "ASTM": "ASTM Provides Means for Healthcare Workers to Collect and Transfer Patient Data"
+                    }
+                ],
+                "importance_scores": [
+                    {
+                        "ASTM": 0.7904579905025688
+                    },
+                    {
+                        "healthcare_summary_document": 0.4969689438491638
+                    },
+                    {
+                        "package": -0.34894676888139486
+                    },
+                    {
+                        "HIE": 0.14820235394574538
+                    },
+                    {
+                        "transaction": 0.693026504608239
+                    },
+                    {
+                        "Document_Consumer": 0.5102159624584417
+                    },
+                    {
+                        "Care_Document": 0.6637027101543223
+                    },
+                    {
+                        "XDS": 0.542641385674183
+                    },
+                    {
+                        "XCA": 0.5809159810051379
+                    },
+                    {
+                        "Patient_Identity_Source": 0.5817057773176827
+                    },
+                    {
+                        "HITSP": 0.19802486293472754
+                    },
+                    {
+                        "IHE": 0.45961170872372653
+                    }
+                ],
+                "score": 0,
+                "links": []
+            }
+        ]
+    }
+]

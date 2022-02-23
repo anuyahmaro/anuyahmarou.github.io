@@ -38,6 +38,11 @@
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">-->
+
+
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" type="text/css"
@@ -56,6 +61,24 @@
 		.last-nav{
 			margin-right: 25px;
 		}
+
+		/*.logo-name {*/
+			/*background-color: lightgrey;*/
+			/*padding: 20px;*/
+		/*}*/
+
+		/*@media screen and (min-width: 601px) {*/
+			/*.logo-name {*/
+				/*font-size: 80px;*/
+			/*}*/
+		/*}*/
+
+		/*@media screen and (max-width: 200px) {*/
+			/*.logo-name {*/
+				/*font-size: 10px;*/
+			/*}*/
+		/*}*/
+
 	</style>
 
 
@@ -63,6 +86,7 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -77,9 +101,9 @@
 	<div class="nav-wrapper">
 		<div class="row">
 			<!--<div class="col-md-6 ">-->
-			<a href="index.html" class="brand-logo center" style="text-decoration: none; font-family:brandon-grotesque-light; font-weight:900; font-style: normal; letter-spacing: .05em;
-									text-align: center; color:#333333; cursor: pointer">Oghenemaro Anuyah</a>
-			<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+			<a href="index.html"  class="brand-logo center logo-name" style="text-decoration: none; font-family:brandon-grotesque-light; font-weight:900; font-style: normal; letter-spacing: .05em;
+									text-align: center; color:#333333; cursor: pointer; object-fit: contain; ">Oghenemaro Anuyah</a>
+			<a href="#" data-target="mobile-demo" class="sidenav-trigger" style="color: black"><i class="material-icons">menu</i></a>
 			<ul class="right hide-on-med-and-down">
 				<li><a href="index.html" class="my_nav">Home</a></li>
 				<li><a href="research-portfolio.html" class="my_nav">Projects</a></li>
@@ -294,7 +318,8 @@
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.sidenav');
-        var instances = M.Sidenav.init(elems, options);
+        var instances = M.Sidenav.init(elems);
+        // document.getElementById("logo-name").style.fontSize = "20px";
     });
 </script>
 

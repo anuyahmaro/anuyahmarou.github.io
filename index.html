@@ -37,16 +37,28 @@
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
 	<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" type="text/css"
 			  href="myfont.css"/>
 
-	<!--<style>-->
-		<!--li {-->
-			<!--cursor: pointer;-->
-		<!--}-->
-	<!--</style>-->
+		<style>
+			nav {
+				background-color: whitesmoke;
+			}
+
+			.my_nav{
+				color:#333333;
+				font-weight: bold;
+			}
+
+			.last-nav{
+				margin-right: 25px;
+			}
+		</style>
+
+
 
 
 	<!-- Modernizr JS -->
@@ -59,39 +71,43 @@
 	</head>
 	<body>
 
-	<nav id="colorlib-main-nav" role="navigation">
-		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i>
-		</i></a>
-		<div class="js-fullheight colorlib-table">
-			<div class="colorlib-table-cell js-fullheight">
 
-				<!--<div class="row">-->
-				<!--&lt;!&ndash;<div class="col-md-12">&ndash;&gt;-->
-				<!--&lt;!&ndash;<div class="form-group">&ndash;&gt;-->
-				<!--&lt;!&ndash;<input type="text" class="form-control" id="search" placeholder="Enter any key to search...">&ndash;&gt;-->
-				<!--&lt;!&ndash;<button type="submit" class="btn btn-primary"><i class="icon-search3"></i></button>&ndash;&gt;-->
+
+	<!--<div id = 'demo_'>-->
+	<!--&lt;!&ndash;<nav id="colorlib-main-nav" role="navigation">&ndash;&gt;-->
+		<!--&lt;!&ndash;<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i>&ndash;&gt;-->
+		<!--&lt;!&ndash;</i></a>&ndash;&gt;-->
+		<!--&lt;!&ndash;<div class="js-fullheight colorlib-table">&ndash;&gt;-->
+			<!--&lt;!&ndash;<div class="colorlib-table-cell js-fullheight">&ndash;&gt;-->
+
+				<!--&lt;!&ndash;<div class="row">&ndash;&gt;-->
+				<!--&lt;!&ndash;&lt;!&ndash;<div class="col-md-12">&ndash;&gt;&ndash;&gt;-->
+				<!--&lt;!&ndash;&lt;!&ndash;<div class="form-group">&ndash;&gt;&ndash;&gt;-->
+				<!--&lt;!&ndash;&lt;!&ndash;<input type="text" class="form-control" id="search" placeholder="Enter any key to search...">&ndash;&gt;&ndash;&gt;-->
+				<!--&lt;!&ndash;&lt;!&ndash;<button type="submit" class="btn btn-primary"><i class="icon-search3"></i></button>&ndash;&gt;&ndash;&gt;-->
+				<!--&lt;!&ndash;&lt;!&ndash;</div>&ndash;&gt;&ndash;&gt;-->
+				<!--&lt;!&ndash;&lt;!&ndash;</div>&ndash;&gt;&ndash;&gt;-->
 				<!--&lt;!&ndash;</div>&ndash;&gt;-->
-				<!--&lt;!&ndash;</div>&ndash;&gt;-->
+				<!--&lt;!&ndash;<div class="row">&ndash;&gt;-->
+					<!--<p>MENU</p>-->
+					<!--<div class="col-md-12">-->
+                        <!--<ul>-->
+                            <!--<li class="active"><a href="index.html">Home</a></li>-->
+                            <!--<li><a href="technical_skills.html">Technical Skills</a></li>-->
+                            <!--<li><a href="research-portfolio.html">Research</a></li>-->
+                            <!--<li><a href="publications.html">Publications</a></li>-->
+                            <!--<li><a href="awards_and_scholarships.html">Awards and Services</a></li>-->
+                            <!--&lt;!&ndash;<li><a href="news_and_activities.html">Activities</a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li><a href="service.html">Service</a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li><a href="blog.html">Blog</a></li>&ndash;&gt;-->
+                        <!--</ul>-->
+					<!--</div>-->
 				<!--</div>-->
-				<div class="row">
-					<p>MENU</p>
-					<div class="col-md-12">
-                        <ul>
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="technical_skills.html">Technical Skills</a></li>
-                            <li><a href="research-portfolio.html">Research</a></li>
-                            <li><a href="publications.html">Publications</a></li>
-                            <li><a href="awards_and_scholarships.html">Awards and Services</a></li>
-                            <!--<li><a href="news_and_activities.html">Activities</a></li>-->
-                            <!--<li><a href="service.html">Service</a></li>-->
-                            <!--<li><a href="blog.html">Blog</a></li>-->
-                        </ul>
-					</div>
-				</div>
 
-			</div>
-		</div>
-	</nav>
+			<!--</div>-->
+		<!--</div>-->
+	<!--</nav>-->
+	<!--</div>-->
 
 	<!--<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">-->
 		<!--<div class="container">-->
@@ -113,41 +129,67 @@
 		<!--</div>-->
 	<!--</nav>-->
 
+	<nav>
+
+		<div class="nav-wrapper">
+			<div class="row">
+				<!--<div class="col-md-6 ">-->
+				<a href="index.html" class="brand-logo center" style="text-decoration: none; font-family:brandon-grotesque-light; font-weight:900; font-style: normal; letter-spacing: .05em;
+									text-align: center; color:#333333; cursor: pointer">Oghenemaro Anuyah</a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="index.html" class="my_nav">Home</a></li>
+					<li><a href="research-portfolio.html" class="my_nav">Projects</a></li>
+					<li><a href="publications.html" class="my_nav">Publications</a></li>
+					<li><a href="technical_skills.html" class="my_nav last-nav" >Skills</a></li>
+					<!--<li class="active"><a href="collapsible.html">JavaScript</a></li>-->
+				</ul>
+			</div>
+		</div>
+		<!--</div>-->
+	</nav>
+
 
 
 	
-	<div id="colorlib-page">
-		<header>
+	<div id="colorlib-page" style="margin-top: 2px">
+		<!--<header>-->
+			<!--<div class="container">-->
+				<!--<div class="row">-->
+					<!--<div class="col-md-12">-->
+						<!--<div class="colorlib-navbar-brand">-->
+
+
+							<!--&lt;!&ndash;<a class="colorlib-logo" href="index.html">&ndash;&gt;-->
+
+								<!--&lt;!&ndash;<span>MA</span><span class="style= font-size: 5pt">RO</span></a>&ndash;&gt;-->
+
+									<!--<h2><a href="index.html" class="heading" style="text-decoration: none; font-family:brandon-grotesque-light; font-weight:900; font-style: normal; letter-spacing: .05em;-->
+									<!--text-transform: none; color:#333333; cursor: pointer">-->
+										<!--&lt;!&ndash;<img src="https://www.pinclipart.com/picdir/middle/23-232680_notre-dame-logo-notre-dame-football-clipart.png" style="height:35px; width:35px" alt="">&ndash;&gt;-->
+										<!--Oghenemaro Anuyah </a></h2>-->
+
+						<!--</div>-->
+						<!--<br>-->
+
+
+
+						<!--<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>-->
+					<!--</div>-->
+				<!--</div>-->
+			<!--</div>-->
+		<!--</header>-->
+
+
+		<!--<header>-->
+			<!---->
+		<!--</header>-->
+
+
+		<!--<div id="colorlib-about" >-->
 			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="colorlib-navbar-brand">
-
-
-							<!--<a class="colorlib-logo" href="index.html">-->
-
-								<!--<span>MA</span><span class="style= font-size: 5pt">RO</span></a>-->
-
-									<h2><a href="index.html" class="heading" style="text-decoration: none; font-family:brandon-grotesque-light; font-weight:900; font-style: normal; letter-spacing: .05em;
-									text-transform: none; color:#333333; cursor: pointer">
-										<!--<img src="https://www.pinclipart.com/picdir/middle/23-232680_notre-dame-logo-notre-dame-football-clipart.png" style="height:35px; width:35px" alt="">-->
-										Oghenemaro Anuyah </a></h2>
-
-						</div>
-						<br>
-
-
-
-						<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
-					</div>
-				</div>
-			</div>
-		</header>
-		<div id="colorlib-about">
-			<div class="container">
-				<div class="row text-center">
-					<!--<h2 class="bold">About</h2>-->
-				</div>
+				<!--<div class="row text-center">-->
+					<!--&lt;!&ndash;<h2 class="bold">About</h2>&ndash;&gt;-->
+				<!--</div>-->
 				<div class="row">
 					<div class="col-md-5 fadeInUp ">
 						<br><br>
@@ -163,7 +205,7 @@
 							<!--&lt;!&ndash;</div>&ndash;&gt;-->
 						<!--</div>-->
 						<div>
-						<h4 style="text-align: center; margin-top: 14px">Research Areas</h4>
+						<h4 style="text-align: center; margin-top: 14px; font-size: 20px">Research Areas</h4>
 							<p style="font-size: 15px; text-align: center">Human-AI interaction, Building info systems for underserved communities, Recommendation systems,
 								User experience, Search systems</p>
 
@@ -216,7 +258,7 @@
 							</div>
 						</div>
 
-					</div>
+					<!--</div>-->
 
 
 
@@ -397,9 +439,9 @@
 							<!--&lt;!&ndash;</div>&ndash;&gt;-->
 							<!--&lt;!&ndash;</div>&ndash;&gt;-->
 						<!--</div>-->
-						<div class="col-md-12 " style="text-align: center" style="margin-top: 0px; padding-top: 0px">
-							<h2 style="font-family:brandon-grotesque-light; font-weight:900; font-style: normal; letter-spacing: .05em;
-									text-transform: none; color:#333333;">Updates</h2>
+						<div class="col-md-12 " style="text-align: center; margin-top: 0px; padding-top: 0px">
+							<h4 style="font-family:brandon-grotesque-light; font-weight:900; font-style: normal; letter-spacing: .05em;
+									text-transform: none; color:#333333;">Updates</h4>
 							<!--<div class="f-entry">-->
 							<!--<a href="#" class="featured-img" style="background-image: url(images/img-1.jpg);"></a>-->
 							<!--&lt;!&ndash;<div class="desc">&ndash;&gt;-->
@@ -530,6 +572,18 @@
 
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
+	<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, options);
+        });
+
+        // Or with jQuery
+
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+        });
+	</script>
 
 	<!--&lt;!&ndash; Start of HubSpot Embed Code &ndash;&gt;-->
 	<!--<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8510808.js"></script>-->

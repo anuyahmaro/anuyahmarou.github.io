@@ -79,6 +79,7 @@
 			<!--<div class="col-md-6 ">-->
 			<a href="index.html" class="brand-logo center" style="text-decoration: none; font-family:brandon-grotesque-light; font-weight:900; font-style: normal; letter-spacing: .05em;
 									text-align: center; color:#333333; cursor: pointer">Oghenemaro Anuyah</a>
+			<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 			<ul class="right hide-on-med-and-down">
 				<li><a href="index.html" class="my_nav">Home</a></li>
 				<li><a href="research-portfolio.html" class="my_nav">Projects</a></li>
@@ -90,7 +91,17 @@
 	</div>
 	<!--</div>-->
 </nav>
+	<ul class="sidenav" id="mobile-demo">
+		<li><a href="index.html" class="my_nav">Home</a></li>
+		<li><a href="research-portfolio.html" class="my_nav">Projects</a></li>
+		<li><a href="publications.html" class="my_nav">Publications</a></li>
+		<li><a href="technical_skills.html" class="my_nav last-nav" >Skills</a></li>
+	</ul>
+
+
 </div>
+
+
 
 	<div id="colorlib-page">
 		<!--<header>-->
@@ -122,23 +133,29 @@
 				</div>
 
 				<div class="row">
+					<div class="col-md-12 col-md-offset-0 intro-heading" style="text-align: center">
+						<span>User Experience (UX) Research and Artificial Intelligence </span>
+						<!--<h2>Here Are Some of My Technical Skills</h2>-->
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="rotate">
+							<h2 class="heading">Technical Skills</h2>
+						</div>
+					</div>
+				</div>
+
 					<div class="col-md-12">
 						<!--<div class="services-flex">-->
 							<div class="container">
 								<div class="row">
-									<div class="col-md-12 col-md-offset-0 intro-heading" style="text-align: center">
-										<span>User Experience (UX) Research and Artificial Intelligence </span>
-										<!--<h2>Here Are Some of My Technical Skills</h2>-->
-									</div>
+
 								</div>
 
-								<div class="row">
-									<div class="col-md-12">
-										<div class="rotate">
-											<h2 class="heading">Technical Skills</h2>
-										</div>
-									</div>
-									<div class="col-md-4">
+
+									<div class="col-md-4" >
 										<div class="services animate-box">
 											<h3>1 - UX Research / Design</h3>
 											<ul>
@@ -213,9 +230,9 @@
 
 
 
-				</div>
-			</div>
-		</div>
+
+
+
 
 
 
@@ -251,11 +268,11 @@
 					</p>
 				</div>
 			</div>
-		</div>
 
+</div>
 
 	</footer>
-
+</div>
 	<!--</div>-->
 
 	<!-- jQuery -->
@@ -278,12 +295,6 @@
     document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.sidenav');
         var instances = M.Sidenav.init(elems, options);
-    });
-
-    // Or with jQuery
-
-    $(document).ready(function(){
-        $('.sidenav').sidenav();
     });
 </script>
 

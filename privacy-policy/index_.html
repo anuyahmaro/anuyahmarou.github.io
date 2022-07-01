@@ -91,11 +91,21 @@
 
 </head>
 <body>
-<div class="row">
-    <div class="col s12 m8 offset-m1 xl7 offset-xl1">
+<div class="row ">
+    <div class="col s12 m8 offset-m1 xl7 offset-xl1 ">
         <h2>Rabbit VR</h2>
 
-        <form action="q3.html">
+        <form action="index_.html">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                    <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Last Name</label>
+                </div>
+            </div>
 
             <div class="row">
                 <div class="input-field col s6">
@@ -110,14 +120,26 @@
                 </div>
             </div>
 
+            <div class="row">
+                <div class="input-field col s12">
+                    <p>
+                        <label>
+                            <input type="checkbox" required/>
+                            <span>I have read the <a href="terms-and-conditions_.html" style="text-decoration: underline">privacy policy.</a></span>
+                        </label>
+                    </p>
+                </div>
+            </div>
 
 
 
 
 
-            <button class="btn waves-effect waves-light btn-small" type="submit">Next
-                <i class="material-icons right">arrow_forward</i>
+
+            <button class="btn waves-effect waves-light btn-small" type="submit">Submit
+                <!--<i class="material-icons right">send</i>-->
             </button>
+
         </form>
     </div>
 </div>

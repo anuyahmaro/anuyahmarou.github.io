@@ -92,25 +92,56 @@
 </head>
 <body>
 <div class="row ">
-<div class="col s12 m8 offset-m1 xl7 offset-xl1 ">
-    <h2>Rabbit VR</h2>
+    <div class="col s12 m8 offset-m1 xl7 offset-xl1 ">
+        <h2>Rabbit VR</h2>
 
-    <form action="q2.html">
-    <div class="row">
-        <div class="input-field col s4">
-            <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-            <label for="first_name">First Name</label>
-        </div>
-        <div class="input-field col s4">
-            <input id="last_name" type="text" class="validate">
-            <label for="last_name">Last Name</label>
-        </div>
+        <form action="finish.html">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="first_name" type="text" class="validate">
+                    <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Last Name</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                    <!--<span class="helper-text" data-error="wrong" data-success="right">Helper text</span>-->
+                </div>
+                <div class="input-field col s6">
+                    <input id="age" type="text" class="validate">
+                    <label for="age">Age</label>
+                    <!--<span class="helper-text" data-error="wrong" data-success="right">Helper text</span>-->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <p>
+                        <label>
+                            <input type="checkbox" required/>
+                            <span>I have read the <a href="privacy_policy.html" style="text-decoration: underline">privacy policy document.</a></span>
+                        </label>
+                    </p>
+                </div>
+            </div>
+
+
+
+
+
+
+            <button class="btn waves-effect waves-light btn-small" type="submit">Submit
+                <!--<i class="material-icons right">send</i>-->
+            </button>
+
+        </form>
     </div>
-        <button class="btn waves-effect waves-light btn-small" type="submit">Next
-            <i class="material-icons right">arrow_forward</i>
-        </button>
-</form>
-</div>
 </div>
 
 </body>

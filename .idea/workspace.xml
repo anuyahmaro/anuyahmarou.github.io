@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53120068-35ce-4fad-9bea-d5c9e2da7296" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test_sheets.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/publications.html" beforeDir="false" afterPath="$PROJECT_DIR$/publications.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,6 +176,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/maroanuyah/Desktop/March 2023/AProj/sth/anuyahmaro.github.io/papers&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -307,7 +307,9 @@
       <workItem from="1683574432509" duration="1548000" />
       <workItem from="1683679886926" duration="879000" />
       <workItem from="1688055986112" duration="850000" />
-      <workItem from="1690823722641" duration="311000" />
+      <workItem from="1690823722641" duration="585000" />
+      <workItem from="1691027730702" duration="20816000" />
+      <workItem from="1691592731531" duration="599000" />
     </task>
     <servers />
   </component>
